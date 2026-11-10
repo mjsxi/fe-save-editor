@@ -1,0 +1,11177 @@
+{
+ "Source": "FETH ItemDB_* dumps + FILE_002 names",
+ "Items": [
+  {
+   "Id": 10,
+   "Names": {
+    "en": "Unarmed"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 11,
+   "Names": {
+    "en": "Broken Sword"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 12,
+   "Names": {
+    "en": "Broken Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 13,
+   "Names": {
+    "en": "Broken Axe"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 14,
+   "Names": {
+    "en": "Broken Bow"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 15,
+   "Names": {
+    "en": "Broken Gauntlet"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 16,
+   "Names": {
+    "en": "Iron Sword"
+   },
+   "Durability": 40,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 17,
+   "Names": {
+    "en": "Steel Sword"
+   },
+   "Durability": 50,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 18,
+   "Names": {
+    "en": "Silver Sword"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 19,
+   "Names": {
+    "en": "Brave Sword"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 20,
+   "Names": {
+    "en": "Killing Edge"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 25,
+   "Weight": 10
+  },
+  {
+   "Id": 21,
+   "Names": {
+    "en": "Training Sword"
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 22,
+   "Names": {
+    "en": "Iron Lance"
+   },
+   "Durability": 30,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 23,
+   "Names": {
+    "en": "Steel Lance"
+   },
+   "Durability": 40,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 24,
+   "Names": {
+    "en": "Silver Lance"
+   },
+   "Durability": 25,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 25,
+   "Names": {
+    "en": "Brave Lance"
+   },
+   "Durability": 25,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 13
+  },
+  {
+   "Id": 26,
+   "Names": {
+    "en": "Killer Lance"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 25,
+   "Weight": 11
+  },
+  {
+   "Id": 27,
+   "Names": {
+    "en": "Training Lance"
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 28,
+   "Names": {
+    "en": "Iron Axe"
+   },
+   "Durability": 45,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 29,
+   "Names": {
+    "en": "Steel Axe"
+   },
+   "Durability": 55,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 30,
+   "Names": {
+    "en": "Silver Axe"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 31,
+   "Names": {
+    "en": "Brave Axe"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 32,
+   "Names": {
+    "en": "Killer Axe"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 25,
+   "Weight": 12
+  },
+  {
+   "Id": 33,
+   "Names": {
+    "en": "Training Axe"
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 34,
+   "Names": {
+    "en": "Iron Bow"
+   },
+   "Durability": 40,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 35,
+   "Names": {
+    "en": "Steel Bow"
+   },
+   "Durability": 50,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 36,
+   "Names": {
+    "en": "Silver Bow"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 37,
+   "Names": {
+    "en": "Brave Bow"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 13
+  },
+  {
+   "Id": 38,
+   "Names": {
+    "en": "Killer Bow"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 25,
+   "Weight": 11
+  },
+  {
+   "Id": 39,
+   "Names": {
+    "en": "Training Bow"
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 40,
+   "Names": {
+    "en": "Iron Gauntlets"
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 3
+  },
+  {
+   "Id": 41,
+   "Names": {
+    "en": "Steel Gauntlets"
+   },
+   "Durability": 60,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 5
+  },
+  {
+   "Id": 42,
+   "Names": {
+    "en": "Silver Gauntlets"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 7
+  },
+  {
+   "Id": 43,
+   "Names": {
+    "en": "Training Gauntlets"
+   },
+   "Durability": 70,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 44,
+   "Names": {
+    "en": "Levin Sword"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 45,
+   "Names": {
+    "en": "Bolt Axe"
+   },
+   "Durability": 25,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 15
+  },
+  {
+   "Id": 46,
+   "Names": {
+    "en": "Magic Bow"
+   },
+   "Durability": 25,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 47,
+   "Names": {
+    "en": "Javelin"
+   },
+   "Durability": 30,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 48,
+   "Names": {
+    "en": "Short Spear"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 49,
+   "Names": {
+    "en": "Spear"
+   },
+   "Durability": 20,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 50,
+   "Names": {
+    "en": "Hand Axe"
+   },
+   "Durability": 30,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 51,
+   "Names": {
+    "en": "Short Axe"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 52,
+   "Names": {
+    "en": "Tomahawk"
+   },
+   "Durability": 20,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 53,
+   "Names": {
+    "en": "Longbow"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 3,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 13
+  },
+  {
+   "Id": 54,
+   "Names": {
+    "en": "Mini Bow"
+   },
+   "Durability": 50,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 3
+  },
+  {
+   "Id": 55,
+   "Names": {
+    "en": "Armorslayer"
+   },
+   "Durability": 20,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 56,
+   "Names": {
+    "en": "Rapier"
+   },
+   "Durability": 40,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 95,
+   "Crit": 10,
+   "Weight": 5
+  },
+  {
+   "Id": 57,
+   "Names": {
+    "en": "Horseslayer"
+   },
+   "Durability": 20,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 13
+  },
+  {
+   "Id": 58,
+   "Names": {
+    "en": "Hammer"
+   },
+   "Durability": 20,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 15
+  },
+  {
+   "Id": 59,
+   "Names": {
+    "en": "Blessed Lance"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 60,
+   "Names": {
+    "en": "Blessed Bow"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 61,
+   "Names": {
+    "en": "Devil Sword"
+   },
+   "Durability": 30,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 62,
+   "Names": {
+    "en": "Devil Axe"
+   },
+   "Durability": 30,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 63,
+   "Names": {
+    "en": "Wo Dao"
+   },
+   "Durability": 15,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 30,
+   "Weight": 5
+  },
+  {
+   "Id": 64,
+   "Names": {
+    "en": "Crescent Sickle"
+   },
+   "Durability": 50,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 65,
+   "Names": {
+    "en": "Sword of Seiros"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 10,
+   "Weight": 6
+  },
+  {
+   "Id": 66,
+   "Names": {
+    "en": "Sword of Begalta"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 67,
+   "Names": {
+    "en": "Sword of Moralta"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 25,
+   "Weight": 9
+  },
+  {
+   "Id": 68,
+   "Names": {
+    "en": "Cursed Ashiya Sword"
+   },
+   "Durability": 15,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 40,
+   "Weight": 8
+  },
+  {
+   "Id": 69,
+   "Names": {
+    "en": "Sword of Zoltan"
+   },
+   "Durability": 25,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 70,
+   "Names": {
+    "en": "Thunderbrand"
+   },
+   "Durability": 30,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 10,
+   "Weight": 7
+  },
+  {
+   "Id": 71,
+   "Names": {
+    "en": "Blutgang"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 72,
+   "Names": {
+    "en": "Sword of the Creator"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 150,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 73,
+   "Names": {
+    "en": "Lance of Zoltan"
+   },
+   "Durability": 20,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 74,
+   "Names": {
+    "en": "Lance of Ruin"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 20,
+   "Weight": 9
+  },
+  {
+   "Id": 75,
+   "Names": {
+    "en": "Areadbhar"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 10,
+   "Weight": 9
+  },
+  {
+   "Id": 76,
+   "Names": {
+    "en": "Lúin"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 10,
+   "Weight": 9
+  },
+  {
+   "Id": 77,
+   "Names": {
+    "en": "Spear of Assal"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 10,
+   "Weight": 9
+  },
+  {
+   "Id": 78,
+   "Names": {
+    "en": "Scythe of Sariel"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 30,
+   "Weight": 6
+  },
+  {
+   "Id": 79,
+   "Names": {
+    "en": "Arrow of Indra"
+   },
+   "Durability": 30,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 80,
+   "Names": {
+    "en": "Freikugel"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 10,
+   "Weight": 11
+  },
+  {
+   "Id": 81,
+   "Names": {
+    "en": "Crusher"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 82,
+   "Names": {
+    "en": "Axe of Ukonvasara"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 20,
+   "Weight": 15
+  },
+  {
+   "Id": 83,
+   "Names": {
+    "en": "Axe of Zoltan"
+   },
+   "Durability": 20,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 84,
+   "Names": {
+    "en": "Tathlum Bow"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 10,
+   "Weight": 11
+  },
+  {
+   "Id": 85,
+   "Names": {
+    "en": "The Inexhaustible"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 86,
+   "Names": {
+    "en": "Bow of Zoltan"
+   },
+   "Durability": 20,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 87,
+   "Names": {
+    "en": "Failnaught"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 75,
+   "Crit": 20,
+   "Weight": 9
+  },
+  {
+   "Id": 88,
+   "Names": {
+    "en": "Dragon Claws"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 5,
+   "Weight": 7
+  },
+  {
+   "Id": 89,
+   "Names": {
+    "en": "Mace"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 90,
+   "Names": {
+    "en": "Athame"
+   },
+   "Durability": 30,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 20,
+   "Weight": 5
+  },
+  {
+   "Id": 91,
+   "Names": {
+    "en": "Ridill"
+   },
+   "Durability": 50,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 92,
+   "Names": {
+    "en": "Aymr"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 20,
+   "Weight": 11
+  },
+  {
+   "Id": 93,
+   "Names": {
+    "en": "Dark Creator Sword"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 150,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 94,
+   "Names": {
+    "en": "Venin Edge"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 95,
+   "Names": {
+    "en": "Venin Lance"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 96,
+   "Names": {
+    "en": "Venin Axe"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 97,
+   "Names": {
+    "en": "Venin Bow"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 98,
+   "Names": {
+    "en": "Mercurius"
+   },
+   "Durability": 40,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 10,
+   "Weight": 7
+  },
+  {
+   "Id": 99,
+   "Names": {
+    "en": "Gradivus"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 10,
+   "Weight": 8
+  },
+  {
+   "Id": 100,
+   "Names": {
+    "en": "Hauteclere"
+   },
+   "Durability": 40,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 10,
+   "Weight": 12
+  },
+  {
+   "Id": 101,
+   "Names": {
+    "en": "Parthia"
+   },
+   "Durability": 40,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 10,
+   "Weight": 7
+  },
+  {
+   "Id": 102,
+   "Names": {
+    "en": "Killer Knuckles"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 20,
+   "Weight": 5
+  },
+  {
+   "Id": 103,
+   "Names": {
+    "en": "Aura Knuckles"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 104,
+   "Names": {
+    "en": "Rusted Sword"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 105,
+   "Names": {
+    "en": "Rusted Sword"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 106,
+   "Names": {
+    "en": "Rusted Sword"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 107,
+   "Names": {
+    "en": "Rusted Sword"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 108,
+   "Names": {
+    "en": "Rusted Sword"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 109,
+   "Names": {
+    "en": "Rusted Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 110,
+   "Names": {
+    "en": "Rusted Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 111,
+   "Names": {
+    "en": "Rusted Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 112,
+   "Names": {
+    "en": "Rusted Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 113,
+   "Names": {
+    "en": "Rusted Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 114,
+   "Names": {
+    "en": "Rusted Axe"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 115,
+   "Names": {
+    "en": "Rusted Axe"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 116,
+   "Names": {
+    "en": "Rusted Axe"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 117,
+   "Names": {
+    "en": "Rusted Axe"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 118,
+   "Names": {
+    "en": "Rusted Axe"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 119,
+   "Names": {
+    "en": "Rusted Bow"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 120,
+   "Names": {
+    "en": "Rusted Bow"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 121,
+   "Names": {
+    "en": "Rusted Bow"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 122,
+   "Names": {
+    "en": "Rusted Bow"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 123,
+   "Names": {
+    "en": "Rusted Bow"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 124,
+   "Names": {
+    "en": "Rusted Gauntlets"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 125,
+   "Names": {
+    "en": "Rusted Gauntlets"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 126,
+   "Names": {
+    "en": "Rusted Gauntlets"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 127,
+   "Names": {
+    "en": "Rusted Gauntlets"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 128,
+   "Names": {
+    "en": "Iron Sword+"
+   },
+   "Durability": 45,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 129,
+   "Names": {
+    "en": "Steel Sword+"
+   },
+   "Durability": 55,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 130,
+   "Names": {
+    "en": "Silver Sword+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 131,
+   "Names": {
+    "en": "Brave Sword+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 132,
+   "Names": {
+    "en": "Killing Edge+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 35,
+   "Weight": 10
+  },
+  {
+   "Id": 133,
+   "Names": {
+    "en": "Training Sword+"
+   },
+   "Durability": 65,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 2
+  },
+  {
+   "Id": 134,
+   "Names": {
+    "en": "Iron Lance+"
+   },
+   "Durability": 35,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 135,
+   "Names": {
+    "en": "Steel Lance+"
+   },
+   "Durability": 45,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 136,
+   "Names": {
+    "en": "Silver Lance+"
+   },
+   "Durability": 35,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 137,
+   "Names": {
+    "en": "Brave Lance+"
+   },
+   "Durability": 35,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 13
+  },
+  {
+   "Id": 138,
+   "Names": {
+    "en": "Killer Lance+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 35,
+   "Weight": 11
+  },
+  {
+   "Id": 139,
+   "Names": {
+    "en": "Training Lance+"
+   },
+   "Durability": 65,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 3
+  },
+  {
+   "Id": 140,
+   "Names": {
+    "en": "Iron Axe+"
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 141,
+   "Names": {
+    "en": "Steel Axe+"
+   },
+   "Durability": 60,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 142,
+   "Names": {
+    "en": "Silver Axe+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 143,
+   "Names": {
+    "en": "Brave Axe+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 144,
+   "Names": {
+    "en": "Killer Axe+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 35,
+   "Weight": 12
+  },
+  {
+   "Id": 145,
+   "Names": {
+    "en": "Training Axe+"
+   },
+   "Durability": 65,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 146,
+   "Names": {
+    "en": "Iron Bow+"
+   },
+   "Durability": 45,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 95,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 147,
+   "Names": {
+    "en": "Steel Bow+"
+   },
+   "Durability": 55,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 148,
+   "Names": {
+    "en": "Silver Bow+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 149,
+   "Names": {
+    "en": "Brave Bow+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 150,
+   "Names": {
+    "en": "Killer Bow+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 35,
+   "Weight": 11
+  },
+  {
+   "Id": 151,
+   "Names": {
+    "en": "Training Bow+"
+   },
+   "Durability": 65,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 3
+  },
+  {
+   "Id": 152,
+   "Names": {
+    "en": "Iron Gauntlets+"
+   },
+   "Durability": 60,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 95,
+   "Crit": 5,
+   "Weight": 3
+  },
+  {
+   "Id": 153,
+   "Names": {
+    "en": "Steel Gauntlets+"
+   },
+   "Durability": 70,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 5
+  },
+  {
+   "Id": 154,
+   "Names": {
+    "en": "Silver Gauntlets+"
+   },
+   "Durability": 55,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 7
+  },
+  {
+   "Id": 155,
+   "Names": {
+    "en": "Training Gauntlets+"
+   },
+   "Durability": 90,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 156,
+   "Names": {
+    "en": "Levin Sword+"
+   },
+   "Durability": 30,
+   "Rank": 2,
+   "Range": 3,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 157,
+   "Names": {
+    "en": "Bolt Axe+"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 3,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 15
+  },
+  {
+   "Id": 158,
+   "Names": {
+    "en": "Magic Bow+"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 3,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 9
+  },
+  {
+   "Id": 159,
+   "Names": {
+    "en": "Javelin+"
+   },
+   "Durability": 40,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 160,
+   "Names": {
+    "en": "Short Spear+"
+   },
+   "Durability": 35,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 161,
+   "Names": {
+    "en": "Spear+"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 162,
+   "Names": {
+    "en": "Hand Axe+"
+   },
+   "Durability": 40,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 163,
+   "Names": {
+    "en": "Short Axe+"
+   },
+   "Durability": 35,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 12
+  },
+  {
+   "Id": 164,
+   "Names": {
+    "en": "Tomahawk+"
+   },
+   "Durability": 30,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 165,
+   "Names": {
+    "en": "Longbow+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 3,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 13
+  },
+  {
+   "Id": 166,
+   "Names": {
+    "en": "Mini Bow+"
+   },
+   "Durability": 55,
+   "Rank": 1,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 10,
+   "Weight": 3
+  },
+  {
+   "Id": 167,
+   "Names": {
+    "en": "Armorslayer+"
+   },
+   "Durability": 25,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 5,
+   "Weight": 11
+  },
+  {
+   "Id": 168,
+   "Names": {
+    "en": "Rapier+"
+   },
+   "Durability": 45,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 95,
+   "Crit": 20,
+   "Weight": 5
+  },
+  {
+   "Id": 169,
+   "Names": {
+    "en": "Horseslayer+"
+   },
+   "Durability": 25,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 13
+  },
+  {
+   "Id": 170,
+   "Names": {
+    "en": "Hammer+"
+   },
+   "Durability": 25,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 15
+  },
+  {
+   "Id": 171,
+   "Names": {
+    "en": "Blessed Lance+"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 172,
+   "Names": {
+    "en": "Blessed Bow+"
+   },
+   "Durability": 20,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 173,
+   "Names": {
+    "en": "Devil Sword+"
+   },
+   "Durability": 30,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 10
+  },
+  {
+   "Id": 174,
+   "Names": {
+    "en": "Devil Axe+"
+   },
+   "Durability": 30,
+   "Rank": 1,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 175,
+   "Names": {
+    "en": "Wo Dao+"
+   },
+   "Durability": 25,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 40,
+   "Weight": 5
+  },
+  {
+   "Id": 176,
+   "Names": {
+    "en": "Crescent Sickle+"
+   },
+   "Durability": 55,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 10,
+   "Weight": 12
+  },
+  {
+   "Id": 177,
+   "Names": {
+    "en": "Cursed Ashiya Sword+"
+   },
+   "Durability": 20,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 50,
+   "Weight": 8
+  },
+  {
+   "Id": 178,
+   "Names": {
+    "en": "Sword of Zoltan+"
+   },
+   "Durability": 30,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 9
+  },
+  {
+   "Id": 179,
+   "Names": {
+    "en": "Lance of Zoltan+"
+   },
+   "Durability": 25,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 10
+  },
+  {
+   "Id": 180,
+   "Names": {
+    "en": "Arrow of Indra+"
+   },
+   "Durability": 35,
+   "Rank": 2,
+   "Range": 3,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 14
+  },
+  {
+   "Id": 181,
+   "Names": {
+    "en": "Axe of Zoltan+"
+   },
+   "Durability": 25,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 5,
+   "Weight": 14
+  },
+  {
+   "Id": 182,
+   "Names": {
+    "en": "Bow of Zoltan+"
+   },
+   "Durability": 25,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 5,
+   "Weight": 8
+  },
+  {
+   "Id": 183,
+   "Names": {
+    "en": "Dragon Claws+"
+   },
+   "Durability": 40,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 7
+  },
+  {
+   "Id": 184,
+   "Names": {
+    "en": "Mace+"
+   },
+   "Durability": 25,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 6
+  },
+  {
+   "Id": 185,
+   "Names": {
+    "en": "Venin Edge+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 186,
+   "Names": {
+    "en": "Venin Lance+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 187,
+   "Names": {
+    "en": "Venin Axe+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 188,
+   "Names": {
+    "en": "Venin Bow+"
+   },
+   "Durability": 25,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 95,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 189,
+   "Names": {
+    "en": "Killer Knuckles+"
+   },
+   "Durability": 40,
+   "Rank": 3,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 30,
+   "Weight": 5
+  },
+  {
+   "Id": 190,
+   "Names": {
+    "en": "Aura Knuckles+"
+   },
+   "Durability": 40,
+   "Rank": 4,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 4
+  },
+  {
+   "Id": 191,
+   "Names": {
+    "en": "Sublime Creator Sword"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 150,
+   "Hit": 90,
+   "Crit": 10,
+   "Weight": 7
+  },
+  {
+   "Id": 192,
+   "Names": {
+    "en": "Dark Thunderbrand"
+   },
+   "Durability": 30,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 70,
+   "Crit": 10,
+   "Weight": 7
+  },
+  {
+   "Id": 193,
+   "Names": {
+    "en": "Dark Blutgang"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 194,
+   "Names": {
+    "en": "Dark Lance of Ruin"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 20,
+   "Weight": 9
+  },
+  {
+   "Id": 195,
+   "Names": {
+    "en": "Areadbhar Γ"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 10,
+   "Weight": 9
+  },
+  {
+   "Id": 196,
+   "Names": {
+    "en": "Lúin Δ"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 10,
+   "Weight": 9
+  },
+  {
+   "Id": 197,
+   "Names": {
+    "en": "Freikugel Λ"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 65,
+   "Crit": 10,
+   "Weight": 11
+  },
+  {
+   "Id": 198,
+   "Names": {
+    "en": "Dark Crusher"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 199,
+   "Names": {
+    "en": "Failnaught Τ"
+   },
+   "Durability": 20,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 75,
+   "Crit": 20,
+   "Weight": 9
+  },
+  {
+   "Id": 200,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 201,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 202,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 203,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 204,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 205,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 206,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 207,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 208,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 209,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 210,
+   "Names": {
+    "en": "Crest Stone (Gautier)"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 65,
+   "Crit": 10,
+   "Weight": 1
+  },
+  {
+   "Id": 211,
+   "Names": {
+    "en": "Crest Stone (Beast)"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 212,
+   "Names": {
+    "en": "Cracked Crest Stone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 213,
+   "Names": {
+    "en": "Crest Stone Shard"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 214,
+   "Names": {
+    "en": "Artificial Crest Stone S"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 215,
+   "Names": {
+    "en": "Artificial Crest Stone L"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 10,
+   "Weight": 1
+  },
+  {
+   "Id": 216,
+   "Names": {
+    "en": "Giant Art. Crest Stone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 15,
+   "Weight": 1
+  },
+  {
+   "Id": 217,
+   "Names": {
+    "en": "Pointy Art. Crest Stone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 95,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 218,
+   "Names": {
+    "en": "Lance of Light"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 219,
+   "Names": {
+    "en": "Lance of Light+"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 95,
+   "Crit": 10,
+   "Weight": 1
+  },
+  {
+   "Id": 220,
+   "Names": {
+    "en": "Giant Katar"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 10,
+   "Weight": 1
+  },
+  {
+   "Id": 221,
+   "Names": {
+    "en": "Blest Crest Stone Shard"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 222,
+   "Names": {
+    "en": "Crest Stone of Seiros"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 5,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 223,
+   "Names": {
+    "en": "Crest Stone of Seiros"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 5,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 224,
+   "Names": {
+    "en": "Real Seiros Crest Stone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 8,
+   "Hit": 100,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 225,
+   "Names": {
+    "en": "Crest Stone of Macuil"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 4,
+   "Hit": 90,
+   "Crit": 10,
+   "Weight": 1
+  },
+  {
+   "Id": 226,
+   "Names": {
+    "en": "Crest Stone of Indech"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 227,
+   "Names": {
+    "en": "Dark Stone (Bird)"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 228,
+   "Names": {
+    "en": "Dark Stone (Crawler)"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 229,
+   "Names": {
+    "en": "Dark Stone (Wolf)"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 230,
+   "Names": {
+    "en": "Crest of Flames Power"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 30,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 231,
+   "Names": {
+    "en": "Twin-Crest Power"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 6,
+   "Hit": 90,
+   "Crit": 10,
+   "Weight": 1
+  },
+  {
+   "Id": 232,
+   "Names": {
+    "en": "Piercing Light Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 15,
+   "Weight": 1
+  },
+  {
+   "Id": 233,
+   "Names": {
+    "en": "Throwing Light Lance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 4,
+   "Hit": 90,
+   "Crit": 15,
+   "Weight": 1
+  },
+  {
+   "Id": 234,
+   "Names": {
+    "en": "Sharp Wings"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 1
+  },
+  {
+   "Id": 235,
+   "Names": {
+    "en": "Lost Crest Stone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 15,
+   "Weight": 1
+  },
+  {
+   "Id": 236,
+   "Names": {
+    "en": "Lost Crest Stone (Lg)"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 95,
+   "Crit": 15,
+   "Weight": 1
+  },
+  {
+   "Id": 237,
+   "Names": {
+    "en": "Crest of Flames Power"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 27,
+   "Hit": 45,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 238,
+   "Names": {
+    "en": "Crest of Flames Power"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 32,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 239,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 240,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 241,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 242,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 243,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 244,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 245,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 246,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 247,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 248,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 249,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 250,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 251,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 252,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 253,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 254,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 255,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 256,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 257,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 258,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 259,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 260,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 261,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 262,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 263,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 264,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 265,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 266,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 267,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 268,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 269,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 270,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 271,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 272,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 273,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 274,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 275,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 276,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 277,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 278,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 279,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 280,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 281,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 282,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 283,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 284,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 285,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 286,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 287,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 288,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 289,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 290,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 291,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 292,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 293,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 294,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 295,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 296,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 297,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 298,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 299,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 300,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 301,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 302,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 303,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 304,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 305,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 306,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 307,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 308,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 309,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 310,
+   "Names": {
+    "en": "Viskam"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 9,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 311,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 312,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 313,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 314,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 315,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 316,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 317,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 318,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 319,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 320,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 321,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 322,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 323,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 324,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 325,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 326,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 327,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 328,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 329,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 330,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 331,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 332,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 333,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 334,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 335,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 336,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 337,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 338,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 339,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 340,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 341,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 342,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 343,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 344,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 345,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 346,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 347,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 348,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 349,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 350,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 351,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 352,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 353,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 354,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 355,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 356,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 357,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 358,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 359,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 360,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 361,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 362,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 363,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 364,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 365,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 366,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 367,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 368,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 369,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 370,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 371,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 372,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 373,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 374,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 375,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 376,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 377,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 378,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 379,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 380,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 381,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 382,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 383,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 384,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 385,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 386,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 387,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 388,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 389,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 390,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 391,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 392,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 393,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 394,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 395,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 396,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 397,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 398,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 399,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 400,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 401,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 402,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 403,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 404,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 405,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 406,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 407,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 408,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 409,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 410,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 411,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 412,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 413,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 414,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 415,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 416,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 417,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 418,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 419,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 420,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 421,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 422,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 423,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 424,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 425,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 426,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 427,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 428,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 429,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 430,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 431,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 432,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 433,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 434,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 435,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 436,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 437,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 438,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 439,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 440,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 441,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 442,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 443,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 444,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 445,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 446,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 447,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 448,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 449,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 450,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 451,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 452,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 453,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 454,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 455,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 456,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 457,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 458,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 459,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 460,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 461,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 462,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 463,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 464,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 465,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 466,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 467,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 468,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 469,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 470,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 471,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 472,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 473,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 474,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 475,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 476,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 477,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 478,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 479,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 480,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 481,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 482,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 483,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 484,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 485,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 486,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 487,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 488,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 489,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 490,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 491,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 492,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 493,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 494,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 495,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 496,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 497,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 498,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 499,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 500,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 501,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 502,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 503,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 504,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 505,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 506,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 507,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 508,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 509,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 50,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 600,
+   "Names": {
+    "en": "Leather Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 601,
+   "Names": {
+    "en": "Iron Shield"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 2
+  },
+  {
+   "Id": 602,
+   "Names": {
+    "en": "Steel Shield"
+   },
+   "Durability": 100,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 3
+  },
+  {
+   "Id": 603,
+   "Names": {
+    "en": "Silver Shield"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 604,
+   "Names": {
+    "en": "Talisman Shield"
+   },
+   "Durability": 100,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 605,
+   "Names": {
+    "en": "Hexlock Shield"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 606,
+   "Names": {
+    "en": "Aegis Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 607,
+   "Names": {
+    "en": "Ochain Shield"
+   },
+   "Durability": 100,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 608,
+   "Names": {
+    "en": "Seiros Shield"
+   },
+   "Durability": 100,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 3
+  },
+  {
+   "Id": 609,
+   "Names": {
+    "en": "Aurora Shield"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 610,
+   "Names": {
+    "en": "Kadmos Shield"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 611,
+   "Names": {
+    "en": "Lampos Shield"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 612,
+   "Names": {
+    "en": "Accuracy Ring"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 613,
+   "Names": {
+    "en": "Critical Ring"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 614,
+   "Names": {
+    "en": "Evasion Ring"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 615,
+   "Names": {
+    "en": "Speed Ring"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 616,
+   "Names": {
+    "en": "March Ring"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 617,
+   "Names": {
+    "en": "Goddess Ring"
+   },
+   "Durability": 100,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 618,
+   "Names": {
+    "en": "Prayer Ring"
+   },
+   "Durability": 100,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 619,
+   "Names": {
+    "en": "Magic Staff"
+   },
+   "Durability": 100,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 620,
+   "Names": {
+    "en": "Healing Staff"
+   },
+   "Durability": 100,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 621,
+   "Names": {
+    "en": "Caduceus Staff"
+   },
+   "Durability": 100,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 622,
+   "Names": {
+    "en": "Thyrsus"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 623,
+   "Names": {
+    "en": "Rafail Gem"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 624,
+   "Names": {
+    "en": "Experience Gem"
+   },
+   "Durability": 100,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 625,
+   "Names": {
+    "en": "Knowledge Gem"
+   },
+   "Durability": 100,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 626,
+   "Names": {
+    "en": "Circe Staff"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 627,
+   "Names": {
+    "en": "Tomas's Staff"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 628,
+   "Names": {
+    "en": "Armored Soldier Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 629,
+   "Names": {
+    "en": "Armored Knight Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 630,
+   "Names": {
+    "en": "Fortress Soldier Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 631,
+   "Names": {
+    "en": "Asclepius"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 632,
+   "Names": {
+    "en": "Dark Aegis Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 633,
+   "Names": {
+    "en": "Dark Thyrsus"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 1
+  },
+  {
+   "Id": 634,
+   "Names": {
+    "en": "Dark Rafail Gem"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 635,
+   "Names": {
+    "en": "Flame Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 636,
+   "Names": {
+    "en": "Emperor Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 637,
+   "Names": {
+    "en": "Black Eagle Pendant"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 638,
+   "Names": {
+    "en": "Blue Lion Brooch"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 639,
+   "Names": {
+    "en": "Golden Deer Bracelet"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 640,
+   "Names": {
+    "en": "White Dragon Scarf"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 641,
+   "Names": {
+    "en": "Item 41"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 642,
+   "Names": {
+    "en": "Item 42"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 643,
+   "Names": {
+    "en": "Item 43"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 644,
+   "Names": {
+    "en": "Item 44"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 645,
+   "Names": {
+    "en": "Item 45"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 646,
+   "Names": {
+    "en": "Item 46"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 647,
+   "Names": {
+    "en": "Item 47"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 648,
+   "Names": {
+    "en": "Item 48"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 649,
+   "Names": {
+    "en": "Item 49"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 1000,
+   "Names": {
+    "en": "Vulnerary"
+   },
+   "Durability": 3,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 1001,
+   "Names": {
+    "en": "Concoction"
+   },
+   "Durability": 3,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 1,
+   "Weight": 0
+  },
+  {
+   "Id": 1002,
+   "Names": {
+    "en": "Elixir"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 2,
+   "Weight": 0
+  },
+  {
+   "Id": 1003,
+   "Names": {
+    "en": "Intermediate Seal"
+   },
+   "Durability": 1,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 4,
+   "Weight": 0
+  },
+  {
+   "Id": 1004,
+   "Names": {
+    "en": "Advanced Seal"
+   },
+   "Durability": 1,
+   "Rank": 3,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 5,
+   "Weight": 0
+  },
+  {
+   "Id": 1005,
+   "Names": {
+    "en": "Combined Seal"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 6,
+   "Weight": 0
+  },
+  {
+   "Id": 1006,
+   "Names": {
+    "en": "Master Seal"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 7,
+   "Weight": 0
+  },
+  {
+   "Id": 1007,
+   "Names": {
+    "en": "Torch"
+   },
+   "Durability": 3,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 9,
+   "Weight": 0
+  },
+  {
+   "Id": 1008,
+   "Names": {
+    "en": "Bullion"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 10,
+   "Weight": 0
+  },
+  {
+   "Id": 1009,
+   "Names": {
+    "en": "Large Bullion"
+   },
+   "Durability": 100,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 11,
+   "Weight": 0
+  },
+  {
+   "Id": 1010,
+   "Names": {
+    "en": "Extra Large Bullion"
+   },
+   "Durability": 100,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 12,
+   "Weight": 0
+  },
+  {
+   "Id": 1011,
+   "Names": {
+    "en": "Antitoxin"
+   },
+   "Durability": 3,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 13,
+   "Weight": 0
+  },
+  {
+   "Id": 1012,
+   "Names": {
+    "en": "Pure Water"
+   },
+   "Durability": 3,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 14,
+   "Weight": 0
+  },
+  {
+   "Id": 1013,
+   "Names": {
+    "en": "Door Key"
+   },
+   "Durability": 1,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 15,
+   "Weight": 0
+  },
+  {
+   "Id": 1014,
+   "Names": {
+    "en": "Chest Key"
+   },
+   "Durability": 1,
+   "Rank": 1,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 16,
+   "Weight": 0
+  },
+  {
+   "Id": 1015,
+   "Names": {
+    "en": "Master Key"
+   },
+   "Durability": 3,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 17,
+   "Weight": 0
+  },
+  {
+   "Id": 1016,
+   "Names": {
+    "en": "Seraph Robe"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 9,
+   "Crit": 18,
+   "Weight": 0
+  },
+  {
+   "Id": 1017,
+   "Names": {
+    "en": "Energy Drop"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 19,
+   "Weight": 0
+  },
+  {
+   "Id": 1018,
+   "Names": {
+    "en": "Spirit Dust"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 1,
+   "Crit": 20,
+   "Weight": 0
+  },
+  {
+   "Id": 1019,
+   "Names": {
+    "en": "Secret Book"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 2,
+   "Crit": 21,
+   "Weight": 0
+  },
+  {
+   "Id": 1020,
+   "Names": {
+    "en": "Speedwing"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 3,
+   "Crit": 22,
+   "Weight": 0
+  },
+  {
+   "Id": 1021,
+   "Names": {
+    "en": "Goddess Icon"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 4,
+   "Crit": 23,
+   "Weight": 0
+  },
+  {
+   "Id": 1022,
+   "Names": {
+    "en": "Giant Shell"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 5,
+   "Crit": 24,
+   "Weight": 0
+  },
+  {
+   "Id": 1023,
+   "Names": {
+    "en": "Talisman"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 6,
+   "Crit": 25,
+   "Weight": 0
+  },
+  {
+   "Id": 1024,
+   "Names": {
+    "en": "Black Pearl"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 8,
+   "Crit": 26,
+   "Weight": 0
+  },
+  {
+   "Id": 1025,
+   "Names": {
+    "en": "Shoes of the Wind"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 7,
+   "Crit": 27,
+   "Weight": 0
+  },
+  {
+   "Id": 1026,
+   "Names": {
+    "en": "Grilled Duck"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1027,
+   "Names": {
+    "en": "Fried Boar"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1028,
+   "Names": {
+    "en": "Magical Herb Salad"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1029,
+   "Names": {
+    "en": "Dried Plums"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1030,
+   "Names": {
+    "en": "Pike Casserole"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1031,
+   "Names": {
+    "en": "Bear & Vegetable Soup"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1032,
+   "Names": {
+    "en": "Fried Gar"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1033,
+   "Names": {
+    "en": "Fried Queen Koi"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1034,
+   "Names": {
+    "en": "Sculpin Gratin"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1035,
+   "Names": {
+    "en": "Grilled Wolverine & Herbs"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1036,
+   "Names": {
+    "en": "Grilled Duck +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1037,
+   "Names": {
+    "en": "Fried Boar +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1038,
+   "Names": {
+    "en": "Magical Herb Salad +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1039,
+   "Names": {
+    "en": "Dried Plums +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1040,
+   "Names": {
+    "en": "Pike Casserole +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1041,
+   "Names": {
+    "en": "Bear & Vegetable Soup +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1042,
+   "Names": {
+    "en": "Fried Gar +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1043,
+   "Names": {
+    "en": "Fried Queen Koi +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1044,
+   "Names": {
+    "en": "Sculpin Gratin +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1045,
+   "Names": {
+    "en": "Grilled Wolverine & Herbs +"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1046,
+   "Names": {
+    "en": "Albinea Juice"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1047,
+   "Names": {
+    "en": "Grilled Chicken & Herbs"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1048,
+   "Names": {
+    "en": "Roast Duck"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1049,
+   "Names": {
+    "en": "Grilled Chicken & Herbs +"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1050,
+   "Names": {
+    "en": "Roast Duck +"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1051,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1052,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1053,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1054,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1055,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1056,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1057,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1058,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1059,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1060,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1061,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1062,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1063,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1064,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1065,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1066,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1067,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1068,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1069,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1070,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1071,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1072,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1073,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1074,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1075,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1076,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1077,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1078,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1079,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1080,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1081,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1082,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1083,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1084,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1085,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1086,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1087,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1088,
+   "Names": {
+    "en": "0"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1089,
+   "Names": {
+    "en": "Dish 63"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1090,
+   "Names": {
+    "en": "Dish 64"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1091,
+   "Names": {
+    "en": "Dish 65"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1092,
+   "Names": {
+    "en": "Dish 66"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1093,
+   "Names": {
+    "en": "Dish 67"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1094,
+   "Names": {
+    "en": "Dish 68"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1095,
+   "Names": {
+    "en": "Dish 69"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1096,
+   "Names": {
+    "en": "Dish 70"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1097,
+   "Names": {
+    "en": "Dish 71"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1098,
+   "Names": {
+    "en": "Dish 72"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1099,
+   "Names": {
+    "en": "Dish 73"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1100,
+   "Names": {
+    "en": "Dish 74"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1101,
+   "Names": {
+    "en": "Dish 75"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1102,
+   "Names": {
+    "en": "Dish 76"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1103,
+   "Names": {
+    "en": "Dish 77"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1104,
+   "Names": {
+    "en": "Dish 78"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1105,
+   "Names": {
+    "en": "Dish 79"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1106,
+   "Names": {
+    "en": "Dish 80"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1107,
+   "Names": {
+    "en": "Dish 81"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1108,
+   "Names": {
+    "en": "Dish 82"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1109,
+   "Names": {
+    "en": "Dish 83"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1110,
+   "Names": {
+    "en": "Dish 84"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1111,
+   "Names": {
+    "en": "Dish 85"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1112,
+   "Names": {
+    "en": "Dish 86"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1113,
+   "Names": {
+    "en": "Dish 87"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1114,
+   "Names": {
+    "en": "Dish 88"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1115,
+   "Names": {
+    "en": "Dish 89"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1116,
+   "Names": {
+    "en": "Dish 90"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1117,
+   "Names": {
+    "en": "Dish 91"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1118,
+   "Names": {
+    "en": "Dish 92"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1119,
+   "Names": {
+    "en": "Dish 93"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1120,
+   "Names": {
+    "en": "Dish 94"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1121,
+   "Names": {
+    "en": "Dish 95"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1122,
+   "Names": {
+    "en": "Dish 96"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1123,
+   "Names": {
+    "en": "Dish 97"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1124,
+   "Names": {
+    "en": "Dish 98"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1125,
+   "Names": {
+    "en": "Dish 99"
+   },
+   "Durability": 1,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1126,
+   "Names": {
+    "en": "Thorn Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 38,
+   "Weight": 0
+  },
+  {
+   "Id": 1127,
+   "Names": {
+    "en": "Wind Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 39,
+   "Weight": 0
+  },
+  {
+   "Id": 1128,
+   "Names": {
+    "en": "Sky Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 40,
+   "Weight": 0
+  },
+  {
+   "Id": 1129,
+   "Names": {
+    "en": "Crusher Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 41,
+   "Weight": 0
+  },
+  {
+   "Id": 1130,
+   "Names": {
+    "en": "Shield Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 42,
+   "Weight": 0
+  },
+  {
+   "Id": 1131,
+   "Names": {
+    "en": "Bloom Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 43,
+   "Weight": 0
+  },
+  {
+   "Id": 1132,
+   "Names": {
+    "en": "Light Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 44,
+   "Weight": 0
+  },
+  {
+   "Id": 1133,
+   "Names": {
+    "en": "Flame Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 45,
+   "Weight": 0
+  },
+  {
+   "Id": 1134,
+   "Names": {
+    "en": "Grim Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 46,
+   "Weight": 0
+  },
+  {
+   "Id": 1135,
+   "Names": {
+    "en": "Craft Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 47,
+   "Weight": 0
+  },
+  {
+   "Id": 1136,
+   "Names": {
+    "en": "Kalpa Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 48,
+   "Weight": 0
+  },
+  {
+   "Id": 1137,
+   "Names": {
+    "en": "Earth Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 49,
+   "Weight": 0
+  },
+  {
+   "Id": 1138,
+   "Names": {
+    "en": "Ice Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 50,
+   "Weight": 0
+  },
+  {
+   "Id": 1139,
+   "Names": {
+    "en": "Fissure Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 51,
+   "Weight": 0
+  },
+  {
+   "Id": 1140,
+   "Names": {
+    "en": "Water Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 52,
+   "Weight": 0
+  },
+  {
+   "Id": 1141,
+   "Names": {
+    "en": "Storm Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 53,
+   "Weight": 0
+  },
+  {
+   "Id": 1142,
+   "Names": {
+    "en": "Lightning Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 54,
+   "Weight": 0
+  },
+  {
+   "Id": 1143,
+   "Names": {
+    "en": "Dark Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 55,
+   "Weight": 0
+  },
+  {
+   "Id": 1144,
+   "Names": {
+    "en": "Star Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 56,
+   "Weight": 0
+  },
+  {
+   "Id": 1145,
+   "Names": {
+    "en": "Snow Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 57,
+   "Weight": 0
+  },
+  {
+   "Id": 1146,
+   "Names": {
+    "en": "Aegis Dragon Sign"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 58,
+   "Weight": 0
+  },
+  {
+   "Id": 1147,
+   "Names": {
+    "en": "Crest Stone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 37,
+   "Weight": 0
+  },
+  {
+   "Id": 1148,
+   "Names": {
+    "en": "Rocky Burdock"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 28,
+   "Weight": 0
+  },
+  {
+   "Id": 1149,
+   "Names": {
+    "en": "Premium Magic Herbs"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 1,
+   "Crit": 29,
+   "Weight": 0
+  },
+  {
+   "Id": 1150,
+   "Names": {
+    "en": "Ailell Pomegranate"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 2,
+   "Crit": 30,
+   "Weight": 0
+  },
+  {
+   "Id": 1151,
+   "Names": {
+    "en": "Speed Carrot"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 3,
+   "Crit": 31,
+   "Weight": 0
+  },
+  {
+   "Id": 1152,
+   "Names": {
+    "en": "Miracle Bean"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 4,
+   "Crit": 32,
+   "Weight": 0
+  },
+  {
+   "Id": 1153,
+   "Names": {
+    "en": "Ambrosia"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 5,
+   "Crit": 33,
+   "Weight": 0
+  },
+  {
+   "Id": 1154,
+   "Names": {
+    "en": "White Verona"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 6,
+   "Crit": 34,
+   "Weight": 0
+  },
+  {
+   "Id": 1155,
+   "Names": {
+    "en": "Golden Apple"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 8,
+   "Crit": 35,
+   "Weight": 0
+  },
+  {
+   "Id": 1156,
+   "Names": {
+    "en": "Fruit of Life"
+   },
+   "Durability": 1,
+   "Rank": 4,
+   "Range": 0,
+   "Hit": 9,
+   "Crit": 36,
+   "Weight": 0
+  },
+  {
+   "Id": 1157,
+   "Names": {
+    "en": "Dark Seal"
+   },
+   "Durability": 1,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 8,
+   "Weight": 0
+  },
+  {
+   "Id": 1158,
+   "Names": {
+    "en": "Beginner Seal"
+   },
+   "Durability": 1,
+   "Rank": 2,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 3,
+   "Weight": 0
+  },
+  {
+   "Id": 1159,
+   "Names": {
+    "en": "Spare slot 12"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1160,
+   "Names": {
+    "en": "Spare slot 13"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1161,
+   "Names": {
+    "en": "Spare slot 14"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1162,
+   "Names": {
+    "en": "Spare slot 15"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1163,
+   "Names": {
+    "en": "Spare slot 16"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1164,
+   "Names": {
+    "en": "Spare slot 17"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1165,
+   "Names": {
+    "en": "Spare slot 18"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1166,
+   "Names": {
+    "en": "Spare slot 19"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1167,
+   "Names": {
+    "en": "Spare slot 20"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1168,
+   "Names": {
+    "en": "Spare slot 21"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1169,
+   "Names": {
+    "en": "Spare slot 22"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1170,
+   "Names": {
+    "en": "Spare slot 23"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1171,
+   "Names": {
+    "en": "Spare slot 24"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1172,
+   "Names": {
+    "en": "Spare slot 25"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1173,
+   "Names": {
+    "en": "Spare slot 26"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1174,
+   "Names": {
+    "en": "Spare slot 27"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1175,
+   "Names": {
+    "en": "Spare slot 28"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1176,
+   "Names": {
+    "en": "Spare slot 29"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1177,
+   "Names": {
+    "en": "Spare slot 30"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1178,
+   "Names": {
+    "en": "Spare slot 31"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1179,
+   "Names": {
+    "en": "Spare slot 32"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1180,
+   "Names": {
+    "en": "Spare slot 33"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1181,
+   "Names": {
+    "en": "Spare slot 34"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1182,
+   "Names": {
+    "en": "Spare slot 35"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1183,
+   "Names": {
+    "en": "Spare slot 36"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1184,
+   "Names": {
+    "en": "Spare slot 37"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1185,
+   "Names": {
+    "en": "Spare slot 38"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1186,
+   "Names": {
+    "en": "Spare slot 39"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1187,
+   "Names": {
+    "en": "Spare slot 40"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1188,
+   "Names": {
+    "en": "Spare slot 41"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1189,
+   "Names": {
+    "en": "Spare slot 42"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1190,
+   "Names": {
+    "en": "Spare slot 43"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1191,
+   "Names": {
+    "en": "Spare slot 44"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1192,
+   "Names": {
+    "en": "Spare slot 45"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1193,
+   "Names": {
+    "en": "Spare slot 46"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1194,
+   "Names": {
+    "en": "Spare slot 47"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1195,
+   "Names": {
+    "en": "Spare slot 48"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1196,
+   "Names": {
+    "en": "Spare slot 49"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1197,
+   "Names": {
+    "en": "Spare slot 50"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1198,
+   "Names": {
+    "en": "Spare slot 51"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 1199,
+   "Names": {
+    "en": "Spare slot 52"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 0,
+   "Hit": 0,
+   "Crit": 255,
+   "Weight": 0
+  },
+  {
+   "Id": 4000,
+   "Names": {
+    "en": "Fire"
+   },
+   "Durability": 10,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 3
+  },
+  {
+   "Id": 4001,
+   "Names": {
+    "en": "Bolganone"
+   },
+   "Durability": 5,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 6
+  },
+  {
+   "Id": 4002,
+   "Names": {
+    "en": "Ragnarok"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 9
+  },
+  {
+   "Id": 4003,
+   "Names": {
+    "en": "Thunder"
+   },
+   "Durability": 8,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 5,
+   "Weight": 4
+  },
+  {
+   "Id": 4004,
+   "Names": {
+    "en": "Thoron"
+   },
+   "Durability": 4,
+   "Rank": 2,
+   "Range": 3,
+   "Hit": 75,
+   "Crit": 10,
+   "Weight": 7
+  },
+  {
+   "Id": 4005,
+   "Names": {
+    "en": "Bolting"
+   },
+   "Durability": 2,
+   "Rank": 3,
+   "Range": 10,
+   "Hit": 65,
+   "Crit": 15,
+   "Weight": 18
+  },
+  {
+   "Id": 4006,
+   "Names": {
+    "en": "Wind"
+   },
+   "Durability": 12,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 100,
+   "Crit": 10,
+   "Weight": 2
+  },
+  {
+   "Id": 4007,
+   "Names": {
+    "en": "Cutting Gale"
+   },
+   "Durability": 6,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 95,
+   "Crit": 10,
+   "Weight": 5
+  },
+  {
+   "Id": 4008,
+   "Names": {
+    "en": "Excalibur"
+   },
+   "Durability": 4,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 100,
+   "Crit": 15,
+   "Weight": 8
+  },
+  {
+   "Id": 4009,
+   "Names": {
+    "en": "Blizzard"
+   },
+   "Durability": 10,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 15,
+   "Weight": 4
+  },
+  {
+   "Id": 4010,
+   "Names": {
+    "en": "Fimbulvetr"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 65,
+   "Crit": 25,
+   "Weight": 10
+  },
+  {
+   "Id": 4011,
+   "Names": {
+    "en": "Sagittae"
+   },
+   "Durability": 10,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 6
+  },
+  {
+   "Id": 4012,
+   "Names": {
+    "en": "Meteor"
+   },
+   "Durability": 1,
+   "Rank": 3,
+   "Range": 10,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 19
+  },
+  {
+   "Id": 4013,
+   "Names": {
+    "en": "Agnea's Arrow"
+   },
+   "Durability": 2,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 5,
+   "Weight": 13
+  },
+  {
+   "Id": 4014,
+   "Names": {
+    "en": "Miasma Δ"
+   },
+   "Durability": 10,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 4015,
+   "Names": {
+    "en": "Mire Β"
+   },
+   "Durability": 8,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 4016,
+   "Names": {
+    "en": "Swarm Ζ"
+   },
+   "Durability": 8,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 4
+  },
+  {
+   "Id": 4017,
+   "Names": {
+    "en": "Banshee Θ"
+   },
+   "Durability": 5,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 5,
+   "Weight": 9
+  },
+  {
+   "Id": 4018,
+   "Names": {
+    "en": "Death Γ"
+   },
+   "Durability": 4,
+   "Rank": 2,
+   "Range": 3,
+   "Hit": 70,
+   "Crit": 20,
+   "Weight": 8
+  },
+  {
+   "Id": 4019,
+   "Names": {
+    "en": "Luna Λ"
+   },
+   "Durability": 2,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 65,
+   "Crit": 0,
+   "Weight": 7
+  },
+  {
+   "Id": 4020,
+   "Names": {
+    "en": "Dark Spikes Τ"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 11
+  },
+  {
+   "Id": 4021,
+   "Names": {
+    "en": "Hades Ω"
+   },
+   "Durability": 2,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 65,
+   "Crit": 10,
+   "Weight": 16
+  },
+  {
+   "Id": 4022,
+   "Names": {
+    "en": "Bohr Χ"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 10,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 4023,
+   "Names": {
+    "en": "Quake Σ"
+   },
+   "Durability": 1,
+   "Rank": 3,
+   "Range": 130,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 20
+  },
+  {
+   "Id": 4024,
+   "Names": {
+    "en": "Heal"
+   },
+   "Durability": 10,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4025,
+   "Names": {
+    "en": "Recover"
+   },
+   "Durability": 5,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4026,
+   "Names": {
+    "en": "Physic"
+   },
+   "Durability": 5,
+   "Rank": 2,
+   "Range": 100,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4027,
+   "Names": {
+    "en": "Fortify"
+   },
+   "Durability": 2,
+   "Rank": 4,
+   "Range": 111,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4028,
+   "Names": {
+    "en": "Nosferatu"
+   },
+   "Durability": 12,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 8
+  },
+  {
+   "Id": 4029,
+   "Names": {
+    "en": "Seraphim"
+   },
+   "Durability": 8,
+   "Rank": 2,
+   "Range": 2,
+   "Hit": 75,
+   "Crit": 5,
+   "Weight": 10
+  },
+  {
+   "Id": 4030,
+   "Names": {
+    "en": "Aura"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 2,
+   "Hit": 70,
+   "Crit": 20,
+   "Weight": 12
+  },
+  {
+   "Id": 4031,
+   "Names": {
+    "en": "Abraxas"
+   },
+   "Durability": 2,
+   "Rank": 4,
+   "Range": 2,
+   "Hit": 90,
+   "Crit": 5,
+   "Weight": 13
+  },
+  {
+   "Id": 4032,
+   "Names": {
+    "en": "Torch"
+   },
+   "Durability": 10,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4033,
+   "Names": {
+    "en": "Restore"
+   },
+   "Durability": 10,
+   "Rank": 2,
+   "Range": 111,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4034,
+   "Names": {
+    "en": "Ward"
+   },
+   "Durability": 5,
+   "Rank": 2,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4035,
+   "Names": {
+    "en": "Silence"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 10,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4036,
+   "Names": {
+    "en": "Rescue"
+   },
+   "Durability": 3,
+   "Rank": 3,
+   "Range": 101,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 4037,
+   "Names": {
+    "en": "Warp"
+   },
+   "Durability": 1,
+   "Rank": 3,
+   "Range": 121,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 5000,
+   "Names": {
+    "en": "Onager"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 10,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 5001,
+   "Names": {
+    "en": "Ballista"
+   },
+   "Durability": 100,
+   "Rank": 1,
+   "Range": 12,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 5002,
+   "Names": {
+    "en": "Fire Orb"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 12,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 5
+  },
+  {
+   "Id": 6000,
+   "Names": {
+    "en": "Onslaught"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6001,
+   "Names": {
+    "en": "Assembly"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6002,
+   "Names": {
+    "en": "Reversal"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6003,
+   "Names": {
+    "en": "Lure"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6004,
+   "Names": {
+    "en": "Disturbance"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6005,
+   "Names": {
+    "en": "Blaze"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6006,
+   "Names": {
+    "en": "Fusillade"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6007,
+   "Names": {
+    "en": "Assault Troop"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6008,
+   "Names": {
+    "en": "Absorption"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 30,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6009,
+   "Names": {
+    "en": "Poisoned Arrows"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6010,
+   "Names": {
+    "en": "Resonant Flames"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6011,
+   "Names": {
+    "en": "Resonant Ice"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6012,
+   "Names": {
+    "en": "Resonant Lightning"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 40,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6013,
+   "Names": {
+    "en": "Resonant White Magic"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6014,
+   "Names": {
+    "en": "Flash-Fire Arrows"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6015,
+   "Names": {
+    "en": "Group Lance Attack"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6016,
+   "Names": {
+    "en": "Linked Horses"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6017,
+   "Names": {
+    "en": "Poison Tactic"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6018,
+   "Names": {
+    "en": "Bag of Tricks"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6019,
+   "Names": {
+    "en": "Recovery Roar"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6020,
+   "Names": {
+    "en": "Spare"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6021,
+   "Names": {
+    "en": "Impregnable Wall"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6022,
+   "Names": {
+    "en": "Sacred Shield"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6023,
+   "Names": {
+    "en": "Spare"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6024,
+   "Names": {
+    "en": "Retribution"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6025,
+   "Names": {
+    "en": "Stride"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6026,
+   "Names": {
+    "en": "Blessing"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6027,
+   "Names": {
+    "en": "Dance of the Goddess"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6028,
+   "Names": {
+    "en": "Ashes and Dust"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 3,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6029,
+   "Names": {
+    "en": "Raging Flames"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6030,
+   "Names": {
+    "en": "Wave Attack"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6031,
+   "Names": {
+    "en": "Line of Lances"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6032,
+   "Names": {
+    "en": "Group Flames"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6033,
+   "Names": {
+    "en": "Group Ice"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6034,
+   "Names": {
+    "en": "Group Lightning"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 2,
+   "Hit": 40,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6035,
+   "Names": {
+    "en": "Mad Melee"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6036,
+   "Names": {
+    "en": "Random Shot"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 40,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6037,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6038,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6039,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6040,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6041,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6042,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6043,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6044,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6045,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6046,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6047,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6048,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6049,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6050,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6051,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6052,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6053,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6054,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6055,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6056,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6057,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6058,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6059,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6060,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6061,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6062,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6063,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6064,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6065,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6066,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6067,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6068,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6069,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6070,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6071,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6072,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6073,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6074,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6075,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6076,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6077,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6078,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 6079,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 50,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7000,
+   "Names": {
+    "en": "Thorns of Ruin"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7001,
+   "Names": {
+    "en": "Heavy Strike"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7002,
+   "Names": {
+    "en": "Poison Breath"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7003,
+   "Names": {
+    "en": "Flame Breath"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7004,
+   "Names": {
+    "en": "Brimstone Breath"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7005,
+   "Names": {
+    "en": "Arm Press"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 60,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7006,
+   "Names": {
+    "en": "Annihilation"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 95,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7007,
+   "Names": {
+    "en": "Light-Lance Barrage"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 80,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7008,
+   "Names": {
+    "en": "Titanomachy"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7009,
+   "Names": {
+    "en": "Light Breath"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7010,
+   "Names": {
+    "en": "Aurora Breath"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7011,
+   "Names": {
+    "en": "Hoarfrost"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 8,
+   "Hit": 70,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7012,
+   "Names": {
+    "en": "Gale"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7013,
+   "Names": {
+    "en": "Rapids"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7014,
+   "Names": {
+    "en": "Sky Fissure"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7015,
+   "Names": {
+    "en": "Sandstorm"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 75,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7016,
+   "Names": {
+    "en": "Cyclone"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 85,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7017,
+   "Names": {
+    "en": "Wilted Flower"
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 6,
+   "Hit": 90,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7018,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7019,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7020,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7021,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7022,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7023,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7024,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7025,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7026,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7027,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7028,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7029,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7030,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7031,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7032,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7033,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7034,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7035,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7036,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7037,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7038,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7039,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7040,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7041,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7042,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7043,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7044,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7045,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7046,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7047,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7048,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7049,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7050,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7051,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7052,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7053,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7054,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7055,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7056,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7057,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7058,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  },
+  {
+   "Id": 7059,
+   "Names": {
+    "en": ""
+   },
+   "Durability": 100,
+   "Rank": 0,
+   "Range": 1,
+   "Hit": 100,
+   "Crit": 0,
+   "Weight": 0
+  }
+ ]
+}

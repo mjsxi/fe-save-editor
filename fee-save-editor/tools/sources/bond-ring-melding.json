@@ -1,0 +1,20 @@
+{
+  "DataRevision": "86b8be7b9820e1bb3bce87d2a9a805ead85d92ab",
+  "Rules": [
+    {
+      "SourceRank": 0,
+      "RequiredRings": 2,
+      "BondFragments": 100
+    },
+    {
+      "SourceRank": 1,
+      "RequiredRings": 3,
+      "BondFragments": 1000
+    },
+    {
+      "SourceRank": 2,
+      "RequiredRings": 4,
+      "BondFragments": 10000
+    }
+  ]
+}

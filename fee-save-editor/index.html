@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fire Emblem Engage save editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root { color-scheme: dark; --bg:#15171b; --pan:#1e2127; --pan2:#252932; --line:#2c313a; --fg:#e6e8ea; --dim:#9aa3ad; --ok:#5ad07a; --bad:#ff6b6b; --hi:#66b3ff; --warn:#ffd479; }
+body { margin:0; padding:20px 18px 70px; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system,system-ui,sans-serif; }
+.wrap { max-width:1180px; margin:0 auto; }
+h1 { font-size:19px; margin:0 0 4px; }
+h2 { font-size:12.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--dim); margin:24px 0 8px; }
+h3 { font-size:13px; margin:0 0 8px; color:var(--dim); font-weight:600; }
+p.note { color:var(--dim); margin:4px 0 0; font-size:13px; }
+.card { background:var(--pan); border:1px solid var(--line); border-radius:10px; padding:13px 15px; }
+.drop { border:1.5px dashed #3d444f; border-radius:10px; padding:18px; text-align:center; color:var(--dim); }
+.drop.over { border-color:var(--hi); color:var(--fg); background:#1b2530; }
+.link { color:var(--hi); text-decoration:underline; cursor:pointer; }
+button { background:#2b3b52; color:var(--fg); border:1px solid #3a5372; border-radius:7px; padding:7px 12px; font:inherit; font-size:13.5px; cursor:pointer; }
+button:hover { filter:brightness(1.15); }
+button:disabled { opacity:.4; cursor:default; }
+button.go { background:#1f4d31; border-color:#2f7048; }
+button.mini { padding:3px 8px; font-size:12px; background:#2a2f38; border-color:#3a4150; }
+button.tab { border-radius:8px 8px 0 0; border-bottom:none; background:#20242b; }
+button.tab.on { background:var(--pan2); border-bottom:2px solid var(--hi); }
+button.slot { padding:6px 10px; font-size:13px; }
+button.slot.on { background:#1f3d5d; border-color:var(--hi); }
+button.unit { display:block; width:100%; text-align:left; margin:0 0 3px; padding:5px 8px; font-size:13px; background:#23272f; border-color:#333a45; }
+button.unit.on { background:#1f3d5d; border-color:var(--hi); }
+button.unit.dim { opacity:.55; }
+button.pool { display:block; width:100%; text-align:left; margin:8px 0 3px; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--dim); background:none; border:none; padding:2px; cursor:default; }
+input, select { background:#12141a; color:var(--fg); border:1px solid #333a45; border-radius:6px; padding:5px 7px; font:inherit; font-size:13.5px; }
+input[type=number] { width:74px; }
+input[type=text] { min-width:120px; }
+input.wide { width:100%; }
+input:disabled { opacity:.5; }
+label { color:var(--dim); font-size:12.5px; }
+table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:13px; }
+th, td { text-align:left; padding:3px 6px; border-bottom:1px solid var(--line); vertical-align:middle; }
+th { color:var(--dim); font-weight:500; font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; position:sticky; top:0; background:var(--pan2); }
+td.num, th.num { text-align:right; }
+code, .mono { font-family:ui-monospace,Menlo,monospace; font-size:12.5px; }
+#log { font-family:ui-monospace,Menlo,monospace; font-size:12.5px; white-space:pre-wrap; max-height:190px; overflow:auto; }
+.ok{color:var(--ok)} .bad{color:var(--bad)} .hi{color:var(--hi)} .warn{color:var(--warn)} .dim{color:var(--dim)}
+.row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:9px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:9px 14px; }
+.f { display:flex; flex-direction:column; gap:3px; }
+.f label { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.f .hint { font-size:11px; color:#6f7783; }
+.plate { background:var(--pan2); border:1px solid var(--line); border-radius:9px; padding:11px 13px; margin:0 0 12px; }
+.plate h3 { margin:0 0 9px; }
+.tabs { display:flex; gap:4px; flex-wrap:wrap; margin:20px 0 0; }
+.pane { background:var(--pan2); border:1px solid var(--line); border-radius:0 10px 10px 10px; padding:14px; }
+.split { display:grid; grid-template-columns:270px 1fr; gap:14px; align-items:start; }
+.scroll { max-height:62vh; overflow:auto; padding-right:4px; }
+.chg { font-size:12.5px; padding:2px 0; border-bottom:1px solid #262b34; display:flex; gap:8px; align-items:center; }
+.chg .t { flex:1; }
+.pill { display:inline-block; padding:1px 7px; border-radius:20px; font-size:11.5px; background:#2d3542; color:#c9d3df; }
+.pill.dirty { background:#4d3a1f; color:var(--warn); }
+.bits { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:3px 10px; font-size:12.5px; }
+.bits label { display:flex; gap:6px; align-items:center; color:var(--fg); font-size:12.5px; }
+details { margin:0 0 10px; }
+details > summary { cursor:pointer; color:var(--dim); font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; padding:3px 0; }
+.rankC { color:#9ecbff; } .rankB { color:#8fe0a8; } .rankA { color:#ffd479; } .rankP { color:#ff9fd0; }
+@media (max-width:800px){ .split { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Fire Emblem Engage save editor</h1>
+<p class="note">Edits <code>save/Auto</code> and <code>save/Manual0</code> (game 1.0 through 2.0, save format version 9), straight from an
+nxnative cloud save <span class="mono">save.dmsync</span> or from loose save files. Everything happens in this page: no upload, no server, nothing to install.</p>
+
+<h2>1 · Open a save</h2>
+<div class="card">
+  <div id="drop" class="drop"><span id="drophint">drop <b>save.dmsync</b> here &nbsp;·&nbsp; or <b>Auto</b>, <b>Manual0</b>, <b>Global</b></span> &nbsp;·&nbsp; or
+    <span id="pick" class="link">choose files</span>
+  </div>
+  <input id="files" type="file" multiple hidden>
+  <div class="row"><span id="meta" class="mono dim"></span></div>
+</div>
+
+<h2>2 · Pick a save to edit</h2>
+<div class="card"><div class="row" id="slots"><span class="dim note">nothing open yet</span></div>
+  <div class="row" id="slotinfo"></div></div>
+
+<div id="editor" hidden>
+  <div class="tabs" id="tabs"></div>
+  <div class="pane" id="pane"></div>
+
+  <h2>3 · Changes <span class="pill" id="changecount">none</span></h2>
+  <div class="card"><div id="changes"><span class="dim note">nothing edited yet</span></div>
+    <div class="row">
+      <button id="dlDms" class="go" disabled>Download save.dmsync</button>
+      <button id="dlFile" disabled>Download this save file</button>
+      <label><input id="touch" type="checkbox" checked> dated now, so this save wins the sync</label>
+    </div>
+    <div class="row"><span id="dlname" class="mono dim"></span></div></div>
+</div>
+
+<h2>What happens next</h2>
+<div class="card"><div id="log">Nothing done yet.</div></div>
+<p class="note">Every write is checked: the page re-reads the value it just wrote, re-computes the header and whole-file checksums, and refuses the change
+if the file stops parsing. Replacing the cloud copy: quit the game on the phone <i>and</i> the Mac app first, then put the new file at
+<span class="mono">&lt;this folder&gt;/&lt;TITLE ID&gt;/save.dmsync</span>.</p>
+<p class="note"><b>Backup first.</b> This writes numbers the game does not check for you: an impossible class, skill or ring can break a battle or a menu.
+Keep the save you opened (the page never touches it on disk) so you can go back.</p>
+</div>
+
+<datalist id="dl-items"></datalist>
+<datalist id="dl-skills"></datalist>
+<datalist id="dl-rings"></datalist>
+
+<script src="js/fee.js"></script>
+<script src="js/data-en.js"></script>
+<script>
+'use strict';
+const $ = (id) => document.getElementById(id);
+const D = window.FEE_DATA.en, NONE = '—';
+let logLines = [];
+function say(msg) {
+  logLines.push(msg);
+  $('log').innerHTML = logLines.slice(-30).map((m) => '<span class="' + (m.startsWith('!') ? 'bad' : m.startsWith('+') ? 'ok' : m.startsWith('>') ? 'hi' : 'dim') + '">' + m.replace(/^[+!>]/, '') + '</span>').join('\n');
+}
+const el = (tag, props, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(props || {})) {
+    if (k === 'class') n.className = v; else if (k === 'style') n.style.cssText = v; else if (k.startsWith('on') && typeof v === 'function') n.addEventListener(k.slice(2), v);
+    else if (k === 'html') n.innerHTML = v; else if (v !== undefined && v !== null) n.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) if (k !== null && k !== undefined) n.append(k.nodeType ? k : document.createTextNode(k));
+  return n;
+};
+const hex = (n, w = 4) => '0x' + n.toString(16).toUpperCase().padStart(w, '0');
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, Math.round(Number.isFinite(+v) ? +v : lo)));
+
+// ---------- name tables, indexed by the game's own hash ----------
+const byH = (list) => new Map(list.map((x) => [x.h, x]));
+const ITEM = byH(D.items), INAME = byH(D.itemNames), PERSON = byH(D.persons), CLASS = byH(D.classes),
+  SKILL = byH(D.skills), RING = byH(D.rings), EMBLEM = byH(D.emblems);
+const PERSON_BY_ID = new Map(D.persons.map((p) => [p.i, p])), CLASS_BY_ID = new Map(D.classes.map((c) => [c.i, c])),
+  EMBLEM_BY_ID = new Map(D.emblems.map((e) => [e.i, e])), RING_BY_ID = new Map(D.rings.map((r) => [r.i, r]));
+const ENGRAVE = (() => { const m = new Map(); for (const g of D.engravings) for (const h of g.ah) m.set(h, g); return m; })();
+const ENGRAVABLE = new Set(D.engraveWeapons);
+// DLC Bracelets: the owned-Emblem record is keyed to one hero and the bond record to another, so look
+// a Bracelet up from the instance hash or from the bond holder id, whichever the save gave us.
+const BRACELET = (() => { const m = new Map(); for (const x of (D.bracelets || [])) { m.set(x.h, x); for (const h of x.gh) m.set(h, x); } return m; })();
+const braceletByHash = (h) => (h === null || h === undefined ? null : BRACELET.get(h >>> 0) || null);
+const braceletById = (id) => (id ? BRACELET.get(FEE.fnv1a(id)) : null);
+const unknownHash = (h) => '? ' + hex(h >>> 0, 8);
+const itemName = (h) => (ITEM.get(h) || INAME.get(h) || { n: unknownHash(h) }).n;
+const personName = (h) => (PERSON.get(h) || { n: unknownHash(h) }).n;
+const personById = (id) => (PERSON_BY_ID.get(id) || { n: id }).n;
+const className = (h) => (CLASS.get(h) || { n: unknownHash(h) }).n;
+const skillName = (h) => (SKILL.get(h) || { n: unknownHash(h) }).n;
+const ringName = (h) => (RING.get(h) || { n: unknownHash(h) }).n;
+const emblemName = (h) => (EMBLEM.get(h) || { n: unknownHash(h) }).n;
+const emblemNameById = (id) => (EMBLEM_BY_ID.get(id) || { n: id }).n;
+const engravingName = (h) => (ENGRAVE.get(h) || { n: unknownHash(h) }).n;
+// The label a player would expect: the Bracelet name for DLC Emblems, the Emblem name otherwise.
+const emblemLabel = (hash, holderId) => {
+  const b = braceletByHash(hash) || braceletById(holderId);
+  if (b) return b.n;
+  const h = hash === null || hash === undefined ? 0 : hash >>> 0;
+  return EMBLEM.has(h) ? emblemName(h) : ((EMBLEM_BY_ID.get(holderId) || {}).n || unknownHash(h));
+};
+const emblemLabelById = (id) => { const b = braceletById(id); return b ? b.n : ((EMBLEM_BY_ID.get(id) || {}).n || id); };
+const itemMax = (h) => { const d = ITEM.get(h); return d ? (d.u === 255 ? null : d.u) : null; };
+
+// ---------- game rules that live in the tables, not the save ----------
+const WEAPON_EDITABLE = 510;                        // Sword through Combat Art; Special is not editable
+const statName = (i) => FEE.STAT_NAMES[i];
+function classWeaponVariants(c) {
+  let mandatory = 0; const options = []; let count = 0;
+  for (let i = 1; i < c.w.length; i++) {
+    if (c.w[i] === 1) mandatory |= 1 << i;
+    if (c.w[i] === 2 || c.w[i] === 3) { options.push(1 << i); count = c.w[i] - 1; }
+  }
+  if (count === 0) return [mandatory];
+  if (count === 1) return options.map((m) => mandatory | m);
+  return options.flatMap((m, i) => options.slice(i + 1).map((o) => mandatory | m | o));
+}
+const weaponMaskNames = (mask) => { const out = []; for (let i = 1; i <= 9; i++) if (mask & (1 << i)) out.push(FEE.WEAPON_TYPES[i]); return out.join('+') || 'none'; };
+function classesFor(personHash, gender) {
+  const p = PERSON.get(personHash); if (!p) return [];
+  const birth = CLASS_BY_ID.get(p.birth);
+  return D.classes.filter((c) => (c.fl & 1) && ((c.fl & 2) || c.i === p.birth || c.i === (birth && birth.promo)) && !((c.fl & 4) && gender !== 2));
+}
+function statOf(unit, i) {
+  const c = CLASS.get(unit.classHash), p = PERSON.get(unit.personHash), personal = unit.personal[i];
+  let max = (c && p) ? Math.max(0, Math.min(255, c.lim[i] + p.lm[i])) : null;
+  if (c && i === 10) max = c.base[i] + 2;
+  const value = (c && max !== null) ? Math.max(i === 0 ? 1 : 0, Math.min(max, personal + c.base[i])) : personal;
+  return { value, max, personal };
+}
+const maxUnitHP = (u) => Math.max(1, Math.min(255, statOf(u, 0).value + u.hpBonus));
+const LEVEL_CAP = (difficulty) => (difficulty === 2 ? 50 : difficulty === 1 ? 40 : 30);
+const bondExpFor = (level) => (level >= 1 && level <= 20 ? D.bondExp[level - 1] : D.bondExp[D.bondExp.length - 1] + 1);
+const bondLevelFor = (exp) => { for (let i = D.bondExp.length - 1; i >= 0; i--) if (D.bondExp[i] <= exp) return i + 1; return 1; };
+const ALEAR_PERSON = 'PID_リュール', ALEAR_EMBLEM = 'GID_リュール', PACT_LEVEL = 21;
+const PAIRS = (() => { const m = new Map(); for (const p of D.supports) { m.set(p.a + p.b, p); m.set(p.b + p.a, p); } return m; })();
+const pairOf = (key) => PAIRS.get(key) || null;
+const pairNames = (p) => personById(p.a) + '  ×  ' + personById(p.b);
+const pointsForRank = (p, rank) => (rank === 0 ? 0 : rank <= 3 ? p.t[rank - 1] : 99);
+const maxPointsFor = (p, rank) => (rank <= 2 ? p.t[rank] - 1 : 99);
+const rankForPoints = (p, pts) => p.t.filter((t) => pts >= t).length;
+const RANK_CLASS = ['dim', 'rankC', 'rankB', 'rankA', 'rankP'];
+
+// ---------- state ----------
+let bundle = null, container = null, saves = {}, originals = {}, saveOrder = [], globalSave = null;
+let cur = null, curName = null, changes = [], dirty = new Set();
+let tab = 'overview', selUnit = 0, selEmblem = 0;
+
+// ---------- undoable field widgets ----------
+function record(save, label, undo) {
+  const n = (save && save.name) || 'save';
+  changes.push({ save: n, label, undo }); dirty.add(n); refreshChanges();
+}
+function setNum(save, label, get, set, { min = 0, max = 0xffffffff, step = 1, hint = '', manual = false, noLabel = false } = {}) {
+  const inp = el('input', { type: 'number', min, max, step, value: get() });
+  inp.addEventListener('change', () => {
+    const v = clamp(inp.value, min, max), old = get();
+    if (v === old) { inp.value = old; return; }
+    if (manual) { set(v); inp.value = get(); return; }
+    try { set(v); } catch (e) { say('!' + e.message); inp.value = old; return; }
+    record(save, label + ': ' + old + ' → ' + v, () => { try { set(old); } catch (e) { say('!' + e.message); } });
+    inp.value = get();
+  });
+  return el('div', { class: 'f' }, noLabel ? null : el('label', {}, label), inp, hint ? el('span', { class: 'hint' }, typeof hint === 'function' ? hint() : hint) : null);
+}
+function setSelect(save, label, get, set, options, hint = '', noLabel = false) {
+  const show = (x) => (x === null || x === undefined ? 'null' : String(x));
+  const sel = el('select', {}, options.map((o) => el('option', { value: show(o.v) }, o.t)));
+  sel.value = show(get());
+  sel.addEventListener('change', () => {
+    const raw = sel.value, oldRaw = show(get());
+    if (raw === oldRaw) return;
+    const v = raw === 'null' ? null : (/^-?\d+$/.test(raw) ? +raw : raw);
+    const name = (x) => (options.find((o) => show(o.v) === show(x)) || {}).t;
+    try { set(v); } catch (e) { say('!' + e.message); sel.value = oldRaw; return; }
+    record(save, label + ': ' + (name(oldRaw) || oldRaw) + ' → ' + (name(v) || v), () => { try { set(oldRaw === 'null' ? null : +oldRaw); } catch (e) { say('!' + e.message); } });
+  });
+  return el('div', { class: 'f' }, noLabel ? null : el('label', {}, label), sel, hint ? el('span', { class: 'hint' }, typeof hint === 'function' ? hint() : hint) : null);
+}
+// A game-data reference edited as free text against a datalist; the underlying value is the game's hash.
+function hashText(save, label, get, set, listId, resolve, hint = '', noLabel = false) {
+  const show = (h) => (h === null || h === undefined ? '' : itemName(h));
+  const inp = el('input', { type: 'text', list: listId, value: show(get()), placeholder: 'empty', class: 'wide' });
+  inp.addEventListener('change', () => {
+    const txt = inp.value.trim();
+    let h = null;
+    if (txt) {
+      const m = /^0x([0-9a-fA-F]{1,8})$/.exec(txt);
+      if (m) h = parseInt(m[1], 16) >>> 0;
+      else {
+        const pool = D._byName[listId] || [];
+        const hit = pool.find((e) => e.label.toLowerCase() === txt.toLowerCase()) || pool.find((e) => e.label.toLowerCase().startsWith(txt.toLowerCase()));
+        if (!hit) { say('!' + txt + ' is not in that list, so nothing was written'); inp.value = show(get()); return; }
+        h = hit.id;
+      }
+    }
+    const old = get();
+    if (h === old) { inp.value = show(old); return; }
+    try { set(h); } catch (e) { say('!' + e.message); inp.value = show(old); return; }
+    record(save, label + ': ' + (old === null ? 'empty' : resolve(old)) + ' → ' + (h === null ? 'empty' : resolve(h)),
+      () => { try { set(old); } catch (e) { say('!' + e.message); } });
+    inp.value = show(get());
+  });
+  return el('div', { class: 'f' }, noLabel ? null : el('label', {}, label), inp, hint ? el('span', { class: 'hint' }, typeof hint === 'function' ? hint() : hint) : null);
+}
+function fillDatalists() {
+  D._byName = {};
+  const mk = (id, pairs) => { const d = $(id); d.innerHTML = ''; pairs.forEach((p) => d.append(el('option', { value: p.label }))); D._byName[id] = pairs; };
+  mk('dl-items', D.items.map((x) => ({ id: x.h, label: x.n })).sort((a, c) => a.label.localeCompare(c.label)));
+  mk('dl-skills', D.skills.filter((s) => s.inh).map((s) => ({ id: s.h, label: s.n })).sort((a, c) => a.label.localeCompare(c.label)));
+  mk('dl-rings', D.rings.map((r) => ({ id: r.h, label: r.n + ' ' + 'CBAS'[r.rk] })).sort((a, c) => a.label.localeCompare(c.label)));
+}
+
+// ---------- open ----------
+async function openFiles(list) {
+  const files = [...list], next = {};
+  for (const f of files) {
+    const bytes = new Uint8Array(await f.arrayBuffer());
+    const base = (f.webkitRelativePath || f.name).split('/').pop();
+    const isDms = f.name.toLowerCase().endsWith('.dmsync') || (bytes.length > 8 && String.fromCharCode(...bytes.subarray(0, 8)) === 'DMSYNC1\n');
+    if (isDms) {
+      try {
+        bundle = await FEE.DMS.read(bytes);
+        container = FEE.DMS.fromBundle(bundle);
+        say('+' + f.name + ': ' + bundle.files + ' files, container hash verified (' + bundle.title + ')');
+      } catch (e) { say('!' + f.name + ': ' + e.message); }
+      continue;
+    }
+    if (FEE.looksLikeSave(bytes)) next[base] = bytes;
+    else say('!' + f.name + ': not an Engage save file, skipped');
+  }
+  if (!bundle && !Object.keys(next).length) return;
+  if (bundle) for (const e of bundle.entries) {
+    if (e.type !== 'file') continue;
+    const base = e.path.split('/').pop();
+    if (FEE.looksLikeSave(e.bytes)) next[base] = e.bytes;
+  }
+  // a loose file wins over the one inside the container, so an already-edited save is not ignored
+  saves = {}; originals = {}; saveOrder = []; globalSave = null;
+  for (const n of Object.keys(next).sort()) {
+    try {
+      const s = new FEE.Save(next[n], n); originals[n] = next[n].slice();
+      if (s.kind === 'global') { globalSave = globalSave || s; say('> ' + n + ': Global save (' + s.sections.map((x) => x.name).join(' ') + ') - read here, edited by the Global download'); continue; }
+      saves[n] = s; saveOrder.push(n);
+    } catch (e) { say('!' + n + ': ' + e.message); }
+  }
+  changes = []; dirty = new Set();
+  $('meta').innerHTML = (bundle ? '<b>' + bundle.title + '</b> · packed ' + new Date(bundle.saved * 1000).toLocaleString() + ' on ' + (bundle.device || '?') + ' · <span class="ok">hash ok</span>' : 'loose save files') + ' · ' + saveOrder.length + ' game save(s)';
+  $('drophint').textContent = 'drop another save, or choose files to replace one';
+  renderSlots();
+  if (saveOrder.length) selectSave(saveOrder[saveOrder.length - 1]);
+  say('> ' + saveOrder.length + ' game save file(s) ready to edit: ' + saveOrder.join(', '));
+}
+function selectSave(name) {
+  cur = saves[name]; curName = name; selUnit = 0;
+  $('editor').hidden = false;
+  renderSlots(); renderTabBar(); render(); refreshChanges(); refreshDownloads();
+}
+function renderSlots() {
+  const box = $('slots'); box.innerHTML = '';
+  if (!saveOrder.length) { box.append(el('span', { class: 'dim note' }, 'nothing open yet')); $('slotinfo').innerHTML = ''; return; }
+  for (const n of saveOrder) {
+    const s = saves[n], h = s.header();
+    box.append(el('button', { class: 'slot' + (n === curName ? ' on' : ''), onclick: () => selectSave(n) },
+      n + ' · ' + (FEE.chapterName(h.chapterHash) || 'ch ' + hex(h.chapterHash, 8)) + ' · ' + FEE.fmtTime(h.playtime)));
+  }
+  const s = cur;
+  if (!s) { $('slotinfo').innerHTML = ''; return; }
+  const m = s.main(), h = s.header(), r = s.roster();
+  $('slotinfo').innerHTML = [
+    'name <b>' + ((r.find((u) => u.personHash === FEE.fnv1a(ALEAR_PERSON)) || {}).customName || '?') + '</b>',
+    'money <b>' + m.money.toLocaleString() + '</b>', 'bond fragments <b>' + m.bondFragments.toLocaleString() + '</b>',
+    'chapter <b>' + (FEE.chapterName(h.chapterHash) || hex(h.chapterHash, 8)) + '</b>',
+    'difficulty <b>' + FEE.DIFFICULTY[h.difficulty] + ' / ' + FEE.GAME_MODE[h.gameMode] + '</b>',
+    'player units <b>' + r.filter((u) => u.force === 0).length + '</b>',
+    'convoy <b>' + s.convoy().slots.filter((x) => x.item).length + ' of ' + s.convoy().count + '</b>',
+    'Emblems <b>' + s.ownedGods().length + ' owned</b>',
+    'format <b>' + s.formatVersion + '</b> · game <b>' + s.gameVersion + '</b>',
+    'checksum <b class="' + (s.crcOk && s.hdrCrcOk ? 'ok' : 'warn') + '">' + (s.crcOk && s.hdrCrcOk ? 'valid' : 'was stale (fixed on download)') + '</b>',
+  ].map((x) => '<span class="pill">' + x + '</span>').join(' ');
+}
+
+// ---------- tabs ----------
+const TABS = [['overview', 'Overview'], ['units', 'Units'], ['items', 'Convoy and storage'], ['emblems', 'Emblems and rings'], ['supports', 'Supports'], ['raw', 'Raw bytes']];
+function renderTabBar() {
+  const t = $('tabs'); t.innerHTML = '';
+  for (const [id, label] of TABS) t.append(el('button', { class: 'tab' + (tab === id ? ' on' : ''), onclick: () => { tab = id; renderTabBar(); render(); } }, label));
+}
+function render() {
+  if (!cur) return;
+  const p = $('pane'); p.innerHTML = '';
+  if (tab === 'overview') renderOverview(p);
+  if (tab === 'units') renderUnits(p);
+  if (tab === 'items') renderItems(p);
+  if (tab === 'emblems') renderEmblems(p);
+  if (tab === 'supports') renderSupports(p);
+  if (tab === 'raw') renderRaw(p);
+}
+const plate = (title, ...kids) => el('div', { class: 'plate' }, el('h3', {}, title), ...kids);
+
+// ---------- overview ----------
+function renderOverview(p) {
+  const s = cur, h = s.header();
+  const roster = s.roster();
+  const hero = roster.find((u) => u.personHash === FEE.fnv1a(ALEAR_PERSON));
+  const m = s.main();
+
+  const nameInp = el('input', { type: 'text', value: hero ? hero.customName || '' : '', maxlength: 24, disabled: !hero || hero.nameStart === null });
+  nameInp.addEventListener('change', () => {
+    const old = hero.customName || '', v = nameInp.value.trim();
+    if (!v || v === old) { nameInp.value = old; return; }
+    try { s.setUnit(hero.index, { customName: v }); } catch (e) { say('!' + e.message); nameInp.value = old; return; }
+    record(s, "Alear's name: " + old + ' → ' + v, () => { try { s.setUnit(hero.index, { customName: old }); } catch (e) { say('!' + e.message); } });
+    renderSlots();
+  });
+
+  const player = plate('Player',
+    !hero ? el('p', { class: 'note' }, 'this save has no Alear record, so her name and gender are not editable') : null,
+    el('div', { class: 'grid' },
+      el('div', { class: 'f' }, el('label', {}, "Alear's name"), nameInp,
+        el('span', { class: 'hint' }, hero ? 'custom name at ' + hex(hero.nameStart, 5) + ' inside UNIT' : '')),
+      hero && hero.nameEnd !== null ? setSelect(s, 'Alear (gender)', () => hero.gender, (v) => s.setUnit(hero.index, { gender: v }), [{ v: 1, t: 'Male' }, { v: 2, t: 'Female' }], () => 'record ' + hero.index + ' in the Player pool') : null,
+      setNum(s, 'Money', () => s.main().money, (v) => s.setMain({ money: v }), { max: 9999999, step: 100 }),
+      setNum(s, 'Bond fragments', () => s.main().bondFragments, (v) => s.setMain({ bondFragments: v }), { max: 9999999, step: 100 }),
+      setNum(s, 'Iron ingots', () => s.main().ingots[0], (v) => s.setMain({ ingots: [v, s.main().ingots[1], s.main().ingots[2]] }), { max: 9999 }),
+      setNum(s, 'Steel ingots', () => s.main().ingots[1], (v) => s.setMain({ ingots: [s.main().ingots[0], v, s.main().ingots[2]] }), { max: 9999 }),
+      setNum(s, 'Silver ingots', () => s.main().ingots[2], (v) => s.setMain({ ingots: [s.main().ingots[0], s.main().ingots[1], v] }), { max: 9999 }),
+      setNum(s, 'Play time (seconds)', () => Math.round(s.header().playtime), (v) => s.setPlaytime(v), { max: 3599999, step: 60, hint: () => FEE.fmtTime(s.header().playtime) }),
+      setSelect(s, 'Difficulty', () => s.main().difficulty, (v) => s.setHeaderSettings(v, null), FEE.DIFFICULTY.map((t, i) => ({ v: i, t })), () => 'level cap ' + LEVEL_CAP(s.main().difficulty) + ' at this difficulty'),
+      setSelect(s, 'Game mode', () => s.main().gameMode, (v) => s.setHeaderSettings(null, v), FEE.GAME_MODE.map((t, i) => ({ v: i, t })), 'falling in battle ends the run in Classic'),
+      (() => {
+        const inp = el('input', { type: 'text', value: s.main().sommieName, maxlength: 24 });
+        inp.addEventListener('change', () => {
+          const old = s.main().sommieName, v = inp.value.trim();
+          if (!v || v === old) { inp.value = old; return; }
+          try { s.setMain({ sommieName: v }); } catch (e) { say('!' + e.message); inp.value = old; return; }
+          record(s, "Sommie's name: " + old + ' → ' + v, () => { try { s.setMain({ sommieName: old }); } catch (e) { say('!' + e.message); } });
+        });
+        return el('div', { class: 'f' }, el('label', {}, "Sommie's name"), inp);
+      })()));
+
+  const chapterRow = el('div', { class: 'grid' },
+    el('div', { class: 'f' }, el('label', {}, 'Current chapter'), el('div', { class: 'mono' }, FEE.chapterName(h.chapterHash) || 'not in the enumerable id list'),
+      el('span', { class: 'hint' }, 'hash ' + hex(h.chapterHash, 8) + ' at 0x0D · read only')),
+    el('div', { class: 'f' }, el('label', {}, 'Next chapter'), el('div', { class: 'mono' }, FEE.chapterName(h.nextChapterHash) || 'not in the enumerable id list'),
+      el('span', { class: 'hint' }, 'hash ' + hex(h.nextChapterHash, 8) + ' at 0x12 · read only')),
+    el('div', { class: 'f' }, el('label', {}, 'Sequence'), el('div', { class: 'mono' }, String(h.sequence)), el('span', { class: 'hint' }, 'u16 at 0x16 · read only')),
+    el('div', { class: 'f' }, el('label', {}, 'Save counter'), el('div', { class: 'mono' }, String(h.counter)), el('span', { class: 'hint' }, 'u32 at 0x1A · read only')),
+    el('div', { class: 'f' }, el('label', {}, 'Status'), el('div', { class: 'mono' }, String(h.status)), el('span', { class: 'hint' }, 'u32 at 0x08 · 2 = normal play')));
+
+  const table = el('table', {}, el('tr', {}, el('th', {}, 'section'), el('th', { class: 'num' }, 'at'), el('th', { class: 'num' }, 'size'), el('th', {}, 'what the page makes of it')));
+  const NOTES = {
+    USER: 'money, Sommie, game variables', GDBD: 'Emblem bond levels and exp', GOD: 'owned Emblems, dirtiness',
+    RING: 'bond ring stock', UNIT: 'every unit in the save', TRAN: 'the convoy', UREL: 'character supports',
+    PROF: 'achievements (read only)', PROL: 'profile bits (read only)', TIME: 'play time (mirrored)',
+    REST: 'story and event flags (read only)', MAP: 'map edit data (read only)',
+  };
+  for (const sec of s.sections) {
+    table.append(el('tr', {}, el('td', { class: 'mono' }, sec.name), el('td', { class: 'num dim' }, hex(sec.off, 5)),
+      el('td', { class: 'num' }, sec.len.toLocaleString()), el('td', { class: 'dim' }, NOTES[sec.name] || '')));
+  }
+  p.append(player, plate('Where this save is in the story', chapterRow),
+    plate('Sections of ' + curName + ' · ' + s.bytes.length.toLocaleString() + ' bytes', table,
+      el('p', { class: 'note' }, 'Format version ' + s.formatVersion + ', game version ' + s.gameVersion + ', header checksum at ' + hex(s.hdrCrcOffset, 2) +
+        (s.hdrCrcOk ? ' (valid)' : ' (recomputed on download)') + ', whole-file checksum ' + hex(s.storedCrc, 8) + (s.crcOk ? ' (valid)' : ' (recomputed on download)') + '.'),
+      globalSave ? el('p', { class: 'note' }, 'Global save open too: ' + globalSave.sections.map((x) => x.name + ' ' + x.len + 'B').join(', ') + ' - nothing on this page writes to it.') : null));
+}
+
+// ---------- units ----------
+function renderUnits(p) {
+  const s = cur;
+  let filter = '', hideNonPlayer = true;
+  const list = el('div', {});
+  const filterInp = el('input', { type: 'text', placeholder: 'filter by name or class', class: 'wide' });
+  filterInp.addEventListener('input', () => { filter = filterInp.value.trim().toLowerCase(); drawList(); });
+  const hideBox = el('input', { type: 'checkbox' }); hideBox.checked = hideNonPlayer;
+  hideBox.addEventListener('change', () => { hideNonPlayer = hideBox.checked; drawList(); });
+  const drawList = () => {
+    list.innerHTML = '';
+    const roster = s.roster();
+    for (const force of [0, 1, 2, 3, 4, 5, 6]) {
+      const pool = roster.filter((u) => u.force === force);
+      if (!pool.length) continue;
+      if (hideNonPlayer && force !== 0) continue;
+      list.append(el('button', { class: 'pool' }, FEE.FORCES[force] + ' pool · ' + pool.length));
+      for (const u of pool) {
+        const known = PERSON.has(u.personHash);
+        const label = (known ? personName(u.personHash) : 'unit ' + u.index) + ' · ' + (CLASS.has(u.classHash) ? className(u.classHash) : 'no class') + ' lv' + u.level + (u.sp ? ' · ' + u.sp + ' SP' : '');
+        if (filter && !label.toLowerCase().includes(filter)) continue;
+        list.append(el('button', { class: 'unit' + (u.index === selUnit ? ' on' : '') + (known ? '' : ' dim'), onclick: () => { selUnit = u.index; render(); } }, label));
+      }
+    }
+    if (!list.children.length) list.append(el('div', { class: 'note' }, 'nothing matches'));
+  };
+  drawList();
+  p.append(el('div', { class: 'split' },
+    el('div', {}, filterInp, el('label', {}, ' ', hideBox, ' only the player pool'), el('div', { class: 'scroll', style: 'margin-top:8px' }, list)),
+    renderUnitEditor(s, selUnit, drawList)));
+}
+
+function renderUnitEditor(s, i, afterChange) {
+  const box = el('div', { class: 'scroll' });
+  const u = s.roster()[i];
+  if (!u) { box.append(el('p', { class: 'note' }, 'no unit at index ' + i)); return box; }
+  const holders = s.emblems();
+  const known = PERSON.has(u.personHash), cls = CLASS.get(u.classHash), per = PERSON.get(u.personHash);
+  // Every unit write goes through here: report failures, refresh the list and the pane afterwards.
+  const setter = (fn) => (v) => { try { fn(v); } catch (e) { e.reported = true; say('!' + e.message); throw e; } afterChange(); render(); };
+  const undoable = (label, undo) => record(s, 'unit ' + i + ' ' + label, () => { try { undo(); } catch (e) { say('!' + e.message); } afterChange(); render(); });
+  const num = (label, get, fn, opts) => setNum(s, label, get, setter(fn), Object.assign({}, opts || {}));
+  const sel = (label, get, fn, options, hint, noLabel) => setSelect(s, label, get, setter(fn), options, hint, noLabel);
+  const txt = (label, get, fn, listId, resolve, hint) => hashText(s, label, get, setter(fn), listId, resolve, hint, true);
+
+  box.append(el('h3', {}, personName(u.personHash) + (known ? '' : ' (not a character this page knows)') +
+    ' · ' + (cls ? cls.n : 'no class') + ' · level ' + u.level + ' · ' + FEE.FORCES[u.force] + ' pool · record at ' + hex(u.start, 5)));
+
+  // ---- who and how much
+  const who = el('div', { class: 'grid' },
+    el('div', { class: 'f' }, el('label', {}, 'Character'), el('div', {}, personName(u.personHash)),
+      el('span', { class: 'hint' }, 'person hash ' + hex(u.personHash >>> 0, 8) + ' - changing who a unit is means rewriting a record, left for v2')),
+    num('Level', () => s.roster()[i].level, (v) => s.setUnit(i, { level: v }), { max: cls ? cls.max : 40, hint: () => (cls ? 'this class goes to ' + cls.max : '') }),
+    num('Exp', () => s.roster()[i].exp, (v) => s.setUnit(i, { exp: v }), { max: 99, hint: 'must be 0 at max level' }),
+    num('Skill points', () => s.roster()[i].sp, (v) => s.setUnit(i, { sp: v }), { min: -1, max: 9999 }),
+    num('Internal level', () => s.roster()[i].internalLevel, (v) => s.setUnit(i, { internalLevel: v }), { min: -100, max: 100, hint: 'what the game uses for level-up rolls' }),
+    num('Current HP', () => s.roster()[i].currentHP, (v) => s.setUnit(i, { currentHP: v }), { max: 255, hint: () => 'max ' + maxUnitHP(s.roster()[i]) + ' HP' }),
+    txt('Class skill', () => s.roster()[i].classSkill, (v) => s.setUnitClassSkill(i, v), 'dl-skills', skillName,
+      cls && cls.learn ? 'this class learns ' + (skillName(FEE.fnv1a(cls.learn)) === unknownHash(FEE.fnv1a(cls.learn)) ? cls.learn : skillName(FEE.fnv1a(cls.learn))) + ' at level ' + (cls.max >= 40 ? 25 : 5) : 'no class skill recorded for this class'),
+    el('div', { class: 'f' }, el('label', {}, 'Weapon selection'), el('div', {}, weaponMaskNames(u.selectedWeapons)),
+      el('span', { class: 'hint' }, 'set with the class dropdown below')));
+  box.append(plate('Level, class and condition', who));
+
+  // ---- carrying an Emblem or a bond ring
+  const carry = (x) => (x.emblemInstance ? { kind: 'emblem', instance: x.emblemInstance } : x.ringInstance ? { kind: 'ring', instance: x.ringInstance } : { kind: 'none', instance: 0 });
+  const carryText = (x) => (x.emblemInstance ? emblemLabel((s.ownedGods().find((g) => g.instance === x.emblemInstance) || {}).hash, (holders.find((h) => h.instance === ((s.ownedGods().find((g) => g.instance === x.emblemInstance) || {}).holder)) || {}).id)
+    : x.ringInstance ? ringName((s.rings().find((r) => r.instance === x.ringInstance) || {}).hash) : 'nothing');
+  const equipChoices = equipmentOptions(s, u, holders);
+  const eqSel = el('select', { style: 'min-width:300px' }, equipChoices.map((o) => el('option', { value: o.key }, o.label)));
+  const nowCarry = carry(u);
+  eqSel.value = nowCarry.kind === 'none' ? 'none' : nowCarry.kind[0] + nowCarry.instance;
+  const applyEquip = () => {
+    const o = equipChoices.find((x) => x.key === eqSel.value);
+    if (!o) return;
+    const snapshot = s.bytes.slice();
+    const before = carryText(u);
+    const got = s.setUnitEquipment(i, { kind: o.kind, instance: o.instance });
+    record(s, personName(u.personHash) + ': ' + before + ' → ' + (o.kind === 'none' ? 'nothing' : o.label)
+      + (o.kind === 'ring' && got.instance !== o.instance ? ' (a fresh copy taken from the stack)' : ''), () => s.loadBytes(snapshot));
+    say('+' + personName(u.personHash) + ' now carries ' + (o.kind === 'none' ? 'nothing' : o.label));
+    afterChange(); render();
+  };
+  box.append(plate('Emblem or bond ring',
+    el('div', { class: 'row' }, el('span', {}, 'now carrying: '), el('b', {}, carryText(u)), el('label', {}, 'change to'), eqSel,
+      el('button', { class: 'mini', onclick: () => { try { applyEquip(); } catch (e) { say('!' + e.message); } } }, 'change')),
+    el('p', { class: 'note' }, u.partnerEmblemInstance
+      ? 'This unit is in an Engage+ link, so the page will not change what it carries - end the link in the game first.'
+      : 'Only Emblems this save owns that the character has a bond with are offered, and Alear’s own Emblem stays with Alear. Taking a ring from a stack of several shortens the stack and makes a new single-copy entry; returning it folds it back. The “engaged this battle” counter and carry flags on the units involved are cleared, because they would otherwise describe gear that is gone.')));
+
+  // ---- class change
+  const options = classesFor(u.personHash, u.gender || (per ? per.g : 1));
+  if (known && options.length) {
+    const classSel = el('select', {}, options.map((c) => el('option', { value: c.i }, c.n + ' (to ' + c.max + ')')));
+    classSel.value = cls ? cls.i : '';
+    const variantSel = el('select', {});
+    const fillVariants = () => {
+      const c = CLASS_BY_ID.get(classSel.value);
+      const variants = c ? classWeaponVariants(c) : [0];
+      variantSel.innerHTML = '';
+      for (const v of variants) variantSel.append(el('option', { value: String(v) }, weaponMaskNames(v)));
+    };
+    fillVariants();
+    classSel.addEventListener('change', fillVariants);
+    const doChange = () => {      const c = CLASS_BY_ID.get(classSel.value), old = CLASS.get(u.classHash), weapons = +variantSel.value;
+      if (!c) return;
+      if (c.i === (cls ? cls.i : '')) { s.setUnit(i, { selectedWeapons: weapons }); undoable('weapon selection → ' + weaponMaskNames(weapons), () => s.setUnit(i, { selectedWeapons: u.selectedWeapons })); return; }
+      const cap = LEVEL_CAP(s.main().difficulty);
+      let level = 1;
+      if (c.max >= 40 && ((old && old.adv) || (old && old.max >= 40 && u.level >= 21))) level = 21;
+      const internal = Math.max(0, Math.min(Math.max(0, u.internalLevel + u.level - 1), cap) - level + 1);
+      const hpLimit = per ? Math.max(1, Math.min(255, c.lim[0] + per.lm[0])) : 255;
+      const hpMax = Math.max(1, Math.min(hpLimit, c.base[0] + u.personal[0])) + u.hpBonus;
+      const hp = Math.max(1, Math.min(u.currentHP, Math.min(255, hpMax)));
+      const before = { classHash: u.classHash, level: u.level, exp: u.exp, internalLevel: u.internalLevel, currentHP: u.currentHP, proficiencies: u.proficiencies, selectedWeapons: u.selectedWeapons, classSkill: u.classSkill };
+      s.setUnitClass(i, { classHash: c.h, level, internalLevel: internal, currentHP: hp, proficiencies: u.proficiencies | weapons, selectedWeapons: weapons, clearClassSkill: true });
+      undoable('class ' + (old ? old.n : 'none') + ' → ' + c.n + ' (level ' + level + ', internal ' + internal + ', HP ' + hp + ')', () => {
+        s.setUnitClass(i, { classHash: before.classHash, level: before.level, internalLevel: before.internalLevel, currentHP: before.currentHP, proficiencies: before.proficiencies, selectedWeapons: before.selectedWeapons, clearClassSkill: false });
+        if (before.classSkill !== null) s.setUnitClassSkill(i, before.classSkill);
+      });
+    };
+    box.append(plate('Change class (the game rules for level, internal level and HP are applied for you)',
+      el('div', { class: 'row' }, el('label', {}, 'class'), classSel, el('label', {}, 'weapons'), variantSel, el('button', { class: 'mini', onclick: () => { try { doChange(); } catch (e) { say('!' + e.message); } } }, 'apply')),
+      el('p', { class: 'note' }, 'A new class relocks its class skill, keeps innate and current weapon proficiencies, and moves you to level 1 or 21 the way the game does when you use a seal.')));
+  }
+
+  // ---- stats
+  const statsTable = el('table', {}, el('tr', {}, el('th', {}, 'stat'), el('th', { class: 'num' }, 'shown'), el('th', { class: 'num' }, 'personal'), el('th', { class: 'num' }, 'class base'), el('th', { class: 'num' }, 'cap')));
+  for (let k = 0; k < 11; k++) {
+    const st = statOf(u, k);
+    statsTable.append(el('tr', {}, el('td', {}, statName(k)),
+      el('td', { class: 'num hi' }, st.max === null ? '—' : String(st.value)),
+      el('td', { class: 'num' }, num(statName(k), () => s.roster()[i].personal[k], (v) => s.setUnit(i, { personal: { [k]: v } }), { min: -120, max: k === 10 ? 2 : 127, noLabel: true })),
+      el('td', { class: 'num dim' }, cls ? String(cls.base[k]) : '—'),
+      el('td', { class: 'num dim maxcol' }, st.max === null ? '—' : String(st.max))));
+  }
+  box.append(plate('Stats (the personal column is what the save stores; shown = personal + class base, capped)', statsTable,
+    el('p', { class: 'note' }, 'The cap is the class limit plus this character’s own modifier, so a cap of 0 means that stat does not apply to the class.')));
+
+  // ---- items
+  const itemsGrid = el('div', { class: 'grid' });
+  for (let k = 0; k < 8; k++) {
+    const slot = k;
+    const cur0 = u.items[slot];
+    itemsGrid.append(el('div', { class: 'f' },
+      el('label', {}, 'Item ' + (slot + 1) + (cur0 ? '' : ' (empty)')),
+      txt('', () => (s.roster()[i].items[slot] || {}).hash ?? null, (h) => {
+        const old = s.roster()[i].items[slot];
+        if (h === null) { s.setUnitItem(i, slot, null); undoable('item ' + slot + ' cleared', () => s.setUnitItem(i, slot, old)); return; }
+        const def = ITEM.get(h);
+        const next = { hash: h, uses: def ? (def.u === 255 ? 255 : def.u) : 255, refine: 0, flags: old ? old.flags : 0, engrave: old && old.engrave !== null ? old.engrave : null };
+        if (!def) throw new Error('that is not in the convoy item list, so its uses and refine limits are unknown');
+        s.setUnitItem(i, slot, next);
+        undoable('item ' + slot + ' → ' + itemName(h), () => s.setUnitItem(i, slot, old));
+      }, 'dl-items', itemName),
+      cur0 ? el('div', { style: 'display:flex;gap:6px' },
+        num('uses', () => (s.roster()[i].items[slot] || { uses: 0 }).uses, (v) => s.setUnitItem(i, slot, Object.assign({}, s.roster()[i].items[slot], { uses: v })), { max: 255, noLabel: true }),
+        num('refine', () => (s.roster()[i].items[slot] || { refine: 0 }).refine, (v) => s.setUnitItem(i, slot, Object.assign({}, s.roster()[i].items[slot], { refine: v })), { max: ITEM.has(cur0.hash) ? (ITEM.get(cur0.hash).r || 0) : 5, noLabel: true })) : null,
+      cur0 ? el('span', { class: 'hint' }, 'uses ' + cur0.uses + (itemMax(cur0.hash) ? ' / ' + itemMax(cur0.hash) : ' (unlimited)') + (cur0.engrave !== null ? ' · engraved ' + engravingName(cur0.engrave) : '')) : null));
+  }
+  box.append(plate('Carried items (8 slots)', itemsGrid));
+
+  // ---- skills
+  const inheritable = D.skills.filter((sk) => sk.inh);
+  const pool = u.pool.map((sk) => sk.hash);
+  const bits = el('div', { class: 'bits' });
+  const filterInp = el('input', { type: 'text', placeholder: 'filter skills (all ' + inheritable.length + ' inheritable ones)', class: 'wide', style: 'margin-bottom:8px' });
+  const drawSkills = () => {
+    bits.innerHTML = '';
+    const q = filterInp.value.trim().toLowerCase();
+    for (const sk of inheritable.filter((x) => !q || x.n.toLowerCase().includes(q)).slice(0, 400)) {
+      const on = pool.includes(sk.h);
+      const cb = el('input', { type: 'checkbox' }); cb.checked = on;
+      cb.addEventListener('change', () => {
+        try {
+          if (!toggleInherited(s, i, sk, cb.checked)) { cb.checked = !cb.checked; say('!' + sk.n + ' has a stronger version already known, so nothing changed'); return; }
+          record(s, 'unit ' + i + (on ? ' forgets ' : ' inherits ') + sk.n, () => toggleInherited(s, i, sk, !on));
+        } catch (e) { say('!' + e.message); cb.checked = !cb.checked; }
+        afterChange(); render();
+      });
+      bits.append(el('label', { title: sk.i }, cb, sk.n));
+    }
+    if (!bits.children.length) bits.append(el('div', { class: 'note' }, 'no skill matches'));
+  };
+  filterInp.addEventListener('input', drawSkills); drawSkills();
+  const equippedSel = (k) => setSelect(s, 'equipped ' + (k + 1), () => ((s.roster()[i].equipped[k] || {}).hash ?? null),
+    setter((h) => {
+      const now = s.roster()[i];
+      const list = now.equipped.map((x) => ({ ...x }));
+      if (h === null) list.splice(k, 1);
+      else {
+        if (list.some((x, n) => n !== k && x.hash === h)) throw new Error('that skill is already in the other slot');
+        const def = SKILL.get(h);
+        if (list.some((x, n) => n !== k && def && SKILL.get(x.hash) && SKILL.get(x.hash).f === def.f)) throw new Error('two versions of the same skill cannot be equipped together');
+        list[k] = { hash: h, age: 0, category: 11 };
+      }
+      const old = now.equipped.map((x) => ({ ...x }));
+      s.setUnitSkills(i, 'equipped', list.filter(Boolean));
+      record(s, 'unit ' + i + ' equipped skill ' + k + ' → ' + (h === null ? 'empty' : skillName(h)), () => s.setUnitSkills(i, 'equipped', old));
+    }),
+    [{ v: 'null', t: NONE }].concat(u.pool.map((sk) => ({ v: String(sk.hash), t: skillName(sk.hash) }))),
+    'pick from the inheritable skills this unit knows', true);
+  const eqWrap = el('div', { class: 'grid' }, equippedSel(0), equippedSel(1));
+  box.append(el('details', { open: '' }, el('summary', {}, 'Skills: ' + u.pool.length + ' inheritable, ' + u.equipped.length + ' equipped (2 slots)'), filterInp, bits, el('h3', { style: 'margin-top:10px' }, 'Equipped inheritance'), eqWrap));
+
+  // ---- weapon ranks and flags, read only
+  const rankRow = u.weaponRanks.map((v, k) => FEE.WEAPON_TYPES[k + 1] + ' ' + v).filter((x, k) => u.weaponRanks[k]);
+  box.append(el('details', {}, el('summary', {}, 'Weapon ranks and status flags (read only in v1)'),
+    el('div', { class: 'row' }, ...(rankRow.length ? rankRow.map((r) => el('span', { class: 'pill' }, r)) : [el('span', { class: 'note' }, 'no ranks recorded')])),
+    el('p', { class: 'note' }, 'status flags ' + hex(Number(u.status & 0xffffffffn), 8) + ' · original proficiencies ' + weaponMaskNames(u.originalProficiencies) +
+      ' · saved ' + weaponMaskNames(u.proficiencies) + ' · ' + (u.customName ? 'custom name "' + u.customName + '"' : 'no custom name') +
+      ' · record ' + (u.end - u.start) + ' bytes at ' + hex(u.start, 5))));
+  return box;
+}
+
+// What a unit could carry: Emblems this save owns that the character has a bond with, and every bond ring
+// with at least one copy. The game's restrictions and the Bracelet id quirk are handled here so the codec
+// never has to know what an Emblem is.
+function equipmentOptions(s, u, holders) {
+  const roster = s.roster();
+  const out = [{ key: 'none', kind: 'none', instance: 0, label: u.emblemInstance || u.ringInstance ? 'nothing (return what it carries)' : 'nothing' }];
+  if (u.partnerEmblemInstance) return out;
+  if (u.force === 1 || u.force === 6) return out;            // enemies and temporary units keep their own gear
+  for (const g of s.ownedGods()) {
+    const holder = holders.find((h) => h.instance === g.holder);
+    if (!holder || g.darkness || g.reserved || g.escaping) continue;
+    if (holder.id === ALEAR_EMBLEM) continue;                 // Alear's Emblem stays with Alear
+    const band = braceletByHash(g.hash);
+    if (!(holder.hash === g.hash || (band && band === braceletById(holder.id)))) continue;
+    if (!holder.bonds.some((b) => b.personHash === u.personHash)) continue;
+    const bearer = roster.find((x) => x.emblemInstance === g.instance);
+    if (bearer && bearer.index === u.index) continue;
+    out.push({ key: 'e' + g.instance, kind: 'emblem', instance: g.instance,
+      label: emblemLabel(g.hash, holder.id) + (bearer ? '  ·  currently ' + personName(bearer.personHash) : '') });
+  }
+  for (const r of s.rings()) {
+    if (r.stock < 1) continue;
+    const def = RING.get(r.hash);
+    if (!def) continue;
+    const owner = r.ownerIndex === null || r.ownerIndex === undefined ? null : roster[r.ownerIndex];
+    if (owner && owner.index === u.index) continue;
+    out.push({ key: 'r' + r.instance, kind: 'ring', instance: r.instance,
+      label: def.n + ' ' + 'CBAS'[def.rk] + '  ·  ' + r.stock + ' in the box' + (owner ? ', carried by ' + personName(owner.personHash) : '') });
+  }
+  return out;
+}
+
+// Inherit / forget a skill the way the game does: one entry per family, the stronger tier wins.
+function toggleInherited(s, index, def, on) {
+  const u = s.roster()[index];
+  const hasBetter = u.pool.some((x) => SKILL.get(x.hash) && SKILL.get(x.hash).f === def.f && SKILL.get(x.hash).t > def.t);
+  if (on && hasBetter) return false;
+  if (on && u.pool.some((x) => x.hash === def.h)) return true;
+  if (!on && !u.pool.some((x) => x.hash === def.h)) return true;
+  const replaced = new Set(u.pool.filter((x) => x.hash === def.h || (on && SKILL.get(x.hash) && SKILL.get(x.hash).f === def.f)).map((x) => x.hash));
+  const pool = u.pool.filter((x) => !replaced.has(x.hash));
+  if (on) pool.push({ hash: def.h, age: 0, category: 11 });
+  if (pool.length > 1280) throw new Error('the inheritable skill pool is full');
+  const equipped = [];
+  for (const x of u.equipped) {
+    if (!replaced.has(x.hash)) equipped.push(x);
+    else if (on) equipped.push({ ...x, hash: def.h });
+  }
+  s.setUnitSkills(index, 'pool', pool);
+  if (equipped.map((x) => x.hash).join() !== u.equipped.map((x) => x.hash).join()) s.setUnitSkills(index, 'equipped', equipped);
+  return true;
+}
+
+// ---------- convoy and storage ----------
+function renderItems(p) {
+  const s = cur;
+  let showAll = false;
+  const add = (label) => {
+    const def = D.items.find((x) => x.n.toLowerCase() === String(label).toLowerCase());
+    if (!def) return say('!' + label + ' is not in the item list');
+    const slot = s.convoy().slots.find((x) => !x.item);
+    if (!slot) return say('!the convoy is full (999 slots)');
+    const item = { hash: def.h, uses: def.u, refine: 0, flags: 0, engrave: null };
+    s.setConvoySlot(slot.slot, item);
+    record(s, 'convoy ' + slot.slot + ' → ' + def.n, () => s.setConvoySlot(slot.slot, null));
+    say('+' + def.n + ' added to convoy slot ' + slot.slot);
+    draw();
+  };
+  const quickInp = el('input', { type: 'text', list: 'dl-items', placeholder: 'add to the first free slot: Iron Sword', style: 'min-width:260px' });
+  const quick = el('div', { class: 'row' }, quickInp,
+    el('button', { onclick: () => add(quickInp.value) }, 'add'),
+    el('button', { class: 'mini', onclick: () => { const n = s.restoreConvoyUses(new Map(D.items.filter((d) => d.u !== 255).map((d) => [d.h, d.u]))); if (n) record(s, n + ' convoy items restored to full uses', () => say('> undoing restored uses needs the old values - reopen the save you started from')); say('+' + n + ' convoy items restored to full uses'); draw(); } }, 'restore all uses'));
+  const wrap = el('div', { class: 'scroll', style: 'max-height:60vh' });
+  const draw = () => {
+    wrap.innerHTML = '';
+    const c = s.convoy();
+    const used = c.slots.filter((x) => x.item).length;
+    const rows = [];
+    for (const slot of c.slots) {
+      if (slot.item || showAll) rows.push(slot);
+      else if (rows.filter((r) => !r.item).length < 12) rows.push(slot);
+    }
+    const table = el('table', {}, el('tr', {}, el('th', { class: 'num' }, '#'), el('th', {}, 'item'), el('th', { class: 'num' }, 'uses'), el('th', { class: 'num' }, 'max'), el('th', { class: 'num' }, 'refine'), el('th', {}, 'engraving'), el('th', {}, '')));
+    for (const slot of rows) {
+      const it = slot.item;
+      const writeItem = (patch, label) => {
+        const old = s.convoy().slots[slot.slot].item;
+        if (!old) return;
+        s.setConvoySlot(slot.slot, Object.assign({}, old, patch));
+        record(s, 'convoy ' + slot.slot + ' ' + label, () => s.setConvoySlot(slot.slot, old));
+      };
+      table.append(el('tr', { style: it ? '' : 'opacity:.45' },
+        el('td', { class: 'num dim' }, String(slot.slot)),
+        el('td', {}, hashText(s, 'item', () => (s.convoy().slots[slot.slot].item || {}).hash ?? null, (h) => {
+          const old = s.convoy().slots[slot.slot].item;
+          if (h === null) {
+            if (!old) return;
+            s.setConvoySlot(slot.slot, null);
+            record(s, 'convoy ' + slot.slot + ' cleared (' + itemName(old.hash) + ')', () => s.setConvoySlot(slot.slot, old));
+            draw(); return;
+          }
+          const def = ITEM.get(h);
+          if (!def) throw new Error('that is not in the convoy item list');
+          s.setConvoySlot(slot.slot, { hash: h, uses: def.u, refine: 0, flags: old ? old.flags : 0, engrave: null });
+          record(s, 'convoy ' + slot.slot + ' → ' + def.n, () => s.setConvoySlot(slot.slot, old));
+          draw();
+        }, 'dl-items', itemName, '', true, true)),
+        el('td', { class: 'num' }, it ? setNum(s, 'uses', () => s.convoy().slots[slot.slot].item.uses, (v) => writeItem({ uses: v }, 'uses → ' + v), { max: 255, manual: true, noLabel: true }) : ''),
+        el('td', { class: 'num dim' }, it ? (itemMax(it.hash) === null ? '∞' : String(itemMax(it.hash))) : ''),
+        el('td', { class: 'num' }, it ? setNum(s, 'refine', () => s.convoy().slots[slot.slot].item.refine, (v) => writeItem({ refine: v }, 'refine → ' + v), { max: ITEM.has(it.hash) ? ITEM.get(it.hash).r : 5, manual: true, noLabel: true }) : ''),
+        el('td', {}, it ? engravingSelect(s, slot.slot, it) : ''),
+        el('td', {}, it ? el('button', { class: 'mini', onclick: () => { const old = s.convoy().slots[slot.slot].item; s.setConvoySlot(slot.slot, null); record(s, 'cleared convoy ' + slot.slot + ' (' + itemName(old.hash) + ')', () => s.setConvoySlot(slot.slot, old)); draw(); } }, 'clear') : '')));
+    }
+    wrap.append(el('div', { class: 'row', style: 'margin:0 0 8px' },
+      el('span', { class: 'pill' }, used + ' of ' + c.count + ' slots used'),
+      el('button', { class: 'mini', onclick: () => { showAll = !showAll; draw(); } }, showAll ? 'hide empty slots' : 'show all ' + c.count + ' slots')),
+      table);
+  };
+  p.append(plate('Convoy', quick, wrap), renderStorage());
+  draw();
+}
+function engravingSelect(s, slot, it) {
+  if (!ENGRAVABLE.has(it.hash)) return el('span', { class: 'dim' }, '—');
+  const eff = (h) => { const g = ENGRAVE.get(h); return g ? (g.n + ': ' + [['mt', g.p], ['wt', g.w], ['hit', g.hit], ['crt', g.c], ['avo', g.av], ['sec', g.s]].filter((x) => x[1]).map((x) => x[0] + ' ' + x[1]).join(' ')) : 'none'; };
+  return setSelect(s, 'engraving', () => (s.convoy().slots[slot].item || {}).engrave ?? null, (h) => {
+    const old = s.convoy().slots[slot].item;
+    const want = h === null ? null : +h;
+    if (want !== null) for (const other of s.convoy().slots) if (other.item && other.slot !== slot && other.item.engrave === want) throw new Error('that engraving is on convoy slot ' + other.slot + ' - clear it there first');
+    if (want !== null) for (const u of s.roster()) u.items.forEach((x, n) => { if (x && x.engrave === want) throw new Error('that engraving is on ' + personName(u.personHash) + '’s item ' + (n + 1) + ' - v1 cannot move it off a character'); });
+    s.setConvoySlot(slot, Object.assign({}, old, { engrave: want }));
+    record(s, 'convoy ' + slot + ' engraving → ' + (want === null ? 'none' : engravingName(want)), () => s.setConvoySlot(slot, old));
+  }, [{ v: 'null', t: NONE }].concat(D.engravings.map((g) => ({ v: String(g.h), t: g.n }))), () => eff((s.convoy().slots[slot].item || {}).engrave), true);
+}
+function renderStorage() {
+  const s = cur;
+  const vars = new Map(s.mainLayout().variables.filter((v) => v.type === 0).map((v) => [v.key, v]));
+  const CATS = { ReclassItems: 'Reclass items', Materials: 'Materials', Ingredients: 'Ingredients', Gifts: 'Gifts', KeyItems: 'Key items' };
+  const ingotKeys = FEE.MATERIAL_KEYS;
+  const groups = {};
+  for (const q of D.quantity) {
+    if (ingotKeys.includes(FEE.QTY_PREFIX + q.i)) continue;             // ingots are edited in Overview
+    (groups[q.c] = groups[q.c] || []).push(q);
+  }
+  const out = [];
+  for (const [cat, label] of Object.entries(CATS)) {
+    const list = groups[cat]; if (!list) continue;
+    const grid = el('div', { class: 'grid' });
+    for (const q of list) {
+      const key = FEE.QTY_PREFIX + q.i;
+      grid.append(setNum(s, q.n, () => (vars.get(key) || { value: 0 }).value, (v) => {
+        const old = (s.mainLayout().variables.find((x) => x.key === key) || { value: 0 }).value;
+        s.setVariables({ [key]: v });
+        record(s, q.n + ': ' + old + ' → ' + v, () => s.setVariables({ [key]: old }));
+      }, { max: q.max, hint: 'up to ' + q.max }));
+    }
+    out.push(plate(label + ' · ' + list.length + ' kinds', grid));
+  }
+  return plate('Storage (game variables in USER): counts the game keeps outside the convoy', ...out);
+}
+
+// ---------- Emblems and rings ----------
+function renderEmblems(p) {
+  const s = cur;
+  const gods = s.ownedGods(), holders = s.emblems();
+  const sel = el('select', {}, gods.map((g) => el('option', { value: String(g.instance) }, emblemLabel(g.hash, (holders.find((h) => h.instance === g.holder) || {}).id) + (g.reserved ? ' (story)' : '') + ' · instance ' + g.instance)));
+  if (gods.some((g) => g.instance === selEmblem)) sel.value = String(selEmblem); else selEmblem = gods.length ? gods[0].instance : 0;
+  sel.addEventListener('change', () => { selEmblem = +sel.value; render(); });
+  const god = gods.find((g) => g.instance === selEmblem);
+  const holder = god ? holders.find((h) => h.instance === god.holder) : null;
+  const alearEmblem = holders.find((h) => h.id === ALEAR_EMBLEM);
+
+  const detail = el('div', {});
+  if (!god) detail.append(el('p', { class: 'note' }, 'this save owns no Emblems yet.'));
+  else {
+    const def = EMBLEM_BY_ID.get(holder ? holder.id : '');
+    const label = emblemLabel(god.hash, holder ? holder.id : null);
+    const band = braceletByHash(god.hash) || braceletById(holder ? holder.id : null);
+    const flags = [god.darkness && 'dark', god.reserved && 'story-reserved', god.escaping && 'escaping'].filter(Boolean).join(', ') || 'none';
+    const bondTable = el('table', {}, el('tr', {}, el('th', {}, 'character'), el('th', {}, 'bond level'), el('th', { class: 'num' }, 'exp'), el('th', { class: 'num' }, 'inherited skills'), el('th', {}, '')));
+    for (const b of (holder ? holder.bonds : [])) {
+      const isPact = holder.pactPartner === b.personId;
+      const maxLevel = isPact ? PACT_LEVEL : 20;
+      const allowed = [1, 5, 10, 20].concat(isPact ? [21] : []);
+      if (!allowed.includes(b.level) && b.level <= 21) allowed.push(b.level);
+      allowed.sort((x, y) => x - y);
+      const opts = [{ v: 'null', t: NONE }].concat(allowed.map((lv) => ({ v: String(lv), t: String(lv) + (lv === 21 ? ' (Pact)' : '') })));
+      bondTable.append(el('tr', {},
+        el('td', {}, personById(b.personId) + (isPact ? ' (Pact)' : '')),
+        el('td', {}, setSelect(s, 'level', () => String(s.emblems().find((g) => g.instance === god.instance).bonds.find((x) => x.personId === b.personId).level), (v) => {
+          const now = s.emblems().find((g) => g.instance === god.instance).bonds.find((x) => x.personId === b.personId);
+          if (v === null) throw new Error('removing a bond is v2: it has to unequip the Emblem first');
+          if (now.level > 21) throw new Error('this bond is a special one the page will not overwrite');
+          const level = +v;
+          if (level > maxLevel) throw new Error(personById(b.personId) + ' can reach bond ' + maxLevel + ' with this Emblem');
+          const exp = bondExpFor(level);
+          const talk = (level >= 5 ? 2 : 0) | (level >= 10 ? 4 : 0) | (level >= 20 ? 8 : 0);
+          s.setBondLevel(god.instance, b.personId, level, exp, talk);
+          record(s, label + ' × ' + personById(b.personId) + ' bond ' + now.level + ' → ' + level,
+            () => s.setBondLevel(god.instance, b.personId, now.level, now.experience, now.flags & 14));
+          if (holder.id === ALEAR_EMBLEM) mirrorAlearBondSupport(s, b.personId, level);
+        }, opts, () => 'exp ' + b.experience + ' · ' + (isPact ? 'Pact partner' : 'max 20'))),
+        el('td', { class: 'num' }, String(b.experience)),
+        el('td', { class: 'num dim' }, String(b.skills.length)),
+        el('td', {}, el('button', { class: 'mini', onclick: () => {
+          const now = s.emblems().find((g) => g.instance === god.instance).bonds.find((x) => x.personId === b.personId);
+          const level = maxLevel, exp = bondExpFor(level);
+          const talk = 2 | 4 | (level >= 20 ? 8 : 0);
+          s.setBondLevel(god.instance, b.personId, level, exp, talk);
+          record(s, label + ' × ' + personById(b.personId) + ' bond → ' + level + ' (max)', () => s.setBondLevel(god.instance, b.personId, now.level, now.experience, now.flags & 14));
+          if (holder.id === ALEAR_EMBLEM) mirrorAlearBondSupport(s, b.personId, level);
+          render();
+        } }, 'max'))));
+    }
+    detail.append(plate(label + (def && def.dlc ? ' · DLC' : '') + ' · instance ' + god.instance,
+      el('div', { class: 'row' },
+        band ? el('span', { class: 'pill' }, 'heroes: ' + band.who.join(', ') + ' · wave ' + band.wave) : null,
+        el('span', { class: 'pill' }, 'flags: ' + flags),
+        el('span', { class: 'pill' }, 'bond holder ' + (holder ? holder.bonds.length + ' bonds' : 'missing')),
+        holder && holder.pactPartner ? el('span', { class: 'pill' }, 'Pact partner ' + personById(holder.pactPartner)) : null),
+      el('div', { class: 'grid', style: 'margin-top:8px' },
+        setNum(s, 'Dirtiness', () => s.ownedGods().find((g) => g.instance === god.instance).dirtiness, (v) => {
+          const old = s.ownedGods().find((g) => g.instance === god.instance).dirtiness;
+          s.setGodDirtiness(god.instance, v);
+          record(s, emblemName(god.hash) + ' dirtiness ' + old + ' → ' + v, () => s.setGodDirtiness(god.instance, old));
+        }, { max: 255, hint: '0 is clean; the game raises it as you use an Emblem' }),
+        el('div', { class: 'f' }, el('label', {}, 'Equipped by'), el('div', {},
+          (() => { const u = s.roster().find((x) => x.emblemInstance === god.instance); return u ? personName(u.personHash) : 'nobody'; })()))),
+      el('h3', { style: 'margin-top:12px' }, 'Bonds'), el('div', { class: 'scroll' }, bondTable)));
+  }
+
+  const rings = s.rings();
+  const ringTable = el('table', {}, el('tr', {}, el('th', {}, 'ring'), el('th', {}, 'rank'), el('th', { class: 'num' }, 'stock'), el('th', { class: 'num' }, 'max'), el('th', {}, 'carried by'), el('th', { class: 'num' }, 'instance')));
+  const totals = {};
+  for (const r of rings) totals[r.hash] = (totals[r.hash] || 0) + r.stock;
+  for (const r of rings.filter((x) => x.stock > 0 || x.ownerIndex !== null).sort((a, b) => (RING.get(a.hash) || { n: '' }).n.localeCompare((RING.get(b.hash) || { n: '' }).n))) {
+    const def = RING.get(r.hash);
+    const others = (totals[r.hash] || 0) - r.stock;
+    ringTable.append(el('tr', {},
+      el('td', {}, (def ? def.n : unknownHash(r.hash)) + (def && def.em ? ' · ' + emblemLabelById(def.em) : '')),
+      el('td', {}, def ? 'CBAS'[def.rk] + (def.single ? ' (single rank)' : '') : '?'),
+      el('td', { class: 'num' }, setNum(s, 'stock', () => s.rings().find((x) => x.instance === r.instance).stock, (v) => {
+        const now = s.rings().find((x) => x.instance === r.instance);
+        if (now.ownerIndex !== null && v !== 1) throw new Error('an equipped ring is always 1 copy');
+        if (v > 99 - others) throw new Error('all copies of this ring share a 99 limit; these others hold ' + others);
+        s.setRingStock(r.instance, v);
+        record(s, 'ring ' + (def ? def.n : hex(r.hash, 8)) + ' stock ' + now.stock + ' → ' + v, () => s.setRingStock(r.instance, now.stock));
+        render();
+      }, { max: 99, manual: true, noLabel: true })),
+      el('td', { class: 'num dim' }, String(Math.max(0, 99 - others))),
+      el('td', {}, r.ownerIndex === null ? el('span', { class: 'dim' }, 'unequipped') : personName(s.roster()[r.ownerIndex].personHash)),
+      el('td', { class: 'num dim' }, String(r.instance))));
+  }
+  p.append(plate('Emblems you own · ' + gods.length + ' (adding or removing Emblems is v2)',
+    el('div', { class: 'row' }, el('label', {}, 'Emblem'), sel), detail),
+    plate('Bond rings · ' + rings.length + ' pool entries', el('div', { class: 'scroll' }, ringTable),
+      el('p', { class: 'note' }, 'The pool holds up to 99 copies of any ring across its entries, plus one entry per equipped copy. Melding, adding missing S rings and equipping are v2.')));
+}
+// Raising Alear's bond with someone also moves the matching support conversation, like the game does.
+function mirrorAlearBondSupport(s, personId, level) {
+  const key = ALEAR_PERSON + personId;
+  const row = s.supports().find((x) => x.key === key || x.key === personId + ALEAR_PERSON);
+  if (!row) return;
+  const rank = level >= 21 ? 4 : level >= 20 ? 3 : level >= 10 ? 2 : level >= 5 ? 1 : 0;
+  const pair = pairOf(row.key);
+  if (!pair || row.rank === rank) return;
+  const points = pointsForRank(pair, rank);
+  try { s.setSupport(row.key, rank, points, row.score); } catch (e) { say('!' + e.message); }
+}
+
+// ---------- supports ----------
+function renderSupports(p) {
+  const s = cur;
+  let onlyRanked = true, q = '';
+  const holders = s.emblems();
+  const alear = holders.find((h) => h.id === ALEAR_EMBLEM);
+  const filterInp = el('input', { type: 'text', placeholder: 'filter by either name, e.g. Seadall', class: 'wide' });
+  filterInp.addEventListener('input', () => { q = filterInp.value.trim().toLowerCase(); draw(); });
+  const wrap = el('div', { class: 'scroll', style: 'max-height:62vh' });
+  const draw = () => {
+    wrap.innerHTML = '';
+    const rows = s.supports();
+    const ranked = rows.filter((r) => r.rank > 0).length;
+    const table = el('table', {}, el('tr', {}, el('th', {}, 'pair'), el('th', {}, 'rank'), el('th', { class: 'num' }, 'points'), el('th', { class: 'num' }, 'score'), el('th', {}, 'set rank')));
+    let shown = 0;
+    for (const row of rows) {
+      if (onlyRanked && !row.rank) continue;
+      const pair = pairOf(row.key);
+      const label = pair ? pairNames(pair) : 'unlisted pair ' + row.key;
+      if (q && !label.toLowerCase().includes(q)) continue;
+      shown++;
+      const other = pair ? (pair.a === ALEAR_PERSON ? pair.b : pair.a) : null;
+      const includesAlear = !!pair && (pair.a === ALEAR_PERSON || pair.b === ALEAR_PERSON);
+      const isPact = !!(alear && includesAlear && alear.pactPartner && other === alear.pactPartner);
+      const maxRank = isPact ? 4 : 3;
+      const setRank = (rank) => {
+        const now = s.supports().find((x) => x.key === row.key);
+        if (rank > maxRank) throw new Error('this pair cannot reach that rank in this save');
+        if (now.rank === 4 && rank !== 4) throw new Error('a Pact support cannot be lowered or reassigned');
+        const points = pair ? pointsForRank(pair, rank) : now.points;
+        const cap = pair ? maxPointsFor(pair, rank) : 99;
+        s.setSupport(row.key, rank, Math.min(points, cap), now.score);
+        record(s, label + ' support ' + FEE.SUPPORT_RANK[now.rank] + ' → ' + FEE.SUPPORT_RANK[rank],
+          () => s.setSupport(row.key, now.rank, now.points, now.score));
+        if (alear && pair && (pair.a === ALEAR_PERSON || pair.b === ALEAR_PERSON) && alear.bonds.some((b) => b.personId === (pair.a === ALEAR_PERSON ? pair.b : pair.a))) {
+          const other = pair.a === ALEAR_PERSON ? pair.b : pair.a;
+          const level = [1, 5, 10, 20, 21][rank];
+          try { s.setBondLevel(alear.instance, other, level, bondExpFor(level), (level >= 5 ? 2 : 0) | (level >= 10 ? 4 : 0) | (level >= 20 ? 8 : 0)); } catch (e) { say('> bond mirror skipped: ' + e.message); }
+        }
+        draw();
+      };
+      const quick = el('div', { style: 'display:flex;gap:4px;flex-wrap:wrap' },
+        ...[0, 1, 2, 3, 4].filter((r) => r <= maxRank).map((r) => el('button', {
+          class: 'mini', title: (pair ? pointsForRank(pair, r) : 0) + ' points', onclick: () => { try { setRank(r); } catch (e) { say('!' + e.message); } },
+        }, FEE.SUPPORT_RANK[r])));
+      table.append(el('tr', { style: row.rank ? '' : 'opacity:.5' },
+        el('td', {}, pair ? el('b', {}, label) : el('span', { class: 'dim' }, label)),
+        el('td', {}, el('span', { class: 'pill ' + RANK_CLASS[row.rank] }, FEE.SUPPORT_RANK[row.rank])),
+        el('td', { class: 'num' }, setNum(s, 'points', () => s.supports().find((x) => x.key === row.key).points, (v) => {
+          const now = s.supports().find((x) => x.key === row.key);
+          if (pair && v > 99) throw new Error('support points top out at 99');
+          s.setSupport(row.key, now.rank, v, now.score);
+          record(s, label + ' points ' + now.points + ' → ' + v, () => s.setSupport(row.key, now.rank, now.points, now.score));
+        }, { min: -128, max: 99, manual: true, noLabel: true })),
+        el('td', { class: 'num dim' }, String(row.score)),
+        el('td', {}, quick)));
+    }
+    const box = el('input', { type: 'checkbox' }); box.checked = onlyRanked;
+    box.addEventListener('change', () => { onlyRanked = box.checked; draw(); });
+    wrap.append(el('div', { class: 'row', style: 'margin:0 0 8px' }, filterInp, el('label', {}, box, ' only pairs with a rank'),
+      el('span', { class: 'pill' }, ranked + ' of ' + rows.length + ' pairs have a rank'), el('span', { class: 'pill' }, shown + ' shown')),
+      table);
+    if (!shown) wrap.append(el('div', { class: 'note' }, 'nothing matches - clear the filter or unhide unranked pairs'));
+  };
+  p.append(el('div', { class: 'plate' }, el('h3', {}, 'Support conversations (UREL)'),
+    el('p', { class: 'note' }, 'Each pair stores a rank, its points (0-99) and a score. Ranks come from the pair’s own thresholds: ' +
+      'the C / B / A cut-offs differ by pair, so the quick buttons use this save’s own table. A Pact (A+) rank only exists for Alear’s Pact partner, ' +
+      'and the page will not lower one. Changing a rank also moves Alear’s bond level with that person, the way the game does.'),
+    wrap));
+  draw();
+}
+
+// ---------- raw ----------
+function renderRaw(p) {
+  const s = cur;
+  const offIn = el('input', { type: 'text', value: '104', style: 'width:110px' });
+  const lenIn = el('input', { type: 'number', value: '64', min: 16, max: 512, style: 'width:80px' });
+  const out = el('div', { class: 'mono', style: 'white-space:pre;overflow:auto;font-size:12px;line-height:1.6' });
+  const editIn = el('input', { type: 'text', class: 'wide', placeholder: 'hex bytes to write at that offset, e.g. 00112233' });
+  const show = () => {
+    const off = clamp(parseInt(offIn.value, 16) || parseInt(offIn.value, 10) || 0, 0, s.bytes.length - 16);
+    const n = clamp(lenIn.value, 16, 512);
+    let txt = '';
+    for (let r = 0; r < n; r += 16) {
+      const abs = off + r; if (abs >= s.bytes.length) break;
+      const bytes = [...s.bytes.subarray(abs, Math.min(abs + 16, s.bytes.length))];
+      txt += hex(off + r, 5) + '  ' + bytes.map((b) => b.toString(16).padStart(2, '0')).join(' ').padEnd(47) + '  ' + bytes.map((b) => (b >= 32 && b < 127 ? String.fromCharCode(b) : '.')).join('') + '\n';
+    }
+    out.textContent = txt;
+  };
+  editIn.addEventListener('change', () => {
+    const off = clamp(parseInt(offIn.value, 16) || 0, 0, s.bytes.length - 16);
+    try {
+      const old = s.setBytes(off, editIn.value);
+      record(s, 'raw ' + old.length + ' byte(s) at ' + hex(off, 5), () => s.setBytes(off, [...old].map((b) => b.toString(16).padStart(2, '0')).join('')));
+      say('+' + old.length + ' byte(s) written at ' + hex(off, 5));
+    } catch (e) { say('!' + e.message); }
+    show();
+  });
+  const jumps = el('div', { class: 'row' }, ...s.sections.map((sec) => el('button', { class: 'mini', onclick: () => { offIn.value = sec.off.toString(16); show(); } }, sec.name + ' ' + hex(sec.off, 5))));
+  p.append(el('div', { class: 'plate' }, el('h3', {}, 'Raw bytes of ' + curName + ' (offsets are absolute in the file: header 0x00-0x7F, index 0x80-0x103, then the sections)'),
+    el('div', { class: 'row' }, el('label', {}, 'offset (hex)'), offIn, el('label', {}, 'length'), lenIn, el('button', { class: 'mini', onclick: show }, 'go')),
+    jumps,
+    el('div', { class: 'row' }, editIn, el('button', { class: 'mini', onclick: () => editIn.dispatchEvent(new Event('change')) }, 'write')),
+    el('p', { class: 'note' }, 'A raw write has to stay inside one section and cannot touch the index or the footer. If what you wrote stops the file parsing, the write is refused and the save stays as it was.'),
+    el('div', { style: 'margin-top:10px' }, out)));
+  show();
+}
+
+// ---------- changes, download ----------
+function refreshChanges() {
+  const box = $('changes'); box.innerHTML = '';
+  $('changecount').textContent = changes.length ? changes.length + ' edit(s)' : 'none';
+  $('changecount').className = 'pill' + (changes.length ? ' dirty' : '');
+  if (!changes.length) box.append(el('span', { class: 'dim note' }, 'nothing edited yet'));
+  changes.slice().reverse().slice(0, 60).forEach((c, revIdx) => {
+    const idx = changes.length - 1 - revIdx;
+    box.append(el('div', { class: 'chg' }, el('span', { class: 't' }, c.save + ' · ' + c.label),
+      el('button', { class: 'mini', onclick: () => { try { c.undo(); } catch (e) { say('!' + e.message); } changes.splice(idx, 1); renderSlots(); renderTabBar(); render(); refreshChanges(); } }, 'revert')));
+  });
+  refreshDownloads();
+}
+function refreshDownloads() {
+  const any = dirty.size > 0;
+  $('dlDms').disabled = !(any && bundle);
+  $('dlFile').disabled = !any;
+}
+async function buildOutput() {
+  for (const n of [...dirty]) {
+    saves[n].seal();
+    const check = new FEE.Save(saves[n].bytes, n, saves[n].hdrCrcOffset);
+    if (!check.crcOk || !check.hdrCrcOk) throw new Error('self check: ' + n + ' checksums do not match before packing');
+    check.roster(); check.convoy(); check.emblems(); check.ownedGods(); check.rings(); check.supports(); check.mainLayout();
+  }
+  const report = (n) => { const o = originals[n]; if (!o) return ''; let c = 0; for (let i = 0; i < Math.min(o.length, saves[n].bytes.length); i++) if (o[i] !== saves[n].bytes[i]) c++; return c + ' byte(s) differ from the file you opened' + (o.length === saves[n].bytes.length ? '' : ', size ' + o.length + ' → ' + saves[n].bytes.length); };
+  if (bundle) {
+    for (const n of [...dirty]) {
+      const path = (bundle.entries.find((e) => e.type === 'file' && e.path.split('/').pop() === n) || {}).path;
+      if (!path) { say('!' + n + ': not an entry of the opened container, so it will not be packed'); continue; }
+      const was = container[path] || {};
+      container[path] = { type: 'file', guest: was.guest || '', mtime: $('touch').checked ? Math.floor(Date.now() / 1000) : (was.mtime || Math.floor(Date.now() / 1000)), bytes: saves[n].bytes.slice() };
+    }
+    const packed = await FEE.DMS.write(container, { title: bundle.title, device: bundle.device || 'web' });
+    const back = await FEE.DMS.read(packed.bytes);
+    if (back.hash !== packed.hash) throw new Error('self check: the repacked save reads back with a different hash');
+    for (const n of [...dirty]) {
+      const e = back.entries.find((x) => x.type === 'file' && x.path.split('/').pop() === n);
+      if (!e) throw new Error('self check: ' + n + ' is missing from the packed output');
+      new FEE.Save(e.bytes, n);
+    }
+    return { bytes: packed.bytes, name: bundle.title + '-save.dmsync', note: packed.files + ' files, hash ' + packed.hash + ', reads back clean · ' + [...dirty].map(report).join(', ') };
+  }
+  const s = cur;
+  return { bytes: s.bytes, name: curName, note: 'checksum ' + hex(s.storedCrc, 8) + ' · ' + report(curName) };
+}
+async function download() {
+  try {
+    const o = await buildOutput();
+    const a = el('a', { href: URL.createObjectURL(new Blob([o.bytes])), download: o.name });
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    $('dlname').textContent = o.name + ' · ' + o.bytes.length.toLocaleString() + ' B · ' + o.note;
+    say('+' + o.name + ': ' + o.note);
+    dirty = new Set(); refreshDownloads(); renderSlots();
+  } catch (e) { say('!' + e.message); }
+}
+
+// ---------- wiring ----------
+$('files').addEventListener('change', (e) => { const picked = [...e.target.files]; e.target.value = ''; if (picked.length) openFiles(picked); });
+// One way in per gesture: the picker lives outside #drop, so a click cannot both open it and bubble up
+// to the drop zone's own handler (which used to open a second panel over the first and dismiss it).
+$('pick').addEventListener('click', (e) => { e.stopPropagation(); $('files').click(); });
+$('drop').addEventListener('click', () => $('files').click());
+for (const ev of ['dragover', 'dragenter']) $('drop').addEventListener(ev, (e) => { e.preventDefault(); $('drop').classList.add('over'); });
+for (const ev of ['dragleave', 'drop']) $('drop').addEventListener(ev, (e) => { e.preventDefault(); $('drop').classList.remove('over'); });
+$('drop').addEventListener('drop', (e) => e.dataTransfer.files.length && openFiles(e.dataTransfer.files));
+window.addEventListener('dragover', (e) => e.preventDefault());
+window.addEventListener('drop', (e) => e.preventDefault());
+$('dlDms').addEventListener('click', download);
+$('dlFile').addEventListener('click', download);
+fillDatalists();
+</script>
+</body>
+</html>

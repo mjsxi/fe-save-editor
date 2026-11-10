@@ -1,0 +1,6921 @@
+{
+  "SourceRevision": "86b8be7b9820e1bb3bce87d2a9a805ead85d92ab",
+  "Items": [
+    {
+      "Id": "IID_ほそみの剣",
+      "English": "Slim Sword",
+      "Chinese": "细剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Slim Sword",
+        "zh-Hans": "细剑",
+        "zh-Hant": "細劍",
+        "ja": "ほそみの剣",
+        "ko": "가느다란 검",
+        "de": "Leichtschwert",
+        "fr": "Épée fine",
+        "es": "Espada delgada",
+        "it": "Spada sottile"
+      }
+    },
+    {
+      "Id": "IID_鉄の剣",
+      "English": "Iron Sword",
+      "Chinese": "铁剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Sword",
+        "zh-Hans": "铁剑",
+        "zh-Hant": "鐵劍",
+        "ja": "てつの剣",
+        "ko": "철의 검",
+        "de": "Eisenschwert",
+        "fr": "Épée fer",
+        "es": "Espada hierro",
+        "it": "Spada di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の剣",
+      "English": "Steel Sword",
+      "Chinese": "钢剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Sword",
+        "zh-Hans": "钢剑",
+        "zh-Hant": "鋼劍",
+        "ja": "はがねの剣",
+        "ko": "강철의 검",
+        "de": "Stahlschwert",
+        "fr": "Épée acier",
+        "es": "Espada acero",
+        "it": "Spada d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀の剣",
+      "English": "Silver Sword",
+      "Chinese": "银剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Sword",
+        "zh-Hans": "银剑",
+        "zh-Hant": "銀劍",
+        "ja": "ぎんの剣",
+        "ko": "은의 검",
+        "de": "Silberschwert",
+        "fr": "Épée argent",
+        "es": "Espada plata",
+        "it": "Spada d'argento"
+      }
+    },
+    {
+      "Id": "IID_アーマーキラー",
+      "English": "Armorslayer",
+      "Chinese": "破甲剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Armorslayer",
+        "zh-Hans": "破甲剑",
+        "zh-Hant": "破甲劍",
+        "ja": "アーマーキラー",
+        "ko": "아머 킬러",
+        "de": "Panzerbrecher",
+        "fr": "Cuiracide",
+        "es": "Machacacorazas",
+        "it": "Frangicotta"
+      }
+    },
+    {
+      "Id": "IID_キルソード",
+      "English": "Killing Edge",
+      "Chinese": "必杀剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Killing Edge",
+        "zh-Hans": "必杀剑",
+        "zh-Hant": "必殺劍",
+        "ja": "キルソード",
+        "ko": "킬 소드",
+        "de": "Schnitter",
+        "fr": "Fer létal",
+        "es": "Espada letal",
+        "it": "Lama letale"
+      }
+    },
+    {
+      "Id": "IID_いかづちの剣",
+      "English": "Levin Sword",
+      "Chinese": "雷之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Levin Sword",
+        "zh-Hans": "雷之剑",
+        "zh-Hant": "雷之劍",
+        "ja": "いかづちの剣",
+        "ko": "천둥의 검",
+        "de": "Donnerschwert",
+        "fr": "Épée orage",
+        "es": "Espada trueno",
+        "it": "Spada folgore"
+      }
+    },
+    {
+      "Id": "IID_倭刀",
+      "English": "Wo Dao",
+      "Chinese": "倭刀",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Wo Dao",
+        "zh-Hans": "倭刀",
+        "zh-Hant": "倭刀",
+        "ja": "倭刀",
+        "ko": "태도",
+        "de": "Wo Dao",
+        "fr": "Wo Dao",
+        "es": "Wo Dao",
+        "it": "Wo Dao"
+      }
+    },
+    {
+      "Id": "IID_ドラゴンキラー",
+      "English": "Wyrmslayer",
+      "Chinese": "屠龙剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Wyrmslayer",
+        "zh-Hans": "屠龙剑",
+        "zh-Hant": "屠龍劍",
+        "ja": "ドラゴンキラー",
+        "ko": "드래곤 킬러",
+        "de": "Wyrmtöter",
+        "fr": "Dracocide",
+        "es": "Machacawyrms",
+        "it": "Attaccawyrm"
+      }
+    },
+    {
+      "Id": "IID_勇者の剣",
+      "English": "Brave Sword",
+      "Chinese": "勇者之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Brave Sword",
+        "zh-Hans": "勇者之剑",
+        "zh-Hant": "勇者之劍",
+        "ja": "勇者の剣",
+        "ko": "용사의 검",
+        "de": "Kriegerschwert",
+        "fr": "Épée héros",
+        "es": "Espada del valor",
+        "it": "Spada forte"
+      }
+    },
+    {
+      "Id": "IID_リベラシオン",
+      "English": "Libération",
+      "Chinese": "里贝拉锡翁",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Libération",
+        "zh-Hans": "里贝拉锡翁",
+        "zh-Hant": "里貝拉錫翁",
+        "ja": "リベラシオン",
+        "ko": "리베라시옹",
+        "de": "Libération",
+        "fr": "Libération",
+        "es": "Libération",
+        "it": "Libération"
+      }
+    },
+    {
+      "Id": "IID_ヴィレグランツ",
+      "English": "Wille Glanz",
+      "Chinese": "毕雷古兰兹",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Wille Glanz",
+        "zh-Hans": "毕雷古兰兹",
+        "zh-Hant": "畢雷古蘭茲",
+        "ja": "ヴィレグランツ",
+        "ko": "빌레그란츠",
+        "de": "Wille Glanz",
+        "fr": "Wille Glanz",
+        "es": "Wille Glanz",
+        "it": "Wille Glanz"
+      }
+    },
+    {
+      "Id": "IID_クラドホルグ",
+      "English": "Caladbolg",
+      "Chinese": "克拉德霍格",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Caladbolg",
+        "zh-Hans": "克拉德霍格",
+        "zh-Hant": "克拉德霍格",
+        "ja": "クラドホルグ",
+        "ko": "클라드홀그",
+        "de": "Caladbolg",
+        "fr": "Caladbolg",
+        "es": "Caladbolg",
+        "it": "Caladbolg"
+      }
+    },
+    {
+      "Id": "IID_鉄の大剣",
+      "English": "Iron Blade",
+      "Chinese": "铁大剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Blade",
+        "zh-Hans": "铁大剑",
+        "zh-Hant": "鐵大劍",
+        "ja": "てつの大剣",
+        "ko": "철의 대검",
+        "de": "Eisenklinge",
+        "fr": "Lame fer",
+        "es": "Mandoble hierro",
+        "it": "Lama di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の大剣",
+      "English": "Steel Blade",
+      "Chinese": "钢大剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Blade",
+        "zh-Hans": "钢大剑",
+        "zh-Hant": "鋼大劍",
+        "ja": "はがねの大剣",
+        "ko": "강철의 대검",
+        "de": "Stahlklinge",
+        "fr": "Lame acier",
+        "es": "Mandoble acero",
+        "it": "Lama d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀の大剣",
+      "English": "Silver Blade",
+      "Chinese": "银大剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Blade",
+        "zh-Hans": "银大剑",
+        "zh-Hant": "銀大劍",
+        "ja": "ぎんの大剣",
+        "ko": "은의 대검",
+        "de": "Silberklinge",
+        "fr": "Lame argent",
+        "es": "Mandoble plata",
+        "it": "Lama d'argento"
+      }
+    },
+    {
+      "Id": "IID_ゲオルギオス",
+      "English": "Georgios",
+      "Chinese": "盖欧吉欧斯",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Georgios",
+        "zh-Hans": "盖欧吉欧斯",
+        "zh-Hant": "蓋歐吉歐斯",
+        "ja": "ゲオルギオス",
+        "ko": "게오르기오스",
+        "de": "Georgios",
+        "fr": "Georgios",
+        "es": "Georgios",
+        "it": "Georgios"
+      }
+    },
+    {
+      "Id": "IID_フォルクヴァング",
+      "English": "Fólkvangr",
+      "Chinese": "弗尔克范格",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Fólkvangr",
+        "zh-Hans": "弗尔克范格",
+        "zh-Hant": "弗爾克范格",
+        "ja": "フォルクヴァング",
+        "ko": "폴크방",
+        "de": "Fólkvangr",
+        "fr": "Fólkvangr",
+        "es": "Fólkvangr",
+        "it": "Fólkvangr"
+      }
+    },
+    {
+      "Id": "IID_チョコレート剣",
+      "English": "Biting Blade",
+      "Chinese": "巧克力之刃",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Biting Blade",
+        "zh-Hans": "巧克力之刃",
+        "zh-Hant": "巧克力之刃",
+        "ja": "ビターブレード",
+        "ko": "비터 블레이드",
+        "de": "Bitterklinge",
+        "fr": "Lame choco",
+        "es": "Chocoespada",
+        "it": "Lama fondente"
+      }
+    },
+    {
+      "Id": "IID_リベラシオン改",
+      "English": "Libération",
+      "Chinese": "里贝拉锡翁",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Libération",
+        "zh-Hans": "里贝拉锡翁",
+        "zh-Hant": "里貝拉錫翁",
+        "ja": "リベラシオン",
+        "ko": "리베라시옹",
+        "de": "Libération",
+        "fr": "Libération",
+        "es": "Libération",
+        "it": "Libération"
+      }
+    },
+    {
+      "Id": "IID_リベラシオン改_ノーマル",
+      "English": "Libération",
+      "Chinese": "里贝拉锡翁",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Libération",
+        "zh-Hans": "里贝拉锡翁",
+        "zh-Hant": "里貝拉錫翁",
+        "ja": "リベラシオン",
+        "ko": "리베라시옹",
+        "de": "Libération",
+        "fr": "Libération",
+        "es": "Libération",
+        "it": "Libération"
+      }
+    },
+    {
+      "Id": "IID_ほそみの槍",
+      "English": "Slim Lance",
+      "Chinese": "细枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Slim Lance",
+        "zh-Hans": "细枪",
+        "zh-Hant": "細槍",
+        "ja": "ほそみの槍",
+        "ko": "가느다란 창",
+        "de": "Leichtlanze",
+        "fr": "Lance fine",
+        "es": "Lanza delgada",
+        "it": "Lancia sottile"
+      }
+    },
+    {
+      "Id": "IID_鉄の槍",
+      "English": "Iron Lance",
+      "Chinese": "铁枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Lance",
+        "zh-Hans": "铁枪",
+        "zh-Hant": "鐵槍",
+        "ja": "てつの槍",
+        "ko": "철의 창",
+        "de": "Eisenlanze",
+        "fr": "Lance fer",
+        "es": "Lanza hierro",
+        "it": "Lancia di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の槍",
+      "English": "Steel Lance",
+      "Chinese": "钢枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Lance",
+        "zh-Hans": "钢枪",
+        "zh-Hant": "鋼槍",
+        "ja": "はがねの槍",
+        "ko": "강철의 창",
+        "de": "Stahllanze",
+        "fr": "Lance acier",
+        "es": "Lanza acero",
+        "it": "Lancia d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀の槍",
+      "English": "Silver Lance",
+      "Chinese": "银枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Lance",
+        "zh-Hans": "银枪",
+        "zh-Hant": "銀槍",
+        "ja": "ぎんの槍",
+        "ko": "은의 창",
+        "de": "Silberlanze",
+        "fr": "Lance argent",
+        "es": "Lanza plata",
+        "it": "Lancia d'argento"
+      }
+    },
+    {
+      "Id": "IID_手槍",
+      "English": "Javelin",
+      "Chinese": "标枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Javelin",
+        "zh-Hans": "标枪",
+        "zh-Hant": "標槍",
+        "ja": "手槍",
+        "ko": "투척창",
+        "de": "Langspeer",
+        "fr": "Javelot",
+        "es": "Jabalina",
+        "it": "Giavellotto"
+      }
+    },
+    {
+      "Id": "IID_ナイトキラー",
+      "English": "Ridersbane",
+      "Chinese": "骑士杀手",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Ridersbane",
+        "zh-Hans": "骑士杀手",
+        "zh-Hant": "騎士殺手",
+        "ja": "ナイトキラー",
+        "ko": "나이트 킬러",
+        "de": "Rittertod",
+        "fr": "Caballucide",
+        "es": "Antijinetes",
+        "it": "Picca"
+      }
+    },
+    {
+      "Id": "IID_キラーランス",
+      "English": "Killer Lance",
+      "Chinese": "必杀枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Killer Lance",
+        "zh-Hans": "必杀枪",
+        "zh-Hant": "必殺槍",
+        "ja": "キラーランス",
+        "ko": "킬러 랜스",
+        "de": "Meisterlanze",
+        "fr": "Lance létale",
+        "es": "Lanza letal",
+        "it": "Lancia letale"
+      }
+    },
+    {
+      "Id": "IID_ほのおの槍",
+      "English": "Flame Lance",
+      "Chinese": "炎枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Flame Lance",
+        "zh-Hans": "炎枪",
+        "zh-Hant": "炎槍",
+        "ja": "炎の槍",
+        "ko": "불꽃의 창",
+        "de": "Feuerlanze",
+        "fr": "Pyrolance",
+        "es": "Lanza de fuego",
+        "it": "Lancia di fiamma"
+      }
+    },
+    {
+      "Id": "IID_スレンドスピア",
+      "English": "Spear",
+      "Chinese": "投枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Spear",
+        "zh-Hans": "投枪",
+        "zh-Hant": "投槍",
+        "ja": "スレンドスピア",
+        "ko": "슬렌드 스피어",
+        "de": "Speer",
+        "fr": "Épieu",
+        "es": "Pica",
+        "it": "Asta"
+      }
+    },
+    {
+      "Id": "IID_勇者の槍",
+      "English": "Brave Lance",
+      "Chinese": "勇者之枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Brave Lance",
+        "zh-Hans": "勇者之枪",
+        "zh-Hant": "勇者之槍",
+        "ja": "勇者の槍",
+        "ko": "용사의 창",
+        "de": "Kriegerlanze",
+        "fr": "Lance héros",
+        "es": "Lanza del valor",
+        "it": "Lancia forte"
+      }
+    },
+    {
+      "Id": "IID_ブリューナク",
+      "English": "Brionac",
+      "Chinese": "布里欧奈克",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Brionac",
+        "zh-Hans": "布里欧奈克",
+        "zh-Hant": "布里歐奈克",
+        "ja": "ブリューナク",
+        "ko": "브류나크",
+        "de": "Brionac",
+        "fr": "Brionac",
+        "es": "Brionac",
+        "it": "Brionac"
+      }
+    },
+    {
+      "Id": "IID_鉄の大槍",
+      "English": "Iron Greatlance",
+      "Chinese": "铁大枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Greatlance",
+        "zh-Hans": "铁大枪",
+        "zh-Hant": "鐵大槍",
+        "ja": "てつの大槍",
+        "ko": "철의 큰 창",
+        "de": "Eisen-Großlanze",
+        "fr": "Pique fer",
+        "es": "Espontón hierro",
+        "it": "Gran lancia ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の大槍",
+      "English": "Steel Greatlance",
+      "Chinese": "钢大枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Greatlance",
+        "zh-Hans": "钢大枪",
+        "zh-Hant": "鋼大槍",
+        "ja": "はがねの大槍",
+        "ko": "강철의 큰 창",
+        "de": "Stahl-Großlanze",
+        "fr": "Pique acier",
+        "es": "Espontón acero",
+        "it": "Gran lancia acc."
+      }
+    },
+    {
+      "Id": "IID_銀の大槍",
+      "English": "Silver Greatlance",
+      "Chinese": "银大枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Greatlance",
+        "zh-Hans": "银大枪",
+        "zh-Hant": "銀大槍",
+        "ja": "ぎんの大槍",
+        "ko": "은의 큰 창",
+        "de": "Silber-Großlanze",
+        "fr": "Pique argent",
+        "es": "Espontón plata",
+        "it": "Gran lancia arg."
+      }
+    },
+    {
+      "Id": "IID_ヴェノマス",
+      "English": "Venomous",
+      "Chinese": "恶毒枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Venomous",
+        "zh-Hans": "恶毒枪",
+        "zh-Hant": "惡毒槍",
+        "ja": "ヴェノマス",
+        "ko": "베너머스",
+        "de": "Giftzahn",
+        "fr": "Venimeuse",
+        "es": "Ponzoñosa",
+        "it": "Dente avvelenato"
+      }
+    },
+    {
+      "Id": "IID_トライゾン",
+      "English": "Représailles",
+      "Chinese": "特拉伊宗",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Représailles",
+        "zh-Hans": "特拉伊宗",
+        "zh-Hant": "特拉伊宗",
+        "ja": "トライゾン",
+        "ko": "트라이종",
+        "de": "Représailles",
+        "fr": "Talion",
+        "es": "Insidia",
+        "it": "Représailles"
+      }
+    },
+    {
+      "Id": "IID_フェンサリル",
+      "English": "Fensalir",
+      "Chinese": "芬萨里尔",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Fensalir",
+        "zh-Hans": "芬萨里尔",
+        "zh-Hant": "芬薩里爾",
+        "ja": "フェンサリル",
+        "ko": "펜살리르",
+        "de": "Fensalir",
+        "fr": "Fensalir",
+        "es": "Fensalir",
+        "it": "Fensalir"
+      }
+    },
+    {
+      "Id": "IID_ソフトクリーム槍",
+      "English": "Swirlance",
+      "Chinese": "甜筒枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Swirlance",
+        "zh-Hans": "甜筒枪",
+        "zh-Hant": "甜筒槍",
+        "ja": "ツイスター",
+        "ko": "트위스터",
+        "de": "Spirallanze",
+        "fr": "Corneglace",
+        "es": "Helanza",
+        "it": "Gelancia"
+      }
+    },
+    {
+      "Id": "IID_ショートアクス",
+      "English": "Compact Axe",
+      "Chinese": "短斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Compact Axe",
+        "zh-Hans": "短斧",
+        "zh-Hant": "短斧",
+        "ja": "ショートアクス",
+        "ko": "쇼트 액스",
+        "de": "Leichtaxt",
+        "fr": "Hache légère",
+        "es": "Hacha corta",
+        "it": "Ascia leggera"
+      }
+    },
+    {
+      "Id": "IID_鉄の斧",
+      "English": "Iron Axe",
+      "Chinese": "铁斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Axe",
+        "zh-Hans": "铁斧",
+        "zh-Hant": "鐵斧",
+        "ja": "てつの斧",
+        "ko": "철의 도끼",
+        "de": "Eisenaxt",
+        "fr": "Hache fer",
+        "es": "Hacha hierro",
+        "it": "Ascia di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の斧",
+      "English": "Steel Axe",
+      "Chinese": "钢斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Axe",
+        "zh-Hans": "钢斧",
+        "zh-Hant": "鋼斧",
+        "ja": "はがねの斧",
+        "ko": "강철의 도끼",
+        "de": "Stahlaxt",
+        "fr": "Hache acier",
+        "es": "Hacha acero",
+        "it": "Ascia d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀の斧",
+      "English": "Silver Axe",
+      "Chinese": "银斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Axe",
+        "zh-Hans": "银斧",
+        "zh-Hant": "銀斧",
+        "ja": "ぎんの斧",
+        "ko": "은의 도끼",
+        "de": "Silberaxt",
+        "fr": "Hache argent",
+        "es": "Hacha plata",
+        "it": "Ascia d'argento"
+      }
+    },
+    {
+      "Id": "IID_手斧",
+      "English": "Hand Axe",
+      "Chinese": "手斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Hand Axe",
+        "zh-Hans": "手斧",
+        "zh-Hant": "手斧",
+        "ja": "手斧",
+        "ko": "투척도끼",
+        "de": "Wurfbeil",
+        "fr": "Hachette",
+        "es": "Hacha de mano",
+        "it": "Scure"
+      }
+    },
+    {
+      "Id": "IID_ハンマー",
+      "English": "Hammer",
+      "Chinese": "战锤",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Hammer",
+        "zh-Hans": "战锤",
+        "zh-Hant": "戰錘",
+        "ja": "ハンマー",
+        "ko": "해머",
+        "de": "Hammer",
+        "fr": "Marteau",
+        "es": "Martillo",
+        "it": "Martello"
+      }
+    },
+    {
+      "Id": "IID_ポールアクス",
+      "English": "Poleaxe",
+      "Chinese": "长斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Poleaxe",
+        "zh-Hans": "长斧",
+        "zh-Hant": "長斧",
+        "ja": "ポールアクス",
+        "ko": "폴액스",
+        "de": "Stabaxt",
+        "fr": "Hache polaire",
+        "es": "Alabarda",
+        "it": "Alabarda"
+      }
+    },
+    {
+      "Id": "IID_キラーアクス",
+      "English": "Killer Axe",
+      "Chinese": "必杀斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Killer Axe",
+        "zh-Hans": "必杀斧",
+        "zh-Hant": "必殺斧",
+        "ja": "キラーアクス",
+        "ko": "킬러 액스",
+        "de": "Meisteraxt",
+        "fr": "Hache létale",
+        "es": "Hacha letal",
+        "it": "Ascia letale"
+      }
+    },
+    {
+      "Id": "IID_トマホーク",
+      "English": "Tomahawk",
+      "Chinese": "投斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Tomahawk",
+        "zh-Hans": "投斧",
+        "zh-Hant": "投斧",
+        "ja": "トマホーク",
+        "ko": "토마호크",
+        "de": "Tomahawk",
+        "fr": "Tomahawk",
+        "es": "Tomahawk",
+        "it": "Tomahawk"
+      }
+    },
+    {
+      "Id": "IID_勇者の斧",
+      "English": "Brave Axe",
+      "Chinese": "勇者之斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Brave Axe",
+        "zh-Hans": "勇者之斧",
+        "zh-Hant": "勇者之斧",
+        "ja": "勇者の斧",
+        "ko": "용사의 도끼",
+        "de": "Kriegeraxt",
+        "fr": "Hache héros",
+        "es": "Hacha del valor",
+        "it": "Ascia forte"
+      }
+    },
+    {
+      "Id": "IID_フラガラッハ",
+      "English": "Fragarach",
+      "Chinese": "佛拉格拉克",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Fragarach",
+        "zh-Hans": "佛拉格拉克",
+        "zh-Hant": "佛拉格拉克",
+        "ja": "フラガラッハ",
+        "ko": "프라가라흐",
+        "de": "Fragarach",
+        "fr": "Fragarach",
+        "es": "Fragarach",
+        "it": "Fragarach"
+      }
+    },
+    {
+      "Id": "IID_鉄の大斧",
+      "English": "Iron Greataxe",
+      "Chinese": "铁大斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Greataxe",
+        "zh-Hans": "铁大斧",
+        "zh-Hant": "鐵大斧",
+        "ja": "てつの大斧",
+        "ko": "철의 큰 도끼",
+        "de": "Eisen-Großaxt",
+        "fr": "Gr. hache fer",
+        "es": "Archa hierro",
+        "it": "Grandascia ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の大斧",
+      "English": "Steel Greataxe",
+      "Chinese": "钢大斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Greataxe",
+        "zh-Hans": "钢大斧",
+        "zh-Hant": "鋼大斧",
+        "ja": "はがねの大斧",
+        "ko": "강철의 큰 도끼",
+        "de": "Stahl-Großaxt",
+        "fr": "Gr. hache acier",
+        "es": "Archa acero",
+        "it": "Grandascia acc."
+      }
+    },
+    {
+      "Id": "IID_銀の大斧",
+      "English": "Silver Greataxe",
+      "Chinese": "银大斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Greataxe",
+        "zh-Hans": "银大斧",
+        "zh-Hant": "銀大斧",
+        "ja": "ぎんの大斧",
+        "ko": "은의 큰 도끼",
+        "de": "Silber-Großaxt",
+        "fr": "Gr. hache argent",
+        "es": "Archa plata",
+        "it": "Grandascia arg."
+      }
+    },
+    {
+      "Id": "IID_かぜの大斧",
+      "English": "Hurricane Axe",
+      "Chinese": "风大斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Hurricane Axe",
+        "zh-Hans": "风大斧",
+        "zh-Hant": "風大斧",
+        "ja": "風の大斧",
+        "ko": "바람의 큰 도끼",
+        "de": "Orkanaxt",
+        "fr": "Hache tornade",
+        "es": "Hacha huracán",
+        "it": "Ascia uragano"
+      }
+    },
+    {
+      "Id": "IID_ウコンバサラ",
+      "English": "Ukonvasara",
+      "Chinese": "乌哥巴萨拉",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Ukonvasara",
+        "zh-Hans": "乌哥巴萨拉",
+        "zh-Hant": "烏哥巴薩拉",
+        "ja": "ウコンバサラ",
+        "ko": "우콘바사라",
+        "de": "Ukonvasara-Axt",
+        "fr": "Ukonvasara",
+        "es": "Ukonvasara",
+        "it": "Ukonvasara"
+      }
+    },
+    {
+      "Id": "IID_ルヴァンシュ",
+      "English": "Revanche",
+      "Chinese": "路邦修",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Revanche",
+        "zh-Hans": "路邦修",
+        "zh-Hant": "路邦修",
+        "ja": "ルバンシュ",
+        "ko": "르방슈",
+        "de": "Ahndung",
+        "fr": "Vengeance",
+        "es": "Revancha",
+        "it": "Revanche"
+      }
+    },
+    {
+      "Id": "IID_ルヴァンシュ_E005",
+      "English": "Revanche",
+      "Chinese": "路邦修",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Revanche",
+        "zh-Hans": "路邦修",
+        "zh-Hant": "路邦修",
+        "ja": "ルバンシュ",
+        "ko": "르방슈",
+        "de": "Ahndung",
+        "fr": "Vengeance",
+        "es": "Revancha",
+        "it": "Revanche"
+      }
+    },
+    {
+      "Id": "IID_ノーアトゥーン",
+      "English": "Nóatún",
+      "Chinese": "诺欧通",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Nóatún",
+        "zh-Hans": "诺欧通",
+        "zh-Hant": "諾歐通",
+        "ja": "ノーアトゥーン",
+        "ko": "노아툰",
+        "de": "Nóatún",
+        "fr": "Nóatún",
+        "es": "Nóatún",
+        "it": "Nóatún"
+      }
+    },
+    {
+      "Id": "IID_ロリポップ斧",
+      "English": "Lollichop",
+      "Chinese": "棒棒糖之斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lollichop",
+        "zh-Hans": "棒棒糖之斧",
+        "zh-Hant": "棒棒糖之斧",
+        "ja": "ロリポックス",
+        "ko": "롤리폭스",
+        "de": "Lollischmackes",
+        "fr": "Friandache",
+        "es": "Hachaleta",
+        "it": "Mozzalecca"
+      }
+    },
+    {
+      "Id": "IID_ショートボウ",
+      "English": "Mini Bow",
+      "Chinese": "短弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Mini Bow",
+        "zh-Hans": "短弓",
+        "zh-Hant": "短弓",
+        "ja": "ショートボウ",
+        "ko": "쇼트 보우",
+        "de": "Miniaturbogen",
+        "fr": "Petit arc",
+        "es": "Miniarco",
+        "it": "Miniarco"
+      }
+    },
+    {
+      "Id": "IID_鉄の弓",
+      "English": "Iron Bow",
+      "Chinese": "铁弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Bow",
+        "zh-Hans": "铁弓",
+        "zh-Hant": "鐵弓",
+        "ja": "てつの弓",
+        "ko": "철의 활",
+        "de": "Eisenbogen",
+        "fr": "Arc fer",
+        "es": "Arco hierro",
+        "it": "Arco di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼の弓",
+      "English": "Steel Bow",
+      "Chinese": "钢弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Bow",
+        "zh-Hans": "钢弓",
+        "zh-Hant": "鋼弓",
+        "ja": "はがねの弓",
+        "ko": "강철의 활",
+        "de": "Stahlbogen",
+        "fr": "Arc acier",
+        "es": "Arco acero",
+        "it": "Arco d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀の弓",
+      "English": "Silver Bow",
+      "Chinese": "银弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Bow",
+        "zh-Hans": "银弓",
+        "zh-Hant": "銀弓",
+        "ja": "ぎんの弓",
+        "ko": "은의 활",
+        "de": "Silberbogen",
+        "fr": "Arc argent",
+        "es": "Arco plata",
+        "it": "Arco d'argento"
+      }
+    },
+    {
+      "Id": "IID_長弓",
+      "English": "Longbow",
+      "Chinese": "长弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Longbow",
+        "zh-Hans": "长弓",
+        "zh-Hant": "長弓",
+        "ja": "長弓",
+        "ko": "장궁",
+        "de": "Langbogen",
+        "fr": "Arc long",
+        "es": "Arco largo",
+        "it": "Arco lungo"
+      }
+    },
+    {
+      "Id": "IID_キラーボウ",
+      "English": "Killer Bow",
+      "Chinese": "必杀弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Killer Bow",
+        "zh-Hans": "必杀弓",
+        "zh-Hant": "必殺弓",
+        "ja": "キラーボウ",
+        "ko": "킬러 보우",
+        "de": "Meisterbogen",
+        "fr": "Arc létal",
+        "es": "Arco letal",
+        "it": "Arco letale"
+      }
+    },
+    {
+      "Id": "IID_光の弓",
+      "English": "Radiant Bow",
+      "Chinese": "光之弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Radiant Bow",
+        "zh-Hans": "光之弓",
+        "zh-Hant": "光之弓",
+        "ja": "光の弓",
+        "ko": "빛의 활",
+        "de": "Sonnenbogen",
+        "fr": "Arc lumière",
+        "es": "Arco fulgor",
+        "it": "Arco di luce"
+      }
+    },
+    {
+      "Id": "IID_勇者の弓",
+      "English": "Brave Bow",
+      "Chinese": "勇者之弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Brave Bow",
+        "zh-Hans": "勇者之弓",
+        "zh-Hant": "勇者之弓",
+        "ja": "勇者の弓",
+        "ko": "용사의 활",
+        "de": "Kriegerbogen",
+        "fr": "Arc héros",
+        "es": "Arco del valor",
+        "it": "Arco forte"
+      }
+    },
+    {
+      "Id": "IID_レンダウィル",
+      "English": "Lendabair",
+      "Chinese": "伦达威尔",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Lendabair",
+        "zh-Hans": "伦达威尔",
+        "zh-Hant": "倫達威爾",
+        "ja": "レンダウィル",
+        "ko": "렌다윌",
+        "de": "Lendabair",
+        "fr": "Lendabair",
+        "es": "Lendabair",
+        "it": "Lendabair"
+      }
+    },
+    {
+      "Id": "IID_クロワッサン弓",
+      "English": "Croissbow",
+      "Chinese": "可颂弯弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Croissbow",
+        "zh-Hans": "可颂弯弓",
+        "zh-Hant": "可頌彎弓",
+        "ja": "アルクロワッサン",
+        "ko": "아크루아상",
+        "de": "Knusprigbogen",
+        "fr": "Arc-au-beurre",
+        "es": "Croissarco",
+        "it": "Arcornetto"
+      }
+    },
+    {
+      "Id": "IID_ショートナイフ",
+      "English": "Short Knife",
+      "Chinese": "短刀",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Short Knife",
+        "zh-Hans": "短刀",
+        "zh-Hant": "短刀",
+        "ja": "ショートナイフ",
+        "ko": "쇼트 나이프",
+        "de": "Kurzmesser",
+        "fr": "Petite dague",
+        "es": "Daga corta",
+        "it": "Coltello corto"
+      }
+    },
+    {
+      "Id": "IID_鉄のナイフ",
+      "English": "Iron Dagger",
+      "Chinese": "铁刀",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron Dagger",
+        "zh-Hans": "铁刀",
+        "zh-Hant": "鐵刀",
+        "ja": "てつのナイフ",
+        "ko": "철의 나이프",
+        "de": "Eisendolch",
+        "fr": "Dague fer",
+        "es": "Daga hierro",
+        "it": "Coltello di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼のナイフ",
+      "English": "Steel Dagger",
+      "Chinese": "钢刀",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel Dagger",
+        "zh-Hans": "钢刀",
+        "zh-Hant": "鋼刀",
+        "ja": "はがねのナイフ",
+        "ko": "강철의 나이프",
+        "de": "Stahldolch",
+        "fr": "Dague acier",
+        "es": "Daga acero",
+        "it": "Coltello d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀のナイフ",
+      "English": "Silver Dagger",
+      "Chinese": "银刀",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver Dagger",
+        "zh-Hans": "银刀",
+        "zh-Hant": "銀刀",
+        "ja": "ぎんのナイフ",
+        "ko": "은의 나이프",
+        "de": "Silberdolch",
+        "fr": "Dague argent",
+        "es": "Daga plata",
+        "it": "Coltello d'argento"
+      }
+    },
+    {
+      "Id": "IID_カルド",
+      "English": "Kard",
+      "Chinese": "卡尔德",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Kard",
+        "zh-Hans": "卡尔德",
+        "zh-Hant": "卡爾德",
+        "ja": "カルド",
+        "ko": "카드",
+        "de": "Kard",
+        "fr": "Dague fine",
+        "es": "Kard",
+        "it": "Kard"
+      }
+    },
+    {
+      "Id": "IID_スティレット",
+      "English": "Stiletto",
+      "Chinese": "史提列特",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Stiletto",
+        "zh-Hans": "史提列特",
+        "zh-Hant": "史提列特",
+        "ja": "スティレット",
+        "ko": "스틸레토",
+        "de": "Stilett",
+        "fr": "Stylet",
+        "es": "Estilete",
+        "it": "Stiletto"
+      }
+    },
+    {
+      "Id": "IID_ペシュカド",
+      "English": "Peshkatz",
+      "Chinese": "佩修卡特",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Peshkatz",
+        "zh-Hans": "佩修卡特",
+        "zh-Hant": "佩修卡特",
+        "ja": "ペシュカド",
+        "ko": "페스카즈",
+        "de": "Peshkatz",
+        "fr": "Faucheur",
+        "es": "Peshkatz",
+        "it": "Peshkatz"
+      }
+    },
+    {
+      "Id": "IID_ミセリコルデ",
+      "English": "Misericorde",
+      "Chinese": "米谢利克德",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Misericorde",
+        "zh-Hans": "米谢利克德",
+        "zh-Hant": "米謝利克德",
+        "ja": "ミセリコルデ",
+        "ko": "미세리코르데",
+        "de": "Gnadengeber",
+        "fr": "Miséricorde",
+        "es": "Misericordia",
+        "it": "Misericordia"
+      }
+    },
+    {
+      "Id": "IID_シンクエディア",
+      "English": "Cinquedea",
+      "Chinese": "辛克艾迪亚",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Cinquedea",
+        "zh-Hans": "辛克艾迪亚",
+        "zh-Hant": "辛克艾迪亞",
+        "ja": "シンクエディア",
+        "ko": "싱크에디아",
+        "de": "Cinquedea",
+        "fr": "Cinquedea",
+        "es": "Cinquedea",
+        "it": "Cinquedea"
+      }
+    },
+    {
+      "Id": "IID_カルンウェナン",
+      "English": "Carnwenhan",
+      "Chinese": "卡伦威南",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Carnwenhan",
+        "zh-Hans": "卡伦威南",
+        "zh-Hant": "卡倫威南",
+        "ja": "カルンウェナン",
+        "ko": "카른웨난",
+        "de": "Carnwennan",
+        "fr": "Carnwennan",
+        "es": "Carnwenhan",
+        "it": "Carnwenhan"
+      }
+    },
+    {
+      "Id": "IID_おだんご短剣",
+      "English": "Confectioknife",
+      "Chinese": "丸子兄弟",
+      "Kind": 5,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Confectioknife",
+        "zh-Hans": "丸子兄弟",
+        "zh-Hant": "丸子兄弟",
+        "ja": "ダンブラザーズ",
+        "ko": "경단 형제",
+        "de": "Leckermesser",
+        "fr": "Dague dango",
+        "es": "Dagolosina",
+        "it": "Lamamella"
+      }
+    },
+    {
+      "Id": "IID_サージ",
+      "English": "Surge",
+      "Chinese": "浪涌",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Surge",
+        "zh-Hans": "浪涌",
+        "zh-Hant": "浪湧",
+        "ja": "サージ",
+        "ko": "서지",
+        "de": "Flut",
+        "fr": "Colère",
+        "es": "Aluvión",
+        "it": "Impeto"
+      }
+    },
+    {
+      "Id": "IID_ファイアー",
+      "English": "Fire",
+      "Chinese": "火焰",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Fire",
+        "zh-Hans": "火焰",
+        "zh-Hant": "火焰",
+        "ja": "ファイアー",
+        "ko": "파이어",
+        "de": "Feuer",
+        "fr": "Feu",
+        "es": "Fuego",
+        "it": "Fuoco"
+      }
+    },
+    {
+      "Id": "IID_サンダー",
+      "English": "Thunder",
+      "Chinese": "雷电",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Thunder",
+        "zh-Hans": "雷电",
+        "zh-Hant": "雷電",
+        "ja": "サンダー",
+        "ko": "선더",
+        "de": "Donner",
+        "fr": "Foudre",
+        "es": "Trueno",
+        "it": "Tuono"
+      }
+    },
+    {
+      "Id": "IID_ウィンド",
+      "English": "Wind",
+      "Chinese": "烈风",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Wind",
+        "zh-Hans": "烈风",
+        "zh-Hant": "烈風",
+        "ja": "ウインド",
+        "ko": "윈드",
+        "de": "Wind",
+        "fr": "Vent",
+        "es": "Viento",
+        "it": "Vento"
+      }
+    },
+    {
+      "Id": "IID_エルサージ",
+      "English": "Elsurge",
+      "Chinese": "狂涌",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Elsurge",
+        "zh-Hans": "狂涌",
+        "zh-Hant": "狂湧",
+        "ja": "エルサージ",
+        "ko": "엘 서지",
+        "de": "Elfenflut",
+        "fr": "Rage",
+        "es": "Elsurge",
+        "it": "Impeto d'elfo"
+      }
+    },
+    {
+      "Id": "IID_エルファイアー",
+      "English": "Elfire",
+      "Chinese": "狂焰",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Elfire",
+        "zh-Hans": "狂焰",
+        "zh-Hant": "狂焰",
+        "ja": "エルファイアー",
+        "ko": "엘 파이어",
+        "de": "Elfenlicht",
+        "fr": "Inferno",
+        "es": "Elfire",
+        "it": "Fuoco d'elfo"
+      }
+    },
+    {
+      "Id": "IID_エルサンダー",
+      "English": "Elthunder",
+      "Chinese": "狂雷",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Elthunder",
+        "zh-Hans": "狂雷",
+        "zh-Hant": "狂雷",
+        "ja": "エルサンダー",
+        "ko": "엘 선더",
+        "de": "Elfendonner",
+        "fr": "Éclair",
+        "es": "Elthunder",
+        "it": "Tuono d'elfo"
+      }
+    },
+    {
+      "Id": "IID_エルウィンド",
+      "English": "Elwind",
+      "Chinese": "狂风",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Elwind",
+        "zh-Hans": "狂风",
+        "zh-Hant": "狂風",
+        "ja": "エルウインド",
+        "ko": "엘 윈드",
+        "de": "Elfenwind",
+        "fr": "Tempête",
+        "es": "Elwind",
+        "it": "Vento d'elfo"
+      }
+    },
+    {
+      "Id": "IID_ボルガノン",
+      "English": "Bolganone",
+      "Chinese": "火山爆焰",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Bolganone",
+        "zh-Hans": "火山爆焰",
+        "zh-Hant": "火山爆焰",
+        "ja": "ボルガノン",
+        "ko": "볼케논",
+        "de": "Bolganone",
+        "fr": "Bolganone",
+        "es": "Bolganone",
+        "it": "Bolganone"
+      }
+    },
+    {
+      "Id": "IID_トロン",
+      "English": "Thoron",
+      "Chinese": "托隆",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Thoron",
+        "zh-Hans": "托隆",
+        "zh-Hant": "托隆",
+        "ja": "トロン",
+        "ko": "트론",
+        "de": "Thoron",
+        "fr": "Thoron",
+        "es": "Thoron",
+        "it": "Thoron"
+      }
+    },
+    {
+      "Id": "IID_エクスカリバー",
+      "English": "Excalibur",
+      "Chinese": "埃克斯卡利伯",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Excalibur",
+        "zh-Hans": "埃克斯卡利伯",
+        "zh-Hant": "埃克斯卡利伯",
+        "ja": "エクスカリバー",
+        "ko": "엑스칼리버",
+        "de": "Excalibur",
+        "fr": "Excalibur",
+        "es": "Excalibur",
+        "it": "Excalibur"
+      }
+    },
+    {
+      "Id": "IID_ノヴァ",
+      "English": "Nova",
+      "Chinese": "新星",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Nova",
+        "zh-Hans": "新星",
+        "zh-Hant": "新星",
+        "ja": "ノヴァ",
+        "ko": "노바",
+        "de": "Nova",
+        "fr": "Nova",
+        "es": "Nova",
+        "it": "Nova"
+      }
+    },
+    {
+      "Id": "IID_オヴスキュリテ",
+      "English": "Obscurité",
+      "Chinese": "暗黑无光",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Obscurité",
+        "zh-Hans": "暗黑无光",
+        "zh-Hant": "暗黑無光",
+        "ja": "オヴスキュリテ",
+        "ko": "옵스큐리테",
+        "de": "Obscurité",
+        "fr": "Obscurité",
+        "es": "Obscurité",
+        "it": "Obscurité"
+      }
+    },
+    {
+      "Id": "IID_ティラミス魔道書",
+      "English": "Tiramistorm",
+      "Chinese": "提拉米苏风暴",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tiramistorm",
+        "zh-Hans": "提拉米苏风暴",
+        "zh-Hant": "提拉米蘇風暴",
+        "ja": "ティラミストーム",
+        "ko": "티라미스톰",
+        "de": "Tiramisturm",
+        "fr": "Tome tatin",
+        "es": "Grimorisú",
+        "it": "Tiramistero"
+      }
+    },
+    {
+      "Id": "IID_ライブ",
+      "English": "Heal",
+      "Chinese": "圣疗",
+      "Kind": 7,
+      "MaxUses": 25,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Heal",
+        "zh-Hans": "圣疗",
+        "zh-Hant": "聖療",
+        "ja": "ライブ",
+        "ko": "라이브",
+        "de": "Heilung",
+        "fr": "Soin",
+        "es": "Curar",
+        "it": "Cura"
+      }
+    },
+    {
+      "Id": "IID_リライブ",
+      "English": "Mend",
+      "Chinese": "大圣疗",
+      "Kind": 7,
+      "MaxUses": 20,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mend",
+        "zh-Hans": "大圣疗",
+        "zh-Hant": "大聖療",
+        "ja": "リライブ",
+        "ko": "리라이브",
+        "de": "Pflege",
+        "fr": "Cure",
+        "es": "Mejorar",
+        "it": "Rimedio"
+      }
+    },
+    {
+      "Id": "IID_リブロー",
+      "English": "Physic",
+      "Chinese": "远程圣疗",
+      "Kind": 7,
+      "MaxUses": 10,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Physic",
+        "zh-Hans": "远程圣疗",
+        "zh-Hant": "遠程聖療",
+        "ja": "リブロー",
+        "ko": "리브로",
+        "de": "Purgativ",
+        "fr": "Remède",
+        "es": "Sanar",
+        "it": "Lenimento"
+      }
+    },
+    {
+      "Id": "IID_リブロー_G004",
+      "English": "Physic",
+      "Chinese": "远程圣疗",
+      "Kind": 7,
+      "MaxUses": 10,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Physic",
+        "zh-Hans": "远程圣疗",
+        "zh-Hant": "遠程聖療",
+        "ja": "リブロー",
+        "ko": "리브로",
+        "de": "Purgativ",
+        "fr": "Remède",
+        "es": "Sanar",
+        "it": "Lenimento"
+      }
+    },
+    {
+      "Id": "IID_リカバー",
+      "English": "Recover",
+      "Chinese": "圣愈",
+      "Kind": 7,
+      "MaxUses": 10,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Recover",
+        "zh-Hans": "圣愈",
+        "zh-Hant": "聖癒",
+        "ja": "リカバー",
+        "ko": "리커버",
+        "de": "Erholung",
+        "fr": "Restitution",
+        "es": "Recuperar",
+        "it": "Recupero"
+      }
+    },
+    {
+      "Id": "IID_リザーブ",
+      "English": "Fortify",
+      "Chinese": "全体圣疗",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fortify",
+        "zh-Hans": "全体圣疗",
+        "zh-Hant": "全體聖療",
+        "ja": "リザーブ",
+        "ko": "리저브",
+        "de": "Stärkung",
+        "fr": "Halo",
+        "es": "Fortalecer",
+        "it": "Balsamo"
+      }
+    },
+    {
+      "Id": "IID_レスト",
+      "English": "Restore",
+      "Chinese": "休息",
+      "Kind": 7,
+      "MaxUses": 10,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Restore",
+        "zh-Hans": "休息",
+        "zh-Hant": "休息",
+        "ja": "レスト",
+        "ko": "레스트",
+        "de": "Erneuerung",
+        "fr": "Vitalis",
+        "es": "Restaurar",
+        "it": "Ripristino"
+      }
+    },
+    {
+      "Id": "IID_ワープ",
+      "English": "Warp",
+      "Chinese": "传送",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Warp",
+        "zh-Hans": "传送",
+        "zh-Hant": "傳送",
+        "ja": "ワープ",
+        "ko": "워프",
+        "de": "Teleport",
+        "fr": "Téléport",
+        "es": "Transportar",
+        "it": "Teletrasporto"
+      }
+    },
+    {
+      "Id": "IID_リワープ",
+      "English": "Rewarp",
+      "Chinese": "自我传送",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rewarp",
+        "zh-Hans": "自我传送",
+        "zh-Hant": "自我傳送",
+        "ja": "リワープ",
+        "ko": "리워프",
+        "de": "Fortschritt",
+        "fr": "Téléportation",
+        "es": "Teletransportar",
+        "it": "Traslazione"
+      }
+    },
+    {
+      "Id": "IID_レスキュー",
+      "English": "Rescue",
+      "Chinese": "救援",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rescue",
+        "zh-Hans": "救援",
+        "zh-Hant": "救援",
+        "ja": "レスキュー",
+        "ko": "레스큐",
+        "de": "Rettung",
+        "fr": "Secours",
+        "es": "Rescatar",
+        "it": "Soccorso"
+      }
+    },
+    {
+      "Id": "IID_ドロー",
+      "English": "Entrap",
+      "Chinese": "召敌",
+      "Kind": 7,
+      "MaxUses": 3,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Entrap",
+        "zh-Hans": "召敌",
+        "zh-Hant": "召敵",
+        "ja": "ドロー",
+        "ko": "드로우",
+        "de": "Falle",
+        "fr": "Piège",
+        "es": "Atrapar",
+        "it": "Trappola"
+      }
+    },
+    {
+      "Id": "IID_トーチ",
+      "English": "Illume",
+      "Chinese": "火炬",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Illume",
+        "zh-Hans": "火炬",
+        "zh-Hant": "火炬",
+        "ja": "トーチ",
+        "ko": "토치",
+        "de": "Illumnis",
+        "fr": "Illumna",
+        "es": "Iluminar",
+        "it": "Barlume"
+      }
+    },
+    {
+      "Id": "IID_フリーズ",
+      "English": "Freeze",
+      "Chinese": "冰封",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Freeze",
+        "zh-Hans": "冰封",
+        "zh-Hant": "冰封",
+        "ja": "フリーズ",
+        "ko": "프리즈",
+        "de": "Einfrieren",
+        "fr": "Gel",
+        "es": "Congelar",
+        "it": "Gelo"
+      }
+    },
+    {
+      "Id": "IID_サイレス",
+      "English": "Silence",
+      "Chinese": "沉默",
+      "Kind": 7,
+      "MaxUses": 5,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Silence",
+        "zh-Hans": "沉默",
+        "zh-Hant": "沉默",
+        "ja": "サイレス",
+        "ko": "사일런스",
+        "de": "Schweigen",
+        "fr": "Silence",
+        "es": "Silenciar",
+        "it": "Silenzio"
+      }
+    },
+    {
+      "Id": "IID_アイスロック",
+      "English": "Obstruct",
+      "Chinese": "冰锁",
+      "Kind": 7,
+      "MaxUses": 10,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Obstruct",
+        "zh-Hans": "冰锁",
+        "zh-Hant": "冰鎖",
+        "ja": "アイスロック",
+        "ko": "아이스 록",
+        "de": "Blockieren",
+        "fr": "Barrage",
+        "es": "Obstrucción",
+        "it": "Ostruzione"
+      }
+    },
+    {
+      "Id": "IID_コラプス",
+      "English": "Fracture",
+      "Chinese": "崩塌",
+      "Kind": 7,
+      "MaxUses": 10,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fracture",
+        "zh-Hans": "崩塌",
+        "zh-Hant": "崩塌",
+        "ja": "コラプス",
+        "ko": "컬랩스",
+        "de": "Fraktur",
+        "fr": "Fracture",
+        "es": "Fractura",
+        "it": "Frattura"
+      }
+    },
+    {
+      "Id": "IID_ノードゥス",
+      "English": "Nodus",
+      "Chinese": "结节",
+      "Kind": 7,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Nodus",
+        "zh-Hans": "结节",
+        "zh-Hant": "結節",
+        "ja": "ノードゥス",
+        "ko": "노두스",
+        "de": "Nodus",
+        "fr": "Nodus",
+        "es": "Nodus",
+        "it": "Nodus"
+      }
+    },
+    {
+      "Id": "IID_カップケーキ杖",
+      "English": "Treat",
+      "Chinese": "午茶时光",
+      "Kind": 7,
+      "MaxUses": 20,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Treat",
+        "zh-Hans": "午茶时光",
+        "zh-Hant": "午茶時光",
+        "ja": "ティータイム",
+        "ko": "티타임",
+        "de": "Küchleinstab",
+        "fr": "Bâton pâtissier",
+        "es": "Bastelito",
+        "it": "Dolcinferno"
+      }
+    },
+    {
+      "Id": "IID_初心の法",
+      "English": "Initiate Art",
+      "Chinese": "新手体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Initiate Art",
+        "zh-Hans": "新手体术",
+        "zh-Hant": "新手體術",
+        "ja": "見習の体術",
+        "ko": "입문 체술",
+        "de": "Erste Stufe",
+        "fr": "Art initié",
+        "es": "Arte iniciático",
+        "it": "Arte iniziatica"
+      }
+    },
+    {
+      "Id": "IID_鉄身の法",
+      "English": "Iron-Body Art",
+      "Chinese": "基本体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Iron-Body Art",
+        "zh-Hans": "基本体术",
+        "zh-Hant": "基本體術",
+        "ja": "基本の体術",
+        "ko": "기본 체술",
+        "de": "Zweite Stufe",
+        "fr": "Art fer",
+        "es": "Mano férrea",
+        "it": "Arte di ferro"
+      }
+    },
+    {
+      "Id": "IID_鋼身の法",
+      "English": "Steel-Hand Art",
+      "Chinese": "高级体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Steel-Hand Art",
+        "zh-Hans": "高级体术",
+        "zh-Hant": "高級體術",
+        "ja": "上級の体術",
+        "ko": "상급 체술",
+        "de": "Dritte Stufe",
+        "fr": "Art acier",
+        "es": "Mano acerada",
+        "it": "Arte d'acciaio"
+      }
+    },
+    {
+      "Id": "IID_銀身の法",
+      "English": "Silver-Spirit Art",
+      "Chinese": "专家体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Silver-Spirit Art",
+        "zh-Hans": "专家体术",
+        "zh-Hant": "專家體術",
+        "ja": "達人の体術",
+        "ko": "달인 체술",
+        "de": "Vierte Stufe",
+        "fr": "Art argent",
+        "es": "Mano argéntea",
+        "it": "Arte d'argento"
+      }
+    },
+    {
+      "Id": "IID_護身の法",
+      "English": "Shielding Art",
+      "Chinese": "护身体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Shielding Art",
+        "zh-Hans": "护身体术",
+        "zh-Hant": "護身體術",
+        "ja": "護身の体術",
+        "ko": "호신 체술",
+        "de": "Abwehrhaltung",
+        "fr": "Art blindé",
+        "es": "Autodefensa",
+        "it": "Arte protettiva"
+      }
+    },
+    {
+      "Id": "IID_閃進の法",
+      "English": "Flashing Fist Art",
+      "Chinese": "闪进体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Flashing Fist Art",
+        "zh-Hans": "闪进体术",
+        "zh-Hant": "閃進體術",
+        "ja": "閃進の体術",
+        "ko": "섬진 체술",
+        "de": "Donnerfaust",
+        "fr": "Art aveuglant",
+        "es": "Puño veloz",
+        "it": "Arte lucente"
+      }
+    },
+    {
+      "Id": "IID_覇神の法",
+      "English": "Divine Fist Art",
+      "Chinese": "霸神体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 5,
+      "Names": {
+        "en": "Divine Fist Art",
+        "zh-Hans": "霸神体术",
+        "zh-Hant": "霸神體術",
+        "ja": "覇神の体術",
+        "ko": "패신 체술",
+        "de": "Götterfaust",
+        "fr": "Art divin",
+        "es": "Puño divino",
+        "it": "Arte divina"
+      }
+    },
+    {
+      "Id": "IID_ロールケーキ体術",
+      "English": "Scrollcake",
+      "Chinese": "蛋糕体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Scrollcake",
+        "zh-Hans": "蛋糕体术",
+        "zh-Hant": "蛋糕體術",
+        "ja": "勁氣の体術",
+        "ko": "원기 체술",
+        "de": "Rührkuchen",
+        "fr": "Rouleau fourré",
+        "es": "Puño goloso",
+        "it": "Pergamenta"
+      }
+    },
+    {
+      "Id": "IID_火のブレス",
+      "English": "Fire Breath",
+      "Chinese": "火之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fire Breath",
+        "zh-Hans": "火之吐息",
+        "zh-Hant": "火之吐息",
+        "ja": "火のブレス",
+        "ko": "불의 브레스",
+        "de": "Feueratem",
+        "fr": "Souffle de feu",
+        "es": "Soplo de fuego",
+        "it": "Soffio igneo"
+      }
+    },
+    {
+      "Id": "IID_炎塊",
+      "English": "Fireball",
+      "Chinese": "炎块",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fireball",
+        "zh-Hans": "炎块",
+        "zh-Hant": "炎塊",
+        "ja": "炎塊",
+        "ko": "염괴",
+        "de": "Feuerball",
+        "fr": "Boule de feu",
+        "es": "Bola de fuego",
+        "it": "Palla di fuoco"
+      }
+    },
+    {
+      "Id": "IID_ソンブル_物理攻撃",
+      "English": "Fell Assault",
+      "Chinese": "邪龙的强击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Assault",
+        "zh-Hans": "邪龙的强击",
+        "zh-Hant": "邪龍的強擊",
+        "ja": "邪竜ノ強撃",
+        "ko": "사룡의 강격",
+        "de": "Dämonensturm",
+        "fr": "Assaut déchu",
+        "es": "Asalto Caído",
+        "it": "Assalto maligno"
+      }
+    },
+    {
+      "Id": "IID_ソンブル_魔法攻撃",
+      "English": "Fell Surge",
+      "Chinese": "邪龙的波动",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Surge",
+        "zh-Hans": "邪龙的波动",
+        "zh-Hant": "邪龍的波動",
+        "ja": "邪竜ノ波動",
+        "ko": "사룡의 파동",
+        "de": "Dämonenwelle",
+        "fr": "Charge déchue",
+        "es": "Aluvión Caído",
+        "it": "Impeto maligno"
+      }
+    },
+    {
+      "Id": "IID_ソンブル_回転アタック",
+      "English": "Whirling Death",
+      "Chinese": "邪龙旋转乱舞",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Whirling Death",
+        "zh-Hans": "邪龙旋转乱舞",
+        "zh-Hant": "邪龍旋轉亂舞",
+        "ja": "邪竜旋転乱舞",
+        "ko": "사룡 회전 난무",
+        "de": "Wirbeltod",
+        "fr": "Cyclone mortel",
+        "es": "Remolino mortal",
+        "it": "Morte turbinante"
+      }
+    },
+    {
+      "Id": "IID_ソンブル_ビーム",
+      "English": "Howling Beam",
+      "Chinese": "邪龙吼叫炮",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Howling Beam",
+        "zh-Hans": "邪龙吼叫炮",
+        "zh-Hant": "邪龍吼叫炮",
+        "ja": "邪竜吼号砲",
+        "ko": "사룡 포효포",
+        "de": "Heulstrahl",
+        "fr": "Rayon hurlant",
+        "es": "Rayo atronador",
+        "it": "Raggio ruggente"
+      }
+    },
+    {
+      "Id": "IID_ソンブル_エンゲージブレイク",
+      "English": "Disengage",
+      "Chinese": "结合破坏",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Disengage",
+        "zh-Hans": "结合破坏",
+        "zh-Hant": "結合破壞",
+        "ja": "エンゲージブレイク",
+        "ko": "인게이지 브레이크",
+        "de": "Bündnisbrecher",
+        "fr": "Dissociation",
+        "es": "Escisión",
+        "it": "Spezza unione"
+      }
+    },
+    {
+      "Id": "IID_邪竜石",
+      "English": "Fell Stone",
+      "Chinese": "邪龙石",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Stone",
+        "zh-Hans": "邪龙石",
+        "zh-Hant": "邪龍石",
+        "ja": "邪竜石",
+        "ko": "사룡석",
+        "de": "Dunkler Stein",
+        "fr": "Pierre déchue",
+        "es": "Piedra caída",
+        "it": "Pietra maligna"
+      }
+    },
+    {
+      "Id": "IID_真邪竜石",
+      "English": "Fell Ruinstone",
+      "Chinese": "邪龙石·灭",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Ruinstone",
+        "zh-Hans": "邪龙石·灭",
+        "zh-Hant": "邪龍石・滅",
+        "ja": "邪竜石・滅",
+        "ko": "사룡석·멸",
+        "de": "Dkl. Ruinstein",
+        "fr": "Pierre de ruine",
+        "es": "Piedra ruinosa",
+        "it": "Pietra della rovina"
+      }
+    },
+    {
+      "Id": "IID_邪竜石_魔法攻撃",
+      "English": "Fell Magicstone",
+      "Chinese": "邪龙石·魔",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Magicstone",
+        "zh-Hans": "邪龙石·魔",
+        "zh-Hant": "邪龍石・魔",
+        "ja": "邪竜石・魔",
+        "ko": "사룡석·마",
+        "de": "Dkl. Magiestein",
+        "fr": "Pierre maléfique",
+        "es": "Piedra mágica",
+        "it": "Pietra occulta"
+      }
+    },
+    {
+      "Id": "IID_邪竜石_騎馬特効",
+      "English": "Fell Slaystone",
+      "Chinese": "邪龙石·屠",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Slaystone",
+        "zh-Hans": "邪龙石·屠",
+        "zh-Hant": "邪龍石・屠",
+        "ja": "邪竜石・屠",
+        "ko": "사룡석·도",
+        "de": "Dkl. Schlachtstein",
+        "fr": "Pierre mortifère",
+        "es": "Piedra asesina",
+        "it": "Pietra del massacro"
+      }
+    },
+    {
+      "Id": "IID_邪竜石_飛行特効",
+      "English": "Fell Weightstone",
+      "Chinese": "邪龙石·堕",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Weightstone",
+        "zh-Hans": "邪龙石·堕",
+        "zh-Hant": "邪龍石・墮",
+        "ja": "邪竜石・堕",
+        "ko": "사룡석·타",
+        "de": "Dkl. Laststein",
+        "fr": "Pierre écrasante",
+        "es": "Piedra lastre",
+        "it": "Pietra della caduta"
+      }
+    },
+    {
+      "Id": "IID_邪竜石_E",
+      "English": "Fell Spark",
+      "Chinese": "邪恶火花",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Spark",
+        "zh-Hans": "邪恶火花",
+        "zh-Hant": "邪惡火花",
+        "ja": "イビルスパーク",
+        "ko": "이블 스파크",
+        "de": "Dunkler Funke",
+        "fr": "Éclair déchu",
+        "es": "Destello caído",
+        "it": "Favilla maligna"
+      }
+    },
+    {
+      "Id": "IID_邪竜石_E005",
+      "English": "Fell Spark",
+      "Chinese": "邪恶火花",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Spark",
+        "zh-Hans": "邪恶火花",
+        "zh-Hant": "邪惡火花",
+        "ja": "イビルスパーク",
+        "ko": "이블 스파크",
+        "de": "Dunkler Funke",
+        "fr": "Éclair déchu",
+        "es": "Destello caído",
+        "it": "Favilla maligna"
+      }
+    },
+    {
+      "Id": "IID_邪竜石_魔法攻撃_E",
+      "English": "Fell Arcana",
+      "Chinese": "腐坏火花",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Arcana",
+        "zh-Hans": "腐坏火花",
+        "zh-Hant": "腐壞火花",
+        "ja": "モルダスパーク",
+        "ko": "몰더 스파크",
+        "de": "Dunkle Arkana",
+        "fr": "Arcane déchue",
+        "es": "Arcano caído",
+        "it": "Favilla occulta"
+      }
+    },
+    {
+      "Id": "IID_イル_反撃",
+      "English": "Fell Assault",
+      "Chinese": "邪龙的强击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Assault",
+        "zh-Hans": "邪龙的强击",
+        "zh-Hant": "邪龍的強擊",
+        "ja": "邪竜ノ強撃",
+        "ko": "사룡의 강격",
+        "de": "Dämonensturm",
+        "fr": "Assaut déchu",
+        "es": "Asalto caído",
+        "it": "Assalto maligno"
+      }
+    },
+    {
+      "Id": "IID_イル_薙払いビーム",
+      "English": "Fell Beam",
+      "Chinese": "邪龙破·横扫",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fell Beam",
+        "zh-Hans": "邪龙破·横扫",
+        "zh-Hant": "邪龍破・橫掃",
+        "ja": "邪竜破・薙ギ",
+        "ko": "사룡파·휩쓸기",
+        "de": "Dämonenstrahl",
+        "fr": "Rayon déchu",
+        "es": "Rayo caído",
+        "it": "Raggio maligno"
+      }
+    },
+    {
+      "Id": "IID_イル_突進",
+      "English": "Devastation",
+      "Chinese": "破坏冲动",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Devastation",
+        "zh-Hans": "破坏冲动",
+        "zh-Hant": "破壞衝動",
+        "ja": "破壊ノ衝動",
+        "ko": "파괴 충동",
+        "de": "Verheerung",
+        "fr": "Dévastation",
+        "es": "Devastación",
+        "it": "Devastazione"
+      }
+    },
+    {
+      "Id": "IID_イル_吸収",
+      "English": "Drain Essence",
+      "Chinese": "渴求力量",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Drain Essence",
+        "zh-Hans": "渴求力量",
+        "zh-Hant": "渴求力量",
+        "ja": "力ノ渇望",
+        "ko": "힘을 향한 갈망",
+        "de": "Essenz leeren",
+        "fr": "Drain d'essence",
+        "es": "Drenaje vital",
+        "it": "Succhia essenza"
+      }
+    },
+    {
+      "Id": "IID_イル_召喚",
+      "English": "Summon Vortex",
+      "Chinese": "召唤漩涡",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Summon Vortex",
+        "zh-Hans": "召唤漩涡",
+        "zh-Hant": "召喚漩渦",
+        "ja": "召喚ノ渦",
+        "ko": "소환의 소용돌이",
+        "de": "Wirbel beschw.",
+        "fr": "Vortex déchu",
+        "es": "Vórtice aberrante",
+        "it": "Vortice evocatore"
+      }
+    },
+    {
+      "Id": "IID_弾_物理",
+      "English": "Standard Blast",
+      "Chinese": "普通炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Standard Blast",
+        "zh-Hans": "普通炮弹",
+        "zh-Hant": "普通炮彈",
+        "ja": "ノーマルシェル",
+        "ko": "노멀 셸",
+        "de": "Standardkanone",
+        "fr": "Boulet simple",
+        "es": "Proyectil común",
+        "it": "Bomba normale"
+      }
+    },
+    {
+      "Id": "IID_弾_魔法",
+      "English": "Magic Blast",
+      "Chinese": "魔法炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Magic Blast",
+        "zh-Hans": "魔法炮弹",
+        "zh-Hant": "魔法炮彈",
+        "ja": "マジックシェル",
+        "ko": "매직 셸",
+        "de": "Magieprojektil",
+        "fr": "Boulet magus",
+        "es": "Proyectil mágico",
+        "it": "Bomba magica"
+      }
+    },
+    {
+      "Id": "IID_弾_フリーズ",
+      "English": "Freeze Blast",
+      "Chinese": "冰封炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Freeze Blast",
+        "zh-Hans": "冰封炮弹",
+        "zh-Hant": "冰封炮彈",
+        "ja": "フリーズシェル",
+        "ko": "프리즈 셸",
+        "de": "Frostprojektil",
+        "fr": "Boulet glacial",
+        "es": "Proyectil gélido",
+        "it": "Bomba gelata"
+      }
+    },
+    {
+      "Id": "IID_弾_サイレス",
+      "English": "Silence Blast",
+      "Chinese": "沉默炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Silence Blast",
+        "zh-Hans": "沉默炮弹",
+        "zh-Hant": "沉默炮彈",
+        "ja": "サイレスシェル",
+        "ko": "사일런스 셸",
+        "de": "Schweigeproj.",
+        "fr": "Boulet sourd",
+        "es": "Proyectil silente",
+        "it": "Bomba silente"
+      }
+    },
+    {
+      "Id": "IID_弾_ブレイク",
+      "English": "Break Blast",
+      "Chinese": "打破炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Break Blast",
+        "zh-Hans": "打破炮弹",
+        "zh-Hant": "打破炮彈",
+        "ja": "ブレイクシェル",
+        "ko": "브레이크 셸",
+        "de": "Bruchprojektil",
+        "fr": "Boulet brisant",
+        "es": "Proyectil ruptura",
+        "it": "Bomba breccia"
+      }
+    },
+    {
+      "Id": "IID_弾_毒",
+      "English": "Venom Blast",
+      "Chinese": "毒炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Venom Blast",
+        "zh-Hans": "毒炮弹",
+        "zh-Hant": "毒炮彈",
+        "ja": "ヴェノムシェル",
+        "ko": "베놈 셸",
+        "de": "Giftprojektil",
+        "fr": "Boulet toxique",
+        "es": "Proyectil venenoso",
+        "it": "Bomba velenosa"
+      }
+    },
+    {
+      "Id": "IID_弾_飛行特効",
+      "English": "Tornado Blast",
+      "Chinese": "龙卷风炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tornado Blast",
+        "zh-Hans": "龙卷风炮弹",
+        "zh-Hant": "龍捲風炮彈",
+        "ja": "トルネードシェル",
+        "ko": "토네이도 셸",
+        "de": "Tornadoproje.",
+        "fr": "Boulet tornade",
+        "es": "Proyectil tornado",
+        "it": "Bomba tornado"
+      }
+    },
+    {
+      "Id": "IID_弾_重装特効",
+      "English": "Armor Blast",
+      "Chinese": "重击炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armor Blast",
+        "zh-Hans": "重击炮弹",
+        "zh-Hant": "重擊炮彈",
+        "ja": "クラッシュシェル",
+        "ko": "크래시 셸",
+        "de": "Rüstprojektil",
+        "fr": "Boulet trépan",
+        "es": "Proyectil perforador",
+        "it": "Bomba corazzata"
+      }
+    },
+    {
+      "Id": "IID_弾_騎馬特効",
+      "English": "Rider Blast",
+      "Chinese": "沉重炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rider Blast",
+        "zh-Hans": "沉重炮弹",
+        "zh-Hant": "沉重炮彈",
+        "ja": "ヘビーシェル",
+        "ko": "헤비 셸",
+        "de": "Reiterprojektil",
+        "fr": "Boulet équin",
+        "es": "Proyectil pesado",
+        "it": "Bomba cavalcante"
+      }
+    },
+    {
+      "Id": "IID_弾_竜特効",
+      "English": "Wyrm Blast",
+      "Chinese": "破坏炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wyrm Blast",
+        "zh-Hans": "破坏炮弹",
+        "zh-Hant": "破壞炮彈",
+        "ja": "バスターシェル",
+        "ko": "버스터 셸",
+        "de": "Drachenproje.",
+        "fr": "Boulet vouivre",
+        "es": "Proyectil draco",
+        "it": "Bomba draconica"
+      }
+    },
+    {
+      "Id": "IID_弾_異形特効",
+      "English": "Holy Blast",
+      "Chinese": "和平炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Holy Blast",
+        "zh-Hans": "和平炮弹",
+        "zh-Hant": "和平炮彈",
+        "ja": "ピースシェル",
+        "ko": "피스 셸",
+        "de": "Hlg. Projektil",
+        "fr": "Boulet sacré",
+        "es": "Proyectil sagrado",
+        "it": "Bomba sacra"
+      }
+    },
+    {
+      "Id": "IID_弾_物理_強",
+      "English": "Mighty Blast",
+      "Chinese": "实心炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mighty Blast",
+        "zh-Hans": "实心炮弹",
+        "zh-Hant": "實心炮彈",
+        "ja": "ソリッドシェル",
+        "ko": "솔리드 셸",
+        "de": "Machtprojektil",
+        "fr": "Boulet exalté",
+        "es": "Proyectil potente",
+        "it": "Bomba potente"
+      }
+    },
+    {
+      "Id": "IID_弾_魔法_強",
+      "English": "Eldritch Blast",
+      "Chinese": "增幅炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eldritch Blast",
+        "zh-Hans": "增幅炮弹",
+        "zh-Hant": "增幅炮彈",
+        "ja": "ブーストシェル",
+        "ko": "부스트 셸",
+        "de": "Verderbnispro.",
+        "fr": "Boulet éthéré",
+        "es": "Proyectil siniestro",
+        "it": "Bomba mirabile"
+      }
+    },
+    {
+      "Id": "IID_弾_防御無視",
+      "English": "Piercing Blast",
+      "Chinese": "穿透炮弹",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Piercing Blast",
+        "zh-Hans": "穿透炮弹",
+        "zh-Hant": "穿透炮彈",
+        "ja": "ピアシングシェル",
+        "ko": "피어싱 셸",
+        "de": "Negationproje.",
+        "fr": "Boulet perçant",
+        "es": "Proyectil agudo",
+        "it": "Bomba penetrante"
+      }
+    },
+    {
+      "Id": "IID_牙",
+      "English": "Fangs",
+      "Chinese": "獠牙",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fangs",
+        "zh-Hans": "獠牙",
+        "zh-Hant": "獠牙",
+        "ja": "牙",
+        "ko": "송곳니",
+        "de": "Reißzähne",
+        "fr": "Crocs",
+        "es": "Colmillo",
+        "it": "Zanne"
+      }
+    },
+    {
+      "Id": "IID_氷のブレス",
+      "English": "Freezing Breath",
+      "Chinese": "冰之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Freezing Breath",
+        "zh-Hans": "冰之吐息",
+        "zh-Hant": "冰之吐息",
+        "ja": "氷のブレス",
+        "ko": "얼음의 브레스",
+        "de": "Frostatem",
+        "fr": "Souffle de gel",
+        "es": "Soplo helado",
+        "it": "Soffio ghiacciato"
+      }
+    },
+    {
+      "Id": "IID_瘴気のブレス",
+      "English": "Miasma Breath",
+      "Chinese": "瘴气吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Miasma Breath",
+        "zh-Hans": "瘴气吐息",
+        "zh-Hant": "瘴氣吐息",
+        "ja": "瘴気のブレス",
+        "ko": "독기의 브레스",
+        "de": "Miasma-Atem",
+        "fr": "Souffle putride",
+        "es": "Aliento miasma",
+        "it": "Alito di miasma"
+      }
+    },
+    {
+      "Id": "IID_氷塊",
+      "English": "Iceball",
+      "Chinese": "冰块",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Iceball",
+        "zh-Hans": "冰块",
+        "zh-Hant": "冰塊",
+        "ja": "氷塊",
+        "ko": "빙괴",
+        "de": "Eisball",
+        "fr": "Sphère de glace",
+        "es": "Bola de hielo",
+        "it": "Palla di ghiaccio"
+      }
+    },
+    {
+      "Id": "IID_瘴気の塊",
+      "English": "Miasma Ball",
+      "Chinese": "瘴气团",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Miasma Ball",
+        "zh-Hans": "瘴气团",
+        "zh-Hant": "瘴氣團",
+        "ja": "瘴気の塊",
+        "ko": "독기 덩어리",
+        "de": "Miasma-Kugel",
+        "fr": "Boule putride",
+        "es": "Bola miasma",
+        "it": "Palla di miasma"
+      }
+    },
+    {
+      "Id": "IID_火炎砲台",
+      "English": "Flame Cannon",
+      "Chinese": "火炎炮台",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Flame Cannon",
+        "zh-Hans": "火炎炮台",
+        "zh-Hant": "火炎炮台",
+        "ja": "火炎砲台",
+        "ko": "화염 포대",
+        "de": "Flammenkanone",
+        "fr": "Canon",
+        "es": "Cañón",
+        "it": "Cannone igneo"
+      }
+    },
+    {
+      "Id": "IID_傷薬",
+      "English": "Vulnerary",
+      "Chinese": "伤药",
+      "Kind": 10,
+      "MaxUses": 3,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Vulnerary",
+        "zh-Hans": "伤药",
+        "zh-Hant": "傷藥",
+        "ja": "傷薬",
+        "ko": "상처약",
+        "de": "Heilmittel",
+        "fr": "Potion",
+        "es": "Poción",
+        "it": "Unguento"
+      }
+    },
+    {
+      "Id": "IID_毒消し",
+      "English": "Antitoxin",
+      "Chinese": "解毒剂",
+      "Kind": 10,
+      "MaxUses": 3,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Antitoxin",
+        "zh-Hans": "解毒剂",
+        "zh-Hant": "解毒劑",
+        "ja": "毒消し薬",
+        "ko": "해독제",
+        "de": "Antidot",
+        "fr": "Antidote",
+        "es": "Antídoto",
+        "it": "Antitossina"
+      }
+    },
+    {
+      "Id": "IID_特効薬",
+      "English": "Elixir",
+      "Chinese": "特效药",
+      "Kind": 10,
+      "MaxUses": 3,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Elixir",
+        "zh-Hans": "特效药",
+        "zh-Hant": "特效藥",
+        "ja": "特効薬",
+        "ko": "특효약",
+        "de": "Elixier",
+        "fr": "Élixir",
+        "es": "Elixir",
+        "it": "Elisir"
+      }
+    },
+    {
+      "Id": "IID_聖水",
+      "English": "Pure Water",
+      "Chinese": "圣水",
+      "Kind": 10,
+      "MaxUses": 3,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Pure Water",
+        "zh-Hans": "圣水",
+        "zh-Hant": "聖水",
+        "ja": "聖水",
+        "ko": "성수",
+        "de": "Weihwasser",
+        "fr": "Eau bénite",
+        "es": "Agua pura",
+        "it": "Acqua pura"
+      }
+    },
+    {
+      "Id": "IID_たいまつ",
+      "English": "Torch",
+      "Chinese": "火把",
+      "Kind": 10,
+      "MaxUses": 3,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Torch",
+        "zh-Hans": "火把",
+        "zh-Hant": "火把",
+        "ja": "たいまつ",
+        "ko": "횃불",
+        "de": "Fackel",
+        "fr": "Torche",
+        "es": "Antorcha",
+        "it": "Torcia"
+      }
+    },
+    {
+      "Id": "IID_天使の衣",
+      "English": "Seraph Robe",
+      "Chinese": "天使之衣",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Seraph Robe",
+        "zh-Hans": "天使之衣",
+        "zh-Hant": "天使之衣",
+        "ja": "天使の衣",
+        "ko": "천사의 옷",
+        "de": "Engelsrobe",
+        "fr": "Robe sainte",
+        "es": "Túnica angélica",
+        "it": "Veste angelica"
+      }
+    },
+    {
+      "Id": "IID_力のしずく",
+      "English": "Energy Drop",
+      "Chinese": "力量水滴",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Energy Drop",
+        "zh-Hans": "力量水滴",
+        "zh-Hant": "力量水滴",
+        "ja": "力のしずく",
+        "ko": "힘의 물방울",
+        "de": "Energietropfen",
+        "fr": "Goutte",
+        "es": "Gota de energía",
+        "it": "Fluido energia"
+      }
+    },
+    {
+      "Id": "IID_精霊の粉",
+      "English": "Spirit Dust",
+      "Chinese": "精灵之粉",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Spirit Dust",
+        "zh-Hans": "精灵之粉",
+        "zh-Hant": "精靈之粉",
+        "ja": "精霊の粉",
+        "ko": "정령의 가루",
+        "de": "Geist",
+        "fr": "Poudre",
+        "es": "Polvo espiritual",
+        "it": "Polvere spirito"
+      }
+    },
+    {
+      "Id": "IID_秘伝の書",
+      "English": "Secret Book",
+      "Chinese": "秘传之书",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Secret Book",
+        "zh-Hans": "秘传之书",
+        "zh-Hant": "秘傳之書",
+        "ja": "秘伝の書",
+        "ko": "비전의 책",
+        "de": "Geheimbuch",
+        "fr": "Tome secret",
+        "es": "Libro secreto",
+        "it": "Tomo segreto"
+      }
+    },
+    {
+      "Id": "IID_はやての羽",
+      "English": "Speedwing",
+      "Chinese": "疾风羽毛",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Speedwing",
+        "zh-Hans": "疾风羽毛",
+        "zh-Hant": "疾風羽毛",
+        "ja": "はやての羽",
+        "ko": "질풍의 깃털",
+        "de": "Tempofeder",
+        "fr": "Aile éclair",
+        "es": "Alas veloces",
+        "it": "Ala rapida"
+      }
+    },
+    {
+      "Id": "IID_女神の像",
+      "English": "Goddess Icon",
+      "Chinese": "女神像",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Goddess Icon",
+        "zh-Hans": "女神像",
+        "zh-Hant": "女神像",
+        "ja": "女神の像",
+        "ko": "여신상",
+        "de": "Göttinnenikone",
+        "fr": "Icône divine",
+        "es": "Ícono de diosa",
+        "it": "Icona divina"
+      }
+    },
+    {
+      "Id": "IID_竜の盾",
+      "English": "Dracoshield",
+      "Chinese": "龙盾",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Dracoshield",
+        "zh-Hans": "龙盾",
+        "zh-Hant": "龍盾",
+        "ja": "竜の盾",
+        "ko": "용의 방패",
+        "de": "Draco-Schild",
+        "fr": "Écu dragon",
+        "es": "Escudo dragón",
+        "it": "Dragoscudo"
+      }
+    },
+    {
+      "Id": "IID_魔よけ",
+      "English": "Talisman",
+      "Chinese": "避邪物",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Talisman",
+        "zh-Hans": "避邪物",
+        "zh-Hant": "避邪物",
+        "ja": "魔よけ",
+        "ko": "부적",
+        "de": "Talisman",
+        "fr": "Talisman",
+        "es": "Talismán",
+        "it": "Talismano"
+      }
+    },
+    {
+      "Id": "IID_ブーツ",
+      "English": "Boots",
+      "Chinese": "靴子",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Boots",
+        "zh-Hans": "靴子",
+        "zh-Hant": "靴子",
+        "ja": "ブーツ",
+        "ko": "부츠",
+        "de": "Stiefel",
+        "fr": "Bottes",
+        "es": "Botas",
+        "it": "Stivali"
+      }
+    },
+    {
+      "Id": "IID_スキルの書・守",
+      "English": "Novice Book",
+      "Chinese": "特技之书·守",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Novice Book",
+        "zh-Hans": "特技之书·守",
+        "zh-Hant": "特技之書・守",
+        "ja": "スキルの書・守",
+        "ko": "스킬의 책·수",
+        "de": "Novizenbuch",
+        "fr": "Manuel novice",
+        "es": "Libro básico",
+        "it": "Manuale novizi"
+      }
+    },
+    {
+      "Id": "IID_スキルの書・破",
+      "English": "Adept Book",
+      "Chinese": "特技之书·破",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Adept Book",
+        "zh-Hans": "特技之书·破",
+        "zh-Hant": "特技之書・破",
+        "ja": "スキルの書・破",
+        "ko": "스킬의 책·파",
+        "de": "Adeptenbuch",
+        "fr": "Manuel initié",
+        "es": "Libro avanzado",
+        "it": "Manuale avanzato"
+      }
+    },
+    {
+      "Id": "IID_スキルの書・離",
+      "English": "Expert Book",
+      "Chinese": "特技之书·离",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Expert Book",
+        "zh-Hans": "特技之书·离",
+        "zh-Hant": "特技之書・離",
+        "ja": "スキルの書・離",
+        "ko": "스킬의 책·리",
+        "de": "Expertenbuch",
+        "fr": "Manuel expert",
+        "es": "Libro magistral",
+        "it": "Manuale esperti"
+      }
+    },
+    {
+      "Id": "IID_HPの薬",
+      "English": "HP Tonic",
+      "Chinese": "HP药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "HP Tonic",
+        "zh-Hans": "HP药",
+        "zh-Hant": "ＨＰ藥",
+        "ja": "ＨＰの薬",
+        "ko": "HP의 약",
+        "de": "Trank der KP",
+        "fr": "Tonique PV",
+        "es": "Tónico PV",
+        "it": "Tonico PS"
+      }
+    },
+    {
+      "Id": "IID_力の薬",
+      "English": "Strength Tonic",
+      "Chinese": "力量药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Strength Tonic",
+        "zh-Hans": "力量药",
+        "zh-Hant": "力量藥",
+        "ja": "力の薬",
+        "ko": "힘의 약",
+        "de": "Trank der Stä.",
+        "fr": "Tonique Frc",
+        "es": "Tónico Fue",
+        "it": "Tonico forza"
+      }
+    },
+    {
+      "Id": "IID_技の薬",
+      "English": "Dexterity Tonic",
+      "Chinese": "技巧药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Dexterity Tonic",
+        "zh-Hans": "技巧药",
+        "zh-Hant": "技巧藥",
+        "ja": "技の薬",
+        "ko": "기술의 약",
+        "de": "Trank der Beh.",
+        "fr": "Tonique Tec",
+        "es": "Tónico Hab",
+        "it": "Tonico destrezza"
+      }
+    },
+    {
+      "Id": "IID_速さの薬",
+      "English": "Speed Tonic",
+      "Chinese": "速度药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Speed Tonic",
+        "zh-Hans": "速度药",
+        "zh-Hant": "速度藥",
+        "ja": "速さの薬",
+        "ko": "속도의 약",
+        "de": "Trank der Ges.",
+        "fr": "Tonique Vit",
+        "es": "Tónico Vel",
+        "it": "Tonico velocità"
+      }
+    },
+    {
+      "Id": "IID_幸運の薬",
+      "English": "Luck Tonic",
+      "Chinese": "幸运药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Luck Tonic",
+        "zh-Hans": "幸运药",
+        "zh-Hant": "幸運藥",
+        "ja": "幸運の薬",
+        "ko": "행운의 약",
+        "de": "Trank des Glk.",
+        "fr": "Tonique Cha",
+        "es": "Tónico Sue",
+        "it": "Tonico fortuna"
+      }
+    },
+    {
+      "Id": "IID_守備の薬",
+      "English": "Defense Tonic",
+      "Chinese": "防守药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Defense Tonic",
+        "zh-Hans": "防守药",
+        "zh-Hant": "防守藥",
+        "ja": "守備の薬",
+        "ko": "수비의 약",
+        "de": "Trank der Ver.",
+        "fr": "Tonique Déf",
+        "es": "Tónico Def",
+        "it": "Tonico difesa"
+      }
+    },
+    {
+      "Id": "IID_魔力の薬",
+      "English": "Magic Tonic",
+      "Chinese": "魔力药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Magic Tonic",
+        "zh-Hans": "魔力药",
+        "zh-Hant": "魔力藥",
+        "ja": "魔力の薬",
+        "ko": "마력의 약",
+        "de": "Trank der Mag.",
+        "fr": "Tonique Mag",
+        "es": "Tónico Mag",
+        "it": "Tonico magia"
+      }
+    },
+    {
+      "Id": "IID_魔防の薬",
+      "English": "Resistance Tonic",
+      "Chinese": "魔防药",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Resistance Tonic",
+        "zh-Hans": "魔防药",
+        "zh-Hant": "魔防藥",
+        "ja": "魔防の薬",
+        "ko": "마방의 약",
+        "de": "Trank der Res.",
+        "fr": "Tonique Rés",
+        "es": "Tónico Res",
+        "it": "Tonico resistenza"
+      }
+    },
+    {
+      "Id": "IID_ヴァンドレのお弁当",
+      "English": "Vander's Meal",
+      "Chinese": "凡德雷便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Vander's Meal",
+        "zh-Hans": "凡德雷便当",
+        "zh-Hant": "凡德雷便當",
+        "ja": "ヴァンドレ弁当",
+        "ko": "반드레의 도시락",
+        "de": "Vanders Ration",
+        "fr": "Repas de Vander",
+        "es": "Ración de Vander",
+        "it": "Pasto di Vander"
+      }
+    },
+    {
+      "Id": "IID_クランのお弁当",
+      "English": "Clanne's Meal",
+      "Chinese": "柯岚便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Clanne's Meal",
+        "zh-Hans": "柯岚便当",
+        "zh-Hant": "柯嵐便當",
+        "ja": "クラン弁当",
+        "ko": "클랜의 도시락",
+        "de": "Clannes Ration",
+        "fr": "Repas de Clanne",
+        "es": "Ración de Clanne",
+        "it": "Pasto di Clanne"
+      }
+    },
+    {
+      "Id": "IID_フランのお弁当",
+      "English": "Framme's Meal",
+      "Chinese": "芙岚便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Framme's Meal",
+        "zh-Hans": "芙岚便当",
+        "zh-Hant": "芙嵐便當",
+        "ja": "フラン弁当",
+        "ko": "프랑의 도시락",
+        "de": "Frammes Ration",
+        "fr": "Repas de Framme",
+        "es": "Ración de Framme",
+        "it": "Pasto di Framme"
+      }
+    },
+    {
+      "Id": "IID_アルフレッドのお弁当",
+      "English": "Alfred's Meal",
+      "Chinese": "阿尔弗雷德便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Alfred's Meal",
+        "zh-Hans": "阿尔弗雷德便当",
+        "zh-Hant": "阿爾弗雷德便當",
+        "ja": "アルフレッド弁当",
+        "ko": "알프레드의 도시락",
+        "de": "Alfreds Ration",
+        "fr": "Repas d'Alfred",
+        "es": "Ración de Alfred",
+        "it": "Pasto di Alfred"
+      }
+    },
+    {
+      "Id": "IID_ブシュロンのお弁当",
+      "English": "Boucheron's Meal",
+      "Chinese": "布修隆便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Boucheron's Meal",
+        "zh-Hans": "布修隆便当",
+        "zh-Hant": "布修隆便當",
+        "ja": "ブシュロン弁当",
+        "ko": "부셰론의 도시락",
+        "de": "Boucherons Ration",
+        "fr": "Repas de Boucheron",
+        "es": "Ración de Boucheron",
+        "it": "Pasto di Boucheron"
+      }
+    },
+    {
+      "Id": "IID_エーティエのお弁当",
+      "English": "Etie's Meal",
+      "Chinese": "艾媞耶便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Etie's Meal",
+        "zh-Hans": "艾媞耶便当",
+        "zh-Hant": "艾媞耶便當",
+        "ja": "エーティエ弁当",
+        "ko": "에티에의 도시락",
+        "de": "Eties Ration",
+        "fr": "Repas d'Etie",
+        "es": "Ración de Etie",
+        "it": "Pasto di Etie"
+      }
+    },
+    {
+      "Id": "IID_セリーヌのお弁当",
+      "English": "Céline's Meal",
+      "Chinese": "锡莉奴便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Céline's Meal",
+        "zh-Hans": "锡莉奴便当",
+        "zh-Hant": "錫莉奴便當",
+        "ja": "セリーヌ弁当",
+        "ko": "셀린의 도시락",
+        "de": "Célines Ration",
+        "fr": "Repas de Céline",
+        "es": "Ración de Céline",
+        "it": "Pasto di Céline"
+      }
+    },
+    {
+      "Id": "IID_ルイのお弁当",
+      "English": "Louis's Meal",
+      "Chinese": "路易便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Louis's Meal",
+        "zh-Hans": "路易便当",
+        "zh-Hant": "路易便當",
+        "ja": "ルイ弁当",
+        "ko": "루이의 도시락",
+        "de": "Louis' Ration",
+        "fr": "Repas de Louis",
+        "es": "Ración de Louis",
+        "it": "Pasto di Louis"
+      }
+    },
+    {
+      "Id": "IID_クロエのお弁当",
+      "English": "Chloé's Meal",
+      "Chinese": "克萝艾便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Chloé's Meal",
+        "zh-Hans": "克萝艾便当",
+        "zh-Hant": "克蘿艾便當",
+        "ja": "クロエ弁当",
+        "ko": "클로에의 도시락",
+        "de": "Chloés Ration",
+        "fr": "Repas de Chloé",
+        "es": "Ración de Chloé",
+        "it": "Pasto di Chloé"
+      }
+    },
+    {
+      "Id": "IID_ディアマンドのお弁当",
+      "English": "Diamant's Meal",
+      "Chinese": "帝亚曼德便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Diamant's Meal",
+        "zh-Hans": "帝亚曼德便当",
+        "zh-Hant": "帝亞曼德便當",
+        "ja": "ディアマンド弁当",
+        "ko": "디아만드의 도시락",
+        "de": "Diamants Ration",
+        "fr": "Repas de Diamant",
+        "es": "Ración de Diamant",
+        "it": "Pasto di Diamant"
+      }
+    },
+    {
+      "Id": "IID_アンバーのお弁当",
+      "English": "Amber's Meal",
+      "Chinese": "安巴便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Amber's Meal",
+        "zh-Hans": "安巴便当",
+        "zh-Hant": "安巴便當",
+        "ja": "アンバー弁当",
+        "ko": "앰버의 도시락",
+        "de": "Ambers Ration",
+        "fr": "Repas d'Amber",
+        "es": "Ración de Amber",
+        "it": "Pasto di Amber"
+      }
+    },
+    {
+      "Id": "IID_ジェーデのお弁当",
+      "English": "Jade's Meal",
+      "Chinese": "洁德便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Jade's Meal",
+        "zh-Hans": "洁德便当",
+        "zh-Hant": "潔德便當",
+        "ja": "ジェーデ弁当",
+        "ko": "제이데의 도시락",
+        "de": "Jades Ration",
+        "fr": "Repas de Jade",
+        "es": "Ración de Jade",
+        "it": "Pasto di Jade"
+      }
+    },
+    {
+      "Id": "IID_スタルークのお弁当",
+      "English": "Alcryst's Meal",
+      "Chinese": "史塔卢克便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Alcryst's Meal",
+        "zh-Hans": "史塔卢克便当",
+        "zh-Hant": "史塔盧克便當",
+        "ja": "スタルーク弁当",
+        "ko": "스타루크의 도시락",
+        "de": "Alcrysts Ration",
+        "fr": "Repas d'Alcryst",
+        "es": "Ración de Alcryst",
+        "it": "Pasto di Alcryst"
+      }
+    },
+    {
+      "Id": "IID_ラピスのお弁当",
+      "English": "Lapis's Meal",
+      "Chinese": "菈琵思便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lapis's Meal",
+        "zh-Hans": "菈琵思便当",
+        "zh-Hant": "菈琵思便當",
+        "ja": "ラピス弁当",
+        "ko": "라피스의 도시락",
+        "de": "Lapis' Ration",
+        "fr": "Repas de Lapis",
+        "es": "Ración de Lapis",
+        "it": "Pasto di Lapis"
+      }
+    },
+    {
+      "Id": "IID_シトリニカのお弁当",
+      "English": "Citrinne's Meal",
+      "Chinese": "希特丽妮卡便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Citrinne's Meal",
+        "zh-Hans": "希特丽妮卡便当",
+        "zh-Hant": "希特麗妮卡便當",
+        "ja": "シトリニカ弁当",
+        "ko": "시트리니카의 도시락",
+        "de": "Citrinnes Ration",
+        "fr": "Repas de Citrinne",
+        "es": "Ración de Citrinne",
+        "it": "Pasto di Citrinne"
+      }
+    },
+    {
+      "Id": "IID_アイビーのお弁当",
+      "English": "Ivy's Meal",
+      "Chinese": "艾比便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Ivy's Meal",
+        "zh-Hans": "艾比便当",
+        "zh-Hant": "艾比便當",
+        "ja": "アイビー弁当",
+        "ko": "아이비의 도시락",
+        "de": "Ivys Ration",
+        "fr": "Repas d'Ivy",
+        "es": "Ración de Ivy",
+        "it": "Pasto di Ivy"
+      }
+    },
+    {
+      "Id": "IID_ゼルコバのお弁当",
+      "English": "Zelkov's Meal",
+      "Chinese": "杰尔科巴便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Zelkov's Meal",
+        "zh-Hans": "杰尔科巴便当",
+        "zh-Hant": "傑爾科巴便當",
+        "ja": "ゼルコバ弁当",
+        "ko": "젤코바의 도시락",
+        "de": "Zelkovs Ration",
+        "fr": "Repas de Zelkov",
+        "es": "Ración de Zelkov",
+        "it": "Pasto di Zelkov"
+      }
+    },
+    {
+      "Id": "IID_カゲツのお弁当",
+      "English": "Kagetsu's Meal",
+      "Chinese": "花月便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Kagetsu's Meal",
+        "zh-Hans": "花月便当",
+        "zh-Hant": "花月便當",
+        "ja": "カゲツ弁当",
+        "ko": "카게츠의 도시락",
+        "de": "Kagetsus Ration",
+        "fr": "Repas de Kagetsu",
+        "es": "Ración de Kagetsu",
+        "it": "Pasto di Kagetsu"
+      }
+    },
+    {
+      "Id": "IID_オルテンシアのお弁当",
+      "English": "Hortensia's Meal",
+      "Chinese": "奥尔坦希亚便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hortensia's Meal",
+        "zh-Hans": "奥尔坦希亚便当",
+        "zh-Hant": "奧爾坦希亞便當",
+        "ja": "オルテンシア弁当",
+        "ko": "오르텐시아의 도시락",
+        "de": "Hortensias Ration",
+        "fr": "Repas d'Hortensia",
+        "es": "Ración de Hortensia",
+        "it": "Pasto di Hortensia"
+      }
+    },
+    {
+      "Id": "IID_ロサードのお弁当",
+      "English": "Rosado's Meal",
+      "Chinese": "罗萨德便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rosado's Meal",
+        "zh-Hans": "罗萨德便当",
+        "zh-Hant": "羅薩德便當",
+        "ja": "ロサード弁当",
+        "ko": "로사도의 도시락",
+        "de": "Rosados Ration",
+        "fr": "Repas de Rosado",
+        "es": "Ración de Rosado",
+        "it": "Pasto di Rosado"
+      }
+    },
+    {
+      "Id": "IID_ゴルドマリーのお弁当",
+      "English": "Goldmary's Meal",
+      "Chinese": "戈尔德玛莉便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Goldmary's Meal",
+        "zh-Hans": "戈尔德玛莉便当",
+        "zh-Hant": "戈爾德瑪莉便當",
+        "ja": "ゴルドマリー弁当",
+        "ko": "골드마리의 도시락",
+        "de": "Goldmarys Ration",
+        "fr": "Repas de Goldmary",
+        "es": "Ración de Goldmary",
+        "it": "Pasto di Goldmary"
+      }
+    },
+    {
+      "Id": "IID_ミスティラのお弁当",
+      "English": "Timerra's Meal",
+      "Chinese": "蜜丝提拉便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Timerra's Meal",
+        "zh-Hans": "蜜丝提拉便当",
+        "zh-Hant": "蜜絲提拉便當",
+        "ja": "ミスティラ弁当",
+        "ko": "미스티라의 도시락",
+        "de": "Timerras Ration",
+        "fr": "Repas de Timerra",
+        "es": "Ración de Timerra",
+        "it": "Pasto di Timerra"
+      }
+    },
+    {
+      "Id": "IID_メリンのお弁当",
+      "English": "Merrin's Meal",
+      "Chinese": "玫琳便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Merrin's Meal",
+        "zh-Hans": "玫琳便当",
+        "zh-Hant": "玫琳便當",
+        "ja": "メリン弁当",
+        "ko": "메린의 도시락",
+        "de": "Merrins Ration",
+        "fr": "Repas de Merrin",
+        "es": "Ración de Merrin",
+        "it": "Pasto di Merrin"
+      }
+    },
+    {
+      "Id": "IID_パネトネのお弁当",
+      "English": "Panette's Meal",
+      "Chinese": "帕涅托涅便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Panette's Meal",
+        "zh-Hans": "帕涅托涅便当",
+        "zh-Hant": "帕涅托涅便當",
+        "ja": "パネトネ弁当",
+        "ko": "파네토네의 도시락",
+        "de": "Panettes Ration",
+        "fr": "Repas de Panette",
+        "es": "Ración de Panette",
+        "it": "Pasto di Panette"
+      }
+    },
+    {
+      "Id": "IID_フォガートのお弁当",
+      "English": "Fogado's Meal",
+      "Chinese": "佛贾特便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fogado's Meal",
+        "zh-Hans": "佛贾特便当",
+        "zh-Hant": "佛賈特便當",
+        "ja": "フォガート弁当",
+        "ko": "포가토의 도시락",
+        "de": "Fogados Ration",
+        "fr": "Repas de Fogado",
+        "es": "Ración de Fogado",
+        "it": "Pasto di Fogado"
+      }
+    },
+    {
+      "Id": "IID_パンドロのお弁当",
+      "English": "Pandreo's Meal",
+      "Chinese": "庞德罗便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Pandreo's Meal",
+        "zh-Hans": "庞德罗便当",
+        "zh-Hant": "龐德羅便當",
+        "ja": "パンドロ弁当",
+        "ko": "판도로의 도시락",
+        "de": "Pandreos Ration",
+        "fr": "Repas de Pandreo",
+        "es": "Ración de Pandreo",
+        "it": "Pasto di Pandreo"
+      }
+    },
+    {
+      "Id": "IID_ボネのお弁当",
+      "English": "Bunet's Meal",
+      "Chinese": "波聂便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bunet's Meal",
+        "zh-Hans": "波聂便当",
+        "zh-Hant": "波聶便當",
+        "ja": "ボネ弁当",
+        "ko": "보네의 도시락",
+        "de": "Bunets Ration",
+        "fr": "Repas de Bunet",
+        "es": "Ración de Bunet",
+        "it": "Pasto di Bunet"
+      }
+    },
+    {
+      "Id": "IID_アンナのお弁当",
+      "English": "Anna's Meal",
+      "Chinese": "安娜便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Anna's Meal",
+        "zh-Hans": "安娜便当",
+        "zh-Hant": "安娜便當",
+        "ja": "アンナ弁当",
+        "ko": "안나의 도시락",
+        "de": "Annas Ration",
+        "fr": "Repas d'Anna",
+        "es": "Ración de Anna",
+        "it": "Pasto di Anna"
+      }
+    },
+    {
+      "Id": "IID_ジャンのお弁当",
+      "English": "Jean's Meal",
+      "Chinese": "贾恩便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Jean's Meal",
+        "zh-Hans": "贾恩便当",
+        "zh-Hant": "賈恩便當",
+        "ja": "ジャン弁当",
+        "ko": "장의 도시락",
+        "de": "Jeans Ration",
+        "fr": "Repas de Jean",
+        "es": "Ración de Jean",
+        "it": "Pasto di Jean"
+      }
+    },
+    {
+      "Id": "IID_ユナカのお弁当",
+      "English": "Yunaka's Meal",
+      "Chinese": "尤娜卡便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Yunaka's Meal",
+        "zh-Hans": "尤娜卡便当",
+        "zh-Hant": "尤娜卡便當",
+        "ja": "ユナカ弁当",
+        "ko": "유나카의 도시락",
+        "de": "Yunakas Ration",
+        "fr": "Repas de Yunaka",
+        "es": "Ración de Yunaka",
+        "it": "Pasto di Yunaka"
+      }
+    },
+    {
+      "Id": "IID_セアダスのお弁当",
+      "English": "Seadall's Meal",
+      "Chinese": "赛安达斯便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Seadall's Meal",
+        "zh-Hans": "赛安达斯便当",
+        "zh-Hant": "賽安達斯便當",
+        "ja": "セアダス弁当",
+        "ko": "세아다스의 도시락",
+        "de": "Seadalls Ration",
+        "fr": "Repas de Seadall",
+        "es": "Ración de Seadall",
+        "it": "Pasto di Seadall"
+      }
+    },
+    {
+      "Id": "IID_リンデンのお弁当",
+      "English": "Lindon's Meal",
+      "Chinese": "霖丹便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lindon's Meal",
+        "zh-Hans": "霖丹便当",
+        "zh-Hant": "霖丹便當",
+        "ja": "リンデン弁当",
+        "ko": "린덴의 도시락",
+        "de": "Lindons Ration",
+        "fr": "Repas de Lindon",
+        "es": "Ración de Lindon",
+        "it": "Pasto di Lindon"
+      }
+    },
+    {
+      "Id": "IID_ザフィーアのお弁当",
+      "English": "Saphir's Meal",
+      "Chinese": "札菲亚便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Saphir's Meal",
+        "zh-Hans": "札菲亚便当",
+        "zh-Hant": "札菲亞便當",
+        "ja": "ザフィーア弁当",
+        "ko": "자피아의 도시락",
+        "de": "Saphirs Ration",
+        "fr": "Repas de Saphir",
+        "es": "Ración de Saphir",
+        "it": "Pasto di Saphir"
+      }
+    },
+    {
+      "Id": "IID_ヴェイルのお弁当",
+      "English": "Veyle's Meal",
+      "Chinese": "贝珥便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Veyle's Meal",
+        "zh-Hans": "贝珥便当",
+        "zh-Hant": "貝珥便當",
+        "ja": "ヴェイル弁当",
+        "ko": "베일의 도시락",
+        "de": "Veyles Ration",
+        "fr": "Repas de Veyle",
+        "es": "Ración de Veyle",
+        "it": "Pasto di Veyle"
+      }
+    },
+    {
+      "Id": "IID_モーヴのお弁当",
+      "English": "Mauvier's Meal",
+      "Chinese": "莫布便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mauvier's Meal",
+        "zh-Hans": "莫布便当",
+        "zh-Hant": "莫布便當",
+        "ja": "モーヴ弁当",
+        "ko": "모브의 도시락",
+        "de": "Mauviers Ration",
+        "fr": "Repas de Mauvier",
+        "es": "Ración de Mauvier",
+        "it": "Pasto di Mauvier"
+      }
+    },
+    {
+      "Id": "IID_エルのお弁当",
+      "English": "Nel's Meal",
+      "Chinese": "爱尔便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Nel's Meal",
+        "zh-Hans": "爱尔便当",
+        "zh-Hant": "愛爾便當",
+        "ja": "エル弁当",
+        "ko": "엘의 도시락",
+        "de": "Nels Ration",
+        "fr": "Repas de Nel",
+        "es": "Ración de Nel",
+        "it": "Pasto di Nel"
+      }
+    },
+    {
+      "Id": "IID_ラファールのお弁当",
+      "English": "Rafal's Meal",
+      "Chinese": "拉法尔便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rafal's Meal",
+        "zh-Hans": "拉法尔便当",
+        "zh-Hant": "拉法爾便當",
+        "ja": "ラファール弁当",
+        "ko": "라팔의 도시락",
+        "de": "Rafals Ration",
+        "fr": "Repas de Rafal",
+        "es": "Ración de Rafal",
+        "it": "Pasto di Rafal"
+      }
+    },
+    {
+      "Id": "IID_セレスティアのお弁当",
+      "English": "Zelestia's Meal",
+      "Chinese": "赛勒斯提雅便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Zelestia's Meal",
+        "zh-Hans": "赛勒斯提雅便当",
+        "zh-Hant": "賽勒斯提雅便當",
+        "ja": "セレスティア弁当",
+        "ko": "셀레스티아의 도시락",
+        "de": "Zelestias Ration",
+        "fr": "Repas de Zelestia",
+        "es": "Ración de Zelestia",
+        "it": "Pasto di Zelestia"
+      }
+    },
+    {
+      "Id": "IID_グレゴリーのお弁当",
+      "English": "Gregory's Meal",
+      "Chinese": "孤雷葛里便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Gregory's Meal",
+        "zh-Hans": "孤雷葛里便当",
+        "zh-Hant": "孤雷葛里便當",
+        "ja": "グレゴリー弁当",
+        "ko": "그레고리의 도시락",
+        "de": "Gregorys Ration",
+        "fr": "Repas de Gregory",
+        "es": "Ración de Gregory",
+        "it": "Pasto di Gregory"
+      }
+    },
+    {
+      "Id": "IID_マデリーンのお弁当",
+      "English": "Madeline's Meal",
+      "Chinese": "玛德琳便当",
+      "Kind": 10,
+      "MaxUses": 1,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Madeline's Meal",
+        "zh-Hans": "玛德琳便当",
+        "zh-Hant": "瑪德琳便當",
+        "ja": "マデリーン弁当",
+        "ko": "마델린의 도시락",
+        "de": "Madelines Ration",
+        "fr": "Repas de Madeline",
+        "es": "Ración de Madeline",
+        "it": "Pasto di Madeline"
+      }
+    },
+    {
+      "Id": "IID_マルス_レイピア_通常",
+      "English": "Rapier",
+      "Chinese": "刺剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rapier",
+        "zh-Hans": "刺剑",
+        "zh-Hant": "刺劍",
+        "ja": "レイピア",
+        "ko": "레이피어",
+        "de": "Rapier",
+        "fr": "Rapière",
+        "es": "Estoque",
+        "it": "Spadino"
+      }
+    },
+    {
+      "Id": "IID_マルス_メリクルソード_通常",
+      "English": "Mercurius",
+      "Chinese": "墨丘利剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mercurius",
+        "zh-Hans": "墨丘利剑",
+        "zh-Hant": "墨丘利劍",
+        "ja": "メリクルソード",
+        "ko": "메리클 소드",
+        "de": "Mercurius",
+        "fr": "Mercurius",
+        "es": "Mercurius",
+        "it": "Mercurius"
+      }
+    },
+    {
+      "Id": "IID_マルス_ファルシオン_通常",
+      "English": "Falchion",
+      "Chinese": "法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Falchion",
+        "zh-Hans": "法尔西昂",
+        "zh-Hant": "法爾西昂",
+        "ja": "ファルシオン",
+        "ko": "팔시온",
+        "de": "Falchion",
+        "fr": "Falchion",
+        "es": "Falchion",
+        "it": "Falchion"
+      }
+    },
+    {
+      "Id": "IID_シグルド_ナイトキラー_通常",
+      "English": "Ridersbane",
+      "Chinese": "骑士杀手",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Ridersbane",
+        "zh-Hans": "骑士杀手",
+        "zh-Hant": "騎士殺手",
+        "ja": "ナイトキラー",
+        "ko": "나이트 킬러",
+        "de": "Rittertod",
+        "fr": "Caballucide",
+        "es": "Antijinetes",
+        "it": "Picca"
+      }
+    },
+    {
+      "Id": "IID_シグルド_ゆうしゃのやり_通常",
+      "English": "Brave Lance",
+      "Chinese": "勇者枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Brave Lance",
+        "zh-Hans": "勇者枪",
+        "zh-Hant": "勇者槍",
+        "ja": "ゆうしゃのやり",
+        "ko": "용사의 창",
+        "de": "Kriegerlanze",
+        "fr": "Lance héros",
+        "es": "Lanza del valor",
+        "it": "Lancia forte"
+      }
+    },
+    {
+      "Id": "IID_シグルド_ティルフィング_通常",
+      "English": "Tyrfing",
+      "Chinese": "斩裂剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tyrfing",
+        "zh-Hans": "斩裂剑",
+        "zh-Hant": "斬裂劍",
+        "ja": "ティルフィング",
+        "ko": "튀르핑",
+        "de": "Tyrfing",
+        "fr": "Tyrfing",
+        "es": "Tyrfing",
+        "it": "Tyrfing"
+      }
+    },
+    {
+      "Id": "IID_セリカ_エンジェル_通常",
+      "English": "Seraphim",
+      "Chinese": "天使",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Seraphim",
+        "zh-Hans": "天使",
+        "zh-Hant": "天使",
+        "ja": "エンジェル",
+        "ko": "엔젤",
+        "de": "Seraphim",
+        "fr": "Séraphins",
+        "es": "Ángeles",
+        "it": "Serafino"
+      }
+    },
+    {
+      "Id": "IID_セリカ_リカバー_通常",
+      "English": "Recover",
+      "Chinese": "圣愈",
+      "Kind": 7,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Recover",
+        "zh-Hans": "圣愈",
+        "zh-Hant": "聖癒",
+        "ja": "リカバー",
+        "ko": "리커버",
+        "de": "Erholung",
+        "fr": "Restitution",
+        "es": "Recuperar",
+        "it": "Recupero"
+      }
+    },
+    {
+      "Id": "IID_セリカ_ライナロック_通常",
+      "English": "Ragnarok",
+      "Chinese": "末世烈焰",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Ragnarok",
+        "zh-Hans": "末世烈焰",
+        "zh-Hant": "末世烈焰",
+        "ja": "ライナロック",
+        "ko": "라이나로크",
+        "de": "Ragnarök",
+        "fr": "Ragnarök",
+        "es": "Ragnarok",
+        "it": "Ragnarok"
+      }
+    },
+    {
+      "Id": "IID_ミカヤ_シャイン_通常",
+      "English": "Shine",
+      "Chinese": "闪光",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Shine",
+        "zh-Hans": "闪光",
+        "zh-Hant": "閃光",
+        "ja": "シャイン",
+        "ko": "샤인",
+        "de": "Glanz",
+        "fr": "Flash",
+        "es": "Resplandor",
+        "it": "Fulgore"
+      }
+    },
+    {
+      "Id": "IID_ミカヤ_リザイア_通常",
+      "English": "Nosferatu",
+      "Chinese": "圣吸",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Nosferatu",
+        "zh-Hans": "圣吸",
+        "zh-Hant": "聖吸",
+        "ja": "リザイア",
+        "ko": "리자이어",
+        "de": "Nosferatu",
+        "fr": "Nosferatu",
+        "es": "Nosferatu",
+        "it": "Nosferatu"
+      }
+    },
+    {
+      "Id": "IID_ミカヤ_セイニー_通常",
+      "English": "Thani",
+      "Chinese": "赛尼",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Thani",
+        "zh-Hans": "赛尼",
+        "zh-Hant": "賽尼",
+        "ja": "セイニー",
+        "ko": "세이니",
+        "de": "Thani",
+        "fr": "Thani",
+        "es": "Thani",
+        "it": "Thani"
+      }
+    },
+    {
+      "Id": "IID_ロイ_ランスバスター_通常",
+      "English": "Lancereaver",
+      "Chinese": "破枪剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lancereaver",
+        "zh-Hans": "破枪剑",
+        "zh-Hant": "破槍劍",
+        "ja": "ランスバスター",
+        "ko": "랜스 버스터",
+        "de": "Lanzenmeister",
+        "fr": "Brise-lance",
+        "es": "Antilanza",
+        "it": "Rompilancia"
+      }
+    },
+    {
+      "Id": "IID_ロイ_ドラゴンキラー_通常",
+      "English": "Wyrmslayer",
+      "Chinese": "屠龙剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wyrmslayer",
+        "zh-Hans": "屠龙剑",
+        "zh-Hant": "屠龍劍",
+        "ja": "ドラゴンキラー",
+        "ko": "드래곤 킬러",
+        "de": "Wyrmtöter",
+        "fr": "Dracocide",
+        "es": "Machacawyrms",
+        "it": "Attaccawyrm"
+      }
+    },
+    {
+      "Id": "IID_ロイ_封印の剣_通常",
+      "English": "Binding Blade",
+      "Chinese": "封印之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Binding Blade",
+        "zh-Hans": "封印之剑",
+        "zh-Hant": "封印之劍",
+        "ja": "封印の剣",
+        "ko": "봉인의 검",
+        "de": "Binding Blade",
+        "fr": "Lame du Sceau",
+        "es": "Espada de los Sellos",
+        "it": "Spada dei sigilli"
+      }
+    },
+    {
+      "Id": "IID_リーフ_キラーアクス_通常",
+      "English": "Killer Axe",
+      "Chinese": "必杀斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Killer Axe",
+        "zh-Hans": "必杀斧",
+        "zh-Hant": "必殺斧",
+        "ja": "キラーアクス",
+        "ko": "킬러 액스",
+        "de": "Meisteraxt",
+        "fr": "Hache létale",
+        "es": "Hacha letal",
+        "it": "Ascia letale"
+      }
+    },
+    {
+      "Id": "IID_リーフ_マスターランス_通常",
+      "English": "Master Lance",
+      "Chinese": "大师之枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Master Lance",
+        "zh-Hans": "大师之枪",
+        "zh-Hant": "大師之槍",
+        "ja": "マスターランス",
+        "ko": "마스터 랜스",
+        "de": "Expertenlanze",
+        "fr": "Lance ultime",
+        "es": "Lanza maestra",
+        "it": "Lancia suprema"
+      }
+    },
+    {
+      "Id": "IID_リーフ_ひかりの剣_通常",
+      "English": "Light Brand",
+      "Chinese": "光之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Light Brand",
+        "zh-Hans": "光之剑",
+        "zh-Hant": "光之劍",
+        "ja": "ひかりの剣",
+        "ko": "빛의 검",
+        "de": "Lichtklinge",
+        "fr": "Épée-lumière",
+        "es": "Espada luminosa",
+        "it": "Spada di luce"
+      }
+    },
+    {
+      "Id": "IID_ルキナ_ノーブルレイピア_通常",
+      "English": "Noble Rapier",
+      "Chinese": "王室贵族刺剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Noble Rapier",
+        "zh-Hans": "王室贵族刺剑",
+        "zh-Hant": "王室貴族刺劍",
+        "ja": "ノーブルレイピア",
+        "ko": "노블 레이피어",
+        "de": "Adelsrapier",
+        "fr": "Rapière noble",
+        "es": "Estoque noble",
+        "it": "Spadino nobile"
+      }
+    },
+    {
+      "Id": "IID_ルキナ_パルティア_通常",
+      "English": "Parthia",
+      "Chinese": "帕提亚",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Parthia",
+        "zh-Hans": "帕提亚",
+        "zh-Hant": "帕提亞",
+        "ja": "パルティア",
+        "ko": "파르티아",
+        "de": "Parthia",
+        "fr": "Parthia",
+        "es": "Parthia",
+        "it": "Parthia"
+      }
+    },
+    {
+      "Id": "IID_ルキナ_裏剣ファルシオン_通常",
+      "English": "Parallel Falchion",
+      "Chinese": "里剑法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Parallel Falchion",
+        "zh-Hans": "里剑法尔西昂",
+        "zh-Hant": "裡劍法爾西昂",
+        "ja": "裏剣ファルシオン",
+        "ko": "이검 팔시온",
+        "de": "Dim.-Falchion",
+        "fr": "Xéno-Falchion",
+        "es": "Falchion linaje",
+        "it": "Falchion gemina"
+      }
+    },
+    {
+      "Id": "IID_リン_キラーボウ_通常",
+      "English": "Killer Bow",
+      "Chinese": "必杀弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Killer Bow",
+        "zh-Hans": "必杀弓",
+        "zh-Hant": "必殺弓",
+        "ja": "キラーボウ",
+        "ko": "킬러 보우",
+        "de": "Meisterbogen",
+        "fr": "Arc létal",
+        "es": "Arco letal",
+        "it": "Arco letale"
+      }
+    },
+    {
+      "Id": "IID_リン_マーニ・カティ_通常",
+      "English": "Mani Katti",
+      "Chinese": "玛尼·卡提",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mani Katti",
+        "zh-Hans": "玛尼·卡提",
+        "zh-Hant": "瑪尼・卡提",
+        "ja": "マーニ・カティ",
+        "ko": "마니 카티",
+        "de": "Mani Katti",
+        "fr": "Mani Katti",
+        "es": "Mani Katti",
+        "it": "Mani Katti"
+      }
+    },
+    {
+      "Id": "IID_残像_マーニ・カティ",
+      "English": "Mani Katti",
+      "Chinese": "玛尼·卡提",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mani Katti",
+        "zh-Hans": "玛尼·卡提",
+        "zh-Hant": "瑪尼・卡提",
+        "ja": "マーニ・カティ",
+        "ko": "마니 카티",
+        "de": "Mani Katti",
+        "fr": "Mani Katti",
+        "es": "Mani Katti",
+        "it": "Mani Katti"
+      }
+    },
+    {
+      "Id": "IID_リン_ミュルグレ_通常",
+      "English": "Mulagir",
+      "Chinese": "妙尔葛雷",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mulagir",
+        "zh-Hans": "妙尔葛雷",
+        "zh-Hant": "妙爾葛雷",
+        "ja": "ミュルグレ",
+        "ko": "뮬그레",
+        "de": "Mulagir",
+        "fr": "Mulagir",
+        "es": "Mulagir",
+        "it": "Mulagir"
+      }
+    },
+    {
+      "Id": "IID_アイク_ハンマー_通常",
+      "English": "Hammer",
+      "Chinese": "战锤",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hammer",
+        "zh-Hans": "战锤",
+        "zh-Hant": "戰錘",
+        "ja": "ハンマー",
+        "ko": "해머",
+        "de": "Hammer",
+        "fr": "Marteau",
+        "es": "Martillo",
+        "it": "Martello"
+      }
+    },
+    {
+      "Id": "IID_アイク_ウルヴァン_通常",
+      "English": "Urvan",
+      "Chinese": "乌尔邦",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Urvan",
+        "zh-Hans": "乌尔邦",
+        "zh-Hant": "烏爾邦",
+        "ja": "ウルヴァン",
+        "ko": "우르반",
+        "de": "Urvan",
+        "fr": "Urvan",
+        "es": "Urvan",
+        "it": "Urvan"
+      }
+    },
+    {
+      "Id": "IID_アイク_ラグネル_通常",
+      "English": "Ragnell",
+      "Chinese": "瑞格内尔",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Ragnell",
+        "zh-Hans": "瑞格内尔",
+        "zh-Hant": "瑞格內爾",
+        "ja": "ラグネル",
+        "ko": "라그넬",
+        "de": "Ragnell",
+        "fr": "Ragnell",
+        "es": "Ragnell",
+        "it": "Ragnell"
+      }
+    },
+    {
+      "Id": "IID_ベレト_ブルトガング_通常",
+      "English": "Blutgang",
+      "Chinese": "布鲁托刚格",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Blutgang",
+        "zh-Hans": "布鲁托刚格",
+        "zh-Hant": "布魯托剛格",
+        "ja": "ブルトガング",
+        "ko": "불트강",
+        "de": "Blutgang",
+        "fr": "Blutgang",
+        "es": "Blutgang",
+        "it": "Blutgang"
+      }
+    },
+    {
+      "Id": "IID_ベレト_ヴァジュラ_通常",
+      "English": "Vajra-Mushti",
+      "Chinese": "降魔杵",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Vajra-Mushti",
+        "zh-Hans": "降魔杵",
+        "zh-Hant": "降魔杵",
+        "ja": "ヴァジュラ",
+        "ko": "바즈라",
+        "de": "Vajra-Mushti",
+        "fr": "Vajra-Mushti",
+        "es": "Vajra-Mushti",
+        "it": "Vajra-Mushti"
+      }
+    },
+    {
+      "Id": "IID_ベレト_天帝の覇剣_通常",
+      "English": "Sword of the Creator",
+      "Chinese": "天帝之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Sword of the Creator",
+        "zh-Hans": "天帝之剑",
+        "zh-Hant": "天帝之劍",
+        "ja": "天帝の剣",
+        "ko": "천제의 검",
+        "de": "Schwert des Schöpfers",
+        "fr": "Épée du Créateur",
+        "es": "Espada de la Creación",
+        "it": "Sp. Creazione"
+      }
+    },
+    {
+      "Id": "IID_カムイ_逆刀_通常",
+      "English": "Dual Katana",
+      "Chinese": "逆刀",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Dual Katana",
+        "zh-Hans": "逆刀",
+        "zh-Hant": "逆刀",
+        "ja": "逆刀",
+        "ko": "역도",
+        "de": "Doppelkatana",
+        "fr": "Katana double",
+        "es": "Katana doble",
+        "it": "Katana doppia"
+      }
+    },
+    {
+      "Id": "IID_カムイ_飛刀_通常",
+      "English": "Wakizashi",
+      "Chinese": "飞刀",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wakizashi",
+        "zh-Hans": "飞刀",
+        "zh-Hant": "飛刀",
+        "ja": "飛刀",
+        "ko": "비도",
+        "de": "Wakizashi",
+        "fr": "Wakizashi",
+        "es": "Wakizashi",
+        "it": "Wakizashi"
+      }
+    },
+    {
+      "Id": "IID_カムイ_夜刀神_通常",
+      "English": "Yato",
+      "Chinese": "夜刀神",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Yato",
+        "zh-Hans": "夜刀神",
+        "zh-Hant": "夜刀神",
+        "ja": "夜刀神",
+        "ko": "야신도",
+        "de": "Yato",
+        "fr": "Yato",
+        "es": "Yato",
+        "it": "Yato"
+      }
+    },
+    {
+      "Id": "IID_エイリーク_レイピア_通常",
+      "English": "Rapier",
+      "Chinese": "刺剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rapier",
+        "zh-Hans": "刺剑",
+        "zh-Hant": "刺劍",
+        "ja": "レイピア",
+        "ko": "레이피어",
+        "de": "Rapier",
+        "fr": "Rapière",
+        "es": "Estoque",
+        "it": "Spadino"
+      }
+    },
+    {
+      "Id": "IID_エイリーク_かぜの剣_通常",
+      "English": "Wind Sword",
+      "Chinese": "风之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wind Sword",
+        "zh-Hans": "风之剑",
+        "zh-Hant": "風之劍",
+        "ja": "かぜの剣",
+        "ko": "바람의 검",
+        "de": "Windschwert",
+        "fr": "Eolame",
+        "es": "Espada de viento",
+        "it": "Spada di vento"
+      }
+    },
+    {
+      "Id": "IID_エイリーク_ジークリンデ_通常",
+      "English": "Sieglinde",
+      "Chinese": "齐格林德",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Sieglinde",
+        "zh-Hans": "齐格林德",
+        "zh-Hant": "齊格林德",
+        "ja": "ジークリンデ",
+        "ko": "지크린데",
+        "de": "Sieglinde",
+        "fr": "Sieglinde",
+        "es": "Sieglinde",
+        "it": "Sieglinde"
+      }
+    },
+    {
+      "Id": "IID_リュール_オリゴルディア_通常",
+      "English": "Oligoludia",
+      "Chinese": "欧里格帝亚",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Oligoludia",
+        "zh-Hans": "欧里格帝亚",
+        "zh-Hant": "歐里格帝亞",
+        "ja": "オリゴルディア",
+        "ko": "오리고르디아",
+        "de": "Oligoludia",
+        "fr": "Oligoludia",
+        "es": "Oligoludia",
+        "it": "Oligoludia"
+      }
+    },
+    {
+      "Id": "IID_リュール_竜神の法_通常",
+      "English": "Dragon's Fist",
+      "Chinese": "神龙体术",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Dragon's Fist",
+        "zh-Hans": "神龙体术",
+        "zh-Hant": "神龍體術",
+        "ja": "神竜の体術",
+        "ko": "신룡 체술",
+        "de": "Drachenfaust",
+        "fr": "Poing du dragon",
+        "es": "Puño de dragón",
+        "it": "Pugno di drago"
+      }
+    },
+    {
+      "Id": "IID_リュール_ライラシオン_通常",
+      "English": "Lyrátion",
+      "Chinese": "莱拉西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lyrátion",
+        "zh-Hans": "莱拉西昂",
+        "zh-Hant": "萊拉西昂",
+        "ja": "ライラシオン",
+        "ko": "라일라시온",
+        "de": "Lyrátion",
+        "fr": "Lyrátion",
+        "es": "Lyrátion",
+        "it": "Lyrátion"
+      }
+    },
+    {
+      "Id": "IID_三級長_アイムール_通常",
+      "English": "Aymr",
+      "Chinese": "艾姆鲁",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Aymr",
+        "zh-Hans": "艾姆鲁",
+        "zh-Hant": "艾姆魯",
+        "ja": "アイムール",
+        "ko": "아이무르",
+        "de": "Aymr",
+        "fr": "Aymr",
+        "es": "Aymr",
+        "it": "Aymr"
+      }
+    },
+    {
+      "Id": "IID_三級長_アラドヴァル_通常",
+      "English": "Areadbhar",
+      "Chinese": "阿莱德巴尔",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Areadbhar",
+        "zh-Hans": "阿莱德巴尔",
+        "zh-Hant": "阿萊德巴爾",
+        "ja": "アラドヴァル",
+        "ko": "아라드바르",
+        "de": "Areadbhar",
+        "fr": "Areadbhar",
+        "es": "Areadbhar",
+        "it": "Areadbhar"
+      }
+    },
+    {
+      "Id": "IID_三級長_フェイルノート_通常",
+      "English": "Failnaught",
+      "Chinese": "费鲁诺特",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Failnaught",
+        "zh-Hans": "费鲁诺特",
+        "zh-Hant": "費魯諾特",
+        "ja": "フェイルノート",
+        "ko": "페일노트",
+        "de": "Nimmerfehl",
+        "fr": "Infaillible",
+        "es": "El Infalible",
+        "it": "Infallibile"
+      }
+    },
+    {
+      "Id": "IID_チキ_つめ_通常",
+      "English": "Eternal Claw",
+      "Chinese": "永恒之爪",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eternal Claw",
+        "zh-Hans": "永恒之爪",
+        "zh-Hant": "永恆之爪",
+        "ja": "エターナルクロー",
+        "ko": "이터널 클로",
+        "de": "Ewige Klaue",
+        "fr": "Griffe éternelle",
+        "es": "Garra eterna",
+        "it": "Artiglio eterno"
+      }
+    },
+    {
+      "Id": "IID_チキ_つめ_通常_G001_最弱",
+      "English": "Eternal Claw",
+      "Chinese": "永恒之爪",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eternal Claw",
+        "zh-Hans": "永恒之爪",
+        "zh-Hant": "永恆之爪",
+        "ja": "エターナルクロー",
+        "ko": "이터널 클로",
+        "de": "Ewige Klaue",
+        "fr": "Griffe éternelle",
+        "es": "Garra eterna",
+        "it": "Artiglio eterno"
+      }
+    },
+    {
+      "Id": "IID_チキ_つめ_通常_G001_弱",
+      "English": "Eternal Claw",
+      "Chinese": "永恒之爪",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eternal Claw",
+        "zh-Hans": "永恒之爪",
+        "zh-Hant": "永恆之爪",
+        "ja": "エターナルクロー",
+        "ko": "이터널 클로",
+        "de": "Ewige Klaue",
+        "fr": "Griffe éternelle",
+        "es": "Garra eterna",
+        "it": "Artiglio eterno"
+      }
+    },
+    {
+      "Id": "IID_チキ_つめ_通常_G001_微弱",
+      "English": "Eternal Claw",
+      "Chinese": "永恒之爪",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eternal Claw",
+        "zh-Hans": "永恒之爪",
+        "zh-Hant": "永恆之爪",
+        "ja": "エターナルクロー",
+        "ko": "이터널 클로",
+        "de": "Ewige Klaue",
+        "fr": "Griffe éternelle",
+        "es": "Garra eterna",
+        "it": "Artiglio eterno"
+      }
+    },
+    {
+      "Id": "IID_チキ_つめ_通常_G001_強",
+      "English": "Eternal Claw",
+      "Chinese": "永恒之爪",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eternal Claw",
+        "zh-Hans": "永恒之爪",
+        "zh-Hant": "永恆之爪",
+        "ja": "エターナルクロー",
+        "ko": "이터널 클로",
+        "de": "Ewige Klaue",
+        "fr": "Griffe éternelle",
+        "es": "Garra eterna",
+        "it": "Artiglio eterno"
+      }
+    },
+    {
+      "Id": "IID_チキ_つめ_通常_G001_最強",
+      "English": "Eternal Claw",
+      "Chinese": "永恒之爪",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Eternal Claw",
+        "zh-Hans": "永恒之爪",
+        "zh-Hant": "永恆之爪",
+        "ja": "エターナルクロー",
+        "ko": "이터널 클로",
+        "de": "Ewige Klaue",
+        "fr": "Griffe éternelle",
+        "es": "Garra eterna",
+        "it": "Artiglio eterno"
+      }
+    },
+    {
+      "Id": "IID_チキ_しっぽ_通常",
+      "English": "Tail Smash",
+      "Chinese": "龙尾猛击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tail Smash",
+        "zh-Hans": "龙尾猛击",
+        "zh-Hant": "龍尾猛擊",
+        "ja": "スマッシュテイル",
+        "ko": "스매시 테일",
+        "de": "Tikischlag",
+        "fr": "Coup caudal",
+        "es": "Coletazo",
+        "it": "Schianto di coda"
+      }
+    },
+    {
+      "Id": "IID_チキ_しっぽ_通常_G001_最弱",
+      "English": "Tail Smash",
+      "Chinese": "龙尾猛击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tail Smash",
+        "zh-Hans": "龙尾猛击",
+        "zh-Hant": "龍尾猛擊",
+        "ja": "スマッシュテイル",
+        "ko": "스매시 테일",
+        "de": "Tikischlag",
+        "fr": "Coup caudal",
+        "es": "Coletazo",
+        "it": "Schianto di coda"
+      }
+    },
+    {
+      "Id": "IID_チキ_しっぽ_通常_G001_弱",
+      "English": "Tail Smash",
+      "Chinese": "龙尾猛击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tail Smash",
+        "zh-Hans": "龙尾猛击",
+        "zh-Hant": "龍尾猛擊",
+        "ja": "スマッシュテイル",
+        "ko": "스매시 테일",
+        "de": "Tikischlag",
+        "fr": "Coup caudal",
+        "es": "Coletazo",
+        "it": "Schianto di coda"
+      }
+    },
+    {
+      "Id": "IID_チキ_しっぽ_通常_G001_微強",
+      "English": "Tail Smash",
+      "Chinese": "龙尾猛击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tail Smash",
+        "zh-Hans": "龙尾猛击",
+        "zh-Hant": "龍尾猛擊",
+        "ja": "スマッシュテイル",
+        "ko": "스매시 테일",
+        "de": "Tikischlag",
+        "fr": "Coup caudal",
+        "es": "Coletazo",
+        "it": "Schianto di coda"
+      }
+    },
+    {
+      "Id": "IID_チキ_しっぽ_通常_G001_強",
+      "English": "Tail Smash",
+      "Chinese": "龙尾猛击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tail Smash",
+        "zh-Hans": "龙尾猛击",
+        "zh-Hant": "龍尾猛擊",
+        "ja": "スマッシュテイル",
+        "ko": "스매시 테일",
+        "de": "Tikischlag",
+        "fr": "Coup caudal",
+        "es": "Coletazo",
+        "it": "Schianto di coda"
+      }
+    },
+    {
+      "Id": "IID_チキ_しっぽ_通常_G001_最強",
+      "English": "Tail Smash",
+      "Chinese": "龙尾猛击",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Tail Smash",
+        "zh-Hans": "龙尾猛击",
+        "zh-Hant": "龍尾猛擊",
+        "ja": "スマッシュテイル",
+        "ko": "스매시 테일",
+        "de": "Tikischlag",
+        "fr": "Coup caudal",
+        "es": "Coletazo",
+        "it": "Schianto di coda"
+      }
+    },
+    {
+      "Id": "IID_チキ_ブレス_通常",
+      "English": "Fog Breath",
+      "Chinese": "雾之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fog Breath",
+        "zh-Hans": "雾之吐息",
+        "zh-Hant": "霧之吐息",
+        "ja": "きりのブレス",
+        "ko": "안개의 브레스",
+        "de": "Dunstatem",
+        "fr": "Souffle embrumé",
+        "es": "Soplo brumoso",
+        "it": "Alito di nebbia"
+      }
+    },
+    {
+      "Id": "IID_チキ_ブレス_通常_G001_最弱",
+      "English": "Fog Breath",
+      "Chinese": "雾之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fog Breath",
+        "zh-Hans": "雾之吐息",
+        "zh-Hant": "霧之吐息",
+        "ja": "きりのブレス",
+        "ko": "안개의 브레스",
+        "de": "Dunstatem",
+        "fr": "Souffle embrumé",
+        "es": "Soplo brumoso",
+        "it": "Alito di nebbia"
+      }
+    },
+    {
+      "Id": "IID_チキ_ブレス_通常_G001_弱",
+      "English": "Fog Breath",
+      "Chinese": "雾之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fog Breath",
+        "zh-Hans": "雾之吐息",
+        "zh-Hant": "霧之吐息",
+        "ja": "きりのブレス",
+        "ko": "안개의 브레스",
+        "de": "Dunstatem",
+        "fr": "Souffle embrumé",
+        "es": "Soplo brumoso",
+        "it": "Alito di nebbia"
+      }
+    },
+    {
+      "Id": "IID_チキ_ブレス_通常_G001_強",
+      "English": "Fog Breath",
+      "Chinese": "雾之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fog Breath",
+        "zh-Hans": "雾之吐息",
+        "zh-Hant": "霧之吐息",
+        "ja": "きりのブレス",
+        "ko": "안개의 브레스",
+        "de": "Dunstatem",
+        "fr": "Souffle embrumé",
+        "es": "Soplo brumoso",
+        "it": "Alito di nebbia"
+      }
+    },
+    {
+      "Id": "IID_チキ_ブレス_通常_G001_最強",
+      "English": "Fog Breath",
+      "Chinese": "雾之吐息",
+      "Kind": 9,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fog Breath",
+        "zh-Hans": "雾之吐息",
+        "zh-Hant": "霧之吐息",
+        "ja": "きりのブレス",
+        "ko": "안개의 브레스",
+        "de": "Dunstatem",
+        "fr": "Souffle embrumé",
+        "es": "Soplo brumoso",
+        "it": "Alito di nebbia"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_低命中",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_最弱_低命中",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_最弱",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_弱_低命中",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_弱",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_強",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル_通常_G002_最強",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ルーンソード_通常",
+      "English": "Runesword",
+      "Chinese": "卢恩剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Runesword",
+        "zh-Hans": "卢恩剑",
+        "zh-Hant": "盧恩劍",
+        "ja": "ルーンソード",
+        "ko": "룬 소드",
+        "de": "Runenschwert",
+        "fr": "Épée runique",
+        "es": "Espada rúnica",
+        "it": "Spada runica"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ルーンソード_通常_G002_最弱",
+      "English": "Runesword",
+      "Chinese": "卢恩剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Runesword",
+        "zh-Hans": "卢恩剑",
+        "zh-Hant": "盧恩劍",
+        "ja": "ルーンソード",
+        "ko": "룬 소드",
+        "de": "Runenschwert",
+        "fr": "Épée runique",
+        "es": "Espada rúnica",
+        "it": "Spada runica"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ルーンソード_通常_G002_弱",
+      "English": "Runesword",
+      "Chinese": "卢恩剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Runesword",
+        "zh-Hans": "卢恩剑",
+        "zh-Hant": "盧恩劍",
+        "ja": "ルーンソード",
+        "ko": "룬 소드",
+        "de": "Runenschwert",
+        "fr": "Épée runique",
+        "es": "Espada rúnica",
+        "it": "Spada runica"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ルーンソード_通常_G002_強",
+      "English": "Runesword",
+      "Chinese": "卢恩剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Runesword",
+        "zh-Hans": "卢恩剑",
+        "zh-Hant": "盧恩劍",
+        "ja": "ルーンソード",
+        "ko": "룬 소드",
+        "de": "Runenschwert",
+        "fr": "Épée runique",
+        "es": "Espada rúnica",
+        "it": "Spada runica"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ルーンソード_通常_G002_最強",
+      "English": "Runesword",
+      "Chinese": "卢恩剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Runesword",
+        "zh-Hans": "卢恩剑",
+        "zh-Hant": "盧恩劍",
+        "ja": "ルーンソード",
+        "ko": "룬 소드",
+        "de": "Runenschwert",
+        "fr": "Épée runique",
+        "es": "Espada rúnica",
+        "it": "Spada runica"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常_G002_最弱_低命中",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常_G002_最弱",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常_G002_弱_低命中",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常_G002_弱",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常_G002_微弱_低命中",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_アルマーズ_通常_G002_微弱",
+      "English": "Armads",
+      "Chinese": "阿尔玛兹",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Armads",
+        "zh-Hans": "阿尔玛兹",
+        "zh-Hant": "阿爾瑪茲",
+        "ja": "アルマーズ",
+        "ko": "알마즈",
+        "de": "Armads",
+        "fr": "Armadès",
+        "es": "Armads",
+        "it": "Fragore"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_フリズスキャルヴ_通常",
+      "English": "Hliðskjálf ",
+      "Chinese": "至高王座之杖",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hliðskjálf ",
+        "zh-Hans": "至高王座之杖",
+        "zh-Hant": "至高王座之杖",
+        "ja": "フリズスキャルヴ",
+        "ko": "흘리드스캴프",
+        "de": "Hliðskjálf",
+        "fr": "Hliðskjálf",
+        "es": "Hliðskjálf",
+        "it": "Hliðskjálf"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_フリズスキャルヴ_通常_G003_最弱",
+      "English": "Hliðskjálf ",
+      "Chinese": "至高王座之杖",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hliðskjálf ",
+        "zh-Hans": "至高王座之杖",
+        "zh-Hant": "至高王座之杖",
+        "ja": "フリズスキャルヴ",
+        "ko": "흘리드스캴프",
+        "de": "Hliðskjálf",
+        "fr": "Hliðskjálf",
+        "es": "Hliðskjálf",
+        "it": "Hliðskjálf"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_フリズスキャルヴ_通常_G003_弱",
+      "English": "Hliðskjálf ",
+      "Chinese": "至高王座之杖",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hliðskjálf ",
+        "zh-Hans": "至高王座之杖",
+        "zh-Hant": "至高王座之杖",
+        "ja": "フリズスキャルヴ",
+        "ko": "흘리드스캴프",
+        "de": "Hliðskjálf",
+        "fr": "Hliðskjálf",
+        "es": "Hliðskjálf",
+        "it": "Hliðskjálf"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_フリズスキャルヴ_通常_G003_微弱",
+      "English": "Hliðskjálf ",
+      "Chinese": "至高王座之杖",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hliðskjálf ",
+        "zh-Hans": "至高王座之杖",
+        "zh-Hant": "至高王座之杖",
+        "ja": "フリズスキャルヴ",
+        "ko": "흘리드스캴프",
+        "de": "Hliðskjálf",
+        "fr": "Hliðskjálf",
+        "es": "Hliðskjálf",
+        "it": "Hliðskjálf"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_フリズスキャルヴ_通常_G003_強",
+      "English": "Hliðskjálf ",
+      "Chinese": "至高王座之杖",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Hliðskjálf ",
+        "zh-Hans": "至高王座之杖",
+        "zh-Hant": "至高王座之杖",
+        "ja": "フリズスキャルヴ",
+        "ko": "흘리드스캴프",
+        "de": "Hliðskjálf",
+        "fr": "Hliðskjálf",
+        "es": "Hliðskjálf",
+        "it": "Hliðskjálf"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_リザーブ＋_通常",
+      "English": "Fortify+",
+      "Chinese": "全体圣疗+",
+      "Kind": 7,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Fortify+",
+        "zh-Hans": "全体圣疗+",
+        "zh-Hant": "全體聖療+",
+        "ja": "リザーブ＋",
+        "ko": "리저브+",
+        "de": "Stärkung+",
+        "fr": "Halo +",
+        "es": "Fortalecer +",
+        "it": "Balsamo+"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_エリヴァーガル_通常",
+      "English": "Élivágar",
+      "Chinese": "冰之波",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Élivágar",
+        "zh-Hans": "冰之波",
+        "zh-Hant": "冰之波",
+        "ja": "エリヴァーガル",
+        "ko": "엘리바가르",
+        "de": "Élivágar",
+        "fr": "Élivágar",
+        "es": "Élivágar",
+        "it": "Élivágar"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_エリヴァーガル_通常_G003_最弱",
+      "English": "Élivágar",
+      "Chinese": "冰之波",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Élivágar",
+        "zh-Hans": "冰之波",
+        "zh-Hant": "冰之波",
+        "ja": "エリヴァーガル",
+        "ko": "엘리바가르",
+        "de": "Élivágar",
+        "fr": "Élivágar",
+        "es": "Élivágar",
+        "it": "Élivágar"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_エリヴァーガル_通常_G003_弱",
+      "English": "Élivágar",
+      "Chinese": "冰之波",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Élivágar",
+        "zh-Hans": "冰之波",
+        "zh-Hant": "冰之波",
+        "ja": "エリヴァーガル",
+        "ko": "엘리바가르",
+        "de": "Élivágar",
+        "fr": "Élivágar",
+        "es": "Élivágar",
+        "it": "Élivágar"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_エリヴァーガル_通常_G003_微弱",
+      "English": "Élivágar",
+      "Chinese": "冰之波",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Élivágar",
+        "zh-Hans": "冰之波",
+        "zh-Hant": "冰之波",
+        "ja": "エリヴァーガル",
+        "ko": "엘리바가르",
+        "de": "Élivágar",
+        "fr": "Élivágar",
+        "es": "Élivágar",
+        "it": "Élivágar"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_エリヴァーガル_通常_G003_微強",
+      "English": "Élivágar",
+      "Chinese": "冰之波",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Élivágar",
+        "zh-Hans": "冰之波",
+        "zh-Hant": "冰之波",
+        "ja": "エリヴァーガル",
+        "ko": "엘리바가르",
+        "de": "Élivágar",
+        "fr": "Élivágar",
+        "es": "Élivágar",
+        "it": "Élivágar"
+      }
+    },
+    {
+      "Id": "IID_ヴェロニカ_エリヴァーガル_通常_G003_強",
+      "English": "Élivágar",
+      "Chinese": "冰之波",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Élivágar",
+        "zh-Hans": "冰之波",
+        "zh-Hant": "冰之波",
+        "ja": "エリヴァーガル",
+        "ko": "엘리바가르",
+        "de": "Élivágar",
+        "fr": "Élivágar",
+        "es": "Élivágar",
+        "it": "Élivágar"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_サンダーストーム_通常",
+      "English": "Bolting",
+      "Chinese": "雷暴",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bolting",
+        "zh-Hans": "雷暴",
+        "zh-Hant": "雷暴",
+        "ja": "サンダーストーム",
+        "ko": "선더스톰",
+        "de": "Gewitter",
+        "fr": "Fulguration",
+        "es": "Rayos",
+        "it": "Tempesta"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_サンダーストーム_通常_G004_弱",
+      "English": "Bolting",
+      "Chinese": "雷暴",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bolting",
+        "zh-Hans": "雷暴",
+        "zh-Hant": "雷暴",
+        "ja": "サンダーストーム",
+        "ko": "선더스톰",
+        "de": "Gewitter",
+        "fr": "Fulguration",
+        "es": "Rayos",
+        "it": "Tempesta"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_サンダーストーム_通常_G004_最弱",
+      "English": "Bolting",
+      "Chinese": "雷暴",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bolting",
+        "zh-Hans": "雷暴",
+        "zh-Hant": "雷暴",
+        "ja": "サンダーストーム",
+        "ko": "선더스톰",
+        "de": "Gewitter",
+        "fr": "Fulguration",
+        "es": "Rayos",
+        "it": "Tempesta"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_マジックシールド_通常",
+      "English": "Reflect",
+      "Chinese": "魔法防护罩",
+      "Kind": 7,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Reflect",
+        "zh-Hans": "魔法防护罩",
+        "zh-Hant": "魔法防護罩",
+        "ja": "マジックシールド",
+        "ko": "매직 실드",
+        "de": "Reflektion",
+        "fr": "Bouclier magique",
+        "es": "Escudo mágico",
+        "it": "Scudo magico"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_レクスカリバー_通常",
+      "English": "Rexcalibur",
+      "Chinese": "列克斯卡利伯",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rexcalibur",
+        "zh-Hans": "列克斯卡利伯",
+        "zh-Hant": "列克斯卡利伯",
+        "ja": "レクスカリバー",
+        "ko": "렉스칼리버",
+        "de": "Rexcalibur",
+        "fr": "Fimbulvetr",
+        "es": "Rexcalibur",
+        "it": "Rexcalibur"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_レクスカリバー_通常_G004_微弱",
+      "English": "Rexcalibur",
+      "Chinese": "列克斯卡利伯",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rexcalibur",
+        "zh-Hans": "列克斯卡利伯",
+        "zh-Hant": "列克斯卡利伯",
+        "ja": "レクスカリバー",
+        "ko": "렉스칼리버",
+        "de": "Rexcalibur",
+        "fr": "Fimbulvetr",
+        "es": "Rexcalibur",
+        "it": "Rexcalibur"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_レクスカリバー_通常_G004_弱",
+      "English": "Rexcalibur",
+      "Chinese": "列克斯卡利伯",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rexcalibur",
+        "zh-Hans": "列克斯卡利伯",
+        "zh-Hant": "列克斯卡利伯",
+        "ja": "レクスカリバー",
+        "ko": "렉스칼리버",
+        "de": "Rexcalibur",
+        "fr": "Fimbulvetr",
+        "es": "Rexcalibur",
+        "it": "Rexcalibur"
+      }
+    },
+    {
+      "Id": "IID_セネリオ_レクスカリバー_通常_G004_最弱",
+      "English": "Rexcalibur",
+      "Chinese": "列克斯卡利伯",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Rexcalibur",
+        "zh-Hans": "列克斯卡利伯",
+        "zh-Hant": "列克斯卡利伯",
+        "ja": "レクスカリバー",
+        "ko": "렉스칼리버",
+        "de": "Rexcalibur",
+        "fr": "Fimbulvetr",
+        "es": "Rexcalibur",
+        "it": "Rexcalibur"
+      }
+    },
+    {
+      "Id": "IID_カミラ_ボルトアクス_通常",
+      "English": "Bolt Axe",
+      "Chinese": "闪雷斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bolt Axe",
+        "zh-Hans": "闪雷斧",
+        "zh-Hant": "閃雷斧",
+        "ja": "ボルトアクス",
+        "ko": "볼트 액스",
+        "de": "Donneraxt",
+        "fr": "Tonnerre",
+        "es": "Hacha rayo",
+        "it": "Ascia lampo"
+      }
+    },
+    {
+      "Id": "IID_カミラ_ボルトアクス_通常_G005",
+      "English": "Bolt Axe",
+      "Chinese": "闪雷斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bolt Axe",
+        "zh-Hans": "闪雷斧",
+        "zh-Hant": "閃雷斧",
+        "ja": "ボルトアクス",
+        "ko": "볼트 액스",
+        "de": "Donneraxt",
+        "fr": "Tonnerre",
+        "es": "Hacha rayo",
+        "it": "Ascia lampo"
+      }
+    },
+    {
+      "Id": "IID_カミラ_ボルトアクス_通常_G005_弱",
+      "English": "Bolt Axe",
+      "Chinese": "闪雷斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Bolt Axe",
+        "zh-Hans": "闪雷斧",
+        "zh-Hant": "閃雷斧",
+        "ja": "ボルトアクス",
+        "ko": "볼트 액스",
+        "de": "Donneraxt",
+        "fr": "Tonnerre",
+        "es": "Hacha rayo",
+        "it": "Ascia lampo"
+      }
+    },
+    {
+      "Id": "IID_カミラ_ライトニング_通常",
+      "English": "Lightning",
+      "Chinese": "闪电",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lightning",
+        "zh-Hans": "闪电",
+        "zh-Hant": "閃電",
+        "ja": "ライトニング",
+        "ko": "라이트닝",
+        "de": "Blitz",
+        "fr": "Lumière",
+        "es": "Relámpago",
+        "it": "Lampo"
+      }
+    },
+    {
+      "Id": "IID_カミラ_ライトニング_通常_G005_弱",
+      "English": "Lightning",
+      "Chinese": "闪电",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lightning",
+        "zh-Hans": "闪电",
+        "zh-Hant": "閃電",
+        "ja": "ライトニング",
+        "ko": "라이트닝",
+        "de": "Blitz",
+        "fr": "Lumière",
+        "es": "Relámpago",
+        "it": "Lampo"
+      }
+    },
+    {
+      "Id": "IID_カミラ_カミラの艶斧_通常",
+      "English": "Camilla's Axe",
+      "Chinese": "卡美拉的艳斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Camilla's Axe",
+        "zh-Hans": "卡美拉的艳斧",
+        "zh-Hant": "卡美拉的豔斧",
+        "ja": "カミラの艶斧",
+        "ko": "카밀라의 도끼",
+        "de": "Camillas Axt",
+        "fr": "Hache de Camilla",
+        "es": "Hacha Camilla",
+        "it": "Ascia di Camilla"
+      }
+    },
+    {
+      "Id": "IID_カミラ_カミラの艶斧_通常_G005_微弱",
+      "English": "Camilla's Axe",
+      "Chinese": "卡美拉的艳斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Camilla's Axe",
+        "zh-Hans": "卡美拉的艳斧",
+        "zh-Hant": "卡美拉的豔斧",
+        "ja": "カミラの艶斧",
+        "ko": "카밀라의 도끼",
+        "de": "Camillas Axt",
+        "fr": "Hache de Camilla",
+        "es": "Hacha Camilla",
+        "it": "Ascia di Camilla"
+      }
+    },
+    {
+      "Id": "IID_カミラ_カミラの艶斧_通常_G005_弱",
+      "English": "Camilla's Axe",
+      "Chinese": "卡美拉的艳斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Camilla's Axe",
+        "zh-Hans": "卡美拉的艳斧",
+        "zh-Hant": "卡美拉的豔斧",
+        "ja": "カミラの艶斧",
+        "ko": "카밀라의 도끼",
+        "de": "Camillas Axt",
+        "fr": "Hache de Camilla",
+        "es": "Hacha Camilla",
+        "it": "Ascia di Camilla"
+      }
+    },
+    {
+      "Id": "IID_カミラ_カミラの艶斧_通常_G005_最弱",
+      "English": "Camilla's Axe",
+      "Chinese": "卡美拉的艳斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Camilla's Axe",
+        "zh-Hans": "卡美拉的艳斧",
+        "zh-Hant": "卡美拉的豔斧",
+        "ja": "カミラの艶斧",
+        "ko": "카밀라의 도끼",
+        "de": "Camillas Axt",
+        "fr": "Hache de Camilla",
+        "es": "Hacha Camilla",
+        "it": "Ascia di Camilla"
+      }
+    },
+    {
+      "Id": "IID_クロム_サンダーソード_通常",
+      "English": "Levin Sword",
+      "Chinese": "雷电剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Levin Sword",
+        "zh-Hans": "雷电剑",
+        "zh-Hant": "雷電劍",
+        "ja": "サンダーソード",
+        "ko": "선더 소드",
+        "de": "Donnerschwert",
+        "fr": "Épée orage",
+        "es": "Espada trueno",
+        "it": "Spada folgore"
+      }
+    },
+    {
+      "Id": "IID_クロム_サンダーソード_通常_G005_弱",
+      "English": "Levin Sword",
+      "Chinese": "雷电剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Levin Sword",
+        "zh-Hans": "雷电剑",
+        "zh-Hant": "雷電劍",
+        "ja": "サンダーソード",
+        "ko": "선더 소드",
+        "de": "Donnerschwert",
+        "fr": "Épée orage",
+        "es": "Espada trueno",
+        "it": "Spada folgore"
+      }
+    },
+    {
+      "Id": "IID_クロム_サンダーソード_通常_G005_最弱",
+      "English": "Levin Sword",
+      "Chinese": "雷电剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Levin Sword",
+        "zh-Hans": "雷电剑",
+        "zh-Hant": "雷電劍",
+        "ja": "サンダーソード",
+        "ko": "선더 소드",
+        "de": "Donnerschwert",
+        "fr": "Épée orage",
+        "es": "Espada trueno",
+        "it": "Spada folgore"
+      }
+    },
+    {
+      "Id": "IID_クロム_トロン_通常",
+      "English": "Thoron",
+      "Chinese": "托隆",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Thoron",
+        "zh-Hans": "托隆",
+        "zh-Hant": "托隆",
+        "ja": "トロン",
+        "ko": "트론",
+        "de": "Thoron",
+        "fr": "Thoron",
+        "es": "Thoron",
+        "it": "Thoron"
+      }
+    },
+    {
+      "Id": "IID_クロム_トロン_通常_G006_微弱",
+      "English": "Thoron",
+      "Chinese": "托隆",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Thoron",
+        "zh-Hans": "托隆",
+        "zh-Hant": "托隆",
+        "ja": "トロン",
+        "ko": "트론",
+        "de": "Thoron",
+        "fr": "Thoron",
+        "es": "Thoron",
+        "it": "Thoron"
+      }
+    },
+    {
+      "Id": "IID_クロム_トロン_通常_G006_弱",
+      "English": "Thoron",
+      "Chinese": "托隆",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Thoron",
+        "zh-Hans": "托隆",
+        "zh-Hant": "托隆",
+        "ja": "トロン",
+        "ko": "트론",
+        "de": "Thoron",
+        "fr": "Thoron",
+        "es": "Thoron",
+        "it": "Thoron"
+      }
+    },
+    {
+      "Id": "IID_クロム_トロン_通常_G006_最弱",
+      "English": "Thoron",
+      "Chinese": "托隆",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Thoron",
+        "zh-Hans": "托隆",
+        "zh-Hant": "托隆",
+        "ja": "トロン",
+        "ko": "트론",
+        "de": "Thoron",
+        "fr": "Thoron",
+        "es": "Thoron",
+        "it": "Thoron"
+      }
+    },
+    {
+      "Id": "IID_クロム_神剣ファルシオン_通常",
+      "English": "Falchion",
+      "Chinese": "神剑法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Falchion",
+        "zh-Hans": "神剑法尔西昂",
+        "zh-Hant": "神劍法爾西昂",
+        "ja": "神剣ファルシオン",
+        "ko": "신검 팔시온",
+        "de": "Falchion",
+        "fr": "Falchion",
+        "es": "Falchion",
+        "it": "Falchion"
+      }
+    },
+    {
+      "Id": "IID_クロム_神剣ファルシオン_通常_G006_微弱",
+      "English": "Falchion",
+      "Chinese": "神剑法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Falchion",
+        "zh-Hans": "神剑法尔西昂",
+        "zh-Hant": "神劍法爾西昂",
+        "ja": "神剣ファルシオン",
+        "ko": "신검 팔시온",
+        "de": "Falchion",
+        "fr": "Falchion",
+        "es": "Falchion",
+        "it": "Falchion"
+      }
+    },
+    {
+      "Id": "IID_クロム_神剣ファルシオン_通常_G006_弱",
+      "English": "Falchion",
+      "Chinese": "神剑法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Falchion",
+        "zh-Hans": "神剑法尔西昂",
+        "zh-Hant": "神劍法爾西昂",
+        "ja": "神剣ファルシオン",
+        "ko": "신검 팔시온",
+        "de": "Falchion",
+        "fr": "Falchion",
+        "es": "Falchion",
+        "it": "Falchion"
+      }
+    },
+    {
+      "Id": "IID_クロム_神剣ファルシオン_通常_G006_最弱",
+      "English": "Falchion",
+      "Chinese": "神剑法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Falchion",
+        "zh-Hans": "神剑法尔西昂",
+        "zh-Hant": "神劍法爾西昂",
+        "ja": "神剣ファルシオン",
+        "ko": "신검 팔시온",
+        "de": "Falchion",
+        "fr": "Falchion",
+        "es": "Falchion",
+        "it": "Falchion"
+      }
+    },
+    {
+      "Id": "IID_リーフ_ひかりの剣＋_通常",
+      "English": "Light Brand",
+      "Chinese": "光之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Light Brand",
+        "zh-Hans": "光之剑",
+        "zh-Hant": "光之劍",
+        "ja": "ひかりの剣",
+        "ko": "빛의 검",
+        "de": "Lichtklinge",
+        "fr": "Épée-lumière",
+        "es": "Espada luminosa",
+        "it": "Spada di luce"
+      }
+    },
+    {
+      "Id": "IID_リーフ_ひかりの剣＋＋_通常",
+      "English": "Light Brand",
+      "Chinese": "光之剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Light Brand",
+        "zh-Hans": "光之剑",
+        "zh-Hant": "光之劍",
+        "ja": "ひかりの剣",
+        "ko": "빛의 검",
+        "de": "Lichtklinge",
+        "fr": "Épée-lumière",
+        "es": "Espada luminosa",
+        "it": "Spada di luce"
+      }
+    },
+    {
+      "Id": "IID_ルキナ_裏剣ファルシオン＋_通常",
+      "English": "Parallel Falchion",
+      "Chinese": "里剑法尔西昂",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Parallel Falchion",
+        "zh-Hans": "里剑法尔西昂",
+        "zh-Hant": "裡劍法爾西昂",
+        "ja": "裏剣ファルシオン",
+        "ko": "이검 팔시온",
+        "de": "Dim.-Falchion",
+        "fr": "Xéno-Falchion",
+        "es": "Falchion linaje",
+        "it": "Falchion gemina"
+      }
+    },
+    {
+      "Id": "IID_リン_マーニ・カティ＋_通常",
+      "English": "Mani Katti",
+      "Chinese": "玛尼·卡提",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mani Katti",
+        "zh-Hans": "玛尼·卡提",
+        "zh-Hant": "瑪尼・卡提",
+        "ja": "マーニ・カティ",
+        "ko": "마니 카티",
+        "de": "Mani Katti",
+        "fr": "Mani Katti",
+        "es": "Mani Katti",
+        "it": "Mani Katti"
+      }
+    },
+    {
+      "Id": "IID_リン_マーニ・カティ＋＋_通常",
+      "English": "Mani Katti",
+      "Chinese": "玛尼·卡提",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Mani Katti",
+        "zh-Hans": "玛尼·卡提",
+        "zh-Hant": "瑪尼・卡提",
+        "ja": "マーニ・カティ",
+        "ko": "마니 카티",
+        "de": "Mani Katti",
+        "fr": "Mani Katti",
+        "es": "Mani Katti",
+        "it": "Mani Katti"
+      }
+    },
+    {
+      "Id": "IID_ベレト_ブルトガング＋_通常",
+      "English": "Blutgang",
+      "Chinese": "布鲁托刚格",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Blutgang",
+        "zh-Hans": "布鲁托刚格",
+        "zh-Hant": "布魯托剛格",
+        "ja": "ブルトガング",
+        "ko": "불트강",
+        "de": "Blutgang",
+        "fr": "Blutgang",
+        "es": "Blutgang",
+        "it": "Blutgang"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ルーンソード＋_通常",
+      "English": "Runesword",
+      "Chinese": "卢恩剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Runesword",
+        "zh-Hans": "卢恩剑",
+        "zh-Hant": "盧恩劍",
+        "ja": "ルーンソード",
+        "ko": "룬 소드",
+        "de": "Runenschwert",
+        "fr": "Épée runique",
+        "es": "Espada rúnica",
+        "it": "Spada runica"
+      }
+    },
+    {
+      "Id": "IID_クロム_サンダーソード＋_通常",
+      "English": "Levin Sword",
+      "Chinese": "雷电剑",
+      "Kind": 1,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Levin Sword",
+        "zh-Hans": "雷电剑",
+        "zh-Hant": "雷電劍",
+        "ja": "サンダーソード",
+        "ko": "선더 소드",
+        "de": "Donnerschwert",
+        "fr": "Épée orage",
+        "es": "Espada trueno",
+        "it": "Spada folgore"
+      }
+    },
+    {
+      "Id": "IID_シグルド_ゆうしゃのやり＋_通常",
+      "English": "Brave Lance",
+      "Chinese": "勇者枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Brave Lance",
+        "zh-Hans": "勇者枪",
+        "zh-Hant": "勇者槍",
+        "ja": "ゆうしゃのやり",
+        "ko": "용사의 창",
+        "de": "Kriegerlanze",
+        "fr": "Lance héros",
+        "es": "Lanza del valor",
+        "it": "Lancia forte"
+      }
+    },
+    {
+      "Id": "IID_リーフ_マスターランス＋_通常",
+      "English": "Master Lance",
+      "Chinese": "大师之枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Master Lance",
+        "zh-Hans": "大师之枪",
+        "zh-Hant": "大師之槍",
+        "ja": "マスターランス",
+        "ko": "마스터 랜스",
+        "de": "Expertenlanze",
+        "fr": "Lance ultime",
+        "es": "Lanza maestra",
+        "it": "Lancia suprema"
+      }
+    },
+    {
+      "Id": "IID_リーフ_マスターランス＋＋_通常",
+      "English": "Master Lance",
+      "Chinese": "大师之枪",
+      "Kind": 2,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Master Lance",
+        "zh-Hans": "大师之枪",
+        "zh-Hant": "大師之槍",
+        "ja": "マスターランス",
+        "ko": "마스터 랜스",
+        "de": "Expertenlanze",
+        "fr": "Lance ultime",
+        "es": "Lanza maestra",
+        "it": "Lancia suprema"
+      }
+    },
+    {
+      "Id": "IID_リーフ_キラーアクス＋_通常",
+      "English": "Killer Axe",
+      "Chinese": "必杀斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Killer Axe",
+        "zh-Hans": "必杀斧",
+        "zh-Hant": "必殺斧",
+        "ja": "キラーアクス",
+        "ko": "킬러 액스",
+        "de": "Meisteraxt",
+        "fr": "Hache létale",
+        "es": "Hacha letal",
+        "it": "Ascia letale"
+      }
+    },
+    {
+      "Id": "IID_リーフ_キラーアクス＋＋_通常",
+      "English": "Killer Axe",
+      "Chinese": "必杀斧",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Killer Axe",
+        "zh-Hans": "必杀斧",
+        "zh-Hant": "必殺斧",
+        "ja": "キラーアクス",
+        "ko": "킬러 액스",
+        "de": "Meisteraxt",
+        "fr": "Hache létale",
+        "es": "Hacha letal",
+        "it": "Ascia letale"
+      }
+    },
+    {
+      "Id": "IID_ヘクトル_ヴォルフバイル＋_通常",
+      "English": "Wolf Beil",
+      "Chinese": "沃夫拜尔",
+      "Kind": 3,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Wolf Beil",
+        "zh-Hans": "沃夫拜尔",
+        "zh-Hant": "沃夫拜爾",
+        "ja": "ヴォルフバイル",
+        "ko": "볼프 바일",
+        "de": "Wolfbeil",
+        "fr": "Wolf Beil",
+        "es": "Hacha lobo",
+        "it": "Wolfbeil"
+      }
+    },
+    {
+      "Id": "IID_リン_キラーボウ＋_通常",
+      "English": "Killer Bow",
+      "Chinese": "必杀弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Killer Bow",
+        "zh-Hans": "必杀弓",
+        "zh-Hant": "必殺弓",
+        "ja": "キラーボウ",
+        "ko": "킬러 보우",
+        "de": "Meisterbogen",
+        "fr": "Arc létal",
+        "es": "Arco letal",
+        "it": "Arco letale"
+      }
+    },
+    {
+      "Id": "IID_リン_キラーボウ＋＋_通常",
+      "English": "Killer Bow",
+      "Chinese": "必杀弓",
+      "Kind": 4,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Killer Bow",
+        "zh-Hans": "必杀弓",
+        "zh-Hant": "必殺弓",
+        "ja": "キラーボウ",
+        "ko": "킬러 보우",
+        "de": "Meisterbogen",
+        "fr": "Arc létal",
+        "es": "Arco letal",
+        "it": "Arco letale"
+      }
+    },
+    {
+      "Id": "IID_ベレト_ヴァジュラ＋_通常",
+      "English": "Vajra-Mushti",
+      "Chinese": "降魔杵",
+      "Kind": 8,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Vajra-Mushti",
+        "zh-Hans": "降魔杵",
+        "zh-Hant": "降魔杵",
+        "ja": "ヴァジュラ",
+        "ko": "바즈라",
+        "de": "Vajra-Mushti",
+        "fr": "Vajra-Mushti",
+        "es": "Vajra-Mushti",
+        "it": "Vajra-Mushti"
+      }
+    },
+    {
+      "Id": "IID_カミラ_ライトニング＋_通常",
+      "English": "Lightning",
+      "Chinese": "闪电",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Lightning",
+        "zh-Hans": "闪电",
+        "zh-Hant": "閃電",
+        "ja": "ライトニング",
+        "ko": "라이트닝",
+        "de": "Blitz",
+        "fr": "Lumière",
+        "es": "Relámpago",
+        "it": "Lampo"
+      }
+    },
+    {
+      "Id": "IID_クロム_トロン＋_通常",
+      "English": "Thoron",
+      "Chinese": "托隆",
+      "Kind": 6,
+      "MaxUses": 255,
+      "MaxRefine": 0,
+      "Names": {
+        "en": "Thoron",
+        "zh-Hans": "托隆",
+        "zh-Hant": "托隆",
+        "ja": "トロン",
+        "ko": "트론",
+        "de": "Thoron",
+        "fr": "Thoron",
+        "es": "Thoron",
+        "it": "Thoron"
+      }
+    }
+  ]
+}

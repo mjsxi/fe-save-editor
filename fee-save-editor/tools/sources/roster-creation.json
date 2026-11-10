@@ -1,0 +1,1973 @@
+{
+  "DataRevision": "8a64328fc9a4df7649852ec2ac8b7d5beaedbc58",
+  "Persons": [
+    {
+      "Id": "PID_リュール",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 2,
+      "Proficiencies": 258,
+      "PersonalStats": [
+        [
+          0,
+          0,
+          3,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ヴァンドレ",
+      "InternalLevel": 15,
+      "SkillPoints": 500,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 8,
+      "PersonalStats": [
+        [
+          4,
+          -2,
+          -5,
+          -7,
+          1,
+          -3,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          -2,
+          -5,
+          -7,
+          1,
+          -3,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          -2,
+          -5,
+          -7,
+          1,
+          -3,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_クラン",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 64,
+      "Proficiencies": 66,
+      "PersonalStats": [
+        [
+          1,
+          0,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_フラン",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 256,
+      "Proficiencies": 384,
+      "PersonalStats": [
+        [
+          0,
+          0,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_アルフレッド",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 6,
+      "PersonalStats": [
+        [
+          0,
+          0,
+          3,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          -1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_エーティエ",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 16,
+      "Proficiencies": 16,
+      "PersonalStats": [
+        [
+          1,
+          3,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          1,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ブシュロン",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 8,
+      "PersonalStats": [
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_セリーヌ",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 64,
+      "Proficiencies": 194,
+      "PersonalStats": [
+        [
+          0,
+          1,
+          3,
+          0,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          0,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          0,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_クロエ",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 132,
+      "PersonalStats": [
+        [
+          1,
+          2,
+          4,
+          1,
+          6,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          6,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          6,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ルイ",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 4,
+      "PersonalStats": [
+        [
+          1,
+          3,
+          4,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          4,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ユナカ",
+      "InternalLevel": 0,
+      "SkillPoints": 500,
+      "OriginalProficiencies": 32,
+      "Proficiencies": 32,
+      "PersonalStats": [
+        [
+          0,
+          1,
+          2,
+          0,
+          5,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          5,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          0,
+          5,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_スタルーク",
+      "InternalLevel": 0,
+      "SkillPoints": 500,
+      "OriginalProficiencies": 16,
+      "Proficiencies": 16,
+      "PersonalStats": [
+        [
+          1,
+          1,
+          3,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          3,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          3,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_シトリニカ",
+      "InternalLevel": 0,
+      "SkillPoints": 500,
+      "OriginalProficiencies": 64,
+      "Proficiencies": 192,
+      "PersonalStats": [
+        [
+          2,
+          0,
+          5,
+          1,
+          6,
+          0,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          5,
+          1,
+          6,
+          0,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          5,
+          1,
+          6,
+          0,
+          4,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ラピス",
+      "InternalLevel": 0,
+      "SkillPoints": 500,
+      "OriginalProficiencies": 2,
+      "Proficiencies": 2,
+      "PersonalStats": [
+        [
+          1,
+          4,
+          2,
+          1,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          4,
+          2,
+          1,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          4,
+          2,
+          1,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ディアマンド",
+      "InternalLevel": 0,
+      "SkillPoints": 800,
+      "OriginalProficiencies": 2,
+      "Proficiencies": 10,
+      "PersonalStats": [
+        [
+          1,
+          2,
+          4,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          1,
+          5,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_アンバー",
+      "InternalLevel": 0,
+      "SkillPoints": 800,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 4,
+      "PersonalStats": [
+        [
+          1,
+          4,
+          2,
+          1,
+          3,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          4,
+          2,
+          1,
+          3,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          4,
+          2,
+          1,
+          3,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ジェーデ",
+      "InternalLevel": 0,
+      "SkillPoints": 800,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 8,
+      "PersonalStats": [
+        [
+          2,
+          2,
+          4,
+          1,
+          1,
+          2,
+          1,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          1,
+          2,
+          1,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          1,
+          2,
+          1,
+          3,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_アイビー",
+      "InternalLevel": 0,
+      "SkillPoints": 1000,
+      "OriginalProficiencies": 64,
+      "Proficiencies": 192,
+      "PersonalStats": [
+        [
+          3,
+          2,
+          7,
+          3,
+          1,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          2,
+          7,
+          3,
+          1,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          2,
+          7,
+          3,
+          1,
+          1,
+          4,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_カゲツ",
+      "InternalLevel": 15,
+      "SkillPoints": 1000,
+      "OriginalProficiencies": 2,
+      "Proficiencies": 2,
+      "PersonalStats": [
+        [
+          3,
+          5,
+          3,
+          1,
+          5,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          5,
+          3,
+          1,
+          5,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          5,
+          3,
+          1,
+          5,
+          2,
+          1,
+          2,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ゼルコバ",
+      "InternalLevel": 0,
+      "SkillPoints": 1000,
+      "OriginalProficiencies": 32,
+      "Proficiencies": 32,
+      "PersonalStats": [
+        [
+          3,
+          4,
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          4,
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          4,
+          3,
+          3,
+          1,
+          2,
+          1,
+          1,
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_フォガート",
+      "InternalLevel": 0,
+      "SkillPoints": 1200,
+      "OriginalProficiencies": 16,
+      "Proficiencies": 18,
+      "PersonalStats": [
+        [
+          2,
+          2,
+          3,
+          2,
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          3,
+          2,
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          3,
+          2,
+          2,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_パンドロ",
+      "InternalLevel": 15,
+      "SkillPoints": 1200,
+      "OriginalProficiencies": 128,
+      "Proficiencies": 448,
+      "PersonalStats": [
+        [
+          3,
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ボネ",
+      "InternalLevel": 15,
+      "SkillPoints": 1200,
+      "OriginalProficiencies": 2,
+      "Proficiencies": 10,
+      "PersonalStats": [
+        [
+          3,
+          0,
+          -1,
+          -3,
+          2,
+          -2,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          -1,
+          -3,
+          2,
+          -2,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          -1,
+          -3,
+          2,
+          -2,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ミスティラ",
+      "InternalLevel": 0,
+      "SkillPoints": 1500,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 4,
+      "PersonalStats": [
+        [
+          2,
+          2,
+          4,
+          3,
+          2,
+          3,
+          1,
+          2,
+          -1,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2,
+          3,
+          1,
+          2,
+          -1,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          4,
+          3,
+          2,
+          3,
+          1,
+          2,
+          -1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_パネトネ",
+      "InternalLevel": 15,
+      "SkillPoints": 1500,
+      "OriginalProficiencies": 32,
+      "Proficiencies": 32,
+      "PersonalStats": [
+        [
+          3,
+          3,
+          5,
+          2,
+          5,
+          2,
+          1,
+          2,
+          -1,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          5,
+          2,
+          5,
+          2,
+          1,
+          2,
+          -1,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          5,
+          2,
+          5,
+          2,
+          1,
+          2,
+          -1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_メリン",
+      "InternalLevel": 15,
+      "SkillPoints": 1500,
+      "OriginalProficiencies": 32,
+      "Proficiencies": 34,
+      "PersonalStats": [
+        [
+          3,
+          4,
+          4,
+          1,
+          5,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          4,
+          4,
+          1,
+          5,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          4,
+          4,
+          1,
+          5,
+          2,
+          2,
+          2,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_オルテンシア",
+      "InternalLevel": 0,
+      "SkillPoints": 1500,
+      "OriginalProficiencies": 128,
+      "Proficiencies": 192,
+      "PersonalStats": [
+        [
+          2,
+          1,
+          6,
+          2,
+          2,
+          0,
+          3,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          6,
+          2,
+          2,
+          0,
+          3,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          6,
+          2,
+          2,
+          0,
+          3,
+          2,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_セアダス",
+      "InternalLevel": 0,
+      "SkillPoints": 1500,
+      "OriginalProficiencies": 256,
+      "Proficiencies": 256,
+      "PersonalStats": [
+        [
+          4,
+          3,
+          3,
+          1,
+          1,
+          4,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          1,
+          1,
+          4,
+          1,
+          1,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          1,
+          1,
+          4,
+          1,
+          1,
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ロサード",
+      "InternalLevel": 17,
+      "SkillPoints": 1800,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 12,
+      "PersonalStats": [
+        [
+          3,
+          -2,
+          3,
+          3,
+          1,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          -2,
+          3,
+          3,
+          1,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          -2,
+          3,
+          3,
+          1,
+          3,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ゴルドマリー",
+      "InternalLevel": 17,
+      "SkillPoints": 1800,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 6,
+      "PersonalStats": [
+        [
+          3,
+          3,
+          5,
+          6,
+          5,
+          3,
+          1,
+          5,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          5,
+          6,
+          5,
+          3,
+          1,
+          5,
+          1,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          5,
+          6,
+          5,
+          3,
+          1,
+          5,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_リンデン",
+      "InternalLevel": 18,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 128,
+      "Proficiencies": 192,
+      "PersonalStats": [
+        [
+          3,
+          1,
+          7,
+          3,
+          2,
+          3,
+          4,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          7,
+          3,
+          2,
+          3,
+          4,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          7,
+          3,
+          2,
+          3,
+          4,
+          3,
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ザフィーア",
+      "InternalLevel": 19,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 24,
+      "PersonalStats": [
+        [
+          4,
+          3,
+          10,
+          4,
+          8,
+          7,
+          1,
+          5,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          10,
+          4,
+          8,
+          7,
+          1,
+          5,
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          10,
+          4,
+          8,
+          7,
+          1,
+          5,
+          4,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ヴェイル",
+      "InternalLevel": 0,
+      "SkillPoints": 2500,
+      "OriginalProficiencies": 64,
+      "Proficiencies": 96,
+      "PersonalStats": [
+        [
+          1,
+          8,
+          8,
+          8,
+          8,
+          6,
+          4,
+          10,
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          8,
+          8,
+          8,
+          8,
+          6,
+          4,
+          10,
+          3,
+          0,
+          0
+        ],
+        [
+          1,
+          8,
+          8,
+          8,
+          8,
+          6,
+          4,
+          10,
+          3,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_モーヴ",
+      "InternalLevel": 0,
+      "SkillPoints": 2500,
+      "OriginalProficiencies": 128,
+      "Proficiencies": 128,
+      "PersonalStats": [
+        [
+          7,
+          3,
+          4,
+          3,
+          6,
+          6,
+          6,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          7,
+          3,
+          4,
+          3,
+          6,
+          6,
+          6,
+          6,
+          1,
+          0,
+          0
+        ],
+        [
+          7,
+          3,
+          4,
+          3,
+          6,
+          6,
+          6,
+          6,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_アンナ",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 16,
+      "Proficiencies": 24,
+      "PersonalStats": [
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ジャン",
+      "InternalLevel": 0,
+      "SkillPoints": 300,
+      "OriginalProficiencies": 256,
+      "Proficiencies": 320,
+      "PersonalStats": [
+        [
+          1,
+          1,
+          4,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          4,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          4,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_エル",
+      "InternalLevel": 0,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 4,
+      "Proficiencies": 4,
+      "PersonalStats": [
+        [
+          5,
+          3,
+          4,
+          5,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          4,
+          5,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          4,
+          5,
+          5,
+          3,
+          2,
+          3,
+          1,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_ラファール",
+      "InternalLevel": 0,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 8,
+      "PersonalStats": [
+        [
+          6,
+          6,
+          4,
+          4,
+          5,
+          6,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          6,
+          6,
+          4,
+          4,
+          5,
+          6,
+          0,
+          2,
+          2,
+          0,
+          0
+        ],
+        [
+          6,
+          6,
+          4,
+          4,
+          5,
+          6,
+          0,
+          2,
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_セレスティア",
+      "InternalLevel": 0,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 2,
+      "Proficiencies": 2,
+      "PersonalStats": [
+        [
+          5,
+          3,
+          3,
+          2,
+          1,
+          3,
+          3,
+          3,
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          3,
+          2,
+          1,
+          3,
+          3,
+          3,
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          3,
+          2,
+          1,
+          3,
+          3,
+          3,
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_グレゴリー",
+      "InternalLevel": 0,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 128,
+      "Proficiencies": 128,
+      "PersonalStats": [
+        [
+          5,
+          3,
+          1,
+          1,
+          1,
+          3,
+          6,
+          6,
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          1,
+          1,
+          1,
+          3,
+          6,
+          6,
+          2,
+          0,
+          0
+        ],
+        [
+          5,
+          3,
+          1,
+          1,
+          1,
+          3,
+          6,
+          6,
+          2,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "Id": "PID_マデリーン",
+      "InternalLevel": 0,
+      "SkillPoints": 2000,
+      "OriginalProficiencies": 8,
+      "Proficiencies": 8,
+      "PersonalStats": [
+        [
+          4,
+          3,
+          2,
+          2,
+          1,
+          3,
+          1,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          2,
+          1,
+          3,
+          1,
+          3,
+          1,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          2,
+          1,
+          3,
+          1,
+          3,
+          1,
+          0,
+          0
+        ]
+      ]
+    }
+  ]
+}

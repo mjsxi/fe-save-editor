@@ -1,0 +1,12 @@
+{
+  "_note": "The seven DLC Bracelets. A Bracelet is one Emblem that carries several heroes: the owned-Emblem record (GOD) points at one hero's god id, while the bond record (GDBD) is filed under another. The Three Houses entry is read straight from a real save - GOD said GID_ディミトリ, GDBD said GID_エーデルガルト - and its bond-holder ids are the seven DLC entries in emblems.json, so lookup works from either side. Names are the game's own English labels.",
+  "Bracelets": [
+    { "Name": "Bracelet of the Ancestor", "HolderId": "GID_チキ", "MemberIds": ["GID_チキ"], "Heroes": ["Tiki"], "Wave": 1 },
+    { "Name": "Bracelet of the Three Houses", "HolderId": "GID_エーデルガルト", "MemberIds": ["GID_エーデルガルト", "GID_ディミトリ", "GID_クロード"], "Heroes": ["Edelgard", "Dimitri", "Claude"], "Wave": 1 },
+    { "Name": "Bracelet of the Brash General", "HolderId": "GID_ヘクトル", "MemberIds": ["GID_ヘクトル"], "Heroes": ["Hector"], "Wave": 2 },
+    { "Name": "Bracelet of the Strategist", "HolderId": "GID_セネリオ", "MemberIds": ["GID_セネリオ"], "Heroes": ["Soren"], "Wave": 2 },
+    { "Name": "Bracelet of the Doting Sister", "HolderId": "GID_カミラ", "MemberIds": ["GID_カミラ"], "Heroes": ["Camilla"], "Wave": 2 },
+    { "Name": "Bracelet of the Shepherd Exalt", "HolderId": "GID_クロム", "MemberIds": ["GID_クロム", "GID_ルフレ"], "Heroes": ["Chrom", "Robin"], "Wave": 3 },
+    { "Name": "Bracelet of the Lonely Heir", "HolderId": "GID_ヴェロニカ", "MemberIds": ["GID_ヴェロニカ"], "Heroes": ["Veronica"], "Wave": 3 }
+  ]
+}

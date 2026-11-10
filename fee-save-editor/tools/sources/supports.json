@@ -1,0 +1,2084 @@
+{
+  "DataRevision": "86b8be7b9820e1bb3bce87d2a9a805ead85d92ab",
+  "Pairs": [
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ヴァンドレ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_クラン",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_クラン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_フラン",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_フラン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_フラン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_アルフレッド",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_アルフレッド",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ブシュロン",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_ブシュロン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ブシュロン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_エーティエ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_エーティエ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_エーティエ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_エーティエ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_セリーヌ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_セリーヌ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_セリーヌ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ルイ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_ルイ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_ルイ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_クロエ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_クロエ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_クロエ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_クロエ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ディアマンド",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_ディアマンド",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ディアマンド",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_アンバー",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_アンバー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_アンバー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_アンバー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_アンバー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ジェーデ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_ジェーデ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_ジェーデ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_ジェーデ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンバー",
+      "SecondPersonId": "PID_ジェーデ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_スタルーク",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_スタルーク",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_スタルーク",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_スタルーク",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ラピス",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_ラピス",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_ラピス",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_ラピス",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_ラピス",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_ラピス",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_シトリニカ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_シトリニカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_シトリニカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_シトリニカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_シトリニカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ラピス",
+      "SecondPersonId": "PID_シトリニカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_アイビー",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_アイビー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_アイビー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_アイビー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_アイビー",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンバー",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_シトリニカ",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_ゼルコバ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジェーデ",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゼルコバ",
+      "SecondPersonId": "PID_カゲツ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_オルテンシア",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_オルテンシア",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_オルテンシア",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_オルテンシア",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_オルテンシア",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_オルテンシア",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ロサード",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_ロサード",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジェーデ",
+      "SecondPersonId": "PID_ロサード",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ラピス",
+      "SecondPersonId": "PID_ロサード",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_オルテンシア",
+      "SecondPersonId": "PID_ロサード",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ラピス",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_オルテンシア",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ロサード",
+      "SecondPersonId": "PID_ゴルドマリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ミスティラ",
+      "Thresholds": [
+        5,
+        20,
+        35
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_ミスティラ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ミスティラ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_ミスティラ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジェーデ",
+      "SecondPersonId": "PID_ミスティラ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_ミスティラ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        20,
+        35
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンバー",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_シトリニカ",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_カゲツ",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ロサード",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_メリン",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        20,
+        35
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンバー",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゴルドマリー",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_メリン",
+      "SecondPersonId": "PID_パネトネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        20,
+        35
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ラピス",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_オルテンシア",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ロサード",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_フォガート",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        20,
+        35
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ロサード",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パネトネ",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フォガート",
+      "SecondPersonId": "PID_パンドロ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        20,
+        35
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジェーデ",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_カゲツ",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_メリン",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フォガート",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パンドロ",
+      "SecondPersonId": "PID_ボネ",
+      "Thresholds": [
+        5,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フラン",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ラピス",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゼルコバ",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_オルテンシア",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ボネ",
+      "SecondPersonId": "PID_アンナ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジェーデ",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゼルコバ",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ボネ",
+      "SecondPersonId": "PID_ジャン",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        20,
+        45
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エーティエ",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_シトリニカ",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゼルコバ",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゴルドマリー",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_メリン",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パネトネ",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_フォガート",
+      "SecondPersonId": "PID_ユナカ",
+      "Thresholds": [
+        5,
+        10,
+        25
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クロエ",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンバー",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_シトリニカ",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_カゲツ",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ロサード",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パンドロ",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ユナカ",
+      "SecondPersonId": "PID_セアダス",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_リンデン",
+      "Thresholds": [
+        3,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_リンデン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ブシュロン",
+      "SecondPersonId": "PID_リンデン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジェーデ",
+      "SecondPersonId": "PID_リンデン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_オルテンシア",
+      "SecondPersonId": "PID_リンデン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ジャン",
+      "SecondPersonId": "PID_リンデン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ルイ",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_スタルーク",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ゴルドマリー",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パネトネ",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リンデン",
+      "SecondPersonId": "PID_ザフィーア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_クラン",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_シトリニカ",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_オルテンシア",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_メリン",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パンドロ",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セアダス",
+      "SecondPersonId": "PID_ヴェイル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        10,
+        20
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴァンドレ",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セリーヌ",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンバー",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ロサード",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_パンドロ",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ボネ",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アンナ",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リンデン",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴェイル",
+      "SecondPersonId": "PID_モーヴ",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_エル",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ディアマンド",
+      "SecondPersonId": "PID_エル",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ミスティラ",
+      "SecondPersonId": "PID_エル",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴェイル",
+      "SecondPersonId": "PID_エル",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_ラファール",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アルフレッド",
+      "SecondPersonId": "PID_ラファール",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_アイビー",
+      "SecondPersonId": "PID_ラファール",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_モーヴ",
+      "SecondPersonId": "PID_ラファール",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エル",
+      "SecondPersonId": "PID_ラファール",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_セレスティア",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴェイル",
+      "SecondPersonId": "PID_セレスティア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_モーヴ",
+      "SecondPersonId": "PID_セレスティア",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_エル",
+      "SecondPersonId": "PID_セレスティア",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_グレゴリー",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴェイル",
+      "SecondPersonId": "PID_グレゴリー",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_モーヴ",
+      "SecondPersonId": "PID_グレゴリー",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ラファール",
+      "SecondPersonId": "PID_グレゴリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セレスティア",
+      "SecondPersonId": "PID_グレゴリー",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_リュール",
+      "SecondPersonId": "PID_マデリーン",
+      "Thresholds": [
+        3,
+        15,
+        30
+      ]
+    },
+    {
+      "FirstPersonId": "PID_ヴェイル",
+      "SecondPersonId": "PID_マデリーン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_モーヴ",
+      "SecondPersonId": "PID_マデリーン",
+      "Thresholds": [
+        3,
+        6,
+        12
+      ]
+    },
+    {
+      "FirstPersonId": "PID_セレスティア",
+      "SecondPersonId": "PID_マデリーン",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    },
+    {
+      "FirstPersonId": "PID_グレゴリー",
+      "SecondPersonId": "PID_マデリーン",
+      "Thresholds": [
+        3,
+        9,
+        18
+      ]
+    }
+  ]
+}

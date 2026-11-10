@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fire Emblem Three Houses save editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root { color-scheme: dark; --bg:#15171b; --pan:#1e2127; --pan2:#252932; --line:#2c313a; --fg:#e6e8ea; --dim:#9aa3ad; --ok:#5ad07a; --bad:#ff6b6b; --hi:#66b3ff; --warn:#ffd479; }
+body { margin:0; padding:20px 18px 70px; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system,system-ui,sans-serif; }
+.wrap { max-width:1180px; margin:0 auto; }
+h1 { font-size:19px; margin:0 0 4px; }
+h2 { font-size:12.5px; text-transform:uppercase; letter-spacing:.07em; color:var(--dim); margin:24px 0 8px; }
+h3 { font-size:13px; margin:0 0 8px; color:var(--dim); font-weight:600; }
+p.note { color:var(--dim); margin:4px 0 0; font-size:13px; }
+.card { background:var(--pan); border:1px solid var(--line); border-radius:10px; padding:13px 15px; }
+.drop { border:1.5px dashed #3d444f; border-radius:10px; padding:18px; text-align:center; color:var(--dim); }
+.drop.over { border-color:var(--hi); color:var(--fg); background:#1b2530; }
+.link { color:var(--hi); text-decoration:underline; cursor:pointer; }
+button { background:#2b3b52; color:var(--fg); border:1px solid #3a5372; border-radius:7px; padding:7px 12px; font:inherit; font-size:13.5px; cursor:pointer; }
+button:hover { filter:brightness(1.15); }
+button:disabled { opacity:.4; cursor:default; }
+button.go { background:#1f4d31; border-color:#2f7048; }
+button.mini { padding:3px 8px; font-size:12px; background:#2a2f38; border-color:#3a4150; }
+button.tab { border-radius:8px 8px 0 0; border-bottom:none; background:#20242b; }
+button.tab.on { background:var(--pan2); border-bottom:2px solid var(--hi); }
+button.slot { padding:6px 10px; font-size:13px; }
+button.slot.on { background:#1f3d5d; border-color:var(--hi); }
+button.unit { display:block; width:100%; text-align:left; margin:0 0 3px; padding:5px 8px; font-size:13px; background:#23272f; border-color:#333a45; }
+button.unit.on { background:#1f3d5d; border-color:var(--hi); }
+button.unit.empty { opacity:.5; }
+input, select { background:#12141a; color:var(--fg); border:1px solid #333a45; border-radius:6px; padding:5px 7px; font:inherit; font-size:13.5px; }
+input[type=number] { width:74px; }
+input[type=text] { min-width:120px; }
+input.wide { width:100%; }
+input:disabled { opacity:.5; }
+label { color:var(--dim); font-size:12.5px; }
+table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:13px; }
+th, td { text-align:left; padding:3px 6px; border-bottom:1px solid var(--line); vertical-align:middle; }
+th { color:var(--dim); font-weight:500; font-size:11.5px; text-transform:uppercase; letter-spacing:.04em; position:sticky; top:0; background:var(--pan); }
+td.num, th.num { text-align:right; }
+code, .mono { font-family:ui-monospace,Menlo,monospace; font-size:12.5px; }
+#log { font-family:ui-monospace,Menlo,monospace; font-size:12.5px; white-space:pre-wrap; max-height:190px; overflow:auto; }
+.ok{color:var(--ok)} .bad{color:var(--bad)} .hi{color:var(--hi)} .warn{color:var(--warn)} .dim{color:var(--dim)}
+.row { display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:9px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:9px 14px; }
+.f { display:flex; flex-direction:column; gap:3px; }
+.f label { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.f .hint { font-size:11px; color:#6f7783; }
+.plate { background:var(--pan2); border:1px solid var(--line); border-radius:9px; padding:11px 13px; margin:0 0 12px; }
+.plate h3 { margin:0 0 9px; }
+.tabs { display:flex; gap:4px; flex-wrap:wrap; margin:20px 0 0; }
+.pane { background:var(--pan2); border:1px solid var(--line); border-radius:0 10px 10px 10px; padding:14px; }
+.split { display:grid; grid-template-columns:270px 1fr; gap:14px; align-items:start; }
+.scroll { max-height:62vh; overflow:auto; padding-right:4px; }
+.chg { font-size:12.5px; padding:2px 0; border-bottom:1px solid #262b34; display:flex; gap:8px; align-items:center; }
+.chg .t { flex:1; }
+.pill { display:inline-block; padding:1px 7px; border-radius:20px; font-size:11.5px; background:#2d3542; color:#c9d3df; }
+.pill.dirty { background:#4d3a1f; color:var(--warn); }
+.bits { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:3px 10px; font-size:12.5px; }
+.bits label { display:flex; gap:6px; align-items:center; color:var(--fg); font-size:12.5px; }
+details { margin:0 0 10px; }
+details > summary { cursor:pointer; color:var(--dim); font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; padding:3px 0; }
+.stats td:nth-child(2) { width:70px; }
+.maxcol { color:#7de3a5; }
+@media (max-width:800px){ .split { grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Fire Emblem Three Houses save editor</h1>
+<p class="note">Edits <code>save/auto</code> and <code>save/slotNN</code> (game 1.1.0/1.2.0, save version 23), straight from an nxnative cloud save
+<span class="mono">save.dmsync</span> or from loose save files. Everything happens in this page: no upload, no server, nothing to install.</p>
+
+<h2>1 · Open a save</h2>
+<div class="card">
+  <div id="drop" class="drop"><span id="drophint">drop <b>save.dmsync</b> here &nbsp;·&nbsp; or <b>save/auto</b>, <b>save/slot00</b>…</span> &nbsp;·&nbsp; or
+    <span id="pick" class="link">choose files</span>
+  </div>
+  <input id="files" type="file" multiple hidden>
+  <div class="row"><span id="meta" class="mono dim"></span></div>
+</div>
+
+<h2>2 · Pick a save to edit</h2>
+<div class="card"><div class="row" id="slots"><span class="dim note">nothing open yet</span></div>
+  <div class="row" id="slotinfo"></div></div>
+
+<div id="editor" hidden>
+  <div class="tabs" id="tabs"></div>
+  <div class="pane" id="pane"></div>
+
+  <h2>3 · Changes <span class="pill" id="changecount">none</span></h2>
+  <div class="card"><div id="changes"><span class="dim note">nothing edited yet</span></div>
+    <div class="row">
+      <button id="dlDms" class="go" disabled>Download save.dmsync</button>
+      <button id="dlFile" disabled>Download this save file</button>
+      <label><input id="touch" type="checkbox" checked> dated now, so this save wins the sync</label>
+    </div>
+    <div class="row"><span id="dlname" class="mono dim"></span></div></div>
+</div>
+
+<h2>What happens next</h2>
+<div class="card"><div id="log">Nothing done yet.</div></div>
+<p class="note">The page re-computes the save's checksum, so the game accepts what you download. Replacing the cloud copy: quit the game on the phone
+<i>and</i> the Mac app first, then put the new file at <span class="mono">&lt;this folder&gt;/&lt;TITLE ID&gt;/save.dmsync</span>.</p>
+<p class="note"><b>Backup first.</b> This writes numbers the game does not check for you: an impossible class, skill or item id can break a battle or a menu.
+Keep the save you opened (the page never touches it on disk) so you can go back.</p>
+</div>
+
+<datalist id="dl-items"></datalist>
+<datalist id="dl-units"></datalist>
+<datalist id="dl-classes"></datalist>
+
+<script src="js/fe3h.js"></script>
+<script src="js/data-en.js"></script>
+<script>
+'use strict';
+const $ = (id) => document.getElementById(id);
+const D = window.FE3H_DATA.en, LANG = 'en';
+const NONE = '—';
+let logLines = [];
+function say(msg) {
+  logLines.push(msg);
+  $('log').innerHTML = logLines.slice(-30).map((m) => '<span class="' + (m.startsWith('!') ? 'bad' : m.startsWith('+') ? 'ok' : m.startsWith('>') ? 'hi' : 'dim') + '">' + m.replace(/^[+!>]/, '') + '</span>').join('\n');
+}
+const el = (tag, props, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(props || {})) {
+    if (k === 'class') n.className = v; else if (k === 'style') n.style.cssText = v; else if (k.startsWith('on') && typeof v === 'function') n.addEventListener(k.slice(2), v);
+    else if (k === 'html') n.innerHTML = v; else if (v !== undefined && v !== null) n.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) if (k !== null && k !== undefined) n.append(k.nodeType ? k : document.createTextNode(k));
+  return n;
+};
+const hex = (n, w = 4) => '0x' + n.toString(16).toUpperCase().padStart(w, '0');
+const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, Math.round(Number.isFinite(+v) ? +v : lo)));
+
+// ---------- name tables ----------
+const itemName = (id) => (id < 0 ? NONE : (D.items[id] && D.items[id].n) || 'item ' + id);
+const itemDur = (id) => (D.items[id] && D.items[id].dur) || 0;
+const unitName = (id) => (id < 0 ? NONE : (D.chars[id] && (D.chars[id].n || '')) || 'unit ' + id);
+const className = (id) => (id < 0 ? NONE : (D.classes[id] && D.classes[id].n) || 'class ' + id + ' (newer than the name table)');
+const skillName = (i) => D.skills[i] || 'skill ' + i;
+const artName = (i) => (i >= 80 ? NONE : D.arts[i] || 'art ' + i);
+const magicName = (i) => (i >= 38 ? NONE : D.magic[i] || 'magic ' + i);
+const battalionName = (i) => (i >= 200 ? NONE : D.battalions[i] || 'battalion ' + i);
+const RANKS = ['E', 'E+', 'D', 'D+', 'C', 'C+', 'B', 'B+', 'A', 'A+', 'S', 'S+'];
+const WEAR = ['Sword', 'Lance', 'Axe', 'Bow', 'Brawling', 'Reason', 'Faith', 'Authority', 'Armor', 'Riding', 'Flight'];
+const DIFFICULTY = ['Normal', 'Hard', 'Maddening', 'Infernal'];
+const STYLE = ['Casual', 'Classic'];
+const UNIT_FLAGS = ['Is available', 'Has joined', 'bit2', 'Is dead', 'bit4', 'bit5', 'bit6', 'bit7', 'bit8', 'bit9', 'bit10', 'bit11', 'bit12', 'bit13', 'bit14', 'bit15',
+  'bit16', 'bit17', 'bit18', 'bit19', 'bit20', 'bit21', 'bit22', 'bit23', 'bit24', 'bit25', 'bit26', 'bit27', 'bit28', 'bit29', 'bit30', 'bit31'];
+const MAX_LEVEL = 20, MAX_STAT = 255;
+
+// ---------- state ----------
+let bundle = null;            // parsed .dmsync
+let container = null;         // { path: {type, guest, mtime, bytes} }
+let saves = {};               // name -> FE3H.Save
+let originals = {};           // name -> untouched bytes, for the diff count and for revert checks
+let saveOrder = [];
+let systemBytes = null;
+let cur = null;               // current Save
+let curName = null;
+let changes = [];             // {label, undo, save}
+let tab = 'overview';
+let selUnit = 0;
+let dirty = new Set();
+
+// ---------- generic field widgets (each one records an undoable change) ----------
+const setNum = baseSetNum, setSelect = baseSetSelect, idText = baseIdText;
+function record(save, label, undo) {
+  const n = (save && save.name) || (typeof save === 'string' ? save : 'save');
+  changes.push({ save: n, label, undo }); dirty.add(n); refreshChanges();
+}
+function baseSetNum(save, label, get, set, { min = 0, max = 0xffffffff, step = 1, hint = '', manual = false, noLabel = false } = {}) {
+  const inp = el('input', { type: 'number', min, max, step, value: get() });
+  inp.addEventListener('change', () => {
+    const v = clamp(inp.value, min, max), old = get();
+    if (v === old) { inp.value = old; return; }
+    if (manual) set(v); else { set(v); record(save, label + ': ' + old + ' → ' + v, () => set(old)); }
+    inp.value = get();
+  });
+  return el('div', { class: 'f' }, noLabel ? null : el('label', {}, label), inp, hint ? el('span', { class: 'hint' }, hint) : null);
+}
+function baseSetSelect(save, label, get, set, options, hint = '', manual = false, noLabel = false) {
+  const sel = el('select', {}, options.map((o) => el('option', { value: o.v }, o.t)));
+  sel.value = get();
+  sel.addEventListener('change', () => {
+    const v = +sel.value, old = get();
+    if (v === old) return;
+    if (manual) set(v); else { set(v); record(save, label + ': ' + (options.find((o) => o.v === old) || {}).t + ' → ' + (options.find((o) => o.v === v) || {}).t, () => set(old)); }
+  });
+  return el('div', { class: 'f' }, noLabel ? null : el('label', {}, label), sel, hint ? el('span', { class: 'hint' }, hint) : null);
+}
+// id+name pair edited as free text against a datalist ("16 — Iron Sword")
+function baseIdText(save, label, get, set, listId, resolve, hint = '', manual = false, noLabel = false) {
+  const show = (id) => (id < 0 ? '' : id + ' — ' + resolve(id));
+  const inp = el('input', { type: 'text', list: listId, value: show(get()), placeholder: 'empty', class: 'wide' });
+  inp.addEventListener('change', () => {
+    const txt = inp.value.trim();
+    let id = -1;
+    if (txt) {
+      const m = /^(\d+)/.exec(txt);
+      if (m) id = +m[1];
+      else { const hit = (D._byName[listId] || []).find((e) => e.label.toLowerCase() === txt.toLowerCase()); if (hit) id = hit.id; }
+    }
+    const old = get();
+    if (id === old) { inp.value = show(old); return; }
+    if (manual) set(id); else { set(id); record(save, label + ': ' + (old < 0 ? 'empty' : resolve(old)) + ' → ' + (id < 0 ? 'empty' : resolve(id)), () => set(old)); }
+    inp.value = show(get());
+  });
+  return el('div', { class: 'f' }, noLabel ? null : el('label', {}, label), inp, hint ? el('span', { class: 'hint' }, hint) : null);
+}
+function fillDatalists() {
+  const mk = (id, pairs) => { const d = $(id); d.innerHTML = ''; pairs.forEach((p) => d.append(el('option', { value: p.id + ' — ' + p.label }))); D._byName = D._byName || {}; D._byName[id] = pairs; };
+  mk('dl-items', Object.keys(D.items).map((k) => ({ id: +k, label: D.items[k].n })).filter((e) => e.label).sort((a, c) => a.label.localeCompare(c.label)));
+  mk('dl-units', D.chars.map((c, i) => ({ id: i, label: c.n })).filter((e) => e.label));
+  mk('dl-classes', D.classes.map((c, i) => ({ id: i, label: c.n })).filter((e) => e.label).sort((a, c) => a.label.localeCompare(c.label)));
+}
+
+// ---------- open ----------
+async function openFiles(list) {
+  const files = [...list];
+  const next = {};
+  for (const f of files) {
+    const bytes = new Uint8Array(await f.arrayBuffer());
+    const base = (f.webkitRelativePath || f.name).split('/').pop();
+    const isDms = f.name.toLowerCase().endsWith('.dmsync') || (bytes.length > 8 && String.fromCharCode(...bytes.subarray(0, 8)) === 'DMSYNC1\n');
+    if (isDms) {
+      try {
+        bundle = await FE3H.DMS.read(bytes);
+        container = FE3H.DMS.fromBundle(bundle);
+        say('+' + f.name + ': ' + bundle.files + ' files, container hash verified (' + bundle.title + ')');
+      } catch (e) { say('!' + f.name + ': ' + e.message); }
+      continue;
+    }
+    if (FE3H.looksLikeSave(bytes)) next[base] = bytes;
+    else if (base === 'system') { systemBytes = bytes; say('> ' + base + ': slot list (metadata, read here only)'); }
+    else say('!' + f.name + ': not a Three Houses save file, skipped');
+  }
+  if (!bundle && !Object.keys(next).length) return;
+  if (bundle) for (const e of bundle.entries) {
+    if (e.type !== 'file') continue;
+    const base = e.path.split('/').pop();
+    if (FE3H.looksLikeSave(e.bytes)) next[base] = e.bytes;
+    else if (base === 'system') systemBytes = e.bytes;
+  }
+  // a loose file wins over the one inside the container, so an already-edited save is not ignored
+  saves = {}; originals = {}; saveOrder = [];
+  for (const n of Object.keys(next).sort()) { saves[n] = new FE3H.Save(next[n], n); originals[n] = next[n].slice(); saveOrder.push(n); }
+  changes = []; dirty = new Set();
+  $('meta').innerHTML = (bundle ? '<b>' + bundle.title + '</b> · packed ' + new Date(bundle.saved * 1000).toLocaleString() + ' on ' + (bundle.device || '?') + ' · <span class="ok">hash ok</span>' : 'loose save files') + ' · ' + saveOrder.length + ' save(s)';
+  $('drophint').textContent = 'drop another save, or choose files to replace one';
+  renderSlots();
+  if (saveOrder.length) selectSave(saveOrder[saveOrder.length - 1]);
+  say('> ' + saveOrder.length + ' save file(s) ready to edit: ' + saveOrder.join(', '));
+}
+
+function selectSave(name) {
+  cur = saves[name]; curName = name;
+  $('editor').hidden = false;
+  renderSlots(); renderTabBar(); render();
+  refreshChanges(); refreshDownloads();
+}
+function renderSlots() {
+  const box = $('slots'); box.innerHTML = '';
+  if (!saveOrder.length) { box.append(el('span', { class: 'dim note' }, 'nothing open yet')); $('slotinfo').innerHTML = ''; return; }
+  for (const n of saveOrder) {
+    const s = saves[n];
+    box.append(el('button', { class: 'slot' + (n === curName ? ' on' : ''), onclick: () => selectSave(n) },
+      n + ' · ch ' + s.chapter + ' · ' + FE3H.fmtTime(s.playtime)));
+  }
+  const s = cur;
+  $('slotinfo').innerHTML = s ? ['name <b>' + s.playerName() + '</b>', 'gold <b>' + s.gold.toLocaleString() + '</b>', 'chapter <b>' + s.chapter + '</b>',
+    'difficulty <b>' + (DIFFICULTY[s.difficulty] || s.difficulty) + '</b>', 'style <b>' + (STYLE[s.gameStyle] || s.gameStyle) + '</b>',
+    'units <b>' + Array.from({ length: 60 }, (_, i) => s.unit(i)).filter((u) => u.id >= 0).length + ' in slots, ' + Array.from({ length: 60 }, (_, i) => s.unit(i)).filter((u) => u.id >= 0 && ((u.flags >>> 1) & 1)).length + ' with "has joined"</b>',
+    'supports <b>' + Array.from({ length: FE3H.P.supportCount }, (_, i) => s.support(i)).filter((v) => v > 100).length + ' pairs past C</b>',
+    'version <b>' + s.version + '</b>', 'checksum <b class="' + (s.bodySumMatches() ? 'ok' : 'warn') + '">' + (s.bodySumMatches() ? 'valid' : 'stale (will be fixed on download)') + '</b>'].map((x) => '<span class="pill">' + x + '</span>').join(' ') : '';
+}
+
+// ---------- tabs ----------
+const TABS = [['overview', 'Overview'], ['units', 'Units'], ['items', 'Item box'], ['barracks', 'Barracks'], ['supports', 'Supports'], ['activity', 'Activity'], ['raw', 'Raw bytes']];
+function renderTabBar() {
+  const t = $('tabs'); t.innerHTML = '';
+  for (const [id, label] of TABS) t.append(el('button', { class: 'tab' + (tab === id ? ' on' : ''), onclick: () => { tab = id; renderTabBar(); render(); } }, label));
+}
+function render() {
+  if (!cur) return;
+  const p = $('pane'); p.innerHTML = '';
+  if (tab === 'overview') renderOverview(p);
+  if (tab === 'units') renderUnits(p);
+  if (tab === 'items') renderItemBox(p);
+  if (tab === 'barracks') renderBarracks(p);
+  if (tab === 'supports') renderSupports(p);
+  if (tab === 'activity') renderActivity(p);
+  if (tab === 'raw') renderRaw(p);
+}
+
+// ---------- overview ----------
+function renderOverview(p) {
+  const s = cur;
+  const plate = (title, ...kids) => el('div', { class: 'plate' }, el('h3', {}, title), ...kids);
+  const nameInp = el('input', { type: 'text', value: s.playerName(), maxlength: 20 });
+  nameInp.addEventListener('change', () => {
+    const old = s.playerName(), v = nameInp.value.trim() || old;
+    const rawOld = s.bytesAt(FE3H.L.playerName, 0x28).slice();
+    s.setPlayerName(v); record(s, 'player name: ' + old + ' → ' + v, () => s.bytes.set(rawOld, 12 + FE3H.L.playerName));
+    nameInp.value = s.playerName(); renderSlots();
+  });
+  const routeWarn = el('span', { class: 'hint' }, 'saved at 0x' + (s.playerBase + FE3H.P.flags + 2).toString(16) + ' — the research editors call this "Route", values 0-9 with no published list');
+  const overviewPlayer = plate('Player', el('div', { class: 'grid' },
+    el('div', { class: 'f' }, el('label', {}, 'Name'), nameInp, el('span', { class: 'hint' }, 'written back with the games N0/N1 name tags')),
+    setNum(s, 'Gold', () => s.gold, (v) => s.s(s.playerBase + FE3H.P.gold, 4, v), { max: 9999999, step: 100 }),
+    setNum(s, 'Chapter', () => s.chapter, (v) => s.s(s.playerBase + FE3H.P.chapter, 4, v), { max: 99 }),
+    setNum(s, 'Playtime (seconds)', () => s.playtime, (v) => s.s(s.playerBase + FE3H.P.playtime, 4, v), { max: 3599999, step: 60, hint: FE3H.fmtTime(s.playtime) }),
+    setSelect(s, 'Difficulty', () => s.difficulty, (v) => s.s(s.playerBase + FE3H.P.flags, 1, v), DIFFICULTY.map((t, i) => ({ v: i, t }))),
+    setSelect(s, 'Game style', () => s.gameStyle, (v) => s.s(s.playerBase + FE3H.P.flags + 1, 1, v), STYLE.map((t, i) => ({ v: i, t }))),
+    setNum(s, 'Route (raw)', () => s.route, (v) => s.s(s.playerBase + FE3H.P.flags + 2, 1, v), { max: 255 }),
+    setNum(s, 'Map id', () => s.mapId, (v) => s.s(s.playerBase + FE3H.P.flags + 4, 1, v), { max: 255 })));
+  const overviewBlocks = plate('What this save holds',
+    el('table', {}, el('tr', {}, el('th', {}, 'block'), el('th', {}, 'in the file'), el('th', {}, 'notes')),
+      ...[
+        ['save file', curName, 'version ' + s.version + ', ' + s.bytes.length.toLocaleString() + ' bytes'],
+        ['item box', '0x0 - 0x640', '400 slots, ' + Array.from({ length: 400 }, (_, i) => s.item(i)).filter((i) => i.id >= 0).length + ' used'],
+        ['unit records', '0x644, 60 × 0x' + s.unitSize.toString(16), Array.from({ length: 60 }, (_, i) => s.unit(i)).filter((u) => u.id >= 0).length + ' units present'],
+        ['player block', hex(s.playerBase, 5), 'gold, playtime, chapter, 270 support values'],
+        ['activity block', hex(s.activityBase, 5), 'reputation, instruct exp, activity counts, statues'],
+        ['unmapped tail', '0x' + (s.activityBase + FE3H.A.activitySize).toString(16) + ' - end', (s.bytes.length - 12 - (s.activityBase + FE3H.A.activitySize)) + ' bytes, left exactly as the game wrote them'],
+      ].map((r) => el('tr', {}, el('td', {}, r[0]), el('td', { class: 'mono' }, r[1]), el('td', { class: 'dim' }, r[2])))));
+  const systemPlate = systemBytes ? el('div', { class: 'plate' },
+    el('h3', {}, 'save/system (slot list, read only)'),
+    el('table', {},
+      el('tr', {}, el('th', {}, 'name'), el('th', { class: 'num' }, 'playtime'), el('th', { class: 'num' }, 'value at +0x50'), el('th', { class: 'num' }, 'save version')),
+      ...FE3H.readSystemSlots(systemBytes).map((r) => el('tr', {},
+        el('td', {}, r.name || NONE),
+        el('td', { class: 'num' }, FE3H.fmtTime(r.playtime)),
+        el('td', { class: 'num' }, String(r.value50)),
+        el('td', { class: 'num' }, String(r.version)))))) : null;
+  p.append(overviewPlayer, overviewBlocks, routeWarn, systemPlate);
+}
+
+// ---------- units ----------
+function renderUnits(p) {
+  const s = cur;
+  const list = el('div', {});
+  const filter = el('input', { type: 'text', placeholder: 'filter by name or class', class: 'wide' });
+  const onlyUsed = el('input', { type: 'checkbox', checked: 'checked' });
+  const drawList = () => {
+    list.innerHTML = '';
+    const q = filter.value.trim().toLowerCase();
+    for (let i = 0; i < 60; i++) {
+      const u = s.unit(i);
+      if (onlyUsed.checked && u.id < 0) continue;
+      const joined = (s.unit(i).flags >>> 1) & 1;
+      const label = (u.id >= 0 ? unitName(u.id) : 'slot ' + i + ' (empty)') + (u.id >= 0 ? ' · ' + className(u.class).split(' (')[0] + ' lv' + u.level + (joined ? ' ✓' : '') : '');
+      if (q && !label.toLowerCase().includes(q)) continue;
+      list.append(el('button', { class: 'unit' + (i === selUnit ? ' on' : '') + (u.id < 0 ? ' empty' : ''), onclick: () => { selUnit = i; render(); } }, label));
+    }
+    if (!list.children.length) list.append(el('div', { class: 'note' }, 'no unit matches'));
+  };
+  filter.addEventListener('input', drawList); onlyUsed.addEventListener('change', drawList);
+  drawList();
+  p.append(el('div', { class: 'split' }, el('div', {}, filter, el('label', {}, el('span', {}, ' '), onlyUsed, ' hide empty slots'), el('div', { class: 'scroll', style: 'margin-top:8px' }, list)), renderUnitEditor(s, selUnit, drawList)));
+}
+
+function renderUnitEditor(s, i, afterChange) {
+  const box = el('div', { class: 'scroll' });
+  const u = s.unit(i);
+  // every unit edit snapshots the record first, so revert puts the exact bytes back
+  const set = (patch, label) => {
+    const addr = 12 + FE3H.L.units + i * s.unitSize;
+    const before = s.bytes.slice(addr, addr + s.unitSize);
+    s.setUnit(i, patch);
+    record(s, 'unit ' + i + ' ' + label, () => { s.bytes.set(before, addr); if (afterChange) afterChange(); });
+    if (afterChange) afterChange();
+  };
+  const plate = (title, ...kids) => el('div', { class: 'plate' }, el('h3', {}, title), ...kids);
+  // unit widgets write through set() below, which records one whole-record undo per edit
+  const setNumU = (label, get, setter, opts = {}) => baseSetNum(s, label, get, setter, { ...opts, manual: true });
+  const setSelectU = (label, get, setter, options, hint = '') => baseSetSelect(s, label, get, setter, options, hint, true);
+  const idTextU = (label, get, setter, listId, resolve, hint = '') => baseIdText(s, label, get, setter, listId, resolve, hint, true);
+  const ref = D.chars[u.id] || {};
+  box.append(el('h3', {}, 'Slot ' + i + ' — ' + (u.id >= 0 ? unitName(u.id) + ', ' + className(u.class) + ', level ' + u.level : 'empty slot') + '  ·  at ' + hex(u.addr, 5)));
+
+  box.append(plate('Who', el('div', { class: 'grid' },
+    idTextU('Unit id (who this slot is)', () => u.id, (v) => set({ id: v }, 'unit id → ' + unitName(v)), 'dl-units', unitName, 'setting this on an empty slot is how a unit appears; their base stats/skills come from the game files, not the save'),
+    setNumU('Level', () => s.unit(i).level, (v) => set({ level: v }, 'level → ' + v), { max: MAX_LEVEL }),
+    setSelectU('Class', () => s.unit(i).class, (v) => set({ class: v }, 'class → ' + className(v)), D.classes.map((c, k) => ({ v: k, t: c.n || 'class ' + k })), 'class ' + s.unit(i).class),
+    setNumU('Class level', () => s.unit(i).classLevel, (v) => set({ classLevel: v }, 'class level → ' + v), { max: 20 }),
+    setNumU('Class exp', () => s.unit(i).classExp, (v) => set({ classExp: v }, 'class exp → ' + v), { max: 65535, step: 100, hint: 'cap for this class: ' + (D.classes[u.class] && D.classes[u.class].exp) }),
+    setNumU('Total exp', () => s.unit(i).exp, (v) => set({ exp: v }, 'exp → ' + v), { max: 65535, step: 100 }),
+    setNumU('Motivation', () => s.unit(i).motivation, (v) => set({ motivation: v }, 'motivation → ' + v), { max: 100 }),
+    setNumU('Deployment index', () => s.unit(i).deployIndex, (v) => set({ deployIndex: v }, 'deploy index → ' + v), { max: 255, hint: '255 = not deployed' }),
+    setNumU('Deployment slot', () => s.unit(i).deploySlot, (v) => set({ deploySlot: v }, 'deploy slot → ' + v), { max: 255 }),
+    setNumU('Adjutant id', () => s.unit(i).adjutant, (v) => set({ adjutant: v }, 'adjutant → ' + v), { min: -1, max: 1200 }))));
+
+  const statRows = [['str', 'Strength'], ['mag', 'Magic'], ['dex', 'Dexterity'], ['spd', 'Speed'], ['lck', 'Luck'], ['def', 'Defense'], ['res', 'Resistance'], ['mov', 'Movement'], ['cha', 'Charm']];
+  const statsGrid = el('div', { class: 'grid' });
+  statRows.forEach(([k, label], n) => {
+    statsGrid.append(setNumU(label, () => s.unit(i).stats[k], (v) => set({ stats: { [k]: v } }, label.toLowerCase() + ' → ' + v), {
+      max: k === 'mov' ? 30 : MAX_STAT, hint: 'base ' + ((ref.base || [])[n]) + ' · max ' + ((ref.max || [])[n]) + ' · grows ' + ((ref.grow || [])[n]) + '%',
+    }));
+  });
+  statsGrid.append(setNumU('HP', () => s.unit(i).hp, (v) => set({ hp: v }, 'hp → ' + v), { max: 255, hint: 'base ' + ref.baseHp + ' · max ' + ref.maxHp }));
+  box.append(plate('Stats (green reference column is the game file value for this unit id)', statsGrid));
+
+  const wGrid = el('div', { class: 'grid' });
+  for (let k = 0; k < 11; k++) {
+    const rankSel = setSelectU('rank', () => s.unit(i).skillRanks[k], (v) => set({ skillRanks: { [k]: v } }, WEAR[k] + ' rank → ' + RANKS[v]), RANKS.map((t, r) => ({ v: r, t })));
+    const expBox = setNumU('exp', () => s.unit(i).skillExp[k], (v) => set({ skillExp: { [k]: v } }, WEAR[k] + ' exp → ' + v), { max: 65535, step: 50 });
+    wGrid.append(el('div', { class: 'f' },
+      el('label', {}, WEAR[k] + '  (' + (RANKS[s.unit(i).skillRanks[k]] || '?') + ')'),
+      el('div', { style: 'display:flex;gap:6px' }, rankSel, expBox)));
+  }
+  box.append(plate('Weapon and magic ranks (exp is what the game tracks toward the next letter)', wGrid));
+
+  const invGrid = el('div', { class: 'grid' });
+  u.items.forEach((it, k) => {
+    const who = idTextU('Item ' + (k + 1), () => s.unit(i).items[k].id, (v) => set({ items: { [k]: { id: v } } }, 'item ' + k + ' → ' + itemName(v)), 'dl-items', itemName, 'max dur ' + itemDur(it.id));
+    const dur = setNumU('durability', () => s.unit(i).items[k].dur, (v) => set({ items: { [k]: { dur: v } } }, 'item ' + k + ' dur → ' + v), { max: 255 });
+    const amt = setNumU('amount', () => s.unit(i).items[k].amount, (v) => set({ items: { [k]: { amount: v } } }, 'item ' + k + ' amount → ' + v), { max: 255 });
+    invGrid.append(el('div', { class: 'f' }, who, el('div', { style: 'display:flex;gap:6px' }, dur, amt)));
+  });
+  invGrid.append(setNumU('equipped item 1', () => s.unit(i).equipped[0], (v) => set({ equipped: { 0: v } }, 'equipped 1 → ' + v), { min: -1, max: 5, hint: 'index into the six slots' }),
+    setNumU('equipped item 2', () => s.unit(i).equipped[1], (v) => set({ equipped: { 1: v } }, 'equipped 2 → ' + v), { min: -1, max: 5 }));
+  box.append(plate('Inventory (six carried items)', invGrid));
+
+  const artGrid = el('div', { class: 'grid' });
+  for (let k = 0; k < 10; k++) artGrid.append(setSelectU('known art ' + (k + 1), () => s.unit(i).artsKnown[k], (v) => set({ artsKnown: { [k]: v } }, 'known art ' + k + ' → ' + artName(v)),
+    [{ v: 0, t: NONE }].concat(D.arts.map((a, n) => ({ v: n, t: a })))));
+  for (let k = 0; k < 3; k++) artGrid.append(setSelectU('equipped art ' + (k + 1), () => s.unit(i).artsEquipped[k], (v) => set({ artsEquipped: { [k]: v } }, 'equipped art ' + k + ' → ' + artName(v)),
+    [{ v: 80, t: NONE }].concat(D.arts.map((a, n) => ({ v: n, t: a })))));
+  box.append(el('details', {}, el('summary', {}, 'Combat arts (10 known, 3 equipped)'), artGrid));
+
+  const magGrid = el('div', { class: 'grid' });
+  for (let k = 0; k < 12; k++) magGrid.append(el('div', { class: 'f' },
+    setSelectU('spell ' + (k + 1), () => s.unit(i).magicKnown[k], (v) => set({ magicKnown: { [k]: v } }, 'spell ' + k + ' → ' + magicName(v)), [{ v: 38, t: NONE }].concat(D.magic.map((m, n) => ({ v: n, t: m })))),
+    setNumU('uses left', () => s.unit(i).magicDurability[k], (v) => set({ magicDurability: { [k]: v } }, 'spell ' + k + ' uses → ' + v), { max: 255 })));
+  box.append(el('details', {}, el('summary', {}, 'Spells (12 slots, uses left per faith/reason)' ), magGrid));
+
+  const abilWrap = el('div', { class: 'bits' });
+  for (let k = 0; k < 240; k++) {
+    const on = s.unit(i).abilities[k];
+    const cb = el('input', { type: 'checkbox' }); cb.checked = !!on;
+    cb.addEventListener('change', () => { set({ abilities: { [k]: cb.checked ? 1 : 0 } }, 'ability ' + skillName(k) + ' ' + (cb.checked ? 'on' : 'off')); });
+    abilWrap.append(el('label', {}, cb, skillName(k)));
+  }
+  const abilEq = el('div', { class: 'grid', style: 'margin-top:10px' });
+  for (let k = 0; k < 5; k++) abilEq.append(setSelectU('equipped ' + (k + 1), () => s.unit(i).abilitiesEquipped[k], (v) => set({ abilitiesEquipped: { [k]: v } }, 'equipped ability ' + k + ' → ' + (v >= 240 ? NONE : skillName(v))),
+    [{ v: 255, t: NONE }].concat(D.skills.map((a, n) => ({ v: n, t: a })))));
+  box.append(el('details', {}, el('summary', {}, 'Abilities and skills (240 flags)'), abilWrap, abilEq));
+
+  const batGrid = el('div', { class: 'grid' });
+  batGrid.append(
+    setSelectU('battalion type', () => s.unit(i).battalion.type, (v) => set({ battalion: { type: v } }, 'battalion → ' + battalionName(v)), [{ v: 200, t: NONE }].concat(D.battalions.map((b, n) => ({ v: n, t: b }))), '200 = none'),
+    setNumU('battalion exp', () => s.unit(i).battalion.exp, (v) => set({ battalion: { exp: v } }, 'battalion exp → ' + v), { max: 65535 }),
+    setNumU('battalion stamina', () => s.unit(i).battalion.stamina, (v) => set({ battalion: { stamina: v } }, 'battalion stamina → ' + v), { max: 65535 }));
+  box.append(plate('Battalion carried by this unit', batGrid));
+
+  const clsGrid = el('details', {}, el('summary', {}, 'Class mastery: exp and level for all 64 classes the save tracks'));
+  const clsTable = el('table', {}, el('tr', {}, el('th', {}, 'class'), el('th', { class: 'num' }, 'exp'), el('th', { class: 'num' }, 'level')));
+  for (let k = 0; k < 64; k++) {
+    clsTable.append(el('tr', {}, el('td', {}, className(k)),
+      el('td', { class: 'num' }, setNumU('exp', () => s.unit(i).classExpAll[k], (v) => set({ classExpAll: { [k]: v } }, className(k) + ' exp → ' + v), { max: 65535 })),
+      el('td', { class: 'num' }, setNumU('level', () => s.unit(i).classLevelsAll[k], (v) => set({ classLevelsAll: { [k]: v } }, className(k) + ' level → ' + v), { max: 20 }))));
+  }
+  clsGrid.append(clsTable);
+  box.append(clsGrid);
+
+  const flagWrap = el('div', { class: 'bits' });
+  for (let b = 0; b < 32; b++) {
+    const cb = el('input', { type: 'checkbox' }); cb.checked = !!((s.unit(i).flags >>> b) & 1);
+    cb.addEventListener('change', () => {
+      const old = s.unit(i).flags, nv = cb.checked ? old | (1 << b) : old & ~(1 << b);
+      s.setUnit(i, { flags: nv }); record(s, 'unit ' + i + ' flag bit ' + b + ' (' + UNIT_FLAGS[b] + ') ' + (cb.checked ? 'on' : 'off'), () => s.setUnit(i, { flags: old }));
+    });
+    flagWrap.append(el('label', {}, cb, b + ' · ' + UNIT_FLAGS[b]));
+  }
+  box.append(el('details', {}, el('summary', {}, 'Unit flags (only bits 0, 1 and 3 have published meanings)'), flagWrap,
+    el('p', { class: 'note' }, 'record ends at +0x230, bytes 0x230-0x24C are new in 1.2.0 and stay untouched')));
+  return box;
+}
+
+// ---------- item box ----------
+function renderItemBox(p) {
+  const s = cur;
+  let showAll = false, draw = () => {};
+  const add = (id) => { for (let i = 0; i < 400; i++) if (s.item(i).id < 0) { const old = s.item(i); s.setItem(i, { id, dur: itemDur(id), amount: 1 }); record(s, 'item box ' + i + ' → ' + itemName(id) + ' x1', () => s.setItem(i, old)); draw(); return; } say('!item box is full'); };
+  const quick = el('div', { class: 'row' },
+    el('input', { type: 'text', list: 'dl-items', placeholder: 'add to first free slot: 16 — Iron Sword', id: 'quickItem' }),
+    el('button', { onclick: () => { const t = $('quickItem').value.trim(); const m = /^(\d+)/.exec(t); const hit = m ? +m[1] : (D._byName['dl-items'].find((e) => e.label.toLowerCase() === t.toLowerCase()) || {}).id; if (hit === undefined || hit === null || Number.isNaN(hit)) return say('!could not read that item'); add(hit); } }, 'add'),
+    el('button', { class: 'mini', onclick: () => { for (let i = 0; i < 400; i++) { const old = s.item(i); if (old.id >= 0) { s.setItem(i, { id: -1, dur: 0, amount: 0 }); record(s, 'cleared item box ' + i + ' (' + itemName(old.id) + ')', () => s.setItem(i, old)); } } draw(); } }, 'clear all'));
+  const wrap = el('div', { class: 'scroll', style: 'max-height:60vh' });
+  draw = () => {
+    wrap.innerHTML = '';
+    const used = Array.from({ length: 400 }, (_, i) => s.item(i)).filter((i) => i.id >= 0).length;
+    const rows = [];
+    for (let i = 0; i < 400; i++) { const it = s.item(i); if (it.id >= 0 || showAll || rows.filter((r) => r.empty).length < 12) rows.push({ i, it, empty: it.id < 0 }); }
+    const table = el('table', {}, el('tr', {}, el('th', { class: 'num' }, '#'), el('th', {}, 'item'), el('th', { class: 'num' }, 'durability'), el('th', { class: 'num' }, 'max'), el('th', { class: 'num' }, 'amount'), el('th', {}, '')));
+    for (const { i, it, empty } of rows) {
+      table.append(el('tr', { style: empty ? 'opacity:.45' : '' },
+        el('td', { class: 'num dim' }, String(i)),
+        el('td', {}, idText(s, 'item', () => s.item(i).id, (v) => { const old = s.item(i); s.setItem(i, { ...old, id: v }); record(s, 'item box ' + i + ' → ' + itemName(v), () => s.setItem(i, old)); }, 'dl-items', itemName, '', true, true)),
+        el('td', { class: 'num' }, setNum(s, 'dur', () => s.item(i).dur, (v) => { const old = s.item(i); s.setItem(i, { ...old, dur: v }); record(s, 'item box ' + i + ' dur → ' + v, () => s.setItem(i, old)); }, { max: 255, manual: true, noLabel: true })),
+        el('td', { class: 'num dim' }, it.id >= 0 ? (itemDur(it.id) || '∞') : ''),
+        el('td', { class: 'num' }, setNum(s, 'amt', () => s.item(i).amount, (v) => { const old = s.item(i); s.setItem(i, { ...old, amount: v }); record(s, 'item box ' + i + ' amount → ' + v, () => s.setItem(i, old)); }, { max: 255, manual: true, noLabel: true })),
+        el('td', {}, el('button', { class: 'mini', onclick: () => { const old = s.item(i); s.setItem(i, { id: -1, dur: 0, amount: 0 }); record(s, 'cleared item box ' + i, () => s.setItem(i, old)); draw(); } }, 'clear'))));
+    }
+    wrap.append(el('div', { class: 'row', style: 'margin:0 0 8px' },
+      el('span', { class: 'pill' }, used + ' of 400 slots used'),
+      el('button', { class: 'mini', onclick: () => { showAll = !showAll; draw(); } }, showAll ? 'hide empty slots' : 'show all 400 slots')),
+      table);
+  };
+  p.append(el('div', { class: 'plate' }, el('h3', {}, 'Item box'), quick), wrap);
+  draw();
+}
+
+// ---------- barracks ----------
+function renderBarracks(p) {
+  const s = cur;
+  const table = el('table', {}, el('tr', {}, el('th', { class: 'num' }, 'slot'), el('th', {}, 'battalion'), el('th', {}, 'assigned unit'), el('th', { class: 'num' }, 'exp'), el('th', { class: 'num' }, 'stamina'), el('th', { class: 'num' }, 'skill')));
+  for (let i = 0; i < 200; i++) {
+    const b = s.barracks(i);
+    if (b.owner === -1 && b.type === 200) continue;
+    table.append(el('tr', {}, el('td', { class: 'num dim' }, String(i)),
+      el('td', {}, setSelect(s, 'type', () => s.barracks(i).type, (v) => { const old = s.barracks(i); s.setBarracks(i, { ...old, type: v }); record(s, 'barracks ' + i + ' → ' + battalionName(v), () => s.setBarracks(i, old)); }, [{ v: 200, t: NONE }].concat(D.battalions.map((t, n) => ({ v: n, t }))), '', true, true)),
+      el('td', {}, idText(s, 'unit', () => s.barracks(i).owner, (v) => { const old = s.barracks(i); s.setBarracks(i, { ...old, owner: v }); record(s, 'barracks ' + i + ' owner → ' + unitName(v), () => s.setBarracks(i, old)); }, 'dl-units', unitName, '', true, true)),
+      el('td', { class: 'num' }, setNum(s, 'exp', () => s.barracks(i).exp, (v) => { const old = s.barracks(i); s.setBarracks(i, { ...old, exp: v }); record(s, 'barracks ' + i + ' exp → ' + v, () => s.setBarracks(i, old)); }, { max: 65535, manual: true, noLabel: true })),
+      el('td', { class: 'num' }, setNum(s, 'stamina', () => s.barracks(i).stamina, (v) => { const old = s.barracks(i); s.setBarracks(i, { ...old, stamina: v }); record(s, 'barracks ' + i + ' stamina → ' + v, () => s.setBarracks(i, old)); }, { max: 65535, manual: true, noLabel: true })),
+      el('td', { class: 'num' }, setSelect(s, 'skill', () => s.barracks(i).skill, (v) => { const old = s.barracks(i); s.setBarracks(i, { ...old, skill: v }); record(s, 'barracks ' + i + ' skill → ' + (v >= 80 ? NONE : D.battalionSkills[v]), () => s.setBarracks(i, old)); }, [{ v: 80, t: NONE }].concat(D.battalionSkills.map((t, n) => ({ v: n, t }))), '', true, true))));
+  }
+  if (table.children.length < 2) table.append(el('tr', {}, el('td', { colspan: 6, class: 'note' }, 'no battalions recruited in this save')));
+  p.append(el('div', { class: 'plate' }, el('h3', {}, 'Barracks — empty slots are hidden'), el('div', { class: 'scroll' }, table)));
+}
+
+// ---------- supports ----------
+/* Each of the 270 slots is one support conversation, and the value is the support points the game has
+   banked for that pair. Which two people own a slot comes from the game's SupportTalkDB (D.supports).
+   Rank thresholds are the ones the research editors document; a pair whose chain has an extra step
+   shifts every later threshold by +200, which is why the raw number stays visible and editable. */
+const rankOfPoints = (v) => (v <= 100 ? 'no rank' : v <= 300 ? 'C' : v <= 600 ? 'B' : v <= 900 ? 'A' : v <= 1200 ? 'S' : 'past S');
+const RANK_POINTS = [['clear', 0], ['C', 101], ['B', 301], ['A', 601], ['S', 901]];
+
+function renderSupports(p) {
+  const s = cur;
+  let onlyUsed = true;
+  const filter = el('input', { type: 'text', placeholder: 'filter by either name, e.g. Edelgard', class: 'wide' });
+  const wrap = el('div', { class: 'scroll', style: 'max-height:62vh' });
+  const pairOf = (i) => {
+    const t = D.supports[i];
+    if (!t || t.a < 0 || t.b < 0) return null;
+    return unitName(t.a) + '  ×  ' + unitName(t.b);
+  };
+  const draw = () => {
+    wrap.innerHTML = '';
+    const q = filter.value.trim().toLowerCase();
+    const table = el('table', {}, el('tr', {}, el('th', {}, 'pair'), el('th', { class: 'num' }, 'points'), el('th', {}, 'rank'), el('th', {}, 'set to'), el('th', { class: 'num' }, 'talk #')));
+    let shown = 0, used = 0;
+    const setOnly = (v) => { onlyUsed = v; box.checked = v; draw(); };
+    for (let i = 0; i < FE3H.P.supportCount; i++) {
+      const v = s.support(i);
+      if (v) used++;
+      if (onlyUsed && !v) continue;
+      const pair = pairOf(i);
+      const label = pair || 'support slot ' + i + (i >= D.supports.length ? ' (newer than the 1.0.2 pairing table)' : ' (no pair recorded)');
+      if (q && !label.toLowerCase().includes(q)) continue;
+      shown++;
+      const points = setNum(s, 'points', () => s.support(i), (val) => { const old = s.support(i); s.setSupport(i, val); record(s, (pair || 'support ' + i) + ': ' + old + ' → ' + val + ' points', () => s.setSupport(i, old)); render(); }, { max: 65535, step: 10, manual: true, noLabel: true });
+      const quick = el('div', { style: 'display:flex;gap:4px;flex-wrap:wrap' }, ...RANK_POINTS.map(([name, pts]) => el('button', {
+        class: 'mini', title: name + ' starts at ' + pts + ' points',
+        onclick: () => { const old = s.support(i); s.setSupport(i, pts); record(s, (pair || 'support ' + i) + ': ' + old + ' → ' + pts + ' points (' + name + ')', () => s.setSupport(i, old)); render(); },
+      }, name)));
+      table.append(el('tr', { style: v ? '' : 'opacity:.5' },
+        el('td', {}, pair ? el('b', {}, pair) : el('span', { class: 'dim' }, label)),
+        el('td', { class: 'num' }, points),
+        el('td', {}, el('span', { class: 'pill' }, rankOfPoints(v))),
+        el('td', {}, quick),
+        el('td', { class: 'num dim' }, String(i))));
+    }
+    const box = el('input', { type: 'checkbox', onchange: (e) => setOnly(e.target.checked) });
+    box.checked = onlyUsed;
+    wrap.append(el('div', { class: 'row', style: 'margin:0 0 8px' },
+      filter,
+      el('label', {}, box, ' only pairs with points'),
+      el('span', { class: 'pill' }, used + ' of ' + FE3H.P.supportCount + ' conversations have points'),
+      el('span', { class: 'pill' }, shown + ' shown')),
+      table);
+    if (!shown) {
+      wrap.append(el('div', { class: 'note' }, q
+        ? 'nothing matches "' + filter.value.trim() + '"' + (onlyUsed ? ' among the pairs that have points' : '') + '.'
+        : 'no conversation has points in this save.'));
+      wrap.append(el('div', { class: 'row' },
+        q ? el('button', { class: 'mini', onclick: () => { filter.value = ''; draw(); } }, 'clear the name filter') : null,
+        q && onlyUsed ? el('button', { class: 'mini', onclick: () => setOnly(false) }, 'show every conversation') : null));
+    }
+  };
+  filter.addEventListener('input', draw);
+  p.append(el('div', { class: 'plate' },
+    el('h3', {}, 'Support conversations'),
+    el('p', { class: 'note' }, 'Each conversation holds the support points banked for one pair. Ranks: 0-100 none · 101-300 C · 301-600 B · 601-900 A · 901-1200 S, taken from the research editors; pairs whose chain has an extra step shift the later steps by +200, so the raw number is always shown. Raising points alone may not make a conversation play: the game also gates them on the calendar, and that part is unverified.'),
+    wrap), el('div', { class: 'row' }, el('button', { class: 'mini', onclick: () => { filter.value = ''; setOnly(false); } }, 'show all ' + FE3H.P.supportCount + ' conversations')));
+  draw();
+}
+
+// ---------- activity ----------
+function renderActivity(p) {
+  const s = cur;
+  const base = s.activityBase;
+  const g = (o, n) => s.g(base + o, n), se = (o, n, v) => s.s(base + o, n, v);
+  const RANK_STEPS = [0, 0, 0, 0, 0, 6400, 10900, 16300, 24000, 32800, 44500];
+  const rank = RANK_STEPS.reduce((a, t, n) => (s.instructExp >= t ? n : a), 0);
+  const grid = el('div', { class: 'grid' },
+    setNum(s, 'Reputation', () => s.reputation, (v) => se(FE3H.A.reputation, 4, v), { max: 999999, step: 100 }),
+    setNum(s, 'Instruct exp', () => s.instructExp, (v) => se(FE3H.A.instructExp, 2, v), { max: 44500, step: 100, hint: 'rank ' + rank + ' of 10' }),
+    setNum(s, 'Explore uses left', () => g(0x27, 1), (v) => se(0x27, 1, v), { max: 255 }),
+    setNum(s, 'Lesson uses left', () => g(0x28, 1), (v) => se(0x28, 1, v), { max: 255 }),
+    setNum(s, 'Battle uses left', () => g(0x29, 1), (v) => se(0x29, 1, v), { max: 255 }));
+  for (let k = 0; k < 4; k++) {
+    grid.append(setNum(s, 'Statue level ' + (k + 1), () => g(0x2B + k, 1), (v) => se(0x2B + k, 1, v), { max: 9, hint: 'one statue, upgrade steps 0-9' }));
+  }
+  p.append(el('div', { class: 'plate' }, el('h3', {}, 'Activity block at ' + hex(base, 5)), grid));
+}
+
+// ---------- raw ----------
+function renderRaw(p) {
+  const s = cur;
+  const offIn = el('input', { type: 'text', value: '0', style: 'width:110px' });
+  const lenIn = el('input', { type: 'number', value: '64', min: 16, max: 512, style: 'width:80px' });
+  const out = el('div', { class: 'mono', style: 'white-space:pre;overflow:auto;font-size:12px;line-height:1.6' });
+  const editIn = el('input', { type: 'text', class: 'wide', placeholder: 'hex bytes to write at that offset, e.g. 00112233' });
+  const show = () => {
+    const off = clamp(parseInt(offIn.value, 16) || parseInt(offIn.value) || 0, 0, s.bytes.length - 16);
+    const n = clamp(lenIn.value, 16, 512);
+    let txt = '';
+    for (let r = 0; r < n; r += 16) {
+      const abs = 12 + off + r; if (abs >= s.bytes.length) break;
+      const bytes = [...s.bytes.subarray(abs, Math.min(abs + 16, s.bytes.length))];
+      txt += hex(off + r, 5) + '  ' + bytes.map((b) => b.toString(16).padStart(2, '0')).join(' ').padEnd(47) + '  ' + bytes.map((b) => (b >= 32 && b < 127 ? String.fromCharCode(b) : '.')).join('') + '\n';
+    }
+    out.textContent = txt;
+  };
+  editIn.addEventListener('change', () => {
+    const off = clamp(parseInt(offIn.value, 16) || 0, 0, s.bytes.length - 16);
+    const hexs = editIn.value.replace(/[^0-9a-fA-F]/g, '');
+    if (!hexs.length || hexs.length % 2) return say('!type an even number of hex digits');
+    const abs = 12 + off, old = s.bytes.slice(abs, abs + hexs.length / 2);
+    for (let i = 0; i < hexs.length / 2; i++) s.bytes[abs + i] = parseInt(hexs.substr(i * 2, 2), 16);
+    record(s, 'raw ' + old.length + ' byte(s) at 0x' + off.toString(16), () => s.bytes.set(old, abs));
+    show();
+  });
+  p.append(el('div', { class: 'plate' }, el('h3', {}, 'Raw bytes of ' + curName + ' (offsets are from the start of the save data, after the 12-byte header)'),
+    el('div', { class: 'row' }, el('label', {}, 'offset (hex)'), offIn, el('label', {}, 'length'), lenIn, el('button', { class: 'mini', onclick: show }, 'go')),
+    el('div', { class: 'row' }, editIn, el('button', { class: 'mini', onclick: () => editIn.dispatchEvent(new Event('change')) }, 'write')),
+    el('div', { style: 'margin-top:10px' }, out)));
+  show();
+}
+
+// ---------- changes, download ----------
+function refreshChanges() {
+  const box = $('changes'); box.innerHTML = '';
+  $('changecount').textContent = changes.length ? changes.length + ' edit(s)' : 'none';
+  $('changecount').className = 'pill' + (changes.length ? ' dirty' : '');
+  if (!changes.length) { box.append(el('span', { class: 'dim note' }, 'nothing edited yet')); }
+  changes.slice().reverse().slice(0, 60).forEach((c, revIdx) => {
+    const idx = changes.length - 1 - revIdx;
+    box.append(el('div', { class: 'chg' }, el('span', { class: 't' }, c.save + ' · ' + c.label),
+      el('button', { class: 'mini', onclick: () => { c.undo(); changes.splice(idx, 1); renderSlots(); render(); refreshChanges(); } }, 'revert')));
+  });
+  refreshDownloads();
+}
+function refreshDownloads() {
+  const any = dirty.size > 0;
+  $('dlDms').disabled = !(any && bundle);
+  $('dlFile').disabled = !any;
+}
+async function buildOutput() {
+  for (const n of [...dirty]) saves[n].seal();
+  const report = (n) => { const o = originals[n]; if (!o) return ''; let c = 0; for (let i = 0; i < o.length; i++) if (o[i] !== saves[n].bytes[i]) c++; return c + ' byte(s) differ from the file you opened'; };
+  if (bundle) {
+    for (const n of [...dirty]) {
+      const path = (bundle.entries.find((e) => e.type === 'file' && e.path.split('/').pop() === n) || {}).path;
+      if (!path) { say('!' + n + ': not an entry of the opened container, so it will not be packed'); continue; }
+      const was = container[path] || {};
+      container[path] = { type: 'file', guest: was.guest || '', mtime: $('touch').checked ? Math.floor(Date.now() / 1000) : (was.mtime || Math.floor(Date.now() / 1000)), bytes: saves[n].bytes.slice() };
+    }
+    const packed = await FE3H.DMS.write(container, { title: bundle.title, device: bundle.device || 'web' });
+    const back = await FE3H.DMS.read(packed.bytes);
+    if (back.hash !== packed.hash) throw new Error('self check: the repacked save reads back with a different hash');
+    for (const n of [...dirty]) {
+      const e = back.entries.find((x) => x.type === 'file' && x.path.split('/').pop() === n);
+      if (!e) throw new Error('self check: ' + n + ' is missing from the packed output');
+      const re = new FE3H.Save(e.bytes, n);
+      if (!re.bodySumMatches()) throw new Error('self check: ' + n + ' checksum does not match after packing');
+    }
+    const detail = [...dirty].map((n) => n + ': ' + report(n)).join(', ');
+    return { bytes: packed.bytes, name: bundle.title + '-save.dmsync', note: packed.files + ' files, hash ' + packed.hash + ', reads back clean · ' + detail };
+  }
+  const s = cur;
+  return { bytes: s.bytes, name: curName, note: 'checksum 0x' + s.checksum.toString(16) + ' · ' + report(curName) };
+}
+async function download() {
+  try {
+    const o = await buildOutput();
+    const a = el('a', { href: URL.createObjectURL(new Blob([o.bytes])), download: o.name });
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    $('dlname').textContent = o.name + ' · ' + o.bytes.length.toLocaleString() + ' B · ' + o.note;
+    say('+' + o.name + ': ' + o.note);
+    dirty = new Set(); refreshDownloads(); renderSlots();
+  } catch (e) { say('!' + e.message); }
+}
+
+// ---------- wiring ----------
+$('files').addEventListener('change', (e) => { const picked = [...e.target.files]; e.target.value = ''; if (picked.length) openFiles(picked); });
+// One way in per gesture: the picker lives outside #drop, so a click cannot both open it and bubble up
+// to the drop zone's own handler (which used to open a second panel over the first and dismiss it).
+$('pick').addEventListener('click', (e) => { e.stopPropagation(); $('files').click(); });
+$('drop').addEventListener('click', () => $('files').click());
+for (const ev of ['dragover', 'dragenter']) $('drop').addEventListener(ev, (e) => { e.preventDefault(); $('drop').classList.add('over'); });
+for (const ev of ['dragleave', 'drop']) $('drop').addEventListener(ev, (e) => { e.preventDefault(); $('drop').classList.remove('over'); });
+$('drop').addEventListener('drop', (e) => e.dataTransfer.files.length && openFiles(e.dataTransfer.files));
+window.addEventListener('dragover', (e) => e.preventDefault());
+window.addEventListener('drop', (e) => e.preventDefault());
+$('dlDms').addEventListener('click', download);
+$('dlFile').addEventListener('click', download);
+fillDatalists();
+say('>ready. Open a save.dmsync (from the fe3h-save folder) or the save files inside it.');
+</script>
+</body>
+</html>

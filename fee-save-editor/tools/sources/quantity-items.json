@@ -1,0 +1,1686 @@
+{
+  "SourceRevision": "86b8be7b9820e1bb3bce87d2a9a805ead85d92ab",
+  "TextRevision": "810fc6d5336e2caf6e434cc6dc316e8ceac5dc7b",
+  "Items": [
+    {
+      "Id": "IID_マスタープルフ",
+      "Names": {
+        "en": "Master Seal",
+        "zh-Hans": "大师证",
+        "zh-Hant": "大師證",
+        "ja": "マスタープルフ",
+        "ko": "마스터 프루프",
+        "de": "Meistersiegel",
+        "fr": "Magister",
+        "es": "Sello maestro",
+        "it": "Sigillo supremo"
+      },
+      "Category": "ReclassItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_チェンジプルフ",
+      "Names": {
+        "en": "Second Seal",
+        "zh-Hans": "转职证",
+        "zh-Hant": "轉職證",
+        "ja": "チェンジプルフ",
+        "ko": "체인지 프루프",
+        "de": "Zweitsiegel",
+        "fr": "Scolaris",
+        "es": "Segundo sello",
+        "it": "Sigillo speciale"
+      },
+      "Category": "ReclassItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_エンチャント専用プルフ",
+      "Names": {
+        "en": "Mystic Satchel",
+        "zh-Hans": "神秘包包",
+        "zh-Hant": "神秘包包",
+        "ja": "神秘の鞄",
+        "ko": "신비한 가방",
+        "de": "Mystische Tasche",
+        "fr": "Besace mystique",
+        "es": "Morral místico",
+        "it": "Borsa mistica"
+      },
+      "Category": "ReclassItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_マージカノン専用プルフ",
+      "Names": {
+        "en": "Mage Cannon",
+        "zh-Hans": "魔法大炮",
+        "zh-Hant": "魔法大炮",
+        "ja": "魔法の大筒",
+        "ko": "마법 대포",
+        "de": "Magiekanone",
+        "fr": "Canon magique",
+        "es": "Cañón mágico",
+        "it": "Cannone magico"
+      },
+      "Category": "ReclassItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_約束の指輪",
+      "Names": {
+        "en": "Pact Ring",
+        "zh-Hans": "约定戒指",
+        "zh-Hant": "約定戒指",
+        "ja": "約束の指輪",
+        "ko": "약속의 반지",
+        "de": "Paktring",
+        "fr": "Anneau du Pacte",
+        "es": "Anillo del Pacto",
+        "it": "Anello del patto"
+      },
+      "Category": "KeyItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_竜の時水晶",
+      "Names": {
+        "en": "Time Crystal",
+        "zh-Hans": "龙之时水晶",
+        "zh-Hant": "龍之時水晶",
+        "ja": "竜の時水晶",
+        "ko": "용의 시간석",
+        "de": "Zeitkristall",
+        "fr": "Cristal temporel",
+        "es": "Cronogema",
+        "it": "Cronogemma"
+      },
+      "Category": "KeyItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_シルバーカード",
+      "Names": {
+        "en": "Silver Card",
+        "zh-Hans": "银卡",
+        "zh-Hant": "銀卡",
+        "ja": "シルバーカード",
+        "ko": "실버 카드",
+        "de": "Silberkarte",
+        "fr": "Carte argent",
+        "es": "Tarjeta de plata",
+        "it": "Carta argento"
+      },
+      "Category": "KeyItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_てつの晶石",
+      "Names": {
+        "en": "Iron Ingot",
+        "zh-Hans": "铁晶石",
+        "zh-Hant": "鐵晶石",
+        "ja": "てつの晶石",
+        "ko": "철정석",
+        "de": "Eisenbarren",
+        "fr": "Lingot fer",
+        "es": "Hierro",
+        "it": "Ferro"
+      },
+      "Category": "Materials",
+      "Maximum": 9999
+    },
+    {
+      "Id": "IID_はがねの晶石",
+      "Names": {
+        "en": "Steel Ingot",
+        "zh-Hans": "钢晶石",
+        "zh-Hant": "鋼晶石",
+        "ja": "はがねの晶石",
+        "ko": "강정석",
+        "de": "Stahlbarren",
+        "fr": "Lingot acier",
+        "es": "Acero",
+        "it": "Acciaio"
+      },
+      "Category": "Materials",
+      "Maximum": 9999
+    },
+    {
+      "Id": "IID_ぎんの晶石",
+      "Names": {
+        "en": "Silver Ingot",
+        "zh-Hans": "银晶石",
+        "zh-Hant": "銀晶石",
+        "ja": "ぎんの晶石",
+        "ko": "은정석",
+        "de": "Silberbarren",
+        "fr": "Lingot argent",
+        "es": "Plata",
+        "it": "Argento"
+      },
+      "Category": "Materials",
+      "Maximum": 9999
+    },
+    {
+      "Id": "IID_素材_威力",
+      "Names": {
+        "en": "Mt Crystal",
+        "zh-Hans": "威力纹晶石",
+        "zh-Hant": "威力紋晶石",
+        "ja": "威力の紋晶石",
+        "ko": "위력의 문정석",
+        "de": "Kft.-Kristall",
+        "fr": "Cristal Dmg",
+        "es": "Cristal Pot",
+        "it": "Cristallo Pot"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_必殺",
+      "Names": {
+        "en": "Crit Crystal",
+        "zh-Hans": "必杀纹晶石",
+        "zh-Hant": "必殺紋晶石",
+        "ja": "必殺の紋晶石",
+        "ko": "필살의 문정석",
+        "de": "Krit.-Kristall",
+        "fr": "Cristal Crit",
+        "es": "Cristal Crí",
+        "it": "Cristallo Trpl"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_技",
+      "Names": {
+        "en": "Dex Crystal",
+        "zh-Hans": "技巧纹晶石",
+        "zh-Hant": "技巧紋晶石",
+        "ja": "技の紋晶石",
+        "ko": "기술의 문정석",
+        "de": "Beh.-Kristall",
+        "fr": "Cristal Tec",
+        "es": "Cristal Hab",
+        "it": "Cristallo Des"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_速さ",
+      "Names": {
+        "en": "Spd Crystal",
+        "zh-Hans": "速度纹晶石",
+        "zh-Hant": "速度紋晶石",
+        "ja": "速さの紋晶石",
+        "ko": "속도의 문정석",
+        "de": "Ges.-Kristall",
+        "fr": "Cristal Vit",
+        "es": "Cristal Vel",
+        "it": "Cristallo Vel"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_守備",
+      "Names": {
+        "en": "Def Crystal",
+        "zh-Hans": "防守纹晶石",
+        "zh-Hant": "防守紋晶石",
+        "ja": "守備の紋晶石",
+        "ko": "수비의 문정석",
+        "de": "Ver.-Kristall",
+        "fr": "Cristal Déf",
+        "es": "Cristal Def",
+        "it": "Cristallo Dif"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_魔防",
+      "Names": {
+        "en": "Res Crystal",
+        "zh-Hans": "魔防纹晶石",
+        "zh-Hant": "魔防紋晶石",
+        "ja": "魔防の紋晶石",
+        "ko": "마방의 문정석",
+        "de": "Res.-Kristall",
+        "fr": "Cristal Rés",
+        "es": "Cristal Res",
+        "it": "Cristallo Res"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_命中",
+      "Names": {
+        "en": "Hit Crystal",
+        "zh-Hans": "命中纹晶石",
+        "zh-Hant": "命中紋晶石",
+        "ja": "命中の紋晶石",
+        "ko": "명중의 문정석",
+        "de": "Trf.-Kristall",
+        "fr": "Cristal Prc",
+        "es": "Cristal Gol",
+        "it": "Cristallo Clp"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_回避",
+      "Names": {
+        "en": "Avo Crystal",
+        "zh-Hans": "回避纹晶石",
+        "zh-Hant": "回避紋晶石",
+        "ja": "回避の紋晶石",
+        "ko": "회피의 문정석",
+        "de": "Aw.-Kristall",
+        "fr": "Cristal Esq",
+        "es": "Cristal Esq",
+        "it": "Cristallo Scv"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_必避",
+      "Names": {
+        "en": "Ddg Crystal",
+        "zh-Hans": "必避纹晶石",
+        "zh-Hant": "必避紋晶石",
+        "ja": "必避の紋晶石",
+        "ko": "필살 회피의 문정석",
+        "de": "Krit.-Aw.-Kristall",
+        "fr": "Cristal Évit",
+        "es": "Cristal Evit",
+        "it": "Cristallo Elu"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_竜特効",
+      "Names": {
+        "en": "Dragon Bane",
+        "zh-Hans": "克制龙之书",
+        "zh-Hant": "克制龍之書",
+        "ja": "竜特効の書",
+        "ko": "용 특효의 책",
+        "de": "Drachenpein",
+        "fr": "Tome dracocide",
+        "es": "Contradragones",
+        "it": "Antidrago"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_騎馬特効",
+      "Names": {
+        "en": "Rider Bane",
+        "zh-Hans": "克制骑马之书",
+        "zh-Hant": "克制騎馬之書",
+        "ja": "騎馬特効の書",
+        "ko": "기마 특효의 책",
+        "de": "Reiterpein",
+        "fr": "Tome caballucide",
+        "es": "Contrajinetes",
+        "it": "Anticavalleria"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_重装特効",
+      "Names": {
+        "en": "Armor Bane",
+        "zh-Hans": "克制重装之书",
+        "zh-Hant": "克制重裝之書",
+        "ja": "重装特効の書",
+        "ko": "중갑 특효의 책",
+        "de": "Schildpein",
+        "fr": "Tome cuiracide",
+        "es": "Contracorazas",
+        "it": "Anticorazza"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_飛行特効",
+      "Names": {
+        "en": "Flier Bane",
+        "zh-Hans": "克制飞行之书",
+        "zh-Hant": "克制飛行之書",
+        "ja": "飛行特効の書",
+        "ko": "비행 특효의 책",
+        "de": "Fliegerpein",
+        "fr": "Tome volacide",
+        "es": "Contravoladores",
+        "it": "Antivolanti"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_素材_異形特効",
+      "Names": {
+        "en": "Corrupted Bane",
+        "zh-Hans": "克制异形之书",
+        "zh-Hant": "克制異形之書",
+        "ja": "異形特効の書",
+        "ko": "이형 특효의 책",
+        "de": "Verzerrtenpein",
+        "fr": "Tome aberracide",
+        "es": "Contraberraciones",
+        "it": "Antiaberrazioni"
+      },
+      "Category": "Materials",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_牛肉",
+      "Names": {
+        "en": "Beef",
+        "zh-Hans": "牛肉",
+        "zh-Hant": "牛肉",
+        "ja": "牛肉",
+        "ko": "소고기",
+        "de": "Rind",
+        "fr": "Bœuf",
+        "es": "Ternera",
+        "it": "Manzo"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_豚肉",
+      "Names": {
+        "en": "Pork",
+        "zh-Hans": "猪肉",
+        "zh-Hant": "豬肉",
+        "ja": "豚肉",
+        "ko": "돼지고기",
+        "de": "Schwein",
+        "fr": "Porc",
+        "es": "Cerdo",
+        "it": "Maiale"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_鶏肉",
+      "Names": {
+        "en": "Chicken",
+        "zh-Hans": "鸡肉",
+        "zh-Hant": "雞肉",
+        "ja": "鶏肉",
+        "ko": "닭고기",
+        "de": "Huhn",
+        "fr": "Poulet",
+        "es": "Pollo",
+        "it": "Pollo"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_羊肉",
+      "Names": {
+        "en": "Mutton",
+        "zh-Hans": "羊肉",
+        "zh-Hant": "羊肉",
+        "ja": "羊肉",
+        "ko": "양고기",
+        "de": "Lamm",
+        "fr": "Mouton",
+        "es": "Cordero",
+        "it": "Agnello"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_タマネギ",
+      "Names": {
+        "en": "Onion",
+        "zh-Hans": "洋葱",
+        "zh-Hant": "洋蔥",
+        "ja": "タマネギ",
+        "ko": "양파",
+        "de": "Zwiebel",
+        "fr": "Oignon",
+        "es": "Cebollas",
+        "it": "Cipolla"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_キャベツ",
+      "Names": {
+        "en": "Cabbage",
+        "zh-Hans": "卷心菜",
+        "zh-Hant": "高麗菜",
+        "ja": "キャベツ",
+        "ko": "양배추",
+        "de": "Kohl",
+        "fr": "Chou",
+        "es": "Coles",
+        "it": "Cavolo"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ハーブ",
+      "Names": {
+        "en": "Herb",
+        "zh-Hans": "香草",
+        "zh-Hant": "香草",
+        "ja": "ハーブ",
+        "ko": "허브",
+        "de": "Kraut",
+        "fr": "Herbes",
+        "es": "Hierbas",
+        "it": "Erbe aromatiche"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_トマト",
+      "Names": {
+        "en": "Tomato",
+        "zh-Hans": "番茄",
+        "zh-Hant": "番茄",
+        "ja": "トマト",
+        "ko": "토마토",
+        "de": "Tomate",
+        "fr": "Tomate",
+        "es": "Tomates",
+        "it": "Pomodoro"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_芋",
+      "Names": {
+        "en": "Potato",
+        "zh-Hans": "薯类",
+        "zh-Hant": "薯類",
+        "ja": "芋",
+        "ko": "감자",
+        "de": "Kartoffel",
+        "fr": "Pomme de terre",
+        "es": "Papas",
+        "it": "Patata"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_幻の野菜",
+      "Names": {
+        "en": "Rare Vegetable",
+        "zh-Hans": "幻之蔬菜",
+        "zh-Hant": "幻之蔬菜",
+        "ja": "幻の野菜",
+        "ko": "환상의 야채",
+        "de": "Selt. Gemüse",
+        "fr": "Légume rare",
+        "es": "Verdura rara",
+        "it": "Verdura rara"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_小麦",
+      "Names": {
+        "en": "Wheat Flour",
+        "zh-Hans": "小麦粉",
+        "zh-Hant": "小麥粉",
+        "ja": "小麦粉",
+        "ko": "밀가루",
+        "de": "Weizenmehl",
+        "fr": "Farine de blé",
+        "es": "Harina de trigo",
+        "it": "Farina"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_リンゴ",
+      "Names": {
+        "en": "Apple",
+        "zh-Hans": "苹果",
+        "zh-Hant": "蘋果",
+        "ja": "リンゴ",
+        "ko": "사과",
+        "de": "Apfel",
+        "fr": "Pomme",
+        "es": "Manzanas",
+        "it": "Mela"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_オレンジ",
+      "Names": {
+        "en": "Orange",
+        "zh-Hans": "柳橙",
+        "zh-Hant": "柳橙",
+        "ja": "オレンジ",
+        "ko": "오렌지",
+        "de": "Orange",
+        "fr": "Orange",
+        "es": "Naranjas",
+        "it": "Arancia"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_モモ",
+      "Names": {
+        "en": "Peach",
+        "zh-Hans": "蜜桃",
+        "zh-Hant": "蜜桃",
+        "ja": "モモ",
+        "ko": "복숭아",
+        "de": "Pfirsich",
+        "fr": "Pêche",
+        "es": "Duraznos",
+        "it": "Pesca"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ブドウ",
+      "Names": {
+        "en": "Grapes",
+        "zh-Hans": "葡萄",
+        "zh-Hant": "葡萄",
+        "ja": "ブドウ",
+        "ko": "포도",
+        "de": "Trauben",
+        "fr": "Raisin",
+        "es": "Uvas",
+        "it": "Uva"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ベリー",
+      "Names": {
+        "en": "Berries",
+        "zh-Hans": "莓果",
+        "zh-Hant": "莓果",
+        "ja": "ベリー",
+        "ko": "베리",
+        "de": "Beeren",
+        "fr": "Baies",
+        "es": "Bayas",
+        "it": "Frutti di bosco"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_幻の果物",
+      "Names": {
+        "en": "Rare Fruit",
+        "zh-Hans": "幻之水果",
+        "zh-Hant": "幻之水果",
+        "ja": "幻の果物",
+        "ko": "환상의 과일",
+        "de": "Seltenes Obst",
+        "fr": "Fruit rare",
+        "es": "Fruta rara",
+        "it": "Frutto raro"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_木の実",
+      "Names": {
+        "en": "Nuts",
+        "zh-Hans": "树果",
+        "zh-Hant": "樹果",
+        "ja": "木の実",
+        "ko": "나무 열매",
+        "de": "Nüsse",
+        "fr": "Noix",
+        "es": "Nueces",
+        "it": "Frutta secca"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ニシン",
+      "Names": {
+        "en": "Herring",
+        "zh-Hans": "鲱鱼",
+        "zh-Hant": "鯡魚",
+        "ja": "ニシン",
+        "ko": "청어",
+        "de": "Hering",
+        "fr": "Hareng",
+        "es": "Samenque",
+        "it": "Aringa"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_コイ",
+      "Names": {
+        "en": "Carp",
+        "zh-Hans": "鲤鱼",
+        "zh-Hant": "鯉魚",
+        "ja": "コイ",
+        "ko": "잉어",
+        "de": "Karpfen",
+        "fr": "Carpe",
+        "es": "Carpioca",
+        "it": "Carpa"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_サケ",
+      "Names": {
+        "en": "Salmon",
+        "zh-Hans": "鲑鱼",
+        "zh-Hant": "鮭魚",
+        "ja": "サケ",
+        "ko": "연어",
+        "de": "Lachs",
+        "fr": "Saumon",
+        "es": "Saltipa",
+        "it": "Salmone"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_タラ",
+      "Names": {
+        "en": "Cod",
+        "zh-Hans": "鳕鱼",
+        "zh-Hant": "鱈魚",
+        "ja": "タラ",
+        "ko": "대구",
+        "de": "Dorsch",
+        "fr": "Morue",
+        "es": "Valcamuza",
+        "it": "Merluzzo"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ウナギ",
+      "Names": {
+        "en": "Eel",
+        "zh-Hans": "鳗鱼",
+        "zh-Hant": "鰻魚",
+        "ja": "ウナギ",
+        "ko": "장어",
+        "de": "Aal",
+        "fr": "Anguille",
+        "es": "Micenia",
+        "it": "Anguilla"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_イワシ",
+      "Names": {
+        "en": "Sardines",
+        "zh-Hans": "沙丁鱼",
+        "zh-Hant": "沙丁魚",
+        "ja": "イワシ",
+        "ko": "정어리",
+        "de": "Sardine",
+        "fr": "Sardine",
+        "es": "Ojosas",
+        "it": "Sardine"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_すり身",
+      "Names": {
+        "en": "Minced Fish",
+        "zh-Hans": "碎肉",
+        "zh-Hant": "碎肉",
+        "ja": "すり身",
+        "ko": "으깬 어육",
+        "de": "Surimi",
+        "fr": "Poisson haché",
+        "es": "Surimi",
+        "it": "Trito di pesce"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_干物",
+      "Names": {
+        "en": "Dried Fish",
+        "zh-Hans": "干货",
+        "zh-Hant": "乾貨",
+        "ja": "干物",
+        "ko": "건어물",
+        "de": "Trockenfisch",
+        "fr": "Poisson séché",
+        "es": "Pescado seco",
+        "it": "Pesce secco"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_刺身",
+      "Names": {
+        "en": "Sashimi",
+        "zh-Hans": "生鱼片",
+        "zh-Hant": "生魚片",
+        "ja": "刺身",
+        "ko": "회",
+        "de": "Sashimi",
+        "fr": "Sashimi",
+        "es": "Sashimi",
+        "it": "Sashimi"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_幻の魚",
+      "Names": {
+        "en": "Rare Fish",
+        "zh-Hans": "幻之鱼",
+        "zh-Hant": "幻之魚",
+        "ja": "幻の魚",
+        "ko": "환상의 물고기",
+        "de": "Seltener Fisch",
+        "fr": "Poisson rare",
+        "es": "Pescado raro",
+        "it": "Pesce raro"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ミルク",
+      "Names": {
+        "en": "Milk",
+        "zh-Hans": "乳品",
+        "zh-Hant": "乳品",
+        "ja": "ミルク",
+        "ko": "우유",
+        "de": "Milch",
+        "fr": "Lait",
+        "es": "Leche",
+        "it": "Latte"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_タマゴ",
+      "Names": {
+        "en": "Eggs",
+        "zh-Hans": "蛋",
+        "zh-Hant": "蛋",
+        "ja": "卵",
+        "ko": "달걀",
+        "de": "Eier",
+        "fr": "Œufs",
+        "es": "Huevos",
+        "it": "Uova"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_米",
+      "Names": {
+        "en": "Rice",
+        "zh-Hans": "米",
+        "zh-Hant": "米",
+        "ja": "米",
+        "ko": "쌀",
+        "de": "Reis",
+        "fr": "Riz",
+        "es": "Arroz",
+        "it": "Riso"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_豆",
+      "Names": {
+        "en": "Beans",
+        "zh-Hans": "豆子",
+        "zh-Hant": "豆子",
+        "ja": "豆",
+        "ko": "콩",
+        "de": "Bohnen",
+        "fr": "Haricots",
+        "es": "Frijoles",
+        "it": "Fagioli"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_スパイス",
+      "Names": {
+        "en": "Spices",
+        "zh-Hans": "香料",
+        "zh-Hant": "香料",
+        "ja": "スパイス",
+        "ko": "향신료",
+        "de": "Gewürze",
+        "fr": "Épices",
+        "es": "Especias",
+        "it": "Spezie"
+      },
+      "Category": "Ingredients",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_摘みたての茶葉",
+      "Names": {
+        "en": "Tea Leaves",
+        "zh-Hans": "现摘茶叶",
+        "zh-Hant": "現摘茶葉",
+        "ja": "摘みたての茶葉",
+        "ko": "갓 딴 찻잎",
+        "de": "Teeblätter",
+        "fr": "Feuilles de thé",
+        "es": "Hojas de té",
+        "it": "Foglie di tè"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_硬い干し肉",
+      "Names": {
+        "en": "Dried Meat",
+        "zh-Hans": "坚硬肉干",
+        "zh-Hant": "堅硬肉乾",
+        "ja": "硬い干し肉",
+        "ko": "단단한 육포",
+        "de": "Dörrfleisch",
+        "fr": "Viande séchée",
+        "es": "Cecina",
+        "it": "Carne secca"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_厳選ヨーグルト",
+      "Names": {
+        "en": "Yogurt",
+        "zh-Hans": "严选酸奶",
+        "zh-Hant": "嚴選優格",
+        "ja": "厳選ヨーグルト",
+        "ko": "엄선 요구르트",
+        "de": "Joghurt",
+        "fr": "Yaourt",
+        "es": "Yogur",
+        "it": "Yogurt"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_こだわりの焼き芋",
+      "Names": {
+        "en": "Roasted Yam",
+        "zh-Hans": "行家烤番薯",
+        "zh-Hant": "行家烤番薯",
+        "ja": "こだわりの焼き芋",
+        "ko": "열심히 구운 감자",
+        "de": "Süßkartoffel",
+        "fr": "Patate grillée",
+        "es": "Camote asado",
+        "it": "Patata arrosto"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_鍛錬用の重り石",
+      "Names": {
+        "en": "Training Weight",
+        "zh-Hans": "锻炼用的重石",
+        "zh-Hant": "鍛鍊用的重石",
+        "ja": "鍛錬用の重り石",
+        "ko": "단련용 돌",
+        "de": "Trainingsstein",
+        "fr": "Lest",
+        "es": "Pesas",
+        "it": "Peso"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_塗る筋肉増強剤",
+      "Names": {
+        "en": "Muscle Balm",
+        "zh-Hans": "外用肌肉增强剂",
+        "zh-Hant": "外用肌肉增強劑",
+        "ja": "塗る筋肉増強剤",
+        "ko": "바르는 근육 증강제",
+        "de": "Muskelbalsam",
+        "fr": "Baume musculaire",
+        "es": "Bálsamo muscular",
+        "it": "Balsamo muscolare"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_動物用のマタタビ",
+      "Names": {
+        "en": "Animal Treats",
+        "zh-Hans": "动物用的木天蓼",
+        "zh-Hant": "動物用的木天蓼",
+        "ja": "動物用のマタタビ",
+        "ko": "동물용 개다래",
+        "de": "Leckerlis",
+        "fr": "Friandises",
+        "es": "Comida para animales",
+        "it": "Cibo per animali"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_よく切れる彫刻刀",
+      "Names": {
+        "en": "Sharp Chisel",
+        "zh-Hans": "锋利雕刻刀",
+        "zh-Hant": "鋒利雕刻刀",
+        "ja": "よく切れる彫刻刀",
+        "ko": "날카로운 조각도",
+        "de": "Scharfer Meißel",
+        "fr": "Ciseau affûté",
+        "es": "Cincel afilado",
+        "it": "Scalpello affilato"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_不思議な童話絵本",
+      "Names": {
+        "en": "Fairy-Tale Book",
+        "zh-Hans": "奇妙的童话绘本",
+        "zh-Hant": "奇妙的童話繪本",
+        "ja": "不思議な童話絵本",
+        "ko": "신비한 그림 동화책",
+        "de": "Märchenbuch",
+        "fr": "Livre de contes",
+        "es": "Libro de cuentos",
+        "it": "Libro di favole"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_世界各国の詩集",
+      "Names": {
+        "en": "Poetry Book",
+        "zh-Hans": "世界各国诗集",
+        "zh-Hant": "世界各國詩集",
+        "ja": "世界各国の詩集",
+        "ko": "세계 각국의 시집",
+        "de": "Poesiebuch",
+        "fr": "Recueil de poésies",
+        "es": "Libro de poesía",
+        "it": "Libro di poesie"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_難しい哲学書",
+      "Names": {
+        "en": "Philosophy Book",
+        "zh-Hans": "深奥的哲学书",
+        "zh-Hant": "深奧的哲學書",
+        "ja": "難しい哲学書",
+        "ko": "어려운 철학서",
+        "de": "Philosophiebuch",
+        "fr": "Livre de philosophie",
+        "es": "Libro de filosofía",
+        "it": "Libro di filosofia"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_神竜聖書",
+      "Names": {
+        "en": "Dragon Scripture",
+        "zh-Hans": "神龙圣书",
+        "zh-Hant": "神龍聖書",
+        "ja": "神竜聖書",
+        "ko": "신룡 성서",
+        "de": "Drachenschrift",
+        "fr": "Livre du Dragon",
+        "es": "Escrituras sagradas",
+        "it": "Scritture del Drago"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_エレオスの歴史書",
+      "Names": {
+        "en": "Elyos History",
+        "zh-Hans": "艾雷欧斯历史书",
+        "zh-Hant": "艾雷歐斯歷史書",
+        "ja": "エレオスの歴史書",
+        "ko": "엘레오스의 역사서",
+        "de": "Elyos' Geschichte",
+        "fr": "Histoire d'Elyos",
+        "es": "Historia de Elyos",
+        "it": "Storia dell'Elyos"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_強い香りの香水",
+      "Names": {
+        "en": "Strong Perfume",
+        "zh-Hans": "香气浓郁的香水",
+        "zh-Hant": "香氣濃郁的香水",
+        "ja": "強い香りの香水",
+        "ko": "향이 강한 향수",
+        "de": "Schweres Parfüm",
+        "fr": "Parfum fort",
+        "es": "Perfume potente",
+        "it": "Profumo forte"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_虫取り網",
+      "Names": {
+        "en": "Butterfly Net",
+        "zh-Hans": "捕虫网",
+        "zh-Hant": "捕蟲網",
+        "ja": "虫取り網",
+        "ko": "잠자리채",
+        "de": "Kescher",
+        "fr": "Filet à papillons",
+        "es": "Cazamariposas",
+        "it": "Retino per insetti"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_日よけ帽子",
+      "Names": {
+        "en": "Sun Visor",
+        "zh-Hans": "遮阳帽",
+        "zh-Hant": "遮陽帽",
+        "ja": "日よけ帽子",
+        "ko": "햇빛 차단 모자",
+        "de": "Sonnenblende",
+        "fr": "Visière estivale",
+        "es": "Visera solar",
+        "it": "Cappellino da sole"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_キクの花",
+      "Names": {
+        "en": "Chrysanthemum",
+        "zh-Hans": "菊花",
+        "zh-Hant": "菊花",
+        "ja": "キクの花",
+        "ko": "국화꽃",
+        "de": "Chrysantheme",
+        "fr": "Chrysanthème",
+        "es": "Crisantemo",
+        "it": "Crisantemo"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_レンズマメの花",
+      "Names": {
+        "en": "Lentil Flower",
+        "zh-Hans": "扁豆花",
+        "zh-Hant": "扁豆花",
+        "ja": "レンズマメの花",
+        "ko": "렌즈콩꽃",
+        "de": "Linsenblume",
+        "fr": "Fleur de lentille",
+        "es": "Flor de lenteja",
+        "it": "Fiore di lenticchia"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ユリの花",
+      "Names": {
+        "en": "Lily",
+        "zh-Hans": "百合花",
+        "zh-Hant": "百合花",
+        "ja": "ユリの花",
+        "ko": "백합꽃",
+        "de": "Lilie",
+        "fr": "Lys",
+        "es": "Lirio",
+        "it": "Giglio"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_コマツナの花",
+      "Names": {
+        "en": "Desert Marigold",
+        "zh-Hans": "小松菜花",
+        "zh-Hant": "小松菜花",
+        "ja": "コマツナの花",
+        "ko": "소송채꽃",
+        "de": "Sandblume",
+        "fr": "Souci du désert",
+        "es": "Flor del desierto",
+        "it": "Fior delle sabbie"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ルピナスの花",
+      "Names": {
+        "en": "Lupine Flower",
+        "zh-Hans": "羽扇豆花",
+        "zh-Hant": "羽扇豆花",
+        "ja": "ルピナスの花",
+        "ko": "루피너스꽃",
+        "de": "Lupine",
+        "fr": "Fleur de lupin",
+        "es": "Flor de altramuz",
+        "it": "Fiore di lupino"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_シロツメクサ",
+      "Names": {
+        "en": "White Clover",
+        "zh-Hans": "白三叶草",
+        "zh-Hant": "白三葉草",
+        "ja": "シロツメクサ",
+        "ko": "클로버",
+        "de": "Weißklee",
+        "fr": "Trèfle blanc",
+        "es": "Trébol blanco",
+        "it": "Trifoglio bianco"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_角笛",
+      "Names": {
+        "en": "Horn",
+        "zh-Hans": "号角",
+        "zh-Hant": "號角",
+        "ja": "角笛",
+        "ko": "뿔피리",
+        "de": "Horn",
+        "fr": "Cor",
+        "es": "Cuerno",
+        "it": "Corno"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_手作りの花輪",
+      "Names": {
+        "en": "Flower Wreath",
+        "zh-Hans": "手作花环",
+        "zh-Hant": "手作花圈",
+        "ja": "手作りの花輪",
+        "ko": "손수 만든 화환",
+        "de": "Blumenkranz",
+        "fr": "Couronne de fleurs",
+        "es": "Corona floral",
+        "it": "Ghirlanda"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_可愛いエプロン",
+      "Names": {
+        "en": "Cute Apron",
+        "zh-Hans": "可爱围裙",
+        "zh-Hant": "可愛圍裙",
+        "ja": "可愛いエプロン",
+        "ko": "귀여운 에이프런",
+        "de": "Niedl. Schürze",
+        "fr": "Tablier mignon",
+        "es": "Delantal lindo",
+        "it": "Grembiule carino"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_釣り用の餌",
+      "Names": {
+        "en": "Fishing Bait",
+        "zh-Hans": "钓饵",
+        "zh-Hant": "釣餌",
+        "ja": "釣り用の餌",
+        "ko": "낚시용 미끼",
+        "de": "Fischköder",
+        "fr": "Appât de pêche",
+        "es": "Cebo de pesca",
+        "it": "Esca"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_多機能ナイフ",
+      "Names": {
+        "en": "Utility Knife",
+        "zh-Hans": "多功能折叠刀",
+        "zh-Hant": "多功能折疊刀",
+        "ja": "多機能ナイフ",
+        "ko": "다기능 나이프",
+        "de": "Allzweckmesser",
+        "fr": "Couteau multifonction",
+        "es": "Navaja multiusos",
+        "it": "Coltello multiuso"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_木彫りのクマ",
+      "Names": {
+        "en": "Bear Carving",
+        "zh-Hans": "熊木雕",
+        "zh-Hant": "熊木雕",
+        "ja": "木彫りのクマ",
+        "ko": "목조 곰",
+        "de": "Bärenschnitzerei",
+        "fr": "Statuette d'ours",
+        "es": "Talla de oso",
+        "it": "Orso di legno"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_裁縫セット",
+      "Names": {
+        "en": "Sewing Kit",
+        "zh-Hans": "裁缝套组",
+        "zh-Hant": "裁縫套組",
+        "ja": "裁縫セット",
+        "ko": "재봉 세트",
+        "de": "Nähzeug",
+        "fr": "Kit de couture",
+        "es": "Set de costura",
+        "it": "Set da cucito"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_ヤギの毛糸玉",
+      "Names": {
+        "en": "Sheep Wool",
+        "zh-Hans": "羊毛线球",
+        "zh-Hant": "羊毛線球",
+        "ja": "羊の毛糸玉",
+        "ko": "양 털실 뭉치",
+        "de": "Schafwolle",
+        "fr": "Laine de mouton",
+        "es": "Lana de oveja",
+        "it": "Lana di pecora"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_上質なハンカチ",
+      "Names": {
+        "en": "Quality Kerchief",
+        "zh-Hans": "高级手帕",
+        "zh-Hant": "高級手帕",
+        "ja": "上質なハンカチ",
+        "ko": "품질 좋은 손수건",
+        "de": "Taschentuch",
+        "fr": "Mouchoir",
+        "es": "Pañuelo bueno",
+        "it": "Fazzoletto"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_高級な羽根ペン",
+      "Names": {
+        "en": "Fine Quill Pen",
+        "zh-Hans": "高级羽毛笔",
+        "zh-Hant": "高級羽毛筆",
+        "ja": "高級な羽根ペン",
+        "ko": "고급 깃펜",
+        "de": "Federkiel",
+        "fr": "Stylo à plume",
+        "es": "Pluma de lujo",
+        "it": "Calamo di lusso"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_装飾入りの短剣",
+      "Names": {
+        "en": "Fancy Dagger",
+        "zh-Hans": "装饰短剑",
+        "zh-Hant": "裝飾短劍",
+        "ja": "装飾入りの短剣",
+        "ko": "장식된 단검",
+        "de": "Edler Dolch",
+        "fr": "Dague ornementale",
+        "es": "Daga decorada",
+        "it": "Pugnale decorato"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_シカ角の耳飾り",
+      "Names": {
+        "en": "Antler Earrings",
+        "zh-Hans": "鹿角耳饰",
+        "zh-Hant": "鹿角耳飾",
+        "ja": "シカ角の耳飾り",
+        "ko": "사슴뿔 귀걸이",
+        "de": "Hornohrringe",
+        "fr": "Boucles en bois",
+        "es": "Pendientes de asta",
+        "it": "Orecchini di corno"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_卓上遊び用絵札",
+      "Names": {
+        "en": "Playing Cards",
+        "zh-Hans": "桌游用纸牌",
+        "zh-Hant": "桌遊用紙牌",
+        "ja": "卓上遊び用絵札",
+        "ko": "탁상 놀이용 카드",
+        "de": "Spielkarten",
+        "fr": "Cartes à jouer",
+        "es": "Naipes",
+        "it": "Carte da gioco"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_激辛調味料",
+      "Names": {
+        "en": "Spicy Seasonings",
+        "zh-Hans": "超辣调味料",
+        "zh-Hant": "超辣調味料",
+        "ja": "激辛調味料",
+        "ko": "엄청 매운 조미료",
+        "de": "Scharfes Gewürz",
+        "fr": "Assaisonnement fort",
+        "es": "Condimento fuerte",
+        "it": "Spezie piccanti"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_風景の絵葉書",
+      "Names": {
+        "en": "Landscape Art",
+        "zh-Hans": "风景明信片",
+        "zh-Hant": "風景明信片",
+        "ja": "風景の絵葉書",
+        "ko": "풍경 그림엽서",
+        "de": "Landschaftsbild",
+        "fr": "Paysage",
+        "es": "Paisaje",
+        "it": "Paesaggio"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_美しい蝋燭",
+      "Names": {
+        "en": "Lovely Candle",
+        "zh-Hans": "美丽的蜡烛",
+        "zh-Hant": "美麗的蠟燭",
+        "ja": "美しい蝋燭",
+        "ko": "예쁜 초",
+        "de": "Schöne Kerze",
+        "fr": "Jolie bougie",
+        "es": "Vela bonita",
+        "it": "Candela carina"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_生き物図鑑",
+      "Names": {
+        "en": "Field Guide",
+        "zh-Hans": "生物图鉴",
+        "zh-Hant": "生物圖鑑",
+        "ja": "生き物図鑑",
+        "ko": "생물 도감",
+        "de": "Naturführer",
+        "fr": "Encyclopédie",
+        "es": "Guía de campo",
+        "it": "Manuale di biologia"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_怪しいお札",
+      "Names": {
+        "en": "Spooky Scroll",
+        "zh-Hans": "诡异符咒",
+        "zh-Hant": "詭異符咒",
+        "ja": "怪しいお札",
+        "ko": "수상한 부적",
+        "de": "Spukrolle",
+        "fr": "Parchemin sinistre",
+        "es": "Papel misterioso",
+        "it": "Rotolo arcano"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_大きなお皿",
+      "Names": {
+        "en": "Large Plate",
+        "zh-Hans": "巨大盘子",
+        "zh-Hant": "巨大盤子",
+        "ja": "大きなお皿",
+        "ko": "커다란 접시",
+        "de": "Großer Teller",
+        "fr": "Grand plateau",
+        "es": "Bandeja",
+        "it": "Grande piatto"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_包帯",
+      "Names": {
+        "en": "Bandages",
+        "zh-Hans": "绷带",
+        "zh-Hant": "繃帶",
+        "ja": "包帯",
+        "ko": "붕대",
+        "de": "Verbände",
+        "fr": "Bandages",
+        "es": "Vendas",
+        "it": "Garza"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_綺麗な石ころ",
+      "Names": {
+        "en": "Pretty Pebble",
+        "zh-Hans": "漂亮的石头",
+        "zh-Hant": "漂亮的石頭",
+        "ja": "綺麗な石ころ",
+        "ko": "예쁜 돌멩이",
+        "de": "Hübscher Kiesel",
+        "fr": "Joli galet",
+        "es": "Guijarro bonito",
+        "it": "Ciottolo carino"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_守り神の宝石",
+      "Names": {
+        "en": "Spirit Gem",
+        "zh-Hans": "守护神的宝石",
+        "zh-Hant": "守護神的寶石",
+        "ja": "守り神の宝石",
+        "ko": "수호신의 보석",
+        "de": "Schutz-Juwel",
+        "fr": "Gemme protectrice",
+        "es": "Gema protectora",
+        "it": "Gemma protettrice"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_馬糞",
+      "Names": {
+        "en": "Horse Manure",
+        "zh-Hans": "马粪",
+        "zh-Hant": "馬糞",
+        "ja": "馬糞",
+        "ko": "말똥",
+        "de": "Pferdedung",
+        "fr": "Crottin",
+        "es": "Estiércol de caballo",
+        "it": "Letame"
+      },
+      "Category": "Gifts",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_釣り竿Ⅰ",
+      "Names": {
+        "en": "Modest Rod",
+        "zh-Hans": "小鱼钓竿",
+        "zh-Hant": "小魚釣竿",
+        "ja": "小魚用の釣り竿",
+        "ko": "작은 낚싯대",
+        "de": "Einfache Angel",
+        "fr": "Canne simple",
+        "es": "Caña simple",
+        "it": "Canna semplice"
+      },
+      "Category": "KeyItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_釣り竿Ⅱ",
+      "Names": {
+        "en": "Sturdy Rod",
+        "zh-Hans": "耐用钓竿",
+        "zh-Hant": "耐用釣竿",
+        "ja": "頑丈な釣り竿",
+        "ko": "튼튼한 낚싯대",
+        "de": "Solide Angel",
+        "fr": "Canne solide",
+        "es": "Caña recia",
+        "it": "Canna robusta"
+      },
+      "Category": "KeyItems",
+      "Maximum": 999
+    },
+    {
+      "Id": "IID_釣り竿Ⅲ",
+      "Names": {
+        "en": "Supreme Rod",
+        "zh-Hans": "万能钓竿",
+        "zh-Hant": "萬能釣竿",
+        "ja": "万能の釣り竿",
+        "ko": "만능 낚싯대",
+        "de": "Profi-Angel",
+        "fr": "Canne suprême",
+        "es": "Caña sublime",
+        "it": "Canna suprema"
+      },
+      "Category": "KeyItems",
+      "Maximum": 999
+    }
+  ]
+}
