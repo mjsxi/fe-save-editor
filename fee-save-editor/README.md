@@ -1,8 +1,9 @@
 # Fire Emblem Engage save editor
 
-A single web page that edits Fire Emblem Engage saves in place, including nxnative cloud saves (`save.dmsync`).
-No server, no install, no upload — open `index.html` and the page reads and writes the bytes itself.
-It is the Engage twin of `../../fire emblem 3 houses/fe3h-save-editor`; same look, same "open it twice a week and it is still there" design.
+A single web page that edits Fire Emblem Engage save files in place — `Auto`, `Manual0`, `Global` — and nxnative
+cloud saves (`save.dmsync`) too. No server, no install, no upload — open `index.html` and the page reads and writes
+the bytes itself.
+It is the Engage twin of [`../fe3h-save-editor`](../fe3h-save-editor/README.md); same look, same "open it twice a week and it is still there" design.
 
 Open it by double-clicking **`index.html`** (tested in Safari; the SHA-256 the container needs works from `file://`).
 
@@ -13,7 +14,8 @@ js/data-en.js           item / character / class / skill / Emblem / ring / suppo
 tools/build-data.mjs    regenerates js/data-<lang>.js from tools/sources/ - same two-step shape as the
                         Three Houses editor, except Engage's dumps are already JSON so there is no
                         dump-sources.mjs step here
-tools/test-codec.mjs    141 checks of the codec against a real save; exits non-zero on failure
+tools/test-codec.mjs    149 checks of the codec against a real save, including that it refuses a Three Houses
+                        save; exits non-zero on failure
 tools/test-page.mjs     54 checks of the page itself (jsdom): choose-files and drag-drop both open a
                         save, every tab renders, widgets write, revert works, the repack reads back
 tools/sources/          JSON tables: items, roster, emblems, bracelets, rings, engravings, supports,
@@ -22,9 +24,13 @@ tools/sources/          JSON tables: items, roster, emblems, bracelets, rings, e
 
 ## Use
 
-1. **Open a save.** Drag `save.dmsync` onto the page — for this game that is
-   `../fee-save/0100A6301214E000/save.dmsync`. Loose `Auto` / `Manual0` / `Global` files work too, as does a mix;
-   a loose file you dropped replaces the copy inside the container.
+1. **Open a save.** Use **choose files**, or drag the save files onto the page: `Auto`, `Manual0`, `Manual1`, …
+   and `Global` if you have it — whatever you have, from wherever you keep them (a save-manager export, the game's
+   save-data folder under `0100A6301214E000`, an emulator's user directory). Pick the files rather than the folder
+   around them; you can select several at once, and the page reads each one it recognises.
+   *Cloud saves:* if your save came out of nxnative, drop **`save.dmsync`** instead — it is the same `save/` folder
+   packed into one file (mine sits at `../fee-save/0100A6301214E000/save.dmsync`). The page unpacks and verifies
+   it, and everything below is identical; dropping a loose file too replaces the copy inside the container.
 2. **Pick a slot.** Each button shows the chapter id and playtime. The pills under it show Alear's name, money,
    bond fragments, chapter, difficulty and mode, how many player units there are, how full the convoy is, how many
    Emblems you own, and whether both stored checksums are currently valid.
@@ -40,11 +46,13 @@ tools/sources/          JSON tables: items, roster, emblems, bracelets, rings, e
    **Supports** (rank, points and score per pair, quick C/B/A buttons using that pair's own thresholds, Pact
    protection), **Raw bytes** (hex view and write, with jumps to each section).
    Every change appears in **3 · Changes** with a **revert** button, newest first.
-4. **Download save.dmsync.** The page recomputes the header checksum and the whole-file CRC32, repacks the
-   container, then reads its own output back with the same reader it uses on other people's files, and refuses to
-   hand you a file that does not read back clean.
-5. **Put it back.** Quit the game on the phone *and* in the Mac app first, then drop the downloaded
-   `0100A6301214E000-save.dmsync` over `../fee-save/0100A6301214E000/save.dmsync`. Keep your original copy.
+4. **Download.** You get back what you opened: the save file under its own name (`Auto`, `Manual0`, …) with its
+   header checksum and whole-file CRC32 recomputed — **Download this save file** — or, if you opened a container,
+   **Download save.dmsync**, which re-packs it. Either way the page reads its own output back with the same reader
+   it uses on other people's files, and refuses to hand you a file that does not read back clean.
+5. **Put it back** where it came from, with the game closed, and **keep your original copy**. Replacing a cloud
+   save: quit the game on the phone *and* in the Mac app first, then drop the downloaded
+   `0100A6301214E000-save.dmsync` over `../fee-save/0100A6301214E000/save.dmsync`.
 
 ## What is safe and what is not
 
@@ -52,6 +60,10 @@ Nothing here checks values the game would check beyond what is listed per field.
 item id can crash a battle or a menu. **The container and both checksums are always recomputed correctly, and every
 write is rolled back if the file stops parsing after it** — so a mistake costs you a save slot, not the file.
 **Keep the copy you opened**: the page never writes to disk, everything is in memory until you download.
+
+One thing it does check: the save belongs to this game. A Three Houses save — loose, or the contents of a Three
+Houses `save.dmsync` — is refused by name rather than failing as "no section index", and a Three Houses container
+is refused from what is inside it rather than opening as a container with no saves in it.
 
 Two things the equipment edits deliberately do, because the alternative is a save that lies about its own state:
 changing what a unit carries clears that unit's *engaged this battle* counter and its carry flags (the game
@@ -101,7 +113,7 @@ game's own Japanese id**: `IID_はがねのつるぎ` → Steel Sword, `PID_リ�
 save only carries numbers, the names come from the game's tables in `tools/sources/`. Strings are `u32` byte length
 (`0xffffffff` = none) + UTF-16LE.
 
-Checked against the save in `../fee-save/` by `tools/test-codec.mjs` (141 checks), not just against documentation:
+Checked against the save in `../fee-save/` by `tools/test-codec.mjs` (149 checks), not just against documentation:
 
 - the stored CRC32 equals the CRC32 of the file, for `Auto`, `Manual0` and `Global`, and the header's own checksum
   lands in exactly one place (`0x42`);
@@ -121,7 +133,7 @@ Checked against the save in `../fee-save/` by `tools/test-codec.mjs` (141 checks
   still parses every section end to end;
 - and the refusals: writing the footer or the section index, a raw write that crosses out of its section, an
   out-of-range play time, a convoy slot past 999, an Emblem this save does not own, a bond ring that is not in the
-  pool, a truncated file, and a Three Houses save.
+  pool, a truncated file, and a Three Houses save — named as such, both loose and inside a container.
 - the page itself, in a real DOM: choose-files and drag-drop both open a save and the picker opens exactly once per
   click, all six tabs render, edits applied through the widgets land, one revert puts things back, and the repacked
   download reads back with a matching hash (`tools/test-page.mjs`, 54 checks).
@@ -129,13 +141,15 @@ Checked against the save in `../fee-save/` by `tools/test-codec.mjs` (141 checks
 ## Development
 
 ```sh
-node tools/test-codec.mjs      # 141 checks against your real save; exits non-zero on failure
+node tools/test-codec.mjs      # 149 checks against your real save; exits non-zero on failure
 node tools/test-page.mjs       # 54 checks against the page (needs `npm install jsdom` once)
 node tools/build-data.mjs      # regenerate js/data-<lang>.js after changing tools/sources
 ```
 
 Both suites are opt-in and quick: about a third of a second for the codec, two and a half for the page.
 `test-codec.mjs` takes a path if your save lives elsewhere: `node tools/test-codec.mjs path/to/save.dmsync`.
+Both suites want a packed `save.dmsync`, since they check the container as well as the save — the page itself works
+with loose `Auto` / `Manual0` files, the tests are the part that wants the container.
 Add a language by dropping its name columns into `tools/sources/` and running `LANGS=ja node tools/build-data.mjs`,
 then add a `<script src>` line in `index.html`. The name and limit tables in `tools/sources/` come from the
 game's own data dumps (the ones `hashcade/fee-save-editor` builds on); the save-format reading here was written

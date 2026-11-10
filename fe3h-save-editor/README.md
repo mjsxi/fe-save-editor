@@ -1,8 +1,9 @@
 # Fire Emblem Three Houses save editor
 
-A single web page that edits FE3H saves in place, including nxnative cloud saves (`save.dmsync`).
-No server, no install, no upload — open `index.html` and the page reads and writes the bytes itself.
-It is the Three Houses half of a pair: `../../fire emblem engage/fee-save-editor` is the same design for Engage,
+A single web page that edits FE3H save files in place — `auto`, `slot00`, `slot01`… — and nxnative cloud saves
+(`save.dmsync`) too. No server, no install, no upload — open `index.html` and the page reads and writes the bytes
+itself.
+It is the Three Houses half of a pair: [`../fee-save-editor`](../fee-save-editor/README.md) is the same design for Engage,
 down to the two-step `tools/sources/*.json -> js/data-<lang>.js` build and the same two kinds of test.
 
 Open it by double-clicking **`index.html`** (works from `file://`; checked in Safari, and the tests below run the
@@ -13,7 +14,7 @@ index.html              the whole app: UI + save format + container format
 js/fe3h.js              save file and .dmsync codec (also loadable in node, for the tests)
 js/data-en.js           item / unit / class / skill / spell names, generated from the game's own tables
 tools/build-data.mjs    tools/sources/*.json  ->  js/data-<lang>.js
-tools/test-codec.mjs    71 checks of the codec against a real save
+tools/test-codec.mjs    79 checks of the codec against a real save, including that it refuses an Engage save
 tools/test-picker.mjs   10 checks that "choose files" opens the picker once and loads the file
 tools/sources/          items.json, roster.json, supports.json, glossary.json - read by build-data.mjs,
                         and the authority: extracted once from the game's own tables (see the
@@ -22,9 +23,13 @@ tools/sources/          items.json, roster.json, supports.json, glossary.json - 
 
 ## Use
 
-1. **Open a save.** Drag `save.dmsync` onto the page — for this game that is
-   `../fe3h-save/010055D009F78000/save.dmsync`. Loose save files (`auto`, `slot00`, …) work too, as does a
-   mix of both; a loose file you dropped replaces the copy inside the container.
+1. **Open a save.** Use **choose files**, or drag the save files onto the page: `auto`, `slot00`, `slot01`, …
+   — whatever you have, from wherever you keep them (a save-manager export, the game's save-data folder under
+   `010055D009F78000`, an emulator's user directory). Pick the files rather than the folder around them; you can
+   select several at once, and the page reads each one it recognises.
+   *Cloud saves:* if your save came out of nxnative, drop **`save.dmsync`** instead — it is the same `save/`
+   folder packed into one file (mine sits at `../fe3h-save/010055D009F78000/save.dmsync`). The page unpacks and
+   verifies it, and everything below is identical; dropping a loose file too replaces the copy inside the container.
 2. **Pick a slot.** Each button shows chapter and playtime. The pills under it show name, gold, chapter,
    difficulty, how many units are in slots, and whether the stored checksum is currently valid.
 3. **Edit.** Tabs: Overview (gold, chapter, playtime, difficulty, style, map), Units (every unit slot:
@@ -33,11 +38,13 @@ tools/sources/          items.json, roster.json, supports.json, glossary.json - 
    Supports (each conversation labelled with its pair, its points and its rank, with C/B/A/S quick-set
    buttons), Activity (reputation, instruct exp, activity uses, statue levels), Raw bytes (write any offset).
    Every change appears in **3 · Changes** with a **revert** button, newest first.
-4. **Download save.dmsync.** The page re-computes the save's checksum, re-packs the container, then reads
-   its own output back with the same reader it uses on other people's files, and refuses to hand you a file
-   that does not read back clean.
-5. **Put it back.** Quit the game on the phone *and* in the Mac app first, then drop the downloaded
-   `010055D009F78000-save.dmsync` over `../fe3h-save/010055D009F78000/save.dmsync`. Keep your original copy.
+4. **Download.** You get back what you opened: the save file under its own name (`auto`, `slot00`, …) with its
+   checksum recomputed — **Download this save file** — or, if you opened a container, **Download save.dmsync**,
+   which re-packs it. Either way the page reads its own output back with the same reader it uses on other people's
+   files, and refuses to hand you a file that does not read back clean.
+5. **Put it back** where it came from, with the game closed, and **keep your original copy**. Replacing a cloud
+   save: quit the game on the phone *and* in the Mac app first, then drop the downloaded
+   `010055D009F78000-save.dmsync` over `../fe3h-save/010055D009F78000/save.dmsync`.
 
 ## What is safe and what is not
 
@@ -45,6 +52,10 @@ Nothing here checks values the game would check. An impossible class, item or sp
 or a menu, and a bad unit id in an empty slot can put a unit in the army that has no data behind it.
 The container and checksum are always recomputed correctly, so a mistake costs you a save slot, not the file.
 **Keep the copy you opened** — the page never writes to disk, everything is in memory until you download.
+
+One thing it does check: the save belongs to this game. An Engage save — loose, or the contents of an Engage
+`save.dmsync` — is refused by name instead of being read as Three Houses data, which would have produced a slot
+list of nothing but zeros.
 
 Bytes the page does not understand are copied through untouched: the 1301 bytes after the activity block,
 the new 0x230–0x24C tail of each unit record, the big table at 0x904C the game owns, and `save/system`.
@@ -98,10 +109,14 @@ date from 1.0.2, so a handful of newer entries fall back to `class 91 (newer tha
 ## Development
 
 ```sh
-node tools/test-codec.mjs      # 71 checks against your real save; exits non-zero on failure
+node tools/test-codec.mjs      # 79 checks against your real save; exits non-zero on failure
 node tools/build-data.mjs      # regenerate js/data-<lang>.js after changing tools/sources
 node tools/test-picker.mjs     # 10 checks on the open-a-file path (needs `npm install jsdom` once)
 ```
+
+The suites read a real save, and the default path in `test-codec.mjs` is this machine's — pass your own
+`save.dmsync` as the first argument (the suites want a packed one, since they check the container too; the page
+works fine with loose files).
 
 Both suites are opt-in and quick: about a tenth of a second for the codec, just over a second for the picker.
 The Engage editor has the same pair (`test-codec.mjs` for the bytes, a DOM test for the page), so the two folders
