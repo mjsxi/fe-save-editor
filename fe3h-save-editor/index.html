@@ -227,15 +227,17 @@ async function openFiles(list) {
     const isDms = f.name.toLowerCase().endsWith('.dmsync') || (bytes.length > 8 && String.fromCharCode(...bytes.subarray(0, 8)) === 'DMSYNC1\n');
     if (isDms) {
       try {
-        bundle = await FE3H.DMS.read(bytes);
-        container = FE3H.DMS.fromBundle(bundle);
-        say('+' + f.name + ': ' + bundle.files + ' files, container hash verified (' + bundle.title + ')');
+        const b = await FE3H.DMS.read(bytes);
+        const foreign = FE3H.containerHoldsOtherGame(b);
+        if (foreign) { say('!' + f.name + ': that is a ' + foreign + ' save (' + b.title + ') - this page edits Three Houses'); continue; }
+        bundle = b; container = FE3H.DMS.fromBundle(b);
+        say('+' + f.name + ': ' + b.files + ' files, container hash verified (' + b.title + ')');
       } catch (e) { say('!' + f.name + ': ' + e.message); }
       continue;
     }
     if (FE3H.looksLikeSave(bytes)) next[base] = bytes;
     else if (base === 'system') { systemBytes = bytes; say('> ' + base + ': slot list (metadata, read here only)'); }
-    else say('!' + f.name + ': not a Three Houses save file, skipped');
+    else say('!' + f.name + ': ' + FE3H.wrongGameNote(bytes));
   }
   if (!bundle && !Object.keys(next).length) return;
   if (bundle) for (const e of bundle.entries) {

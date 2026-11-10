@@ -131,6 +131,8 @@
   class Save {
     constructor(bytes, name) {
       this.name = name || 'save';
+      // refuse the other game by name rather than parsing it into nonsense (gold 0, playtime 83886080)
+      if (!looksLikeSave(bytes) && looksLikeOtherGame(bytes)) throw new Error(OTHER_GAME + ' save, not Three Houses');
       this.bytes = bytes.slice();                       // never touch the caller's buffer
       this.view = new DataView(this.bytes.buffer, this.bytes.byteOffset, this.bytes.byteLength);
       this.checksum = this.view.getUint32(0, true);
@@ -291,6 +293,32 @@
   }
   const looksLikeSystemSave = (bytes) => bytes.length > 16 && new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength).getUint32(8, true) === bytes.length && bytes.length < 0x4000;
 
+  // ---- refusing the other game ---------------------------------------------
+  /* Both titles travel in the same .dmsync container, so an Engage container opens happily here and the
+     saves inside are the only thing that says which game they belong to. Engage marks itself: its section
+     index starts with the "EDNI" magic, at 0 in a Global save and at 0x80 in a game save. Silently
+     skipping such a file reads as "opened fine, 0 saves", which looks like a bug in this page. */
+  const OTHER_GAME = 'Fire Emblem Engage';
+  function looksLikeOtherGame(bytes) {
+    const b = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
+    if (!b || b.length < 0x84) return false;
+    const at = (o) => b[o] === 0x45 && b[o + 1] === 0x44 && b[o + 2] === 0x4e && b[o + 3] === 0x49;   // E D N I
+    return at(0) || at(0x80);
+  }
+  // a container belongs to the other game when nothing in it is ours and something in it is theirs
+  function containerHoldsOtherGame(b) {
+    let mine = 0, theirs = 0;
+    for (const e of b.entries) {
+      if (e.type !== 'file') continue;
+      if (looksLikeSave(e.bytes)) mine++; else if (looksLikeOtherGame(e.bytes)) theirs++;
+    }
+    return !mine && theirs ? OTHER_GAME : null;
+  }
+  // why a dropped file was skipped, naming the game when we can tell which one it is
+  const wrongGameNote = (bytes) => looksLikeOtherGame(bytes)
+    ? OTHER_GAME + ' save - this page edits Three Houses, so it was skipped'
+    : 'not a Three Houses save file, skipped';
+
   // save/system: 0x70-byte slot records from 0x38. Only records that carry a real save version
   // are decoded; the rest is left as raw bytes (it is metadata the game owns).
   function readSystemSlots(bytes) {
@@ -309,6 +337,7 @@
   const fmtTime = (s) => Math.floor(s / 3600) + 'h ' + String(Math.floor(s % 3600 / 60)).padStart(2, '0') + 'm';
   const TAG = '\u001b';
 
-  const api = { DMS, Save, looksLikeSave, looksLikeSystemSave, readSystemSlots, bodySum, fmtTime, L, P, A, TAG };
+  const api = { DMS, Save, looksLikeSave, looksLikeSystemSave, readSystemSlots, bodySum, fmtTime, L, P, A, TAG,
+    OTHER_GAME, looksLikeOtherGame, containerHoldsOtherGame, wrongGameNote };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.FE3H = api;
 })(typeof window !== 'undefined' ? window : globalThis);

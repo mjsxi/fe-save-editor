@@ -76,7 +76,7 @@ ok('container hash verified', /hash ok/.test(doc.getElementById('meta').textCont
 ok('summary pills filled', /money/.test(doc.getElementById('slotinfo').textContent) && /convoy/.test(doc.getElementById('slotinfo').textContent));
 ok('six tabs', doc.querySelectorAll('#tabs button.tab').length === 6);
 {
-  const errs = [...doc.getElementById('log').textContent.split('\n')].filter((l) => l.startsWith('!'));
+  const errs = [...doc.querySelectorAll('#log span.bad')].map((s) => s.textContent);   // say() strips the leading '!', so the class is what marks an error
   ok('the log reports no errors on open', errs.length === 0, errs.join(' | '));
 }
 

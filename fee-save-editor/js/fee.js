@@ -244,6 +244,7 @@
     parse() {
       const b = this.bytes;
       if (b.length < INDEX_SIZE + 8) throw new Error('too short to be an Engage save (' + b.length + ' bytes)');
+      if (!looksLikeSave(b) && looksLikeOtherGame(b)) throw new Error(OTHER_GAME + ' save, not Engage');   // rather than "no section index"
       if (tagAt(b, 0) === 'EDNI') { this.kind = 'global'; this.indexOffset = 0; }
       else if (b.length >= H.index + INDEX_SIZE + 8 && tagAt(b, H.index) === 'EDNI') { this.kind = 'game'; this.indexOffset = H.index; }
       else throw new Error('no Engage section index found (looked for the EDNI magic at 0 and at 0x80)');
@@ -1073,6 +1074,34 @@
   }
   const looksLikeGlobal = (bytes) => looksLikeSave(bytes) && tagAt(bytes, 0) === 'EDNI';
 
+  // ---- refusing the other game ---------------------------------------------
+  /* Both titles travel in the same .dmsync container, so a Three Houses container opens happily here and the
+     saves inside are the only thing that says which game they belong to. Three Houses has no magic word - its
+     12-byte header is u32 byte-sum of the body, u32 save version (12, 13 or 23), u32 file size - so size-equals
+     -length plus the version list names it, and no Engage header can satisfy that (it keeps a chapter hash at
+     0x08 and the game version at 0x04, and carries the LVRC footer this reader insists on anyway).
+     Silently skipping such a file reads as "opened fine, 0 saves", which looks like a bug in this page. */
+  const OTHER_GAME = 'Fire Emblem Three Houses';
+  function looksLikeOtherGame(bytes) {
+    const b = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
+    if (!b || b.length < 0x20000) return false;
+    const v = new DataView(b.buffer, b.byteOffset, b.byteLength);
+    return v.getUint32(8, true) === b.length && [12, 13, 23].includes(v.getUint32(4, true));
+  }
+  // a container belongs to the other game when nothing in it is ours and something in it is theirs
+  function containerHoldsOtherGame(b) {
+    let mine = 0, theirs = 0;
+    for (const e of b.entries) {
+      if (e.type !== 'file') continue;
+      if (looksLikeSave(e.bytes)) mine++; else if (looksLikeOtherGame(e.bytes)) theirs++;
+    }
+    return !mine && theirs ? OTHER_GAME : null;
+  }
+  // why a dropped file was skipped, naming the game when we can tell which one it is
+  const wrongGameNote = (bytes) => looksLikeOtherGame(bytes)
+    ? OTHER_GAME + ' save - this page edits Engage, so it was skipped'
+    : 'not an Engage save file, skipped';
+
   // Chapter ids are not in the data dumps, but they are short and enumerable, so hash the plausible
   // shapes and match them against the save's two chapter hashes. This gives "CID_M007" back, which is
   // a chapter's real id; the friendlier "Chapter 7" label would need the game's message table.
@@ -1096,6 +1125,7 @@
   const api = {
     DMS, Save, looksLikeSave, looksLikeGlobal, fnv1a, crc32, chapterName, fmtTime,
     H, STAT_NAMES, WEAPON_TYPES, FORCES, DIFFICULTY, GAME_MODE, SUPPORT_RANK, MATERIAL_KEYS, QTY_PREFIX,
+    OTHER_GAME, looksLikeOtherGame, containerHoldsOtherGame, wrongGameNote,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.FEE = api;
 })(typeof window !== 'undefined' ? window : globalThis);

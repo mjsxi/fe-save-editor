@@ -475,8 +475,29 @@ await throws('an out-of-range play time is refused', async () => { const x = clo
 }
 await throws('a convoy slot past the capacity is refused', async () => { const x = clone(); return x.setConvoySlot(5000, { hash: 1, uses: 1, refine: 0, flags: 0, engrave: null }); });
 await throws('a truncated save is refused', async () => new FEE.Save(S.bytes.subarray(0, 4000), 'cut'));
-await throws('a three-houses save is refused', async () => new FEE.Save(new Uint8Array(6000), 'not engage'));
+await throws('a zero-filled blob is refused', async () => new FEE.Save(new Uint8Array(6000), 'not engage'));
 ok('looksLikeSave says no to a random blob', !FEE.looksLikeSave(new Uint8Array(4000)));
+
+// ------------------------------------------------------- refusing the other game
+/* A real Three Houses save carries no magic word, but its header is { byte-sum of the body, save version,
+   file size }, which is what the detector keys on - so a synthetic file of the right length with that header
+   stands in for one here. The Three Houses suite checks the same thing in the other direction. */
+section('11 · refusing the other game');
+const threeHousesShaped = new Uint8Array(0x25B2C);
+{
+  const v = new DataView(threeHousesShaped.buffer);
+  v.setUint32(4, 23, true); v.setUint32(8, threeHousesShaped.length, true);
+}
+ok('a Three Houses save is not an Engage save', !FEE.looksLikeSave(threeHousesShaped));
+ok('but it is recognised as ' + FEE.OTHER_GAME, FEE.looksLikeOtherGame(threeHousesShaped));
+ok('our own saves are never mistaken for it', Object.keys(saves).every((n) => !FEE.looksLikeOtherGame(saves[n].bytes)), Object.keys(saves).join(', '));
+await throws('a Three Houses save is refused by name', async () => new FEE.Save(threeHousesShaped, 'auto'));
+const theirsPacked = await FEE.DMS.write({ 'save/auto': { type: 'file', guest: '', mtime: 1700000000, bytes: threeHousesShaped } }, { title: '010055D009F78000', device: 'synthetic' });
+const theirsBundle = await FEE.DMS.read(theirsPacked.bytes);
+ok('a Three Houses container is refused by name, from what is inside it', FEE.containerHoldsOtherGame(theirsBundle) === FEE.OTHER_GAME, theirsBundle.title);
+ok('and ours is not', FEE.containerHoldsOtherGame(bundle) === null, bundle.title);
+ok('the skip note names the game', /Three Houses/.test(FEE.wrongGameNote(threeHousesShaped)), FEE.wrongGameNote(threeHousesShaped));
+ok('a file that is neither game still gets the plain note', FEE.wrongGameNote(new Uint8Array(0x900).fill(7)) === 'not an Engage save file, skipped');
 
 console.log('\n' + (fail ? 'FAILED' : 'PASSED') + ': ' + pass + ' checks passed, ' + fail + ' failed.');
 process.exit(fail ? 1 : 0);

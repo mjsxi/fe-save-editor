@@ -285,14 +285,16 @@ async function openFiles(list) {
     const isDms = f.name.toLowerCase().endsWith('.dmsync') || (bytes.length > 8 && String.fromCharCode(...bytes.subarray(0, 8)) === 'DMSYNC1\n');
     if (isDms) {
       try {
-        bundle = await FEE.DMS.read(bytes);
-        container = FEE.DMS.fromBundle(bundle);
-        say('+' + f.name + ': ' + bundle.files + ' files, container hash verified (' + bundle.title + ')');
+        const b = await FEE.DMS.read(bytes);
+        const foreign = FEE.containerHoldsOtherGame(b);
+        if (foreign) { say('!' + f.name + ': that is a ' + foreign + ' save (' + b.title + ') - this page edits Engage'); continue; }
+        bundle = b; container = FEE.DMS.fromBundle(b);
+        say('+' + f.name + ': ' + b.files + ' files, container hash verified (' + b.title + ')');
       } catch (e) { say('!' + f.name + ': ' + e.message); }
       continue;
     }
     if (FEE.looksLikeSave(bytes)) next[base] = bytes;
-    else say('!' + f.name + ': not an Engage save file, skipped');
+    else say('!' + f.name + ': ' + FEE.wrongGameNote(bytes));
   }
   if (!bundle && !Object.keys(next).length) return;
   if (bundle) for (const e of bundle.entries) {

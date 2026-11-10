@@ -60,7 +60,7 @@ ok('the picked save actually opened', doc.getElementById('editor').hidden === fa
   [...doc.querySelectorAll('#slots button.slot')].map((b) => b.textContent).join(' | '));
 ok('the input is cleared, so the same file can be picked again', input.value === '');
 ok('"choose files" is still there after a load', !!doc.getElementById('pick'));
-const errs = doc.getElementById('log').textContent.split('\n').filter((l) => l.startsWith('!'));
+const errs = [...doc.querySelectorAll('#log span.bad')].map((s) => s.textContent);   // say() strips the leading '!', so the class is what marks an error
 ok('no errors in the log', errs.length === 0, errs.join(' | '));
 ok('the save on disk is untouched', Buffer.compare(Buffer.from(fs.readFileSync(SAVE)), bytes) === 0);
 console.log('\n' + (fail ? 'FAILED' : 'PASSED') + ': ' + pass + ' checks passed, ' + fail + ' failed.');

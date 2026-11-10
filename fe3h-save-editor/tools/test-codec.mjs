@@ -165,5 +165,25 @@ console.log('\nsupport conversations:');
   ok('rank thresholds classify every stored value', Array.from({ length: F.P.supportCount }, (_, i) => s.support(i)).every((v) => Number.isFinite(v)), ranks + ' pairs past C in this save');
 }
 
+// ---- refusing the other game ----------------------------------------------
+/* Engage marks its saves with the "EDNI" section-index magic - at 0x80 in a game save, at 0 in a Global one -
+   so a synthetic file carrying it stands in for a real Engage save here. The Engage suite checks the same
+   thing in the other direction, against a real Three Houses save. */
+const engageShaped = new Uint8Array(0x400);
+engageShaped.set([0x45, 0x44, 0x4e, 0x49], 0x80);
+console.log('\nrefusing the other game (synthetic ' + F.OTHER_GAME + ' save):');
+ok('an Engage save is not a Three Houses save', !F.looksLikeSave(engageShaped));
+ok('but it is recognised as ' + F.OTHER_GAME, F.looksLikeOtherGame(engageShaped));
+ok('our own saves are never mistaken for it', Object.keys(files).filter((n) => F.looksLikeSave(files[n])).every((n) => !F.looksLikeOtherGame(files[n])));
+let refuseNote = '';
+try { new F.Save(engageShaped, 'Auto'); } catch (e) { refuseNote = e.message; }
+ok('the reader refuses an Engage save by name', /Engage/.test(refuseNote), refuseNote);
+const theirsPacked = await F.DMS.write({ 'save/Auto': { type: 'file', guest: '', mtime: 1700000000, bytes: engageShaped } }, { title: '0100A6301214E000', device: 'synthetic' });
+const theirsBundle = await F.DMS.read(theirsPacked.bytes);
+ok('an Engage container is refused by name, from what is inside it', F.containerHoldsOtherGame(theirsBundle) === F.OTHER_GAME, theirsBundle.title);
+ok('and ours is not', F.containerHoldsOtherGame(bundle) === null, bundle.title);
+ok('the skip note names the game', /Engage/.test(F.wrongGameNote(engageShaped)), F.wrongGameNote(engageShaped));
+ok('a file that is neither game still gets the plain note', F.wrongGameNote(new Uint8Array(0x900).fill(7)) === 'not a Three Houses save file, skipped');
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 process.exit(fail ? 1 : 0);
